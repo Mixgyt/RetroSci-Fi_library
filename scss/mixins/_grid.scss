@@ -1,0 +1,12 @@
+@use "../_variables" as v;
+
+@mixin make-container($breakpoint, $max-width) {
+    @media (min-width: $breakpoint) {
+        max-width: $max-width;
+    }
+}
+
+@mixin make-col($size) {
+    flex: 0 0 calc((100% / #{v.$grid-columns}) * #{$size} - #{v.$gutter-width});
+    max-width: calc((100% / #{v.$grid-columns}) * #{$size} - #{v.$gutter-width});
+}
