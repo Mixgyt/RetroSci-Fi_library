@@ -51,3 +51,9 @@ yarn-error.log*
 package-lock.json
 yarn.lock
 pnpm-lock.yaml
+
+# Se ignorara temporalmente para
+# hacer pruebas unitarias :)
+/dist/
+index.html
+/scss/main.scss
