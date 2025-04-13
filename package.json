@@ -1,0 +1,24 @@
+{
+  "name": "retrosci-fi_library",
+  "version": "1.0.0",
+  "main": "scss/mian.scss",
+  "sass": "scss/main.scss",
+  "style": "dist/css/main.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sass --watch scss/:dist/css/",
+    "css-compile": "sass --style expanded --source-map --embed-sources --no-error-css scss/:dist/css/",
+    "scss-watch": "sass --watch scss/:dist/css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mixgyt/RetroSci-Fi_library.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mixgyt/RetroSci-Fi_library/issues"
+  },
+  "homepage": "https://github.com/Mixgyt/RetroSci-Fi_library#readme",
+  "description": ""
+}
