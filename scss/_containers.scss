@@ -1,0 +1,33 @@
+@use "variables";
+@use "sass:map";
+
+// Estilos base
+.container,
+.container-fluid {
+  width: 100%;
+  padding-right: variables.$padd;
+  padding-left: variables.$padd;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+//Contenedor responsivo
+.container {
+  @each $breakpoint, $max-width in variables.$container-max-widths {
+    @media (min-width: map.get(variables.$grid-breakpoints, $breakpoint)){
+      max-width: $max-width;
+    }
+  }
+}
+
+//Contenedores con tamaños diferentes
+@each $breakpoint, $max-width in variables.$container-max-widths{
+  .container-#{$breakpoint}{
+    width: 100%;
+    max-width: $max-width;
+    padding-right: variables.$padd;
+    padding-left: variables.$padd;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
