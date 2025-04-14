@@ -3,14 +3,15 @@
 
 // Estilo base para todos los badges
 .badge {
-    font-family: fonts.$font-mukta;
-    font-weight: fonts.$font-weight-bold;
+  font-family: fonts.$font-mukta;
+  font-weight: fonts.$font-weight-bold;
   padding: 5px 5px;
   font-size: 16px;
   text-align: center;
   border-radius: 10px;
   color: #fff; // color de texto por defecto
   border: 1px solid variables.$secondary;
+  margin: 20px auto;
 }
 
 //Todas las variantes con los diferentes colores para los badge
@@ -21,6 +22,10 @@
     //Para badge con colores claros
     @if ($nombre == "light" or $nombre == "warning" or $nombre == "primary") {
       color: #000;
+    }
+
+    @if ($nombre == "secondary"){
+      box-shadow: 0 0 0 1px variables.$primary;
     }
   }
 }
