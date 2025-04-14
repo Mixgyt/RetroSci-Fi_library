@@ -1,11 +1,11 @@
-$primary: #bb3a2d;
-$secondary: #dcc9a9;
+$primary: #dcc9a9;
+$secondary: #1a1a1a;
 $success: #4e6851;
 $info: #4b848a;
 $warning: #fbc359;
 $danger: #e70103;
 $light: #f9f2f2;
-$dark: #1a1a1a;
+$alert: #bb3a2d;
 
 $theme-colors: (
   "primary": $primary,
@@ -15,7 +15,7 @@ $theme-colors: (
   "warning": $warning,
   "danger": $danger,
   "light": $light,
-  "dark": $dark,
+  "alert": $alert,
 );
 
 //variables del layout
