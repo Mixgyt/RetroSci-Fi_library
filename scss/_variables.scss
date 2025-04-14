@@ -1,3 +1,5 @@
+@use "sass:color";
+
 $primary: #dcc9a9;
 $secondary: #1a1a1a;
 $success: #4e6851;
@@ -16,6 +18,18 @@ $theme-colors: (
   "danger": $danger,
   "light": $light,
   "alert": $alert,
+);
+
+//Colores subtle y emphasis
+$subtle-colors:(
+  "primary-subtle": mix(black,$primary, 60%),
+  "secondary-subtle": mix(black,$secondary, 60%),
+  "success-subtle": mix(black,$success, 60%),
+  "info-subtle":mix(black,$info, 60%),
+  "warning-subtle":mix(black,$warning, 60%),
+  "danger-subtle":mix(black,$danger, 60%),
+  "light-subtle":rgb(102, 102, 102),
+  "alert-subtle":mix(black,$alert, 60%),
 );
 
 //variables del layout
@@ -44,4 +58,51 @@ $container-max-widths: (
 );
 
 //El padding de los containers
-$padd: 25px;
+$c-padding: 25px;
+
+//Espaciados predeterminados para margenes y paddings
+$spacer: 1rem;
+$spacers:(
+  "0": 0,
+  "1":$spacer * .25,
+  "2":$spacer * .5,
+  "3":$spacer,
+  "4":$spacer * 1.5,
+  "5":$spacer * 3
+);
+
+//Bordes estandart
+$borders:(
+  "0": 0,
+  "1": 1px,
+  "2": 2px,
+  "3": 3px,
+  "4": 4px,
+  "5": 5px,
+);
+
+//Color standart para bordes
+$default-border-color: $primary;
+
+//Redondeado en los bordes
+$default-border-radius: 0.375rem;
+
+//Radius por defecto
+$borders-radius:(
+  "0":0,
+  "1":.2rem,
+  "2":.25rem,
+  "3":.3rem,
+  "4":$default-border-radius,
+  "5":.5rem,
+  "circle":50%,
+  "pill": 50rem,
+);
+
+//Las posiciones estandar
+$standart-positions:(
+    top: "top",
+    end: "end",
+    bottom: "bottom",
+    start: "start"
+);  
