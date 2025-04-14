@@ -31,3 +31,11 @@
         }
     }
 }
+
+.col {
+    position: relative;
+    width: 100%;
+    padding-right: (v.$gutter-width / 2);
+    padding-left: (v.$gutter-width / 2);
+    flex: 1 0 0%;
+  }
