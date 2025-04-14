@@ -6,9 +6,10 @@
     text-align: center;
     text-decoration: none;
     padding: 0.5rem 1rem;
+    margin: 5px;
     font-size: 1rem;
     border: 1px solid transparent;
-    border-radius: 0.25rem;
+    border-radius: 0.5rem;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
     user-select: none;
@@ -21,7 +22,7 @@
     color: if(color.channel($bg-color, "lightness", $space: hsl) > 60%, #000, #fff);
 
     &:hover{
-        opacity: 0.8;
+        background: color.adjust($bg-color,$lightness: -10%);
     }
 }
 
