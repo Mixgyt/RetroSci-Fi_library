@@ -1,0 +1,26 @@
+@use '../variables' as *;
+
+.form-check{
+    display: inline;
+    align-items: center;
+    gap: 10px;
+    width: 1rem;
+
+    .form-check-input{
+        width: 1rem;
+        height: 1rem;
+        accent-color: $primary;
+    }
+
+          .form-check-label {
+              font-size: 1rem;
+              font-family: $font-family;
+              cursor: pointer;
+          }
+    
+          // Si el input está deshabilitado
+          .form-check-input:disabled~.form-check-label {
+              opacity: 0.5;
+              cursor: not-allowed;
+          }
+}
