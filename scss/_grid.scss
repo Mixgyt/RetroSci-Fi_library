@@ -1,0 +1,33 @@
+@use "variables" as v;
+@use "mixins/grid" as grid-mixin;
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -(v.$gutter-width / 2);
+    margin-left: -(v.$gutter-width / 2);
+}
+
+[class*="col-"] {
+    padding-right: v.$gutter-width / 2;
+    padding-left: v.$gutter-width / 2;
+}
+
+
+// Creacion de la clases de columnas col-1, col-2, col-3,
+@for $i from 1 through v.$grid-columns { //bucle que recorre el numero de columnas (12)
+    .col-#{$i} {
+        @include grid-mixin.make-col($i);
+    }
+}
+
+// Hacemos las columnas responsivas
+@each $breakpoint, $max-width in v.$container-max-widths {
+    @media (min-width: #{map-get(v.$grid-breakpoints, $breakpoint)}) {
+        @for $i from 1 through v.$grid-columns {
+            .col-#{$breakpoint}-#{$i} {
+                @include grid-mixin.make-col($i);
+            }
+        }
+    }
+}

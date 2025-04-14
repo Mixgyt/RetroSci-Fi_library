@@ -1,8 +1,8 @@
 {
   "name": "retrosci-fi_library",
-  "version": "1.0.0",
-  "main": "scss/mian.scss",
-  "sass": "scss/main.scss",
+  "version": "0.1.0",
+  "main": "scss/sci-fi.scss",
+  "sass": "scss/sci-fi.scss",
   "style": "dist/css/main.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -20,5 +20,5 @@
     "url": "https://github.com/Mixgyt/RetroSci-Fi_library/issues"
   },
   "homepage": "https://github.com/Mixgyt/RetroSci-Fi_library#readme",
-  "description": ""
+  "description": "Libreria css creada en sass basada en el estilo retro ciencia ficcion japones"
 }
