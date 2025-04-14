@@ -43,8 +43,8 @@ $transition-easing: cubic-bezier(0.68, -0.55, 0.27, 1.55);
     $transition-easing: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   
     .slide-menu {
-      position: fixed;
-      top: 0; //cambiar cuando el contendor funcione
+      //position: fixed;
+      //top: 0; //cambiar cuando el contendor funcione
       left: 0; 
       height: 100vh;
       width: $width;
@@ -123,7 +123,7 @@ $transition-easing: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   
       &__toggle {
         position: absolute;
-        top: 50%;
+        top: 30%;
         left: calc(#{$width} - #{$toggle-size} / 2);
         width: $toggle-size;
         height: $toggle-size + 50px;
@@ -178,9 +178,13 @@ $transition-easing: cubic-bezier(0.68, -0.55, 0.27, 1.55);
         &.open {
           .slide-menu__toggle {
             left: calc(100% - #{$toggle-size} - 20px);
-            transform: translateY(-340px);
+            position: fixed;
+            bottom: 20px;
+            top: 20px;
+
             background-color: v.$alert;
             height: 60px;
+            transform: none;
           }
         }
         &.closed {
@@ -198,11 +202,15 @@ $transition-easing: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   
         &.open {
           .slide-menu__toggle {
-            border: none;
             left: calc(100% - #{$toggle-size} - 20px);
-            transform: translateY(-340px);
+            position: fixed;
+            bottom: 20px;
+
+            top: 20px;
+            
             background-color: v.$alert;
             height: 60px;
+            transform: none;
           }
         }
       }
