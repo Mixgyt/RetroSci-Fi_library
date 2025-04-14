@@ -20,6 +20,9 @@
 @each $name, $color in $theme-colors {
     .btn-#{$name} {
         @include button-color($color);
+        &.btn-efect{
+            @include button-style($color);
+        }
     }
 }
 
@@ -31,4 +34,8 @@
 .btn-sm{
     padding: 0.25rem 0.75rem;
     font-size: 0.75rem;
+}
+
+.estilo-brillo {
+    @include estilo-brillo();
 }
