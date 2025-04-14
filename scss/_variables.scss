@@ -9,6 +9,7 @@ $danger: #e70103;
 $light: #f9f2f2;
 $alert: #bb3a2d;
 
+//Colores base
 $theme-colors: (
   "primary": $primary,
   "secondary": $secondary,
@@ -20,7 +21,7 @@ $theme-colors: (
   "alert": $alert,
 );
 
-//Colores subtle y emphasis
+//Colores subtle
 $subtle-colors:(
   "primary-subtle": color.mix(black,$primary, 60%),
   "secondary-subtle": color.mix(black,$secondary, 60%),
@@ -30,6 +31,18 @@ $subtle-colors:(
   "danger-subtle":color.mix(black,$danger, 60%),
   "light-subtle":rgb(102, 102, 102),
   "alert-subtle":color.mix(black,$alert, 60%),
+);
+
+//Colores emphasis usados para el texto
+$emphasis-colors:(
+  "primary":color.mix(white,$primary,60%),
+  "secondary":color.mix(white,$secondary,60%),
+  "success":color.mix(white,$success,60%),
+  "info":color.mix(white,$info,60%),
+  "warning":color.mix(white,$warning,60%),
+  "danger":color.mix(white,$danger,60%),
+  "light":color.mix(white,$light,60%),
+  "alert":color.mix(white,$alert,60%),
 );
 
 //variables del layout
@@ -48,7 +61,7 @@ $grid-breakpoints: (
 $grid-columns: 12; // Número de columnas
 $gutter-width: 1.5rem; // Espaciado entre columnas
 
-//tamano de los contenedores
+//Tamaño de los contenedores
 $container-max-widths: (
   sm: 540px,
   md: 720px,
@@ -71,7 +84,7 @@ $spacers:(
   "5":$spacer * 3
 );
 
-//Bordes estandart
+//Bordes estandar
 $borders:(
   "0": 0,
   "1": 1px,
@@ -81,7 +94,7 @@ $borders:(
   "5": 5px,
 );
 
-//Color standart para bordes
+//Color estandar para bordes
 $default-border-color: $primary;
 
 //Redondeado en los bordes
