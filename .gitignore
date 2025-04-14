@@ -52,8 +52,5 @@ package-lock.json
 yarn.lock
 pnpm-lock.yaml
 
-# Se ignorara temporalmente para
-# hacer pruebas unitarias :)
+# La cache que usa sass al compilar
 /dist/
-index.html
-/scss/main.scss
