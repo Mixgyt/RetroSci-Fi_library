@@ -1,0 +1,12 @@
+@use 'variables' as v;
+@use 'mixins/asidevar' as aside;
+
+$menu-width: 220px;
+$menu-color: lighten( v.$secondary, 5%);
+$menu-text-color: v.$light;
+
+@include aside.slide-menu($menu-color, $menu-text-color, $menu-width);
+
+.slide-menu.closed .slide-menu__toggle {
+  animation: pulse 2s infinite alternate;
+}
