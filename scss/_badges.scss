@@ -1,0 +1,26 @@
+@use "variables";
+@use "fonts";
+
+// Estilo base para todos los badges
+.badge {
+    font-family: fonts.$font-mukta;
+    font-weight: fonts.$font-weight-bold;
+  padding: 5px 5px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 10px;
+  color: #fff; // color de texto por defecto
+  border: 1px solid variables.$secondary;
+}
+
+//Todas las variantes con los diferentes colores para los badge
+@each $nombre, $color in variables.$theme-colors {
+  .badge-#{$nombre} {
+    background-color: $color;
+
+    //Para badge con colores claros
+    @if ($nombre == "light" or $nombre == "warning" or $nombre == "primary") {
+      color: #000;
+    }
+  }
+}
