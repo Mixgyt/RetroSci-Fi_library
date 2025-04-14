@@ -1,12 +1,11 @@
 @use '../variables' as *;
 
 .form-control{
-    width: 90%;
-    margin: auto;
+    width: 100%;
     display: block;
     padding: 5px 10px;
     border: 2px solid $primary;
-    margin-block: 5px ;
+    margin-bottom: 8px ;
     border-radius: 7px;
     background: $light;
 

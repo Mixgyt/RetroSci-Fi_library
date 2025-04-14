@@ -2,14 +2,13 @@
 @use 'sass:color' as color;
 
 .form-select{
-    width: 90%;
-    margin: auto;
+    width: 100%;
     display: block;
-    padding: 0.25rem 0.75rem;
+    padding: 5px 10px;
     font-size: 1rem;
     color: if(color.channel($primary, "lightness", $space: hsl) > 60%, #000, #fff);
     background: $light;
     border: 2px solid $primary;
     border-radius: 0.25rem;
-    margin-block: 5px ;
+    margin: 0px 0px 10px 0;
 }
