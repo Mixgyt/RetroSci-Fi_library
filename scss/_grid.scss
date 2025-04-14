@@ -1,16 +1,17 @@
 @use "variables" as v;
 @use "mixins/grid" as grid-mixin;
+@use "sass:map";
 
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -(v.$gutter-width / 2);
-    margin-left: -(v.$gutter-width / 2);
+    margin-right: -(calc(v.$gutter-width / 2));
+    margin-left: -(calc(v.$gutter-width / 2));
 }
 
 [class*="col-"] {
-    padding-right: v.$gutter-width / 2;
-    padding-left: v.$gutter-width / 2;
+    padding-right: calc(v.$gutter-width / 2);
+    padding-left: calc(v.$gutter-width / 2);
 }
 
 
@@ -23,7 +24,7 @@
 
 // Hacemos las columnas responsivas
 @each $breakpoint, $max-width in v.$container-max-widths {
-    @media (min-width: #{map-get(v.$grid-breakpoints, $breakpoint)}) {
+    @media (min-width: #{map.get(v.$grid-breakpoints, $breakpoint)}) {
         @for $i from 1 through v.$grid-columns {
             .col-#{$breakpoint}-#{$i} {
                 @include grid-mixin.make-col($i);

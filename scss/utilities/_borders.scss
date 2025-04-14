@@ -1,12 +1,12 @@
 @use "../variables";
+@use "sass:map";
 
 //En bordes tambien incluyo el border-radius en este caso rounded
-
 .border {
   //Borde predeterminado de 2px
-  border: map-get(variables.$borders, "2") solid variables.$default-border-color;
+  border: map.get(variables.$borders, "2") solid variables.$default-border-color;
 }
-
+//Bordes redondeados
 .rounded {
   border-radius: variables.$default-border-radius;
 }
@@ -37,8 +37,8 @@
       --sci-border-opacity: 0.1;
     }
   }
-  .border-opacity-#{($i/4)*100} {
-    --sci-border-opacity: #{$i/4};
+  .border-opacity-#{calc($i/4)*100} {
+    --sci-border-opacity: #{calc($i/4)};
   }
 }
 
@@ -51,15 +51,15 @@
 @each $nombre, $posicion in variables.$standart-positions {
   .border-#{$nombre} {
     @if ($nombre == "start") {
-      border-left: map-get(variables.$borders, "2")
+      border-left: map.get(variables.$borders, "2")
         solid
         variables.$default-border-color;
     } @else if($nombre == "end") {
-      border-right: map-get(variables.$borders, "2")
+      border-right: map.get(variables.$borders, "2")
         solid
         variables.$default-border-color;
     } @else {
-      border-#{$nombre}: map-get(variables.$borders, "2")
+      border-#{$nombre}: map.get(variables.$borders, "2")
         solid
         variables.$default-border-color;
     }
@@ -67,15 +67,15 @@
 
   .border-#{$nombre}-0 {
     @if ($posicion == "start") {
-      border-left: map-get(variables.$borders, "0")
+      border-left: map.get(variables.$borders, "0")
         solid
         variables.$default-border-color;
     } @else if($posicion == "end") {
-      border-right: map-get(variables.$borders, "0")
+      border-right: map.get(variables.$borders, "0")
         solid
         variables.$default-border-color;
     } @else {
-      border-#{$nombre}: map-get(variables.$borders, "0")
+      border-#{$nombre}: map.get(variables.$borders, "0")
         solid
         variables.$default-border-color;
     }

@@ -22,14 +22,14 @@ $theme-colors: (
 
 //Colores subtle y emphasis
 $subtle-colors:(
-  "primary-subtle": mix(black,$primary, 60%),
-  "secondary-subtle": mix(black,$secondary, 60%),
-  "success-subtle": mix(black,$success, 60%),
-  "info-subtle":mix(black,$info, 60%),
-  "warning-subtle":mix(black,$warning, 60%),
-  "danger-subtle":mix(black,$danger, 60%),
+  "primary-subtle": color.mix(black,$primary, 60%),
+  "secondary-subtle": color.mix(black,$secondary, 60%),
+  "success-subtle": color.mix(black,$success, 60%),
+  "info-subtle":color.mix(black,$info, 60%),
+  "warning-subtle":color.mix(black,$warning, 60%),
+  "danger-subtle":color.mix(black,$danger, 60%),
   "light-subtle":rgb(102, 102, 102),
-  "alert-subtle":mix(black,$alert, 60%),
+  "alert-subtle":color.mix(black,$alert, 60%),
 );
 
 //variables del layout
