@@ -1,17 +1,18 @@
 @use "variables";
 @use "fonts";
+@use "sass:color" as color;
 
 // Estilo base para todos los badges
 .badge {
   font-family: fonts.$font-mukta;
   font-weight: fonts.$font-weight-bold;
-  padding: 5px 5px;
+  padding: 0 5px;
   font-size: 16px;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 0.5rem;
   color: #fff; // color de texto por defecto
   border: 1px solid variables.$secondary;
-  margin: 20px auto;
+  margin: 10px auto;
 }
 
 //Todas las variantes con los diferentes colores para los badge
@@ -20,11 +21,13 @@
     background-color: $color;
 
     //Para badge con colores claros
-    @if ($nombre == "light" or $nombre == "warning" or $nombre == "primary") {
-      color: #000;
-    }
+    color: if(
+      color.channel($color, "lightness", $space: hsl) > 60%,
+      #000,
+      #fff
+    );
 
-    @if ($nombre == "secondary"){
+    @if ($nombre == "secondary") {
       box-shadow: 0 0 0 1px variables.$primary;
     }
   }
