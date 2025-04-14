@@ -1,0 +1,15 @@
+@use '../variables' as *;
+
+.form-control{
+    width: 90%;
+    margin: auto;
+    padding: 5px 10px;
+    border: 2px solid $primary;
+    margin-block: 5px ;
+    border-radius: 7px;
+    background: $light;
+
+    &:focus {
+            box-shadow: 0 0 4px 4px $primary;
+        }
+}
