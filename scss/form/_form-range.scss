@@ -1,0 +1,11 @@
+@use "../variables" as *;
+
+.form-range{
+    width: 100%;
+    display: block;
+    padding: 5px 0px;
+    margin-bottom: 8px;
+    border-radius: 7px;
+    background: $light;
+    box-sizing: border-box;
+}
