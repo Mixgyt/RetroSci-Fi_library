@@ -10,3 +10,31 @@
     flex: 0 0 calc((100% / #{v.$grid-columns}) * #{$size} - #{v.$gutter-width});
     max-width: calc((100% / #{v.$grid-columns}) * #{$size} - #{v.$gutter-width});
 }
+
+@mixin make-col-auto() {
+    flex: 0 0 auto;
+    max-width: none;
+}
+
+@mixin make-row-cols($size){
+    .row-cols-#{$size} {
+        > * {
+            flex: 0 0 calc(100% / #{$size});
+            max-width: calc(100% / #{$size});
+        }
+}}
+
+@mixin make-responsive-row-cols(){
+    @each $breakpoint, $value in v.$grid-breakpoints {
+        @media (min-width: $value) {
+            @for $i from 1 through v.$grid-row-columns {
+                .row-cols-#{$breakpoint}-#{$i} {
+                    > * {
+                        flex: 0 0 calc(100% / #{$i});
+                        max-width: calc(100% / #{$i});
+                    }
+                }
+            }
+        }
+    }
+}

@@ -39,3 +39,39 @@
     padding-left: (v.$gutter-width / 2);
     flex: 1 0 0%;
   }
+.col-auto {
+    flex: 0 0 auto;
+    width: auto;
+}
+
+//crear todas las clases de columnas auto col-sm-auto, col-md-auto, col-lg-auto
+@each $breakpoint, $value in v.$grid-breakpoints {
+    @media (min-width: $value) {
+        .col-#{$breakpoint}-auto {
+            @include grid-mixin.make-col-auto();
+        }
+    }
+}
+
+// gap modificador del row
+@for $i from 0 through 5 {
+    .g-#{$i} {
+        gap: #{$i * 0.25}rem;
+    }
+
+    .gx-#{$i} {
+        column-gap: #{$i * 0.25}rem;
+    }
+
+    .gy-#{$i} {
+        row-gap: #{$i * 0.25}rem;
+    }
+}
+
+// generar las clases de columnas para el grid-row
+@for $i from 1 through v.$grid-row-columns{
+
+     @include grid-mixin.make-row-cols($i);
+}
+// Hacemos las columnas responsivas
+@include grid-mixin.make-responsive-row-cols();
