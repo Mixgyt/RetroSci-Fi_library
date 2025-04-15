@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retrosci-Fi</title>
+    <link rel="stylesheet" href="../../dist/css/sci-fi.css">
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+</head>
+
+<body>
+  <nav class=" navbar bg-secondary estilo-brillo border rounded border-secondary hover-neon  position-sticky top-0 p-1"
+  id="nav1">
+  <div class="navbar-header">
+      <div class="navbar-brand"><div class="img-logo-prin-white"></div>Retro Sci-Fi</div>
+      <button class="navbar-toggle" onclick="toggleMenu('nav1')">
+          <div class="img-menu-white"></div>
+      </button>
+  </div>
+  <div class="navbar-nav">
+      <a class="nav-item rounded-pill" href="#inicio">Inicio</a>
+      <a class="nav-item rounded-pill" href="#estructura">Estructura</a>
+      <a class="nav-item rounded-pill" href="#grid">Grid</a>
+      <a class="nav-item rounded-pill" href="#alerts">Alerts</a>
+  </div>
+</nav>
+
+<div class="grid">
+  <div class="g-col g-col-md-2 g-col-lg-3">
+          <div class=""> <!-- Crear el contenedo para el aside bar (o usar las clases de posision)-->
+              <div class="slide-menu closed position-fixed">
+                  <div class="slide-menu__content">
+                      <h2 class="slide-menu__title">Documentacion</h2>
+                      <ul class="slide-menu__list">
+
+                        <!--COMIENZO LAYOUT-->
+                          <p class="">Layout</p>
+
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#clase-row">Clase .row</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#clase-row-cols">Clase .row-cols-*</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#alineacion-filas">Alineación en Filas</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#clases-espaciado">Espaciado: .g, .gx, .gy</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#clase-col">Clase .col Básica</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#columnas-tamano-fijo">Columnas de Tamaño Fijo</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#columnas-responsivas">Columnas Responsivas</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#autoajuste-col-auto">Autoajuste con .col-auto</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#autoajuste-responsivo">Autoajuste Responsivo</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="#alineacion-individual">Alineación Individual de Columnas</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#desplazamiento-offset">Desplazamiento con Offset</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#clase-grid">Clase .grid y .g-col-*</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#filas-grid">Filas en Grid</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#filas-responsivas">Filas Responsivas</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#filas-columnas">Combinación Filas + Columnas</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#espaciado-grid">Espaciado en Grid .gap-*</a>
+                          </li>
+
+                          <!--FIN DE LAYOUT -->
+
+                          <!--COMIENZO DE COMPONENTES-->
+
+                          <p class="">Componentes</p>
+
+                          <!--BAGGE-->
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="badge.html">Badge</a>
+                          </li>
+                          <!--FIN BAGGE-->
+
+                          <!--BUTTONS-->
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="buttons.html">Botones</a>
+                          </li>
+                          <!--FIN BUTTONS-->
+
+                          <!--CARDS-->
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="card.html">Cards</a>
+                          </li>
+                          <!--FIN CARDS-->
+
+                          <!--CONTAINERS -->
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="container.html">Contenedores</a>
+                          </li>
+                          <!--FIN CONTAINERS-->
+
+                          <!--FORMULARIOS -->
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="container.html">Contenedores</a>
+                          </li>
+                          <!--FIN FORMULARIOS-->
+
+                          <!--NAV BAR -->
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="navbar.html">Contenedores</a>
+                          </li>
+                          <!--FIN NAV BAR-->
+
+                          <!--ALERTAS-->
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="#alerta-basica">Alerta Básica</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="#tipos-alertas">Tipos de alerta</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="#parametros-alertas">Parametros de las alertas</a>
+                          </li>
+                          <!--FIN DE ALERTAS-->
+
+                          <!-- ### FIN DE COMPONENTES ### -->
+                           <!--COMIENZO DE UTILIDADES-->
+                          <p class="">Componentes</p>
+
+                          <!-- ### FIN DE UTILIDADES -->
+                     
+                      </ul><!--FIN DEL SLIDE MENU LIST -->
+                  </div>
+                  <button class="slide-menu__toggle">
+                  </button>
+              </div>
+          </div>
+    </div><!-- FIN DEL ASIDE CONTENT-->
+
+  <div class="g-col-12 g-col-md-9  g-col-lg-8">
+
+    <header class="container bg-light-neon text-secondary-neon text-center estilo-brillo py-5">
+      <h1>Visibility</h1>
+      <p>Estas son clases que utilizan para poder ocultar ciertos elementos de la pantalla o para mostrarlos. Son utiles para añadirse desde javascript y solamente desaparecer o aparecer elementos en el html.</p>
+    </header>
+
+<!--ALERTAS-->
+
+  <div class="row g-2 container">
+    <div class="col-12">
+    <h2 class="text-white">Clases visibile e invisible</h2>
+    <p>Estas son clases que tal como dicen sus nombres, hacen visibles o invisibles los elementos a los cuales se le colocan.</p>
+    <div class="code container mt-4">
+      <div class="code-example">
+          <!-- COLOCAR EL CODIGO HTML DE EJEMPLO -->
+          <div class="row gap-3 justify-content-center">
+                <div class="visible border col-12">Elemento visible</div>
+                <div class="invisible border col-12">Elemento invisible</div>
+                <div class="visible border col-12">Elemento visible 2</div>
+          </div>
+      </div>
+      <!-- PARA COLOCAR LENGUAJE -->
+      <div class="code-lenguaje">
+          <div class="row justify-content-between mx-3">
+          <div>HTML</div>
+          <div>
+              <div class="img-copy" alt="copy"></div>
+          </div>
+          </div>
+      </div>
+      <!-- BLOQUE DE CODIGO -->
+      <div class="code-block">
+          <pre><code class="language-html">  
+&lt;div class=&quot;row gap-3 justify-content-center&quot;&gt;
+    &lt;div class=&quot;visible border col-12&quot;&gt;Elemento visible&lt;/div&gt;
+    &lt;div class=&quot;invisible border col-12&quot;&gt;Elemento invisible&lt;/div&gt;
+    &lt;div class=&quot;visible border col-12&quot;&gt;Elemento visible 2&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</div>
+<p>Como podemos observar cuando el elemento se le coloca <code class="text-white">.invisibility</code> solo no se observa pero el espacio del mismo el documento sigue presente para solventar eso utilizamos otra clase si queremos que parezca en el html como que dicho elemento no exista.</p>
+  </div>
+  </div>
+
+  <div class="row g-2 container">
+    <div class="col-12">
+    <h2 class="text-white">Clase .visually-hidden</h2>
+    <p>Esta clase hace que el elemento al que se le coloca se haga invisible y a la vez su presencia ya no altere el html visible.</p>
+    <p>Ahora volvemos al ejemplo anterior para poder visualizarlo mejor:</p>
+    <div class="code container mt-4">
+      <div class="code-example">
+          <!-- COLOCAR EL CODIGO HTML DE EJEMPLO -->
+          <div class="row gap-3 justify-content-center">
+                <div class="visible border col-12">Elemento visible</div>
+                <div class="visually-hidden border col-12">Elemento invisible</div>
+                <div class="visible border col-12">Elemento visible 2</div>
+          </div>
+      </div>
+      <!-- PARA COLOCAR LENGUAJE -->
+      <div class="code-lenguaje">
+          <div class="row justify-content-between mx-3">
+          <div>HTML</div>
+          <div>
+              <div class="img-copy" alt="copy"></div>
+          </div>
+          </div>
+      </div>
+      <!-- BLOQUE DE CODIGO -->
+      <div class="code-block">
+          <pre><code class="language-html">  
+&lt;div class=&quot;row gap-3 justify-content-center&quot;&gt;
+    &lt;div class=&quot;visible border col-12&quot;&gt;Elemento visible&lt;/div&gt;
+    &lt;div class=&quot;visually-hidden border col-12&quot;&gt;Elemento invisible&lt;/div&gt;
+    &lt;div class=&quot;visible border col-12&quot;&gt;Elemento visible 2&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</div>
+<p>Ahora que se le coloco la clase <code class="text-white">.visually-hidden</code> podemos observar que el elemento parece a simple vista como que no existiera a pesar que se encuentra en el html y no distorciona la posicion de los demas componentes.</p>
+  </div>
+  </div>
+
+  <div class="row g-2 container">
+    <div class="col-12">
+    <h2 class="text-white">Opacity</h2>
+    <p>Esta son un grupo de clases que ayudan si queremos que un elemento no sea completamente invisible y queremos que se vea un poco.</p>
+    <p>Los valores que opacity puede tomar son <code class="text-white">0,25,50,75 y 100</code></p>
+    <div class="code container mt-4">
+      <div class="code-example">
+          <!-- COLOCAR EL CODIGO HTML DE EJEMPLO -->
+          <div class="row gap-3 justify-content-center">
+                <div class="opacity-0 border col-12">Opacity-0</div>
+                <div class="opacity-25 border col-12">Opacity-25</div>
+                <div class="opacity-50 border col-12">Opacity-50</div>
+                <div class="opacity-75 border col-12">Opacity-75</div>
+                <div class="opacity-100 border col-12">Opacity-100</div>
+          </div>
+      </div>
+      <!-- PARA COLOCAR LENGUAJE -->
+      <div class="code-lenguaje">
+          <div class="row justify-content-between mx-3">
+          <div>HTML</div>
+          <div>
+              <div class="img-copy" alt="copy"></div>
+          </div>
+          </div>
+      </div>
+      <!-- BLOQUE DE CODIGO -->
+      <div class="code-block">
+          <pre><code class="language-html">  
+&lt;div class=&quot;row gap-3 justify-content-center&quot;&gt;
+    &lt;div class=&quot;opacity-0 border col-12&quot;&gt;Opacity-0&lt;/div&gt;
+    &lt;div class=&quot;opacity-25 border col-12&quot;&gt;Opacity-25&lt;/div&gt;
+    &lt;div class=&quot;opacity-50 border col-12&quot;&gt;Opacity-50&lt;/div&gt;
+    &lt;div class=&quot;opacity-75 border col-12&quot;&gt;Opacity-75&lt;/div&gt;
+    &lt;div class=&quot;opacity-100 border col-12&quot;&gt;Opacity-100&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</div>
+<p>Esta clase funciona para cualquier componente o contenedor pero eso si, modifica toda la visualización de dicho elemento aplicanose así tambien a sus hijos.</p>
+  </div>
+  </div>
+
+    </div>
+    </div>
+</div>
+</div>
+
+
+
+
+</div><!--fIN DEL container g-col-12 -->
+
+
+</div> 
+
+
+<footer class="container-fluid bg-dark text-white text-center py-3">
+  <p>© 2025 Retro Sci-Fi Library.</p>
+</footer>
+
+    <script src="../../dist/js/retrosci-fi.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", () => { closeMenu(); });</script>
+</body>
+
+</html>

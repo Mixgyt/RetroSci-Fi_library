@@ -36,3 +36,7 @@
         --sci-bg-opacity: #{calc($i/4)};
     }
 }
+
+.bg-r {
+    @include back.border-r();
+}

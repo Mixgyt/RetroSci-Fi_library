@@ -2,15 +2,18 @@
 @use "../mixins/borders" as bord;
 @use "../mixins/neon" as neon;
 @use "sass:map";
+@use "sass:color";
 
 //En bordes tambien incluyo el border-radius en este caso rounded
 .border {
+  --sci-border-opacity: 1;
   //Borde predeterminado de 2px
-  @include bord.make-border-complete(map.get(variables.$borders, "2"), variables.$default-border-color);
+  @include bord.make-border-complete(map.get(variables.$borders, "2"), variables.$default-border-color,var(--sci-border-opacity));
 }
 
 .border-neon{
   &.border{
+    border-color: color-mix(in srgb, var(--sci-border-color), white 20%) !important;
     @include neon.border-neon("");
   }
   @each $titulo, $posicion in variables.$standart-positions{
@@ -31,7 +34,8 @@
 
 @each $nombre, $grosor in variables.$borders {
   .border-#{$nombre} {
-    @include bord.make-border-complete($grosor, variables.$default-border-color);
+    --sci-border-opacity: 1;
+    @include bord.make-border-complete($grosor, variables.$default-border-color, var(--sci-border-opacity));
   }
 }
 
@@ -90,7 +94,4 @@
       @include bord.rounded($radius,$posicion);
     }
   }
-}
-.border-r {
-  @include bord.border-r();
 }

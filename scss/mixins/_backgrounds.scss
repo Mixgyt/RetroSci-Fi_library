@@ -16,6 +16,9 @@
 
     &.bg-gradient{
         @include background-gradient($color, 180deg, $opacity);
+        @if(variables.$secondary == $color){
+            border: 0px solid var(--sci-border-color);
+        }
     }
 }
 
@@ -24,10 +27,55 @@
     $lighter-color: lighten($color, 15%);
     $darker-color: darken($color, 10%);
     background: linear-gradient($angle, rgba($lighter-color, $opacity), rgba($darker-color, $opacity));
+    @include background-text-diff($color);
 }
 
 @mixin background-text-diff($color){
     $text-color: if(color.channel($color, "lightness", $space: hsl) > 60%, #000, #fff);
     color: $text-color;
     --sci-text-color: #{$text-color};
+}
+
+@mixin border-r($padding: 3px) {
+    display: block;
+    cursor: pointer; // cursor opcional pero queda bien 
+    position: relative;
+    overflow: hidden;
+    padding: $padding;
+    color: white; // la cantidad de borde que se va ver 3px
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 400%;
+        height: 100%;
+        background: linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfe, #44ce7b);
+        background-size: 25% 100%;
+        animation: border-animation 0.75s linear infinite;
+        animation-play-state: paused;
+        translate: -5% 0%;
+        transition: translate 0.25s ease-out;
+    }
+
+    &:hover::before,
+    &.active::before {
+        animation-play-state: running;
+        transition-duration: 0.75s;
+        translate: 0% 0%;
+    }
+
+    >span{
+        position: relative;
+        display: block;
+        border-radius: 3px;
+        height: 100%;
+    }
+}
+
+@keyframes border-animation {
+    to {
+        transform: translateX(-25%);
+    }
 }

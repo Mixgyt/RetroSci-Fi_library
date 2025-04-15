@@ -12,10 +12,11 @@
 
 @mixin text-neon-effect($color, $intensity){
   text-shadow: 
-    0 0 10px rgba($color, calc($intensity * 0.5)),
-    0 0 20px rgba($color, calc($intensity * 0.3)),
-    0 0 30px rgba($color, calc($intensity * 0.1));
+    0 0 10px rgba($color, calc($intensity * 0.7)),
+    0 0 20px rgba($color, calc($intensity * 0.5)),
+    0 0 30px rgba($color, calc($intensity * 0.2));
 
+  
   transition: all 0.3s ease;
 }
 
@@ -38,30 +39,37 @@
       0 0 40px rgba($color, 0.5),
       0 0 60px rgba($color, 0.3);
   }
-  
+  @include border-neon-active($color);
+}
+
+@mixin border-neon-active($color){
+    &.hover-neon-active {
+      box-shadow: 
+        0 0 15px rgba($color, 0.8),
+        0 0 30px rgba($color, 0.6),
+        0 0 45px rgba($color, 0.3);
+    }
+}
+
+@mixin text-neon-active($color){
   &.hover-neon-active {
-    box-shadow: 
+    text-shadow: 
       0 0 15px rgba($color, 0.7),
       0 0 30px rgba($color, 0.5),
       0 0 45px rgba($color, 0.3);
-  } 
+  }
 }
+
 
 @mixin text-neon-hover($color){
   &.hover-neon:hover {
     transform: translateY(-2px);
     text-shadow: 
-      0 0 20px rgba($color, 0.7),
-      0 0 40px rgba($color, 0.5),
-      0 0 60px rgba($color, 0.3);
+      0 0 20px rgba($color, 0.8),
+      0 0 30px rgba($color, 0.6),
+      0 0 50px rgba($color, 0.5);
   }
-  
-  &.hover-neon-active {
-    text-shadow: 
-      0 0 15px rgba($color, 0.7),
-      0 0 30px rgba($color, 0.5),
-      0 0 45px rgba($color, 0.3);
-  }
+  @include text-neon-active($color);
 }
 
 @mixin boder-neon-complete($intensity: 0.8){
@@ -112,7 +120,7 @@
 }
 
 //Funcion extra terminada
-@mixin make-border-neon($color, $position, $intensity: 0.8){
+@mixin make-border-neon($color, $position, $intensity: 1){
   $Ofx: 0;
   $Ofy: 0;
   $Blur1: 10px; 
@@ -141,8 +149,8 @@
   }
 
     box-shadow: 
-      #{$Ofx} #{$Ofy} #{$Blur1} rgba($color, $intensity * 0.5),
-      #{$Ofx} #{$Ofy} #{$Blur2} rgba($color, $intensity * 0.3),
-      #{$Ofx} #{$Ofy} #{$Blur3} rgba($color, $intensity * 0.1);
+      #{$Ofx} #{$Ofy} #{$Blur1} rgba($color, $intensity * 0.6),
+      #{$Ofx} #{$Ofy} #{$Blur2} rgba($color, $intensity * 0.4),
+      #{$Ofx} #{$Ofy} #{$Blur3} rgba($color, $intensity * 0.2);
     transition: all 0.3s ease;
 }

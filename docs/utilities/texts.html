@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retrosci-Fi</title>
+    <link rel="stylesheet" href="../../dist/css/sci-fi.css">
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+</head>
+
+<body>
+  <nav class=" navbar bg-secondary estilo-brillo border rounded border-secondary hover-neon  position-sticky top-0 p-1"
+  id="nav1">
+  <div class="navbar-header">
+      <div class="navbar-brand"><div class="img-logo-prin-white"></div>Retro Sci-Fi</div>
+      <button class="navbar-toggle" onclick="toggleMenu('nav1')">
+          <div class="img-menu-white"></div>
+      </button>
+  </div>
+  <div class="navbar-nav">
+      <a class="nav-item rounded-pill" href="#inicio">Inicio</a>
+      <a class="nav-item rounded-pill" href="#estructura">Estructura</a>
+      <a class="nav-item rounded-pill" href="#grid">Grid</a>
+      <a class="nav-item rounded-pill" href="#alerts">Alerts</a>
+  </div>
+</nav>
+
+<div class="grid">
+  <div class="g-col g-col-md-2 g-col-lg-3">
+          <div class=""> <!-- Crear el contenedo para el aside bar (o usar las clases de posision)-->
+              <div class="slide-menu closed position-fixed">
+                  <div class="slide-menu__content">
+                      <h2 class="slide-menu__title">Documentacion</h2>
+                      <ul class="slide-menu__list">
+
+                        <!--COMIENZO LAYOUT-->
+                          <p class="">Layout</p>
+
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#clase-row">Clase .row</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#clase-row-cols">Clase .row-cols-*</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#alineacion-filas">Alineación en Filas</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#clases-espaciado">Espaciado: .g, .gx, .gy</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#clase-col">Clase .col Básica</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#columnas-tamano-fijo">Columnas de Tamaño Fijo</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#columnas-responsivas">Columnas Responsivas</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#autoajuste-col-auto">Autoajuste con .col-auto</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#autoajuste-responsivo">Autoajuste Responsivo</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="#alineacion-individual">Alineación Individual de Columnas</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#desplazamiento-offset">Desplazamiento con Offset</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#clase-grid">Clase .grid y .g-col-*</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#filas-grid">Filas en Grid</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#filas-responsivas">Filas Responsivas</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#filas-columnas">Combinación Filas + Columnas</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#espaciado-grid">Espaciado en Grid .gap-*</a>
+                          </li>
+
+                          <!--FIN DE LAYOUT -->
+
+                          <!--COMIENZO DE COMPONENTES-->
+
+                          <p class="">Componentes</p>
+
+                          <!--BAGGE-->
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="badge.html">Badge</a>
+                          </li>
+                          <!--FIN BAGGE-->
+
+                          <!--BUTTONS-->
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="buttons.html">Botones</a>
+                          </li>
+                          <!--FIN BUTTONS-->
+
+                          <!--CARDS-->
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="card.html">Cards</a>
+                          </li>
+                          <!--FIN CARDS-->
+
+                          <!--CONTAINERS -->
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="container.html">Contenedores</a>
+                          </li>
+                          <!--FIN CONTAINERS-->
+
+                          <!--FORMULARIOS -->
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="container.html">Contenedores</a>
+                          </li>
+                          <!--FIN FORMULARIOS-->
+
+                          <!--NAV BAR -->
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="navbar.html">Contenedores</a>
+                          </li>
+                          <!--FIN NAV BAR-->
+
+                          <!--ALERTAS-->
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="#alerta-basica">Alerta Básica</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="#tipos-alertas">Tipos de alerta</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="#parametros-alertas">Parametros de las alertas</a>
+                          </li>
+                          <!--FIN DE ALERTAS-->
+
+                          <!-- ### FIN DE COMPONENTES ### -->
+                     
+                      </ul><!--FIN DEL SLIDE MENU LIST -->
+                  </div>
+                  <button class="slide-menu__toggle">
+                  </button>
+              </div>
+          </div>
+    </div><!-- FIN DEL ASIDE CONTENT-->
+
+  <div class="g-col-12 g-col-md-9  g-col-lg-8">
+
+    <header class="container bg-dark-neon text-white-neon text-center estilo-brillo border border-neon hover-neon rounded py-5 mt-3">
+      <h1>Texts</h1>
+      <p>Estas clases exclusivas para los text les brindan mejor personalización ademas de poder impliementar clases exclusivas para poder tematizar mejor los text en cada caso. Tanto que brindan cambio de color, sombras, mejoras y tamaño</p>
+    </header>
+
+<!--ALERTAS-->
+
+  <div class="row g-2 container">
+    <div class="col-12">
+    <h2 class="text-white">Texts Basicos</h2>
+    <p>Estos son los valores basicos que puede tomar un text con respecto a los colores utilizables tales como <code class="text-white">primarios, subtle y emphasis</code>.</p>
+    <div class="code container mt-4">
+      <div class="code-example">
+          <!-- COLOCAR EL CODIGO HTML DE EJEMPLO -->
+          <div class="text-primary m-2 text-center">
+            Text Primary
+          </div>
+          <div class="text-secondary bg-primary-subtle m-2 text-center">
+            Text Secondary
+          </div>
+          <div class="text-success m-2 text-center">
+            Text Success
+          </div>
+          <div class="text-danger m-2 text-center">
+            Text Danger
+          </div>
+          <div class="text-info m-2 text-center">
+            Text Info
+          </div>
+          <div class="text-warning m-2 text-center">
+            Text Warning
+          </div>
+          <div class="text-light m-2 text-center">
+            Text Light
+          </div>
+          <div class="text-alert m-2 text-center">
+            Text Alert
+          </div>
+          <div class="text-white m-2 text-center">
+            Text White
+          </div>
+          <div class="text-dark m-2 text-center">
+            Text Dark
+          </div>
+          <div class="text-primary-subtle m-2 text-center">
+            Text Primary Subtle
+        </div>
+        <div class="text-secondary-emphasis m-2 text-center">
+            Text Secondary Emphasis
+        </div>
+      </div>
+      <!-- PARA COLOCAR LENGUAJE -->
+      <div class="code-lenguaje">
+          <div class="row justify-content-between mx-3">
+          <div>HTML</div>
+          <div>
+              <div class="img-copy" alt="copy"></div>
+          </div>
+          </div>
+      </div>
+      <!-- BLOQUE DE CODIGO -->
+      <div class="code-block">
+          <pre><code class="language-html">  
+&lt;div class=&quot;text-primary m-2 text-center&quot;&gt;
+    Text Primary
+&lt;/div&gt;
+&lt;div class=&quot;text-secondary bg-primary-subtle m-2 text-center&quot;&gt;
+    Text Secondary
+&lt;/div&gt;
+&lt;div class=&quot;text-success m-2 text-center&quot;&gt;
+    Text Success
+&lt;/div&gt;
+&lt;div class=&quot;text-danger m-2 text-center&quot;&gt;
+    Text Danger
+&lt;/div&gt;
+&lt;div class=&quot;text-info m-2 text-center&quot;&gt;
+    Text Info
+&lt;/div&gt;
+&lt;div class=&quot;text-warning m-2 text-center&quot;&gt;
+    Text Warning
+&lt;/div&gt;
+&lt;div class=&quot;text-light m-2 text-center&quot;&gt;
+    Text Light
+&lt;/div&gt;
+&lt;div class=&quot;text-alert m-2 text-center&quot;&gt;
+    Text Alert
+&lt;/div&gt;
+&lt;div class=&quot;text-white m-2 text-center&quot;&gt;
+    Text White
+&lt;/div&gt;
+&lt;div class=&quot;text-dark m-2 text-center&quot;&gt;
+    Text Dark
+&lt;/div&gt;
+&lt;div class=&quot;text-primary-subtle m-2 text-center&quot;&gt;
+    Text Primary Subtle
+&lt;/div&gt;
+&lt;div class=&quot;text-secondary-emphasis m-2 text-center&quot;&gt;
+    Text Secondary Emphasis
+&lt;/div&gt;
+</code></pre>
+</div>
+</div>
+  </div>
+  </div>
+
+  <div class="row g-2 container">
+    <div class="col-12">
+    <h2 class="text-white">Texts Neon</h2>
+    <p>Esta es una clase que implementa luego de utilizar cualquiera de los anteriores estilos basicos, al implementarla se activa el estilo exclusivo de textos neon, esto tambien funciona con su respectivo <code class="text-white">hover-neon</code> para poder implementar un hover al texto.</p>
+    <div class="code container mt-4">
+      <div class="code-example">
+          <!-- COLOCAR EL CODIGO HTML DE EJEMPLO -->
+          <div class="text-primary-neon hover-neon m-2 text-center">
+            Text Primary Neon
+          </div>
+          <div class="text-secondary-neon hover-neon bg-primary-subtle m-2 text-center">
+            Text Secondary Neon
+          </div>
+          <div class="text-success-neon hover-neon m-2 text-center">
+            Text Success Neon
+          </div>
+          <div class="text-danger-neon hover-neon m-2 text-center">
+            Text Danger Neon
+          </div>
+          <div class="text-info-neon hover-neon m-2 text-center">
+            Text Info Neon
+          </div>
+          <div class="text-warning-neon hover-neon m-2 text-center">
+            Text Warning Neon
+          </div>
+          <div class="text-light-neon hover-neon m-2 text-center">
+            Text Light Neon
+          </div>
+          <div class="text-alert-neon hover-neon m-2 text-center">
+            Text Alert Neon
+          </div>
+          <div class="text-white-neon hover-neon m-2 text-center">
+            Text White Neon
+          </div>
+          <div class="text-dark-neon hover-neon m-2 text-center">
+            Text Dark Neon
+          </div>
+          <div class="text-primary-subtle-neon hover-neon m-2 text-center">
+            Text Primary Subtle Neon
+        </div>
+        <div class="text-secondary-emphasis-neon hover-neon m-2 text-center">
+            Text Secondary Emphasis Neon
+        </div>
+      </div>
+      <!-- PARA COLOCAR LENGUAJE -->
+      <div class="code-lenguaje">
+          <div class="row justify-content-between mx-3">
+          <div>HTML</div>
+          <div>
+              <div class="img-copy" alt="copy"></div>
+          </div>
+          </div>
+      </div>
+      <!-- BLOQUE DE CODIGO -->
+      <div class="code-block">
+          <pre><code class="language-html">  
+&lt;div class=&quot;text-primary-neon hover-neon m-2 text-center&quot;&gt;
+Text Primary
+&lt;/div&gt;
+&lt;div class=&quot;text-secondary-neon hover-neon bg-primary-subtle m-2 text-center&quot;&gt;
+Text Secondary
+&lt;/div&gt;
+&lt;div class=&quot;text-success-neon hover-neon m-2 text-center&quot;&gt;
+Text Success
+&lt;/div&gt;
+&lt;div class=&quot;text-danger-neon hover-neon m-2 text-center&quot;&gt;
+Text Danger
+&lt;/div&gt;
+&lt;div class=&quot;text-info-neon hover-neon m-2 text-center&quot;&gt;
+Text Info
+&lt;/div&gt;
+&lt;div class=&quot;text-warning-neon hover-neon m-2 text-center&quot;&gt;
+Text Warning
+&lt;/div&gt;
+&lt;div class=&quot;text-light-neon hover-neon hover-neon m-2 text-center&quot;&gt;
+Text Light
+&lt;/div&gt;
+&lt;div class=&quot;text-alert-neon hover-neon m-2 text-center&quot;&gt;
+Text Alert
+&lt;/div&gt;
+&lt;div class=&quot;text-white-neon hover-neon m-2 text-center&quot;&gt;
+Text White
+&lt;/div&gt;
+&lt;div class=&quot;text-dark-neon hover-neon m-2 text-center&quot;&gt;
+Text Dark
+&lt;/div&gt;
+&lt;div class=&quot;text-primary-subtle-neon hover-neon m-2 text-center&quot;&gt;
+Text Primary Subtle
+&lt;/div&gt;
+&lt;div class=&quot;text-secondary-emphasis-neon hover-neon m-2 text-center&quot;&gt;
+Text Secondary Emphasis
+&lt;/div&gt;</code></pre>
+</div>
+</div>
+  </div>
+  </div>
+
+  <div class="row g-2 container">
+    <div class="col-12">
+      <h2 class="text-white">Texts Opacity</h2>
+      <p>La opacidad de los textos a los que se le coloca esta clase puede tomar valores tales como: <code class="text-white">25,50,75,100</code>.</p>
+      <div class="code container mt-4">
+        <div class="code-example">
+          <div class="text-primary text-opacity-25 text-center m-2">opacity-25</div>
+          <div class="text-primary text-opacity-50 text-center m-2">opacity-50</div>
+          <div class="text-primary text-opacity-75 text-center m-2">opacity-75</div>
+          <div class="text-primary text-opacity-100 text-center m-2">opacity-100</div>
+        </div>
+        <div class="code-lenguaje">
+          <div class="row justify-content-between mx-3">
+          <div>HTML</div>
+          <div>
+              <div class="img-copy" alt="copy"></div>
+          </div>
+          </div>
+      </div>
+      <!-- BLOQUE DE CODIGO -->
+      <div class="code-block">
+          <pre><code class="language-html">
+&lt;div class=&quot;text-primary text-opacity-25 text-center m-2&quot;&gt;opacity-25&lt;/div&gt;
+&lt;div class=&quot;text-primary text-opacity-50 text-center m-2&quot;&gt;opacity-50&lt;/div&gt;
+&lt;div class=&quot;text-primary text-opacity-75 text-center m-2&quot;&gt;opacity-75&lt;/div&gt;
+&lt;div class=&quot;text-primary text-opacity-100 text-center m-2&quot;&gt;opacity-100&lt;/div&gt;</code></pre>
+          </div>
+          </div>
+          </div>
+      </div>
+      <div class="row g-2 container">
+        <div class="col-12">
+          <h2 class="text-white">Text position</h2>
+          <p>Las posiciones predefinidas al alinear un text son: <code class="text-white">start, center y end</code>. <br><br>
+            Cada una de estas anteriores posiciones tambien cuenta con los correspodientes breakpoints que existen la libreria: <code class="text-white">sm, md, lg, xl y xxl</code></p>
+            <div class="code container mt-4">
+              <div class="code-example">
+                <div class="text-start text-primary m-2">text-start</div>
+                <div class="text-center text-primary m-2">text-center</div>
+                <div class="text-end text-primary m-2">text-end</div>
+                <!-- Ejemplo con breakpoint -->
+                <div class="text-center text-sm-start text-primary m-2">text-sm-start</div>
+              </div>
+              <div class="code-lenguaje">
+                <div class="row justify-content-between mx-3">
+                <div>HTML</div>
+                <div>
+                    <div class="img-copy" alt="copy"></div>
+                </div>
+                </div>
+            </div>
+            <!-- BLOQUE DE CODIGO -->
+             <div class="code-block">
+              <pre><code class="language-html">
+&lt;div class=&quot;text-start text-primary m-2&quot;&gt;text-start&lt;/div&gt;
+&lt;div class=&quot;text-center text-primary m-2&quot;&gt;text-center&lt;/div&gt;
+&lt;div class=&quot;text-end text-primary m-2&quot;&gt;text-end&lt;/div&gt;
+&lt;!-- Ejemplo con breakpoint --&gt;
+&lt;div class=&quot;text-center text-sm-start text-primary m-2&quot;&gt;text-sm-start&lt;/div&gt;</code></pre></div>
+             </div>
+            </div>
+        </div>
+
+        <div class="row g-2 container">
+          <div class="col-12">
+            <h2 class="text-white">Text sizes</h2>
+            <p>Estas clases sirven para poder cambiar los tamaños del texto dinamicamente, escogiendo tambien valores basados en breakpoints para poder mejorar la resposividad.</p>
+            <p>(Cada text no admite más de un breakpoint)</p>
+            <div class="code container mt-4">
+                <div class="code-example">
+                    <div class="fs-1 text-primary text-center m-2">fs-1</div>
+                    <div class="fs-2 text-primary text-center m-2">fs-2</div>
+                    <div class="fs-3 text-primary text-center m-2">fs-3</div>
+                    <div class="fs-4 text-primary text-center m-2">fs-4</div>
+                    <div class="fs-5 text-primary text-center m-2">fs-5</div>
+                    <div class="fs-6 text-primary text-center m-2">fs-6</div>
+                    <div class="fs-sm-3 fs-5 text-primary text-center m-2">fs-sm-3</div>
+                </div>
+                <div class="code-lenguaje">
+                <div class="row justify-content-between mx-3">
+                <div>HTML</div>
+                <div>
+                    <div class="img-copy" alt="copy"></div>
+                </div>
+                </div>
+            </div>
+            <!-- BLOQUE DE CODIGO -->
+             <div class="code-block">
+              <pre><code class="language-html">
+&lt;div class=&quot;fs-1 text-primary text-center m-2&quot;&gt;fs-1&lt;/div&gt;
+&lt;div class=&quot;fs-2 text-primary text-center m-2&quot;&gt;fs-2&lt;/div&gt;
+&lt;div class=&quot;fs-3 text-primary text-center m-2&quot;&gt;fs-3&lt;/div&gt;
+&lt;div class=&quot;fs-4 text-primary text-center m-2&quot;&gt;fs-4&lt;/div&gt;
+&lt;div class=&quot;fs-5 text-primary text-center m-2&quot;&gt;fs-5&lt;/div&gt;
+&lt;div class=&quot;fs-6 text-primary text-center m-2&quot;&gt;fs-6&lt;/div&gt;
+&lt;div class=&quot;fs-sm-3 fs-5 text-primary text-center m-2&quot;&gt;fs-sm-3&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-2 container">
+            <div class="col-12">
+              <div class="h2 text-white">Clases header</div>
+              <p>Estas clases solo son utiles cuando se quiere modificar un componente desde javascript a mas de eso el comportamiento es lo mismo que una etiqueta header normal.</p>
+              <div class="code container mt-4">
+                  <div class="code-example">
+                      <div class="h1 text-primary text-center m-2">h1</div>
+                      <div class="h2 text-primary text-center m-2">h2</div>
+                      <div class="h3 text-primary text-center m-2">h3</div>
+                      <div class="h4 text-primary text-center m-2">h4</div>
+                      <div class="h5 text-primary text-center m-2">h5</div>
+                      <div class="h6 text-primary text-center m-2">h6</div>
+                  </div>
+                  <div class="code-lenguaje">
+                  <div class="row justify-content-between mx-3">
+                  <div>HTML</div>
+                  <div>
+                      <div class="img-copy" alt="copy"></div>
+                  </div>
+                  </div>
+              </div>
+              <!-- BLOQUE DE CODIGO -->
+               <div class="code-block">
+                <pre><code class="language-html">
+&lt;div class=&quot;h1 text-primary text-center m-2&quot;&gt;h1&lt;/div&gt;
+&lt;div class=&quot;h2 text-primary text-center m-2&quot;&gt;h2&lt;/div&gt;
+&lt;div class=&quot;h3 text-primary text-center m-2&quot;&gt;h3&lt;/div&gt;
+&lt;div class=&quot;h4 text-primary text-center m-2&quot;&gt;h4&lt;/div&gt;
+&lt;div class=&quot;h5 text-primary text-center m-2&quot;&gt;h5&lt;/div&gt;
+&lt;div class=&quot;h6 text-primary text-center m-2&quot;&gt;h6&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <div class="row g-2 container">
+          <div class="col-12">
+            <h2 class="text-white">Text weight</h2>
+            <p>Esta clase sirve para poder usar texto de diferentes anchuras, tales como <code class="text-white">bold, normal o light</code> etc.</p>
+            <div class="code container mt-4">
+                <div class="code-example">
+                    <div class="fw-bold text-primary text-center m-2">texto bold</div>
+                    <div class="fw-bolder text-primary text-center m-2">texto bolder</div>
+                    <div class="fw-semibold text-primary text-center m-2">texto semibold</div>
+                    <div class="fw-normal text-primary text-center m-2">texto normal</div>
+                    <div class="fw-medium text-primary text-center m-2">texto medium</div>
+                    <div class="fw-light text-primary text-center m-2">texto light</div>
+                    <div class="fw-lighter text-primary text-center m-2">texto ligther</div>
+                </div>
+                <div class="code-lenguaje">
+                <div class="row justify-content-between mx-3">
+                <div>HTML</div>
+                <div>
+                    <div class="img-copy" alt="copy"></div>
+                </div>
+                </div>
+            </div>
+            <!-- BLOQUE DE CODIGO -->
+             <div class="code-block">
+              <pre><code class="language-html">
+&lt;div class=&quot;fw-bold text-primary text-center m-2&quot;&gt;texto bold&lt;/div&gt;
+&lt;div class=&quot;fw-bolder text-primary text-center m-2&quot;&gt;texto bolder&lt;/div&gt;
+&lt;div class=&quot;fw-semibold text-primary text-center m-2&quot;&gt;texto semibold&lt;/div&gt;
+&lt;div class=&quot;fw-normal text-primary text-center m-2&quot;&gt;texto normal&lt;/div&gt;
+&lt;div class=&quot;fw-medium text-primary text-center m-2&quot;&gt;texto medium&lt;/div&gt;
+&lt;div class=&quot;fw-light text-primary text-center m-2&quot;&gt;texto light&lt;/div&gt;
+&lt;div class=&quot;fw-lighter text-primary text-center m-2&quot;&gt;texto ligther&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-2 container">
+          <div class="col-12">
+            <h2 class="text-white">Text style</h2>
+            <p>Esta libreria solo posee dos clases para los estilos del texto <code class="text-white">fst-normal y fst-italic</code></p>
+            <div class="code container mt-4">
+                <div class="code-example">
+                    <div class="fst-normal text-primary text-center m-2">estilo normal</div>
+                    <div class="fst-italic text-primary text-center m-2">estilo italic</div>
+                </div>
+                <div class="code-lenguaje">
+                <div class="row justify-content-between mx-3">
+                <div>HTML</div>
+                <div>
+                    <div class="img-copy" alt="copy"></div>
+                </div>
+                </div>
+            </div>
+            <!-- BLOQUE DE CODIGO -->
+             <div class="code-block">
+              <pre><code class="language-html">
+&lt;div class=&quot;fst-normal text-primary text-center m-2&quot;&gt;estilo normal&lt;/div&gt;
+&lt;div class=&quot;fst-italic text-primary text-center m-2&quot;&gt;estilo italic&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-2 container">
+          <div class="col-12">
+            <h2 class="text-white">Line Height</h2>
+            <p>Estos sirven para poder cambiar al altura de cada linea o espaciado entre cada parrafo.</p>
+            <div class="code container mt-4">
+                <div class="code-example">
+                    <p class="lh-1"><span class="text-white">(1)</span> This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+                    <p class="lh-sm"><span class="text-white">(sm)</span> This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+                    <p class="lh-base"><span class="text-white">(base)</span> This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+                    <p class="lh-lg"><span class="text-white">(lg)</span> This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+                </div>
+                <div class="code-lenguaje">
+                <div class="row justify-content-between mx-3">
+                <div>HTML</div>
+                <div>
+                    <div class="img-copy" alt="copy"></div>
+                </div>
+                </div>
+            </div>
+            <!-- BLOQUE DE CODIGO -->
+             <div class="code-block">
+              <pre><code class="language-html">
+&lt;p class=&quot;lh-1&quot;&gt;&lt;span class=&quot;text-white&quot;&gt;(1)&lt;/span&gt; This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.&lt;/p&gt;
+&lt;p class=&quot;lh-sm&quot;&gt;&lt;span class=&quot;text-white&quot;&gt;(sm)&lt;/span&gt; This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.&lt;/p&gt;
+&lt;p class=&quot;lh-base&quot;&gt;&lt;span class=&quot;text-white&quot;&gt;(base)&lt;/span&gt; This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.&lt;/p&gt;
+&lt;p class=&quot;lh-lg&quot;&gt;&lt;span class=&quot;text-white&quot;&gt;(lg)&lt;/span&gt; This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.&lt;/p&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-2 container">
+            <div class="col-12">
+              <h2 class="text-white">Text decoration</h2>
+              <p>Sirve para poder personalizar aun mas los text y poder utilizar decoraciones para colocarles mas personalizacion en cada text.</p>
+              <div class="code container mt-4">
+                  <div class="code-example">
+                    <p class="text-decoration-underline">This text has a line underneath it.</p>
+                    <p class="text-decoration-line-through">This text has a line going through it.</p>
+                    <p class="text-decoration-overline">This text with overline.</p>
+                    <a href="#" class="text-decoration-none">This link has its text decoration removed</a>
+                  </div>
+                  <div class="code-lenguaje">
+                  <div class="row justify-content-between mx-3">
+                  <div>HTML</div>
+                  <div>
+                      <div class="img-copy" alt="copy"></div>
+                  </div>
+                  </div>
+              </div>
+              <!-- BLOQUE DE CODIGO -->
+               <div class="code-block">
+                <pre><code class="language-html">
+&lt;p class=&quot;text-decoration-underline&quot;&gt;This text has a line underneath it.&lt;/p&gt;
+&lt;p class=&quot;text-decoration-line-through&quot;&gt;This text has a line going through it.&lt;/p&gt;
+&lt;p class=&quot;text-decoration-overline&quot;&gt;This text with overline.&lt;/p&gt;
+&lt;a href=&quot;#&quot; class=&quot;text-decoration-none&quot;&gt;This link has its text decoration removed&lt;/a&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row g-2 container">
+            <div class="col-12">
+              <h2 class="text-white">Text wrap</h2>
+              <p>Sirve para activar o desactivar el wrap en un texto segun el caso sea necesario.</p>
+              <div class="code container mt-4">
+                  <div class="code-example">
+                    <div class="badge bg-primary text-wrap m-3" style="width: 6rem;">
+                        This text should wrap.
+                    </div>
+                    <div class="text-nowrap bg-success m-3" style="width: 8rem;">
+                        This text should overflow the parent.
+                      </div>
+                  </div>
+                  <div class="code-lenguaje">
+                  <div class="row justify-content-between mx-3">
+                  <div>HTML</div>
+                  <div>
+                      <div class="img-copy" alt="copy"></div>
+                  </div>
+                  </div>
+              </div>
+              <!-- BLOQUE DE CODIGO -->
+               <div class="code-block">
+                <pre><code class="language-html">
+&lt;div class=&quot;badge bg-primary text-wrap m-3&quot; style=&quot;width: 6rem;&quot;&gt;
+    This text should wrap.
+&lt;/div&gt;
+&lt;div class=&quot;text-nowrap bg-success m-3&quot; style=&quot;width: 8rem;&quot;&gt;
+    This text should overflow the parent.
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row g-2 container">
+            <div class="col-12">
+              <h2 class="text-white">Text break</h2>
+              <p>Sirve para evitar que las los textos muy largos no rompan los componentes.</p>
+              <div class="code container mt-4">
+                  <div class="code-example">
+                    <p class="text-white text-decoration-underline">Sin Text Break</p>
+                    <p class="">mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
+                    <p class="text-white text-decoration-underline">Con Text Break</p>
+                    <p class="text-break">mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
+                  </div>
+                  <div class="code-lenguaje">
+                  <div class="row justify-content-between mx-3">
+                  <div>HTML</div>
+                  <div>
+                      <div class="img-copy" alt="copy"></div>
+                  </div>
+                  </div>
+              </div>
+              <!-- BLOQUE DE CODIGO -->
+               <div class="code-block">
+                <pre><code class="language-html">
+&lt;p class=&quot;text-white text-decoration-underline&quot;&gt;Sin Text Break&lt;/p&gt;
+&lt;p&gt;mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm&lt;/p&gt;
+&lt;p class=&quot;text-white text-decoration-underline&quot;&gt;Con Text Break&lt;/p&gt;
+&lt;p class=&quot;text-break&quot;&gt;mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm&lt;/p&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row g-2 container">
+            <div class="col-12">
+              <h2 class="text-white">Text transform</h2>
+              <p>Estas clases son muy utiles cuando se requiere cambiar texto de un componente dinamicamente o desde un javascript.</p>
+              <div class="code container mt-4">
+                  <div class="code-example">
+                    <p class="text-lowercase">Lowercased text.</p>
+                    <p class="text-uppercase">Uppercased text.</p>
+                    <p class="text-capitalize">Capitalized text.</p>
+                  </div>
+                  <div class="code-lenguaje">
+                  <div class="row justify-content-between mx-3">
+                  <div>HTML</div>
+                  <div>
+                      <div class="img-copy" alt="copy"></div>
+                  </div>
+                  </div>
+              </div>
+              <!-- BLOQUE DE CODIGO -->
+               <div class="code-block">
+                <pre><code class="language-html">
+&lt;p class=&quot;text-lowercase&quot;&gt;Lowercased text.&lt;/p&gt;
+&lt;p class=&quot;text-uppercase&quot;&gt;Uppercased text.&lt;/p&gt;
+&lt;!--Capitalized solo afecta a la primera letra de cada palabra dejando las demas iguales--&gt;
+&lt;p class=&quot;text-capitalize&quot;&gt;Capitalized text.&lt;/p&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row g-2 container">
+            <div class="col-12">
+              <h2 class="text-white">Text Reset</h2>
+              <p>Es util cuando quieres en un cierto contenedor el texto vuelva a estar como el estado por defecto del la ultima clase aplicada.</p>
+              <div class="code container mt-4">
+                  <div class="code-example">
+                    <p class="text-secondary-emphasis">
+                        Secondary emphasis text with a <a href="">normal link</a>.
+                    </p>
+                    <p class="text-secondary-emphasis">
+                        Secondary emphasis text with a <a href="" class="text-reset">reset link</a>.
+                    </p>
+                  </div>
+                  <div class="code-lenguaje">
+                  <div class="row justify-content-between mx-3">
+                  <div>HTML</div>
+                  <div>
+                      <div class="img-copy" alt="copy"></div>
+                  </div>
+                  </div>
+              </div>
+              <!-- BLOQUE DE CODIGO -->
+               <div class="code-block">
+                <pre><code class="language-html">
+&lt;p class=&quot;text-secondary-emphasis&quot;&gt;
+    Secondary emphasis text with a &lt;a href=&quot;&quot;&gt;normal link&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p class=&quot;text-secondary-emphasis&quot;&gt;
+    Secondary emphasis text with a &lt;a href=&quot;&quot; class=&quot;text-reset&quot;&gt;reset link&lt;/a&gt;.
+&lt;/p&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row g-2 container">
+            <div class="col-12">
+          <h2 class="text-white">Estilos de Links</h2>
+            <p>Estos son los estilos de links basicos. (El link predeterminado es el link-info al utilizar la etiqueta "a").</p>
+            <p class="warning">Ten en cuenta que estos son "estilos" de links, no son links funcionales como tal.</p>
+            <div class="code container mt-4">
+              <div class="code-example">
+                  <!-- COLOCAR EL CODIGO HTML DE EJEMPLO -->
+                  <div class="link-primary m-2 text-center">
+                    Link Primary
+                  </div>
+                  <div class="link-secondary bg-primary-subtle m-2 text-center">
+                    Link Secondary
+                  </div>
+                  <div class="link-success m-2 text-center">
+                    Link Success
+                  </div>
+                  <div class="link-danger m-2 text-center">
+                    Link Danger
+                  </div>
+                  <div class="link-info m-2 text-center">
+                    Link Info
+                  </div>
+                  <div class="link-warning m-2 text-center">
+                    Link Warning
+                  </div>
+                  <div class="link-light m-2 text-center">
+                    Link Light
+                  </div>
+                  <div class="link-alert m-2 text-center">
+                    Link Alert
+                  </div>
+                  <div class="link-white m-2 text-center">
+                    Link White
+                  </div>
+                  <div class="link-dark m-2 text-center">
+                    Link Dark
+                  </div>
+                  <div class="link-primary-subtle m-2 text-center">
+                    Link Primary Subtle
+                </div>
+                <div class="link-secondary-emphasis m-2 text-center">
+                    Link Secondary Emphasis
+                </div>
+              </div>
+              <!-- PARA COLOCAR LENGUAJE -->
+              <div class="code-lenguaje">
+                  <div class="row justify-content-between mx-3">
+                  <div>HTML</div>
+                  <div>
+                      <div class="img-copy" alt="copy"></div>
+                  </div>
+                  </div>
+              </div>
+              <!-- BLOQUE DE CODIGO -->
+              <div class="code-block">
+                  <pre><code class="language-html">  
+&lt;div class=&quot;link-primary m-2 text-center&quot;&gt;
+    Link Primary
+&lt;/div&gt;
+&lt;div class=&quot;link-secondary bg-primary-subtle m-2 text-center&quot;&gt;
+    Link Secondary
+&lt;/div&gt;
+&lt;div class=&quot;link-success m-2 text-center&quot;&gt;
+    Link Success
+&lt;/div&gt;
+&lt;div class=&quot;link-danger m-2 text-center&quot;&gt;
+    Link Danger
+&lt;/div&gt;
+&lt;div class=&quot;link-info m-2 text-center&quot;&gt;
+    Link Info
+&lt;/div&gt;
+&lt;div class=&quot;link-warning m-2 text-center&quot;&gt;
+    Link Warning
+&lt;/div&gt;
+&lt;div class=&quot;link-light m-2 text-center&quot;&gt;
+    Link Light
+&lt;/div&gt;
+&lt;div class=&quot;link-alert m-2 text-center&quot;&gt;
+    Link Alert
+&lt;/div&gt;
+&lt;div class=&quot;link-white m-2 text-center&quot;&gt;
+    Link White
+&lt;/div&gt;
+&lt;div class=&quot;link-dark m-2 text-center&quot;&gt;
+    Link Dark
+&lt;/div&gt;
+&lt;div class=&quot;link-primary-subtle m-2 text-center&quot;&gt;
+    Link Primary Subtle
+&lt;/div&gt;
+&lt;div class=&quot;link-secondary-emphasis m-2 text-center&quot;&gt;
+    Link Secondary Emphasis
+&lt;/div&gt;</code></pre>
+        </div>
+        </div>
+          </div>
+          </div>
+      </div>
+
+    </div>
+
+</div>
+</div>
+
+
+
+
+</div><!--fIN DEL container g-col-12 -->
+
+
+</div> 
+
+
+<footer class="container-fluid bg-dark text-white text-center py-3">
+  <p>© 2025 Retro Sci-Fi Library.</p>
+</footer>
+
+    <script src="../../dist/js/retrosci-fi.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", () => { closeMenu(); });</script>
+</body>
+
+</html>

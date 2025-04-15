@@ -3,63 +3,63 @@
 @each $tipo, $espaciado in variables.$spacers{
     //Paddings
     .p-#{$tipo}{
-        padding: $espaciado;
+        padding: $espaciado !important;
     }
 
     .pt-#{$tipo}{
-        padding-top: $espaciado;
+        padding-top: $espaciado !important;
     }
 
     .pb-#{$tipo}{
-        padding-bottom: $espaciado;
+        padding-bottom: $espaciado !important;
     }
 
     .ps-#{$tipo}{
-        padding-left: $espaciado;
+        padding-left: $espaciado !important;
     }
 
     .pe-#{$tipo}{
-        padding-right: $espaciado;
+        padding-right: $espaciado !important;
     }
 
     .px-#{$tipo}{
-        padding-left: $espaciado;
-        padding-right: $espaciado;
+        padding-left: $espaciado !important;
+        padding-right: $espaciado !important;
     }
 
     .py-#{$tipo}{
-        padding-top: $espaciado;
-        padding-bottom: $espaciado;
+        padding-top: $espaciado !important;
+        padding-bottom: $espaciado !important;
     }
 
     //Margins
     .m-#{$tipo}{
-        margin: $espaciado;
+        margin: $espaciado !important;
     }
 
     .mt-#{$tipo}{
-        margin-top: $espaciado;
+        margin-top: $espaciado !important;
     }
 
     .mb-#{$tipo}{
-        margin-bottom: $espaciado;
+        margin-bottom: $espaciado !important;
     }
 
     .ms-#{$tipo}{
-        margin-left: $espaciado;
+        margin-left: $espaciado !important;
     }
 
     .me-#{$tipo}{
-        margin-right: $espaciado;
+        margin-right: $espaciado !important;
     }
 
     .mx-#{$tipo}{
-        margin-left: $espaciado;
-        margin-right: $espaciado;
+        margin-left: $espaciado !important;
+        margin-right: $espaciado !important;
     }
 
     .my-#{$tipo}{
-        margin-top: $espaciado;
-        margin-bottom: $espaciado;
+        margin-top: $espaciado !important;
+        margin-bottom: $espaciado !important;
     }
 }

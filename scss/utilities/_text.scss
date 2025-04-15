@@ -13,9 +13,15 @@
         @include text.text-color($color, var(--sci-text-opacity));
     }
 
-    .text-#{$nombre}-neon{
+    .link-#{$nombre}{
         --sci-text-opacity: 1;
         @include text.text-color($color, var(--sci-text-opacity));
+        @include text.decoration("underline");
+        cursor: pointer;
+    }
+
+    .text-#{$nombre}-neon{
+        --sci-text-opacity: 1;
         @include text.text-neon($color, var(--sci-text-opacity));
     }
 }
@@ -24,6 +30,13 @@
     .text-#{$nombre}{
         --sci-text-opacity: 1;
         @include text.text-color($color, var(--sci-text-opacity));
+    }
+
+    .link-#{$nombre}{
+        --sci-text-opacity: 1;
+        @include text.text-color($color, var(--sci-text-opacity));
+        @include text.decoration("underline");
+        cursor: pointer;
     }
 
     .text-#{$nombre}-neon{
@@ -37,6 +50,13 @@
     .text-#{$nombre}{
         --sci-text-opacity: 1;
         @include text.text-color($color, var(--sci-text-opacity));
+    }
+
+    .link-#{$nombre}{
+        --sci-text-opacity: 1;
+        @include text.text-color($color, var(--sci-text-opacity));
+        @include text.decoration("underline");
+        cursor: pointer;
     }
 
     .text-#{$nombre}-neon{
@@ -76,12 +96,24 @@
 @each $nombre, $size in variables.$text-sizes{
     //Tamaños de fuentes
     .fs-#{$nombre}{
-        @include text.size($size)
+        @include text.size($size);
     }
 
+    //Tamaños de fuentes con breakpoints
+    @each $tipo, $breakpoint in variables.$grid-breakpoints{
+        @media(min-width: $breakpoint){
+            .fs-#{$tipo}-#{$nombre}{
+                    font-size: #{$size} !important;
+            }
+        }
+    }
+}
+
+@each $nombre, $size in variables.$header-sizes{
     //Clases para titulos
     .h#{$nombre}{
         @include text.header($nombre, $size);
+        margin: 20px 0px;
     }
 }
 
@@ -109,7 +141,7 @@
     }
     @else{
         .fst-#{$nombre}{
-            @include text.weight($estilo)
+            @include text.style($estilo)
         }
     }
 }
@@ -118,6 +150,12 @@
     .text-decoration-#{$nombre}{
         @include text.decoration($decoration);
     }
+}
+
+//Configuracion de los enlaces predeterminados
+a{
+    color: variables.$info;
+    text-decoration: underline;
 }
 
 .text-lowercase{
