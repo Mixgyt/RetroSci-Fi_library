@@ -1,0 +1,44 @@
+@use "../variables";
+@use "sass:map";
+
+$positions-border: (
+    "start":"left",
+    "end":"right",
+    "top":"top",
+    "bottom":"bottom",
+);
+
+@mixin make-border-complete($grosor, $color){
+    border: $grosor solid $color;
+}
+
+@mixin make-border($grosor, $color, $position){
+    border-#{map.get($positions-border,$position)}: $grosor solid $color;
+}
+
+@mixin change-color($color, $alpha){
+    border-color: rgba($color, $alpha);
+}
+
+@mixin rounded-complete($radius){
+    border-radius: $radius;
+}
+
+@mixin rounded($radius, $position){
+    @if($position == "start"){
+        border-top-left-radius: $radius;
+        border-bottom-left-radius: $radius;
+    }
+    @else if($position == "end"){
+        border-top-right-radius: $radius;
+        border-bottom-right-radius: $radius;
+    }
+    @else if($position == "top"){
+        border-top-left-radius: $radius;
+        border-top-right-radius: $radius;
+    }
+    @else if($position == "bottom"){
+        border-bottom-left-radius: $radius;
+        border-bottom-right-radius: $radius;
+    }
+}

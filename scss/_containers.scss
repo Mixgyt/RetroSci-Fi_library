@@ -5,8 +5,8 @@
 .container,
 .container-fluid {
   width: 100%;
-  padding-right: variables.$padd;
-  padding-left: variables.$padd;
+  padding-right: variables.$c-padding;
+  padding-left: variables.$c-padding;
   margin-right: auto;
   margin-left: auto;
 }
@@ -25,8 +25,8 @@
   .container-#{$breakpoint}{
     width: 100%;
     max-width: $max-width;
-    padding-right: variables.$padd;
-    padding-left: variables.$padd;
+    padding-right: variables.$c-padding;
+    padding-left: variables.$c-padding;
     margin-right: auto;
     margin-left: auto;
   }

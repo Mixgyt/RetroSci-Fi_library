@@ -1,6 +1,7 @@
 @use "variables";
 @use "fonts";
 @use "sass:color" as color;
+@use "mixins/borders" as border;
 
 // Estilo base para todos los badges
 .badge {
@@ -26,9 +27,9 @@
       #000,
       #fff
     );
-
-    @if ($nombre == "secondary") {
-      box-shadow: 0 0 0 1px variables.$primary;
+    
+    @if ($nombre == "secondary"){
+      @include border.make-border-complete(variables.$default-border,variables.$default-border-color);
     }
   }
 }
