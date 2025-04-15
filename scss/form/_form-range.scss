@@ -1,11 +1,7 @@
 @use "../variables" as *;
+@use "../mixins/form" as *;
 
 .form-range{
-    width: 100%;
-    display: block;
+    @include form-base;
     padding: 5px 0px;
-    margin-bottom: 8px;
-    border-radius: 7px;
-    background: $light;
-    box-sizing: border-box;
 }
