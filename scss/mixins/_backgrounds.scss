@@ -1,0 +1,14 @@
+@mixin background-color($color, $opacity){
+    background: rgba($color, $opacity);
+
+    &.bg-gradient{
+        @include background-gradient($color, 180deg, $opacity);
+    }
+}
+
+@mixin background-gradient($color, $angle, $opacity: 1){
+    //colores intermedios para hacer el gradiante
+    $lighter-color: lighten($color, 15%);
+    $darker-color: darken($color, 10%);
+    background: linear-gradient($angle, rgba($lighter-color, $opacity), rgba($darker-color, $opacity));
+}
