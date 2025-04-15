@@ -46,7 +46,7 @@ $transition-easing: cubic-bezier(0.68, -0.55, 0.27, 1.55);
       //position: fixed;
       //top: 0; //cambiar cuando el contendor funcione
       left: 0; 
-      height: 100vh;
+      height: calc( 100vh - 80px); //se calcula el tamańo del nav bar 
       width: $width;
       background-color: $color;
       color: $text-color;
@@ -150,6 +150,9 @@ $transition-easing: cubic-bezier(0.68, -0.55, 0.27, 1.55);
           transition: all $transition-speed $transition-easing;
         }
       }
+    }
+    .height-100vh{
+      height: 100vh;
     }
   
     @media (max-width: map-get(v.$grid-breakpoints, md)) {
