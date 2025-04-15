@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "main": "scss/sci-fi.scss",
   "sass": "scss/sci-fi.scss",
-  "style": "dist/css/main.css",
+  "style": "dist/css/sci-fi.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "sass --watch scss/:dist/css/",
