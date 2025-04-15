@@ -35,14 +35,14 @@ $subtle-colors:(
 
 //Colores emphasis usados para el texto
 $emphasis-colors:(
-  "primary":color.mix(white,$primary,60%),
-  "secondary":color.mix(white,$secondary,60%),
-  "success":color.mix(white,$success,60%),
-  "info":color.mix(white,$info,60%),
-  "warning":color.mix(white,$warning,60%),
-  "danger":color.mix(white,$danger,60%),
-  "light":color.mix(white,$light,60%),
-  "alert":color.mix(white,$alert,60%),
+  "primary-emphasis":color.mix(white,$primary,60%),
+  "secondary-emphasis":color.mix(white,$secondary,60%),
+  "success-emphasis":color.mix(white,$success,60%),
+  "info-emphasis":color.mix(white,$info,60%),
+  "warning-emphasis":color.mix(white,$warning,60%),
+  "danger-emphasis":color.mix(white,$danger,60%),
+  "light-emphasis":color.mix(white,$light,60%),
+  "alert-emphasis":color.mix(white,$alert,60%),
 );
 
 //variables del layout

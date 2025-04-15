@@ -46,6 +46,10 @@
 @mixin boder-neon-complete($intensity: 0.8){
   &.border{
     @include border-neon(v.$default-border-color,"");
+    
+    &.hover-neon:hover{
+      @include intense-neon-gradient(v.$default-border-color);
+    }
   }
   @each $name, $color in v.$theme-colors {
       &.border-#{$name} {

@@ -1,0 +1,5 @@
+@use "../variables";
+
+@mixin text-color($color, $opacity){
+    color: rgba($color, $opacity);
+}

@@ -1,0 +1,29 @@
+@use "../variables";
+@use "../mixins/colors" as colrs;
+
+@each $nombre, $color in variables.$theme-colors{
+    .text-#{$nombre}{
+        --sci-text-opacity: 1;
+        @include colrs.text-color($color, var(--sci-text-opacity));
+    }
+}
+
+@each $nombre, $color in variables.$subtle-colors{
+    .text-#{$nombre}{
+        --sci-text-opacity: 1;
+        @include colrs.text-color($color, var(--sci-text-opacity));
+    }
+}
+
+@each $nombre, $color in variables.$emphasis-colors{
+    .text-#{$nombre}{
+        --sci-text-opacity: 1;
+        @include colrs.text-color($color, var(--sci-text-opacity));
+    }
+}
+
+@for $i from 1 through 4{
+    .text-opacity-#{calc($i/4)*100}{
+        --sci-text-opacity: #{calc($i/4)};
+    }
+}
