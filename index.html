@@ -11,6 +11,9 @@
         .ancho {
             height: 100px;
         }
+        .ancho-2 {
+            height: 200px;
+        }
     </style>
 </head>
 <body>
@@ -19,15 +22,47 @@
 
 <div class="container">
     <div class="row row-cols-6 g-5">
-        <div class="col primary-neon ancho rounded-5 border-secundary">1</div>
+        <div class="col primary-neon ancho rounded-5 border-2">1</div>
         <div class="col secondary-neon ancho hover-neon-active ">2</div>
         <div class="col success-neon ancho ">3</div>
         <div class="col danger-neon ancho">4</div>
         <div class="col warning-neon ancho">5</div>
-        <div class="col info-neon ancho">6</div>
+        <div class="col info-neon ancho hover-neon-active">6</div>
         <div class="col light-neon ancho hover-neon">7</div>
-        <div class="col alert-neon ancho">8</div>
+        <div class="col alert-neon ancho border-secundary">8</div>
     </div>
+</div>
+
+
+<div class="container">
+
+    <div class="grid gap-1">
+
+        <div class="g-col-6 ancho bg-primary-neon"></div>
+        <div class="g-col-6 ancho bg-primary-neon"></div>
+
+        <div class="g-col-3 ancho bg-primary-neon"></div>
+        <div class="g-col-3  bg-warning-neon"></div>
+
+        <div class=" g-row-2 g-col-6 g-row-2   bg-success-neon"></div>
+
+        <div class="g-col-6 ancho-2 bg-primary-neon"></div>
+
+        <div class="g-col-12 ancho bg-alert-neon"></div>
+        
+
+    </div>
+
+
+    <div class="grid gap-2">
+        <div class="g-col-6">Columna 1</div>
+        <div class="g-col-6 g-row-2 bg-primary text-white">
+          Esta ocupa 2 filas
+        </div>
+        <div class="g-col-6">Columna 3</div>
+        <div class="g-col-6">Columna 4</div>
+      </div>
+      
 </div>
 
 
