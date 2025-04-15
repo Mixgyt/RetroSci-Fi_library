@@ -5,6 +5,11 @@
 @use "mixins/backgrounds" as bg;
 
 // Estilo base
+
+.navbar-reverse{
+  flex-direction: row-reverse;
+}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -17,7 +22,7 @@
   .navbar-header {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: end;
     align-items: center;
   }
 

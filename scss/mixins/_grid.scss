@@ -7,8 +7,8 @@
 }
 
 @mixin make-col($size) {
-    flex: 0 0 calc((100% / #{v.$grid-columns}) * #{$size} - #{v.$gutter-width});
-    max-width: calc((100% / #{v.$grid-columns}) * #{$size} - #{v.$gutter-width});
+    flex: 0 0 calc((100% / #{v.$grid-columns}) * #{$size}  - var(--col-gap-adjust,0rem));
+    max-width: calc((100% / #{v.$grid-columns}) * #{$size} - var(--col-gap-adjust,0rem));
 }
 
 @mixin make-col-auto() {
