@@ -1,0 +1,35 @@
+@use 'variables' as *;
+@use "sass:color" as color;
+
+.card{
+    border: 2px solid $primary;
+    margin-bottom: 25px;
+    border-radius: 7px;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    .card-header{
+        padding: 1rem;
+    }
+
+    .card-body{
+        padding: 0.25rem 1rem;
+        border-top: 1px solid $primary;
+    }
+
+    .card-title{
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+        font-weight: 900;
+    }
+
+    .card-text{
+        font-size: 1rem;
+        color: $primary;
+    }
+
+    .card-footer{
+        padding: 1rem;
+        border-top: 1px solid $primary;
+    }
+}

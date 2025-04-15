@@ -4,4 +4,8 @@
 .form-range{
     @include form-base;
     padding: 5px 0px;
+
+    &:focus {
+        box-shadow: 0 0 0px 0px $primary;
+    }
 }

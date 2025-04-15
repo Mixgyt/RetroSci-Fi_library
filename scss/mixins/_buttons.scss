@@ -1,0 +1,12 @@
+@use "../variables" as *;
+@use "sass:color" as color;
+@mixin button-color($bg-color) {
+    background-color: $bg-color;
+    border-color: $subtle-colors;
+    color: if(color.channel($bg-color, "lightness", $space: hsl) > 60%, #000, #fff);
+
+    &:hover {
+        background: color.adjust($bg-color, $lightness: -10%);
+        box-shadow: 0;
+    }
+}

@@ -1,29 +1,20 @@
 @use 'variables' as *;
 @use 'sass:color' as color;
+@use "mixins/buttons" as *;
 
 .btn {
     display: inline-block;
     text-align: center;
+    // Por si pone un link
     text-decoration: none;
-    padding: 0.5rem 0;
+    padding: 0.5rem 0.75rem;
     margin: 5px 0;
     font-size: 1rem;
-    border: 1px solid transparent;
+    border: 1px solid ;
     border-radius: 0.5rem;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
     user-select: none;
-}
-
-@mixin button-color($bg-color) {
-    background-color: $bg-color;
-    border-color: $bg-color;
-
-    color: if(color.channel($bg-color, "lightness", $space: hsl) > 60%, #000, #fff);
-
-    &:hover{
-        background: color.adjust($bg-color,$lightness: -10%);
-    }
 }
 
 @each $name, $color in $theme-colors {
