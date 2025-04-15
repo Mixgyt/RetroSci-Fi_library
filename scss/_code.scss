@@ -23,7 +23,7 @@
 
     .code-block {
         background-color: $secondary;
-        overflow-y: scroll;
+        overflow-y: hidden;
         div{
             background-color: $dark;
         }
