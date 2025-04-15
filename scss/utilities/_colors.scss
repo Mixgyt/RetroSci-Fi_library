@@ -1,6 +1,11 @@
 @use "../variables";
 @use "../mixins/colors" as c;
 
+.text-neon{
+    --sci-text-opacity: 1;
+    @include c.text-neon(variables.$primary,var(--sci-text-opacity));
+}
+
 @each $nombre, $color in variables.$theme-colors{
     .text-#{$nombre}{
         --sci-text-opacity: 1;

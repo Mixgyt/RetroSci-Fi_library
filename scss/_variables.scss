@@ -8,6 +8,8 @@ $warning: #fbc359;
 $danger: #e70103;
 $light: #f9f2f2;
 $alert: #bb3a2d;
+$white: #ffff;
+$dark: #0000;
 
 //Colores base
 $theme-colors: (
@@ -19,6 +21,8 @@ $theme-colors: (
   "danger": $danger,
   "light": $light,
   "alert": $alert,
+  "white":$white,
+  "dark":$dark,
 );
 
 //Colores subtle
@@ -82,7 +86,8 @@ $spacers:(
   "2":$spacer * .5,
   "3":$spacer,
   "4":$spacer * 1.5,
-  "5":$spacer * 3
+  "5":$spacer * 3,
+  "auto":auto,
 );
 
 //Bordes estandar
@@ -121,4 +126,11 @@ $standart-positions:(
     end: "end",
     bottom: "bottom",
     start: "start"
-);  
+);
+
+$positions: (
+    "start":"left",
+    "end":"right",
+    "top":"top",
+    "bottom":"bottom",
+);
