@@ -1,15 +1,12 @@
-<h1 align="center">RETROSCI-FI_LIBRARY</h1>
+# RETROSCI-FI_LIBRARY
 
-<p align="center"> <b>RetroSci-fi</b> es una librería de componentes inspirada en la ciencia ficción retro de Japón. Basada en Bootstrap, está desarrollada completamente desde cero con SASS, usando clases reutilizables, estructura modular y un sistema de diseño personalizable. </p>
+ **RetroSci-fi** es una librería de componentes inspirada en la ciencia ficción retro de Japón. Basada en Bootstrap, está desarrollada completamente desde cero con SASS, usando clases reutilizables, estructura modular y un sistema de diseño personalizable.
 
----
-<h2 align="center">💻 Cómo usar la librería</h2>
+##  Cómo usar la librería
 
-<p align='center'>Lorem ipsum</p>
+Lorem ipsum
 
----
-
-<h2 align='center'>🎨 Paleta de colores</h2>
+## 🎨 Paleta de colores
 
 <div align="center">
   <table>
@@ -65,24 +62,19 @@
   </table>
 </div>
 
-
----
-### <h2 align="center">👨🏻‍💻 Integrantes</h2>
-
-<p align="center">
-✅ - Cesar Enoc Aparicio Reyes (<b>AA23026</b>)<br>
-✅ - Cesar Alexander Garay Ortez (<b>GO22007</b>)<br> 
-✅ - Gerson Mauricio Alegria Caballero (<b>AC23014<b>)<br>
-✅ - Juan Antonio Sandoval Paiz (<b>SP23002</b>)</p>
-
----
-###
-<h2 align="center">Tecnologias y herramientas usadas</h2>
+## 👨🏻‍💻 Integrantes
 
 
+✅ - Cesar Enoc Aparicio Reyes (**AA23026**) <br> 
+✅ - Cesar Alexander Garay Ortez (**GO22007**) <br>
+✅ - Gerson Mauricio Alegria Caballero (**AC2301**) <br>
+✅ - Juan Antonio Sandoval Paiz (**SP23002**) <br>
+
+
+
+
+## Tecnologias y herramientas usadas
 
 <div align="center">
     <img src="https://skillicons.dev/icons?i=sass,css,javascript,html,nodejs,vscode,git,github" /><br>
 </div>
-
-###
