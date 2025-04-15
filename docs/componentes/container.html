@@ -2,225 +2,227 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Container</title>
-    <link rel="stylesheet" href="../../dist/css/sci-fi.css">
-    <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Container</title>
+  <link rel="stylesheet" href="../../dist/css/sci-fi.css">
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
 </head>
 
-<body >
-    <nav class=" navbar bg-secondary estilo-brillo border rounded border-secondary hover-neon  position-sticky top-0 p-1"
-  id="nav1">
-  <div class="navbar-header">
-      <div class="navbar-brand"><div class="img-logo-prin-white"></div>Retro Sci-Fi</div>
-      <button class="navbar-toggle" onclick="toggleMenu('nav1')">
-          <div class="img-menu-white"></div>
+<body>
+  <nav class="navbar bg-secondary estilo-brillo border rounded border-secondary hover-neon  position-sticky top-0 p-1">
+    <div class="navbar-header">
+      <div class="navbar-brand">
+        <div class="img-logo-prin-white"></div>Retro Sci-Fi
+      </div>
+      <button class="navbar-toggle">
+        <div class="img-menu-white"></div>
       </button>
-  </div>
-  <div class="navbar-nav">
+    </div>
+    <div class="navbar-nav">
       <a class="nav-item rounded-pill" href="#inicio">Inicio</a>
-      <a class="nav-item rounded-pill" href="#estructura">Estructura</a>
-      <a class="nav-item rounded-pill" href="#grid">Grid</a>
-      <a class="nav-item rounded-pill" href="#alerts">Alerts</a>
-  </div>
-</nav>
+      <a class="nav-item rounded-pill" href="#">Documentacion</a>
+      <a class="nav-item rounded-pill" href="https://github.com/Mixgyt/RetroSci-Fi_library" target="_blank">Github</a>
+      <a class="nav-item rounded-pill" href="https://www.npmjs.com/package/retrosci-fi_library" target="_blank">NPM</a>
+    </div>
+  </nav>
 
-<div class="grid">
-  <div class="g-col g-col-md-2 g-col-lg-3">
-          <div class=""> <!-- Crear el contenedo para el aside bar (o usar las clases de posision)-->
-              <div class="slide-menu open position-fixed">
-                  <div class="slide-menu__content">
-                      <h2 class="slide-menu__title">Documentacion</h2>
-                      <ul class="slide-menu__list">
+  <div class="grid">
+    <div class="g-col g-col-md-2 g-col-lg-3">
+      <div class=""> <!-- Crear el contenedo para el aside bar (o usar las clases de posision)-->
+        <div class="slide-menu open position-fixed">
+          <div class="slide-menu__content">
+            <h2 class="slide-menu__title">Documentacion</h2>
+            <ul class="slide-menu__list">
 
-                        <!--COMIENZO LAYOUT-->
-                          <p class="">Layout</p>
+              <!--COMIENZO LAYOUT-->
+              <p class="">Layout</p>
 
-                          <li class="slide-menu__item">
-                            <a class="estilo-brillo" href="../layout/layout.html#clase-row">Clase .row</a>
-                          </li>
-                          <li class="slide-menu__item">
-                            <a class="estilo-brillo" href="../layout/layout.html#clase-row-cols">Clase .row-cols-*</a>
-                          </li>
-                          <li class="slide-menu__item">
-                            <a class="estilo-brillo" href="../layout/layout.html#alineacion-filas">Alineación en Filas</a>
-                          </li>
-                          <li class="slide-menu__item">
-                            <a class="estilo-brillo" href="../layout/layout.html#clases-espaciado">Espaciado: .g, .gx, .gy</a>
-                          </li>
-                          <li class="slide-menu__item">
-                            <a class="estilo-brillo" href="../layout/layout.html#clase-col">Clase .col Básica</a>
-                          </li>
-                          <li class="slide-menu__item">
-                            <a class="estilo-brillo" href="../layout/layout.html#columnas-tamano-fijo">Columnas de Tamaño Fijo</a>
-                          </li>
-                          <li class="slide-menu__item">
-                            <a class="estilo-brillo" href="../layout/layout.html#columnas-responsivas">Columnas Responsivas</a>
-                          </li>
-                          <li class="slide-menu__item">
-                            <a class="estilo-brillo" href="../layout/layout.html#autoajuste-col-auto">Autoajuste con .col-auto</a>
-                          </li>
-                          <li class="slide-menu__item">
-                            <a class="estilo-brillo" href="../layout/layout.html#autoajuste-responsivo">Autoajuste Responsivo</a>
-                          </li>
-                          <li class="slide-menu__item">
-                            <a class="estilo-brillo" href="#alineacion-individual">Alineación Individual de Columnas</a>
-                          </li>
-                          <li class="slide-menu__item">
-                            <a class="estilo-brillo" href="../layout/layout.html#desplazamiento-offset">Desplazamiento con Offset</a>
-                          </li>
-                          <li class="slide-menu__item">
-                            <a class="estilo-brillo" href="../layout/layout.html#clase-grid">Clase .grid y .g-col-*</a>
-                          </li>
-                          <li class="slide-menu__item">
-                            <a class="estilo-brillo" href="../layout/layout.html#filas-grid">Filas en Grid</a>
-                          </li>
-                          <li class="slide-menu__item">
-                            <a class="estilo-brillo" href="../layout/layout.html#filas-responsivas">Filas Responsivas</a>
-                          </li>
-                          <li class="slide-menu__item">
-                            <a class="estilo-brillo" href="../layout/layout.html#filas-columnas">Combinación Filas + Columnas</a>
-                          </li>
-                          <li class="slide-menu__item">
-                            <a class="estilo-brillo" href="../layout/layout.html#espaciado-grid">Espaciado en Grid .gap-*</a>
-                          </li>
+              <li class="slide-menu__item">
+                <a class="estilo-brillo" href="../layout/layout.html#clase-row">Clase .row</a>
+              </li>
+              <li class="slide-menu__item">
+                <a class="estilo-brillo" href="../layout/layout.html#clase-row-cols">Clase .row-cols-*</a>
+              </li>
+              <li class="slide-menu__item">
+                <a class="estilo-brillo" href="../layout/layout.html#alineacion-filas">Alineación en Filas</a>
+              </li>
+              <li class="slide-menu__item">
+                <a class="estilo-brillo" href="../layout/layout.html#clases-espaciado">Espaciado: .g, .gx, .gy</a>
+              </li>
+              <li class="slide-menu__item">
+                <a class="estilo-brillo" href="../layout/layout.html#clase-col">Clase .col Básica</a>
+              </li>
+              <li class="slide-menu__item">
+                <a class="estilo-brillo" href="../layout/layout.html#columnas-tamano-fijo">Columnas de Tamaño Fijo</a>
+              </li>
+              <li class="slide-menu__item">
+                <a class="estilo-brillo" href="../layout/layout.html#columnas-responsivas">Columnas Responsivas</a>
+              </li>
+              <li class="slide-menu__item">
+                <a class="estilo-brillo" href="../layout/layout.html#autoajuste-col-auto">Autoajuste con .col-auto</a>
+              </li>
+              <li class="slide-menu__item">
+                <a class="estilo-brillo" href="../layout/layout.html#autoajuste-responsivo">Autoajuste Responsivo</a>
+              </li>
+              <li class="slide-menu__item">
+                <a class="estilo-brillo" href="#alineacion-individual">Alineación Individual de Columnas</a>
+              </li>
+              <li class="slide-menu__item">
+                <a class="estilo-brillo" href="../layout/layout.html#desplazamiento-offset">Desplazamiento con
+                  Offset</a>
+              </li>
+              <li class="slide-menu__item">
+                <a class="estilo-brillo" href="../layout/layout.html#clase-grid">Clase .grid y .g-col-*</a>
+              </li>
+              <li class="slide-menu__item">
+                <a class="estilo-brillo" href="../layout/layout.html#filas-grid">Filas en Grid</a>
+              </li>
+              <li class="slide-menu__item">
+                <a class="estilo-brillo" href="../layout/layout.html#filas-responsivas">Filas Responsivas</a>
+              </li>
+              <li class="slide-menu__item">
+                <a class="estilo-brillo" href="../layout/layout.html#filas-columnas">Combinación Filas + Columnas</a>
+              </li>
+              <li class="slide-menu__item">
+                <a class="estilo-brillo" href="../layout/layout.html#espaciado-grid">Espaciado en Grid .gap-*</a>
+              </li>
 
-                          <!--FIN DE LAYOUT -->
+              <!--FIN DE LAYOUT -->
 
-                          <!--COMIENZO DE COMPONENTES-->
+              <!--COMIENZO DE COMPONENTES-->
 
-                          <p class="">Componentes</p>
+              <p class="text-warning-neon">Componentes</p>
 
-                          <!--BAGGE-->
-                          <li class="slide-menu__item">
-                            <a class="estilo-brillo" href="badge.html">Badge</a>
-                          </li>
-                          <!--FIN BAGGE-->
+              <!--BAGGE-->
+              <li class="slide-menu__item">
+                <a class="estilo-brillo" href="badge.html">Badge</a>
+              </li>
+              <!--FIN BAGGE-->
 
-                          <!--BUTTONS-->
-                          <li class="slide-menu__item">
-                            <a class="estilo-brillo" href="buttons.html">Botones</a>
-                          </li>
-                          <!--FIN BUTTONS-->
+              <!--BUTTONS-->
+              <li class="slide-menu__item">
+                <a class="estilo-brillo" href="buttons.html">Botones</a>
+              </li>
+              <!--FIN BUTTONS-->
 
-                          <!--CARDS-->
-                          <li class="slide-menu__item">
-                            <a class="estilo-brillo" href="card.html">Cards</a>
-                          </li>
-                          <!--FIN CARDS-->
+              <!--CARDS-->
+              <li class="slide-menu__item">
+                <a class="estilo-brillo" href="card.html">Cards</a>
+              </li>
+              <!--FIN CARDS-->
 
-                          <!--CONTAINERS -->
-                          <li class="slide-menu__item">
-                            <a class="estilo-brillo" href="#">Contenedores</a>
-                          </li>
-                          <!--FIN CONTAINERS-->
+              <!--CONTAINERS -->
+              <li class="slide-menu__item">
+                <a class="estilo-brillo" href="#">Contenedores</a>
+              </li>
+              <!--FIN CONTAINERS-->
 
-                          <!--FORMULARIOS -->
-                          <li class="slide-menu__item">
-                            <a class="estilo-brillo" href="container.html">Contenedores</a>
-                          </li>
-                          <!--FIN FORMULARIOS-->
+              <!--FORMULARIOS -->
+              <li class="slide-menu__item">
+                <a class="estilo-brillo" href="formularios.html">Formularios</a>
+              </li>
+              <!--FIN FORMULARIOS-->
 
-                          <!--NAV BAR -->
-                          <li class="slide-menu__item">
-                            <a class="estilo-brillo" href="navbar.html">Contenedores</a>
-                          </li>
-                          <!--FIN NAV BAR-->
+              <!--NAV BAR -->
+              <li class="slide-menu__item">
+                <a class="estilo-brillo" href="navbar.html">Nav bar</a>
+              </li>
+              <!--FIN NAV BAR-->
 
-                          <!--ALERTAS-->
-                          <li class="slide-menu__item">
-                            <a class="estilo-brillo" href="#alerta-basica">Alerta Básica</a>
-                          </li>
-                          <li class="slide-menu__item">
-                            <a class="estilo-brillo" href="#tipos-alertas">Tipos de alerta</a>
-                          </li>
-                          <li class="slide-menu__item">
-                            <a class="estilo-brillo" href="#parametros-alertas">Parametros de las alertas</a>
-                          </li>
-                          <!--FIN DE ALERTAS-->
+              <!--ALERTAS-->
+              <li class="slide-menu__item">
+                <a class="estilo-brillo" href="alertas.html#alerta-basica">Alerta Básica</a>
+              </li>
+              <li class="slide-menu__item">
+                <a class="estilo-brillo" href="alertas.html#tipos-alertas">Tipos de alerta</a>
+              </li>
+              <li class="slide-menu__item">
+                <a class="estilo-brillo" href="alertas.html#parametros-alertas">Parametros de las alertas</a>
+              </li>
+              <!--FIN DE ALERTAS-->
 
-                          <!-- ### FIN DE COMPONENTES ### -->
-                     
-                      </ul><!--FIN DEL SLIDE MENU LIST -->
-                  </div>
-                  <button class="slide-menu__toggle">
-                  </button>
-              </div>
+              <!-- ### FIN DE COMPONENTES ### -->
+
+            </ul><!--FIN DEL SLIDE MENU LIST -->
           </div>
+          <button class="slide-menu__toggle">
+          </button>
+        </div>
+      </div>
     </div><!-- FIN DEL ASIDE CONTENT-->
 
-        <div class="g-col-12 g-col-md-9  g-col-lg-8">
-            <h1> </h1>
-            <header class="container bg-secondary-neon border-warning text-white text-center py-5">
-                <h1>Container</h1>
-                <p>Los contenedores son un componente fundamental que contiene, rellena y alinea su contenido dentro de
-                    un dispositivo o ventana gráfica determinados.</p>
-            </header>
+    <div class="g-col-12 g-col-md-9  g-col-lg-8">
+      <h1> </h1>
+      <header class="container bg-secondary-neon border-warning text-white text-center py-5">
+        <h1>Container</h1>
+        <p>Los contenedores son un componente fundamental que contiene, rellena y alinea su contenido dentro de
+          un dispositivo o ventana gráfica determinados.</p>
+      </header>
 
 
-            <div class="row g-2 container">
-                <div class="col-12">
-                    <h1>Contenedor predeterminado</h1>
-                    <p>Nuestra clase .container predeterminada es un contenedor responsivo de ancho fijo, lo que
-                        significa que max-width cambia en cada punto de interrupción.</p>
-                    <!-------------------------------- ESQUELETO PARA REUTILIZAR A LA HORA DE HACER LA DOCS--------------------------------- -->
-                    <div class="code container mt-4">
-                        <div class="code-example">
-                            <!-- COLOCAR EL CODIGO HTML DE EJEMPLO -->
-                            <div class="container ">
-                                <!-- Contenido aqui -->
-                            </div>
-                        </div>
-                        <!-- PARA COLOCAR LENGUAJE -->
-                        <div class="code-lenguaje">
-                            <div class="row justify-content-between mx-3">
-                                <div>HTML</div>
-                                <div>
-                                    <div class="img-copy" alt="copy"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- BLOQUE DE CODIGO -->
-                        <div class="code-block">
-                            <pre><code class="language-html">  
+      <div class="row g-2 container">
+        <div class="col-12">
+          <h1>Contenedor predeterminado</h1>
+          <p>Nuestra clase .container predeterminada es un contenedor responsivo de ancho fijo, lo que
+            significa que max-width cambia en cada punto de interrupción.</p>
+          <!-------------------------------- ESQUELETO PARA REUTILIZAR A LA HORA DE HACER LA DOCS--------------------------------- -->
+          <div class="code container mt-4">
+            <div class="code-example">
+              <!-- COLOCAR EL CODIGO HTML DE EJEMPLO -->
+              <div class="container ">
+                <!-- Contenido aqui -->
+              </div>
+            </div>
+            <!-- PARA COLOCAR LENGUAJE -->
+            <div class="code-lenguaje">
+              <div class="row justify-content-between mx-3">
+                <div>HTML</div>
+                <div>
+                  <div class="img-copy" alt="copy"></div>
+                </div>
+              </div>
+            </div>
+            <!-- BLOQUE DE CODIGO -->
+            <div class="code-block">
+              <pre><code class="language-html">  
           <!-- AQUI VA EL CODIGO YA CON  -->
 &lt;div class=&quot;container&quot;&gt;
 &lt;!-- Contenido aqui --&gt;
 &lt;/div&gt;
            <!-- SENTENCIA DE ESCAPE -->
                             </code></pre>
-                        </div>
-                    </div>
-                    <!-- ---------------------------------------------------------------------------------------------------------------- -->
+            </div>
+          </div>
+          <!-- ---------------------------------------------------------------------------------------------------------------- -->
+        </div>
+        <div class="col-12">
+          <h1>Contenedores responsivos</h1>
+          <p>Los contenedores adaptables permiten especificar una clase con un ancho del 100 % hasta alcanzar
+            el punto de interrupción especificado. Tras ello, se aplican max-widths a cada punto de
+            interrupción superior.</p>
+          <!-------------------------------- ESQUELETO PARA REUTILIZAR A LA HORA DE HACER LA DOCS--------------------------------- -->
+          <div class="code container mt-4">
+            <div class="code-example">
+              <!-- COLOCAR EL CODIGO HTML DE EJEMPLO -->
+              <div class="container-sm">100% Ancho hasta un pequeño punto de quiebre</div>
+              <div class="container-md">100% Ancho hasta punto de interrupción medio</div>
+              <div class="container-lg">100% Ancho hasta un punto de interrupción grande</div>
+              <div class="container-xl">100% Ancho hasta punto de interrupción extra grande</div>
+              <div class="container-xxl">100% Ancho hasta un punto de quiebre extra extra grande</div>
+            </div>
+            <!-- PARA COLOCAR LENGUAJE -->
+            <div class="code-lenguaje">
+              <div class="row justify-content-between mx-3">
+                <div>HTML</div>
+                <div>
+                  <div class="img-copy" alt="copy"></div>
                 </div>
-                <div class="col-12">
-                    <h1>Contenedores responsivos</h1>
-                    <p>Los contenedores adaptables permiten especificar una clase con un ancho del 100 % hasta alcanzar
-                        el punto de interrupción especificado. Tras ello, se aplican max-widths a cada punto de
-                        interrupción superior.</p>
-                    <!-------------------------------- ESQUELETO PARA REUTILIZAR A LA HORA DE HACER LA DOCS--------------------------------- -->
-                    <div class="code container mt-4">
-                        <div class="code-example">
-                            <!-- COLOCAR EL CODIGO HTML DE EJEMPLO -->
-                            <div class="container-sm">100% Ancho hasta un pequeño punto de quiebre</div>
-                            <div class="container-md">100% Ancho hasta punto de interrupción medio</div>
-                            <div class="container-lg">100% Ancho hasta un punto de interrupción grande</div>
-                            <div class="container-xl">100% Ancho hasta punto de interrupción extra grande</div>
-                            <div class="container-xxl">100% Ancho hasta un punto de quiebre extra extra grande</div>
-                        </div>
-                        <!-- PARA COLOCAR LENGUAJE -->
-                        <div class="code-lenguaje">
-                            <div class="row justify-content-between mx-3">
-                                <div>HTML</div>
-                                <div>
-                                    <div class="img-copy" alt="copy"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- BLOQUE DE CODIGO -->
-                        <div class="code-block">
-                            <pre><code class="language-html">  
+              </div>
+            </div>
+            <!-- BLOQUE DE CODIGO -->
+            <div class="code-block">
+              <pre><code class="language-html">  
                               <!-- AQUI VA EL CODIGO YA CON  -->
 &lt;div class=&quot;container-sm&quot;&gt;100% Ancho hasta un pequeño punto de quiebre&lt;/div&gt;
 &lt;div class=&quot;container-md&quot;&gt;100% Ancho hasta punto de interrupción medio&lt;/div&gt;
@@ -229,57 +231,56 @@
 &lt;div class=&quot;container-xxl&quot;&gt;100% Ancho hasta un punto de quiebre extra extra grande&lt;/div&gt;
                                <!-- SENTENCIA DE ESCAPE -->
                                                 </code></pre>
-                        </div>
-                    </div>
-                    <!-- ---------------------------------------------------------------------------------------------------------------- -->
-                </div>
-                <div class="col-12">
-                    <h1>Contenedores de fluidos</h1>
-                    <p>Use .container-fluid para un contenedor de ancho completo, que abarque todo el ancho de la
-                        ventana gráfica.</p>
-                    <!-------------------------------- ESQUELETO PARA REUTILIZAR A LA HORA DE HACER LA DOCS--------------------------------- -->
-                    <div class="code container mt-4">
-                        <div class="code-example">
-                            <!-- COLOCAR EL CODIGO HTML DE EJEMPLO -->
-                            <div class="container-fluid">
-                                <!-- Contenido aqui -->
-                            </div>
+            </div>
+          </div>
+          <!-- ---------------------------------------------------------------------------------------------------------------- -->
+        </div>
+        <div class="col-12">
+          <h1>Contenedores de fluidos</h1>
+          <p>Use .container-fluid para un contenedor de ancho completo, que abarque todo el ancho de la
+            ventana gráfica.</p>
+          <!-------------------------------- ESQUELETO PARA REUTILIZAR A LA HORA DE HACER LA DOCS--------------------------------- -->
+          <div class="code container mt-4">
+            <div class="code-example">
+              <!-- COLOCAR EL CODIGO HTML DE EJEMPLO -->
+              <div class="container-fluid">
+                <!-- Contenido aqui -->
+              </div>
 
-                        </div>
-                        <!-- PARA COLOCAR LENGUAJE -->
-                        <div class="code-lenguaje">
-                            <div class="row justify-content-between mx-3">
-                                <div>HTML</div>
-                                <div>
-                                    <div class="img-copy" alt="copy"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- BLOQUE DE CODIGO -->
-                        <div class="code-block">
-                            <pre><code class="language-html">  
+            </div>
+            <!-- PARA COLOCAR LENGUAJE -->
+            <div class="code-lenguaje">
+              <div class="row justify-content-between mx-3">
+                <div>HTML</div>
+                <div>
+                  <div class="img-copy" alt="copy"></div>
+                </div>
+              </div>
+            </div>
+            <!-- BLOQUE DE CODIGO -->
+            <div class="code-block">
+              <pre><code class="language-html">  
                               <!-- AQUI VA EL CODIGO YA CON  -->
 &lt;div class=&quot;container-fluid&quot;&gt;
 &lt;!-- Contenido aqui --&gt;
 &lt;/div&gt;
                                <!-- SENTENCIA DE ESCAPE -->
                                                 </code></pre>
-                        </div>
-                    </div>
-                    <!-- ---------------------------------------------------------------------------------------------------------------- -->
-                </div>
             </div>
+          </div>
+          <!-- ---------------------------------------------------------------------------------------------------------------- -->
         </div>
+      </div>
     </div>
+  </div>
 
 
-    <footer class="container-fluid bg-dark text-white text-center py-3">
-        <p>© 2025 Retro Sci-Fi Library.</p>
-    </footer>
+  <footer class="container-fluid bg-dark text-white text-center py-3">
+    <p>© 2025 Retro Sci-Fi Library.</p>
+  </footer>
 
-    <script src="../../dist/js/retrosci-fi.js"></script>
+  <script src="../../dist/js/retrosci-fi.js"></script>
 
-    <script>document.addEventListener("DOMContentLoaded", () => { closeMenu(); });</script>
 </body>
 
 </html>

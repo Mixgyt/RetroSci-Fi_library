@@ -46,7 +46,7 @@ $transition-easing: cubic-bezier(0.68, -0.55, 0.27, 1.55);
       //position: fixed;
       //top: 0; //cambiar cuando el contendor funcione
       left: 0; 
-      height: calc( 100vh - 80px); //se calcula el tamańo del nav bar 
+      height: calc( 100vh - 70px); //se calcula el tamańo del nav bar 
       width: $width;
       background-color: $color;
       color: $text-color;
