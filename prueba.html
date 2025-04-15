@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/css/sci-fi.css">
+</head>
+
+<body>
+    <script src="alerts.js"></script>
+
+    <div class="navbar navbar-primary" id="main-navbar">
+        <!--el id es necesario para identificar a quien se le aplicara-->
+        <div class="navbar-header">
+            <div class="navbar-brand">Logo</div>
+            <button type="button" class="navbar-toggle" onclick="toggleMenu('main-navbar')">
+                <!--el toggleMenu identifica el navbar al que le aplicara los cambios-->
+                <img src="img/menu_black.png" alt="Menu">
+            </button>
+        </div>
+        <div class="navbar-nav">
+            <a class="nav-item">Inicio</a>
+            <a class="nav-item">Proyectos</a>
+            <a class="nav-item">Contacto</a>
+        </div>
+    </div>
+    <div class="navbar navbar-secondary" id="main-navbar1">
+        <!--el id es necesario para identificar a quien se le aplicara-->
+        <div class="navbar-header">
+            <div class="navbar-brand">Logo</div>
+            <button type="button" class="navbar-toggle" onclick="toggleMenu('main-navbar1')">
+                <!--el toggleMenu identifica el navbar al que le aplicara los cambios-->
+                <img src="img/menu_white.png" alt="Menu">
+            </button>
+        </div>
+        <div class="navbar-nav">
+            <a class="nav-item">Inicio</a>
+            <a class="nav-item">Proyectos</a>
+            <a class="nav-item">Contacto</a>
+        </div>
+    </div>
+    <div class="navbar navbar-success" id="main-navbar2">
+        <!--el id es necesario para identificar a quien se le aplicara-->
+        <div class="navbar-header">
+            <div class="navbar-brand">Logo</div>
+            <button type="button" class="navbar-toggle" onclick="toggleMenu('main-navbar2')">
+                <!--el toggleMenu identifica el navbar al que le aplicara los cambios-->
+                <img src="img/menu_black.png" alt="Menu">
+            </button>
+        </div>
+        <div class="navbar-nav">
+            <a class="nav-item">Inicio</a>
+            <a class="nav-item">Proyectos</a>
+            <a class="nav-item">Contacto</a>
+        </div>
+    </div>
+    <div class="navbar navbar-info" id="main-navbar3"> <!--el id es necesario para identificar a quien se le aplicara-->
+        <div class="navbar-header">
+            <div class="navbar-brand">Logo</div>
+            <button type="button" class="navbar-toggle" onclick="toggleMenu('main-navbar3')">
+                <!--el toggleMenu identifica el navbar al que le aplicara los cambios-->
+                <img src="img/menu_black.png" alt="Menu">
+            </button>
+        </div>
+        <div class="navbar-nav">
+            <a class="nav-item">Inicio</a>
+            <a class="nav-item">Proyectos</a>
+            <a class="nav-item">Contacto</a>
+        </div>
+    </div>
+    <div class="navbar navbar-warning" id="main-navbar4">
+        <!--el id es necesario para identificar a quien se le aplicara-->
+        <div class="navbar-header">
+            <div class="navbar-brand">Logo</div>
+            <button type="button" class="navbar-toggle" onclick="toggleMenu('main-navbar4')">
+                <!--el toggleMenu identifica el navbar al que le aplicara los cambios-->
+                <img src="img/menu_black.png" alt="Menu">
+            </button>
+        </div>
+        <div class="navbar-nav">
+            <a class="nav-item">Inicio</a>
+            <a class="nav-item">Proyectos</a>
+            <a class="nav-item">Contacto</a>
+        </div>
+    </div>
+    <div class="navbar navbar-danger" id="main-navbar5">
+        <!--el id es necesario para identificar a quien se le aplicara-->
+        <div class="navbar-header">
+            <div class="navbar-brand">Logo</div>
+            <button type="button" class="navbar-toggle" onclick="toggleMenu('main-navbar5')">
+                <!--el toggleMenu identifica el navbar al que le aplicara los cambios-->
+                <img src="img/menu_black.png" alt="Menu">
+            </button>
+        </div>
+        <div class="navbar-nav">
+            <a class="nav-item">Inicio</a>
+            <a class="nav-item">Proyectos</a>
+            <a class="nav-item">Contacto</a>
+        </div>
+    </div>
+    <div class="navbar navbar-light" id="main-navbar6">
+        <!--el id es necesario para identificar a quien se le aplicara-->
+        <div class="navbar-header">
+            <div class="navbar-brand">Logo</div>
+            <button type="button" class="navbar-toggle" onclick="toggleMenu('main-navbar6')">
+                <!--el toggleMenu identifica el navbar al que le aplicara los cambios-->
+                <img src="img/menu_black.png" alt="Menu">
+            </button>
+        </div>
+        <div class="navbar-nav">
+            <a class="nav-item">Inicio</a>
+            <a class="nav-item">Proyectos</a>
+            <a class="nav-item">Contacto</a>
+        </div>
+    </div>
+    <div class="navbar navbar-alert" id="main-navbar7">
+        <!--el id es necesario para identificar a quien se le aplicara-->
+        <div class="navbar-header">
+            <div class="navbar-brand">Logo</div>
+            <button type="button" class="navbar-toggle" onclick="toggleMenu('main-navbar7')">
+                <!--el toggleMenu identifica el navbar al que le aplicara los cambios-->
+                <img src="img/menu_black.png" alt="Menu">
+            </button>
+        </div>
+        <div class="navbar-nav">
+            <a class="nav-item">Inicio</a>
+            <a class="nav-item">Proyectos</a>
+            <a class="nav-item">Contacto</a>
+        </div>
+    </div>
+
+    <div class="navbar navbar-secondary">
+        <div class="navbar-header">
+            <div class="navbar-brand">Mi Marca</div>
+            <button class="navbar-toggle"><img src="menu.svg" /></button>
+        </div>
+        <div class="navbar-nav">
+            <div class="nav-item">Inicio</div>
+            <div class="nav-item dropdown">
+                Servicios
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">Servicio 1</li>
+                    <li class="dropdown-item">Servicio 2</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar navbar-secondary" id="nav1">
+        <div class="navbar-header">
+            <div class="navbar-brand">La Forja</div>
+            <button class="navbar-toggle" onclick="toggleMenu('nav1')">
+                <img src="img/menu_black.png" />
+            </button>
+        </div>
+
+        <div class="navbar-nav">
+            <div class="nav-item">Inicio</div>
+
+            <div class="nav-item dropdown">
+                Servicios
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Diseño</a>
+                    <a class="dropdown-item" href="https://www.youtube.com/watch?v=Sfvbau2OzIo">Video</a>
+                    <a class="dropdown-item" href="#">Desarrollo</a>
+                    <a class="dropdown-item" href="#">Consultoría</a>
+                </div>
+            </div>
+
+            <div class="nav-item">Contacto</div>
+        </div>
+    </div>
+    <div class="navbar navbar-info" id="nav2">
+        <div class="navbar-header">
+            <div class="navbar-brand">La Forja</div>
+            <button class="navbar-toggle" onclick="toggleMenu('nav2')">
+                <img src="img/menu_black.png" />
+            </button>
+        </div>
+
+        <div class="navbar-nav">
+            <div class="nav-item">Inicio</div>
+
+            <div class="nav-item dropdown">
+                Servicios
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Diseño</a>
+                    <a class="dropdown-item" href="https://www.youtube.com/watch?v=Sfvbau2OzIo">Video</a>
+                    <a class="dropdown-item" href="#">Desarrollo</a>
+                    <a class="dropdown-item" href="#">Consultoría</a>
+                </div>
+            </div>
+
+            <div class="nav-item">Contacto</div>
+        </div>
+    </div>
+
+    <span class="badge-secondary">Texto</span>
+    <span class="badge-primary">Otro texto</span>
+    <span class="badge-success">Texto</span>
+    <span class="badge-info">Otro texto</span>
+    <span class="badge-warning">Texto</span>
+    <span class="badge-danger">Otro texto</span>
+    <span class="badge-light">Texto</span>
+    <span class="badge-alert">Otro texto</span>
+
+    <button class="btn btn-success"
+        onclick="mostrarAlerta({mensaje: 'Se guardó cor dfrectamen teaa aaaaaaaaaaaaaaafd fdddddddddd ddddddddaaaaa aaaaaaaaaaaa asasaaaaaa aaaaaaaaaaaaaa', tipo: 'success'})">Mostrar
+        Éxito</button>
+
+    <button class="btn btn-danger"
+        onclick="mostrarAlerta({ mensaje: 'Se guardó cor dfrectamen teaa aaaaaaaaaaaaaaafd aaaaaaa asasaaaaaa aaaaaaaaaaaaaa', tipo: 'danger'})">Mostrar
+        Éxito</button>
+    <button class="btn btn-info"
+        onclick="mostrarAlerta({ mensaje: 'Se guardó coraa aaaaaaaaaaaaaa', tipo: 'info'})">Mostrar
+        Éxito</button>
+    <button class="btn btn-warning" onclick="mostrarAlerta({ mensaje: 'Se guardó cor', tipo: 'warning'})">Mostrar
+        Éxito</button>
+
+    <button class="btn btn-secondary" onclick="mostrarAlerta({ mensaje: 'Se guardó cor', tipo: 'secondary'})">Mostrar
+        Éxito</button>
+
+    <button class="btn btn-primary" onclick="mostrarAlerta({ mensaje: 'Se guardó cor', tipo: 'primary'})">Mostrar
+        Éxito</button>
+
+    <button class="btn btn-alert" onclick="mostrarAlerta({ mensaje: 'Se guardó cor', tipo: 'alert'})">Mostrar
+        Éxito</button>
+
+    <button class="btn btn-light" onclick="mostrarAlerta({ mensaje: 'Se guardó cor', tipo: 'light'})">Mostrar
+        Éxito</button>
+
+
+</body>
+
+</html>

@@ -3,42 +3,34 @@
 @use "sass:color" as color;
 
 // Estilo base
-.alert {
-    position: relative;
-    font-family: fonts.$font-mukta;
-    font-weight: fonts.$font-weight-medium;
-    font-size: 18px;
-    padding: 10px 40px;
-    border-radius: 15px;
-    border: 2px solid variables.$secondary;
-    text-align: center;
-    width: 100%;
-    display: flex;
-    text-wrap: wrap;
-    
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    max-width: 100%; // para que respete el max-width del contenedor
-    margin-bottom: 5px;
-  }
+@mixin alert-base($bg, $fg, $border) {
+  position: relative;
+  font-family: fonts.$font-mukta;
+  font-weight: fonts.$font-weight-medium;
+  font-size: 18px;
+  padding: 10px 40px;
+  border-radius: 15px;
+  border: 2px solid $border;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 100%;
+  margin-bottom: 5px;
+  background-color: $bg;
+  color: $fg;
+}
 
 //las difreentes tipos de alertas
 @each $nombre, $color in variables.$theme-colors {
+  $fg: if(color.channel($color, "lightness", $space: hsl) > 60%, #000, #fff);
+  $border: if($nombre == "secondary", variables.$primary, variables.$secondary);
+
   .alert-#{$nombre} {
-    background-color: $color;
-
-    color: if(
-      color.channel($color, "lightness", $space: hsl) > 60%,
-      #000,
-      #fff
-    );
-
-    @if ($nombre == "secondary") {
-      border: 1px solid variables.$primary;
-    } @else {
-      border: 2px solid variables.$secondary;
-    }
+    @include alert-base($color, $fg, $border);
   }
 }
 
@@ -56,4 +48,13 @@
     width: 90%;
     max-width: 1200px;
     padding: 0 20px;
+  }
+
+  //el icono para las alerts
+  .alert-icon {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px;
   }
