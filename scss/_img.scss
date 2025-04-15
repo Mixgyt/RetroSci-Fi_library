@@ -1,0 +1,19 @@
+.img-icon {
+    width: 32px;
+    height: 32px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  .img-menu-black {
+    @extend .img-icon;
+    background-image: url('https://raw.githubusercontent.com/Mixgyt/RetroSci-Fi_library/refs/heads/alegria/img/menu_black.svg');
+  }
+  
+  .img-menu-white {
+    @extend .img-icon;
+    background-image: url('https://raw.githubusercontent.com/Mixgyt/RetroSci-Fi_library/refs/heads/alegria/img/menu_white.svg');
+  }
