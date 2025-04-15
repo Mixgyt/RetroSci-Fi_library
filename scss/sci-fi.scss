@@ -9,12 +9,14 @@
 @use "utilidades";
 
 //Componentes
-@use "general";
-@use "buttons";
+@use "alerts";
 @use "badges";
 @use "form";
 @use "card";
-
+@use "buttons";
+@use "navbar";
+@use "general";
+@use 'form/form-control';
 
 //Clases utilitarias
 @use "utilities/borders";
