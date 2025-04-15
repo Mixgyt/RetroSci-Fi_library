@@ -3,27 +3,35 @@
 @use "sass:color" as color;
 
 // Estilo base
-.navbar {
+@mixin navbar-base($bg, $fg) {
+  margin: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: variables.$padd;
-  background-color: variables.$primary;
-  color: variables.$primary;
+  padding: 20px;
+  background-color: $bg;
+  color: $fg;
   font-family: fonts.$font-mplus;
   font-weight: fonts.$font-weight-medium;
-  border: 2px solid variables.$secondary;
+  border: 2px solid $fg;
   border-radius: 25px;
-  box-shadow: 0 0 0 2px variables.$primary;
-  margin: 20px auto;
-  text-decoration: none;
+  box-shadow: 0 0 0 2px $bg;
+
+  .navbar-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .navbar-brand {
     font-family: fonts.$font-mplus;
     font-size: 30px;
-    color: variables.$secondary;
+    color: $fg;
   }
 
   .navbar-nav {
+    margin: 10px;
     display: flex;
     gap: 15px;
 
@@ -31,14 +39,14 @@
       font-family: fonts.$font-mukta;
       font-weight: fonts.$font-weight-bold;
       font-size: 20px;
-      color: variables.$secondary;
+      color: $fg;
       padding: 10px;
       border-radius: 10px;
       transition: 0.4s;
       text-decoration: none;
       &:hover {
-        background-color: variables.$secondary;
-        color: variables.$primary;
+        background-color: $fg;
+        color: $bg;
         cursor: pointer;
       }
     }
@@ -47,67 +55,87 @@
 
 //Diferentes temas para los navbar
 @each $nombre, $color in variables.$theme-colors {
-  @if ($nombre == "secondary") {
-    .navbar-#{$nombre} {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: variables.$padd;
-      background-color: variables.$secondary;
-      color: variables.$secondary;
-      font-family: fonts.$font-mplus;
-      font-weight: fonts.$font-weight-medium;
-      border: 2px solid variables.$primary;
-      border-radius: 25px;
-      box-shadow: 0 0 0 2px variables.$secondary;
+  $navbar-bg: if($nombre == "secondary", variables.$secondary, $color);
+  $navbar-fg: if($nombre == "secondary", variables.$primary, variables.$secondary);
 
-      .navbar-brand {
-        font-family: fonts.$font-mplus;
-        font-size: 30px;
-        color: variables.$primary;
-      }
+  .navbar-#{$nombre} {
+    @include navbar-base($navbar-bg, $navbar-fg);
 
-      .navbar-nav {
-        display: flex;
-        gap: 15px;
+    //vamos a crear las vairaites de dropdown para los navbar
+    .nav-item.dropdown {
+      position: relative;
 
-        .nav-item {
+      .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 56px;
+        left: 0;
+        background-color: $navbar-bg;
+        border: 2px solid $navbar-fg;
+        border-radius: 15px;
+        padding: 10px;
+        box-shadow: 0 0 0 2px $navbar-fg;
+        z-index: 100;
+
+        .dropdown-item {
+          color: $navbar-fg;
           font-family: fonts.$font-mukta;
           font-weight: fonts.$font-weight-bold;
-          font-size: 20px;
-          color: variables.$primary;
-          padding: 10px;
+          padding: 8px 12px;
           border-radius: 10px;
-          transition: 0.4s;
+          transition: 0.3s;
+          white-space: nowrap;
+          display: block;
           text-decoration: none;
+
           &:hover {
-            background-color: variables.$primary;
-            color: variables.$secondary;
+            background-color: $navbar-fg;
+            color: $navbar-bg;
             cursor: pointer;
           }
         }
       }
-    }
-  } @else {
-    .navbar-#{$nombre} {
-      background-color: $color;
-      border: 2px solid variables.$secondary;
-      box-shadow: 0 0 0 2px $color;
 
-      .navbar-brand {
-        color: variables.$secondary;
-      }
-
-      .navbar-nav {
-        .nav-item {
-          color: variables.$secondary;
-          text-decoration: none;
-          &:hover {
-            background-color: variables.$secondary;
-            color: $color;
-          }
-        }
+      &:hover .dropdown-menu {
+        display: block;
       }
     }
   }
 }
+
+
+//Modo hamburgeusa
+.navbar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .navbar-nav {
+      display: none;
+      width: 100%;
+      flex-direction: column;
+
+      &.active {
+        display: flex;
+      }
+    }
+  }
+}
+

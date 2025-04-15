@@ -45,3 +45,10 @@ function cerrarAlerta(id) {
     alerta.remove();
   }
 }
+
+//funcion hamburguesa para los navbar
+function toggleMenu(navbarId) {
+  const navbar = document.getElementById(navbarId);
+  const nav = navbar.querySelector(".navbar-nav");
+  nav.classList.toggle("active");
+}
