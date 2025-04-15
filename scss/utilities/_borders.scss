@@ -1,33 +1,34 @@
 @use "../variables";
+@use "../mixins/borders" as bord;
+@use "sass:map";
 
 //En bordes tambien incluyo el border-radius en este caso rounded
-
 .border {
   //Borde predeterminado de 2px
-  border: map-get(variables.$borders, "2") solid variables.$default-border-color;
+  @include bord.make-border-complete(map.get(variables.$borders, "2"), variables.$default-border-color);
 }
-
+//Bordes redondeados
 .rounded {
-  border-radius: variables.$default-border-radius;
+  @include bord.rounded-complete(variables.$default-border-radius);
 }
 
 @each $nombre, $grosor in variables.$borders {
   .border-#{$nombre} {
-    border: $grosor solid variables.$default-border-color;
+    @include bord.make-border-complete($grosor, variables.$default-border-color);
   }
 }
 
 @each $nombre, $color in variables.$theme-colors {
   .border-#{$nombre} {
     --sci-border-opacity: 1;
-    border-color: rgba($color, var(--sci-border-opacity));
+    @include bord.change-color($color,var(--sci-border-opacity));
   }
 }
 
 @each $nombre, $color in variables.$subtle-colors {
     .border-#{$nombre} {
       --sci-border-opacity: 1;
-      border-color: rgba($color, var(--sci-border-opacity));
+      @include bord.change-color($color,var(--sci-border-opacity));
     }
 }
 
@@ -37,93 +38,33 @@
       --sci-border-opacity: 0.1;
     }
   }
-  .border-opacity-#{($i/4)*100} {
-    --sci-border-opacity: #{$i/4};
+  .border-opacity-#{calc($i/4)*100} {
+    --sci-border-opacity: #{calc($i/4)};
   }
 }
 
 @each $nombre, $borde in variables.$borders-radius {
   .rounded-#{$nombre} {
-    border-radius: $borde;
+    @include bord.rounded-complete($borde);
   }
 }
 
 @each $nombre, $posicion in variables.$standart-positions {
   .border-#{$nombre} {
-    @if ($nombre == "start") {
-      border-left: map-get(variables.$borders, "2")
-        solid
-        variables.$default-border-color;
-    } @else if($nombre == "end") {
-      border-right: map-get(variables.$borders, "2")
-        solid
-        variables.$default-border-color;
-    } @else {
-      border-#{$nombre}: map-get(variables.$borders, "2")
-        solid
-        variables.$default-border-color;
-    }
+    @include bord.make-border(map.get(variables.$borders,"2"),variables.$default-border-color,$posicion);
   }
 
   .border-#{$nombre}-0 {
-    @if ($posicion == "start") {
-      border-left: map-get(variables.$borders, "0")
-        solid
-        variables.$default-border-color;
-    } @else if($posicion == "end") {
-      border-right: map-get(variables.$borders, "0")
-        solid
-        variables.$default-border-color;
-    } @else {
-      border-#{$nombre}: map-get(variables.$borders, "0")
-        solid
-        variables.$default-border-color;
-    }
+    @include bord.make-border(map.get(variables.$borders,"0"),variables.$default-border-color,$posicion)
   }
 
-  @if ($posicion == "start") {
-    .rounded-#{$nombre} {
-      border-top-left-radius: variables.$default-border-radius;
-      border-bottom-left-radius: variables.$default-border-radius;
-    }
-    @each $tipo, $borde in variables.$borders-radius{
-        .rounded-#{$nombre}-#{$tipo} {
-            border-top-left-radius: $borde;
-            border-bottom-left-radius: $borde;
-        }
-    }
-  } @else if($posicion == "end") {
-    .rounded-#{$nombre}{
-        border-top-right-radius: variables.$default-border-radius;
-        border-bottom-right-radius: variables.$default-border-radius;
-    }
-    @each $tipo, $borde in variables.$borders-radius{
-        .rounded-#{$nombre}-#{$tipo}{
-            border-top-right-radius: $borde;
-            border-bottom-right-radius: $borde;
-        }
-    }
-  } @else if($posicion == "top") {
-    .rounded-#{$nombre}{
-        border-top-left-radius: variables.$default-border-radius;
-        border-top-right-radius: variables.$default-border-radius;
-    }
-    @each $tipo, $borde in variables.$borders-radius{
-        .rounded-#{$nombre}-#{$tipo}{
-            border-top-left-radius: $borde;
-            border-top-right-radius: $borde;
-        }
-    }
-  } @else if($posicion == "bottom") {
-    .rounded-#{$nombre}{
-        border-bottom-left-radius: variables.$default-border-radius;
-        border-bottom-right-radius: variables.$default-border-radius;
-    }
-    @each $tipo, $borde in variables.$borders-radius{
-        .rounded-#{$nombre}-#{$tipo}{
-            border-bottom-left-radius: $borde;
-            border-bottom-right-radius: $borde;
-        }
+  .rounded-#{$nombre}{
+    @include bord.rounded(variables.$default-border-radius,$posicion);
+  }
+
+  @each $tipo, $radius in variables.$borders-radius{
+    .rounded-#{$nombre}-#{$tipo}{
+      @include bord.rounded($radius,$posicion);
     }
   }
 }

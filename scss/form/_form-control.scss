@@ -1,15 +1,17 @@
 @use '../variables' as *;
+@use 'sass:color' as color;
 
 .form-control{
-    width: 90%;
-    margin: auto;
+    width: 100%;
+    display: block;
     padding: 5px 10px;
     border: 2px solid $primary;
-    margin-block: 5px ;
+    margin-bottom: 8px ;
     border-radius: 7px;
     background: $light;
 
-    &:focus {
-            box-shadow: 0 0 4px 4px $primary;
-        }
+    &:focus{
+        box-shadow: 0 0 4px 4px $primary;
+    }
+
 }

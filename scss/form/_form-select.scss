@@ -1,0 +1,14 @@
+@use "../variables" as *;
+@use 'sass:color' as color;
+
+.form-select{
+    width: 100%;
+    display: block;
+    padding: 5px 10px;
+    font-size: 1rem;
+    color: if(color.channel($primary, "lightness", $space: hsl) > 60%, #000, #fff);
+    background: $light;
+    border: 2px solid $primary;
+    border-radius: 0.25rem;
+    margin: 0px 0px 10px 0;
+}
