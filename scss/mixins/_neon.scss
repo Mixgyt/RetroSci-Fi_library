@@ -1,0 +1,46 @@
+@use "../variables" as v;
+
+@mixin neon-gradient($color, $angle: 135deg, $intensity: 0.8) {
+   
+    $lighter-color: lighten($color, 15%); //colores intermedios para hacer el gradiante
+    $darker-color: darken($color, 10%);
+    
+    
+    background: linear-gradient($angle, $lighter-color, $darker-color);
+    
+    
+    box-shadow: 
+      0 0 10px rgba($color, $intensity * 0.5), //brillo neon sutil 
+      0 0 20px rgba($color, $intensity * 0.3),
+      0 0 30px rgba($color, $intensity * 0.1);
+
+    transition: all 0.3s ease;
+    
+    &:hover {
+      box-shadow: 
+        0 0 15px rgba($color, $intensity * 0.6), // intensidad del brillo
+        0 0 30px rgba($color, $intensity * 0.4),
+        0 0 45px rgba($color, $intensity * 0.2);
+    }
+  }
+  
+  
+  @mixin intense-neon-gradient($color, $angle: 135deg) {
+    @include neon-gradient($color, $angle, 1);
+    
+   
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 
+        0 0 20px rgba($color, 0.7),
+        0 0 40px rgba($color, 0.5),
+        0 0 60px rgba($color, 0.3);
+    }
+  }
+
+@each $name, $color in v.$theme-colors {
+    .#{$name}-neon {
+        @include intense-neon-gradient($color);
+    }
+}
+

@@ -6,100 +6,31 @@
     <title>Test de sci-fi library</title>
 
     <link rel="stylesheet" href="dist/css/sci-fi.css">
+
+    <style>
+        .ancho {
+            height: 100px;
+        }
+    </style>
 </head>
 <body>
 
-    <div class="container">
+    <br><br>
 
-        <h1>hola</h1>
-
-        <div class="row">
-            <div class="col-8 color">primer columna</div>
-            <div class="col-4 color">hola</div>
-        </div>
-
-        <div class="row">
-            <div class="col-8 color">primer columna</div>
-            <div class="col-4 color">hola</div>
-        </div>
-
-        
+<div class="container">
+    <div class="row row-cols-6 g-5">
+        <div class="col primary-neon ancho rounded-5 border-secundary">1</div>
+        <div class="col secondary-neon ancho">2</div>
+        <div class="col success-neon ancho">3</div>
+        <div class="col danger-neon ancho">4</div>
+        <div class="col warning-neon ancho">5</div>
+        <div class="col info-neon ancho">6</div>
+        <div class="col light-neon ancho">7</div>
+        <div class="col alert-neon ancho">8</div>
     </div>
+</div>
 
 
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 bg-success ">1</div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 ">2</div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 bg-danger text-white text-center">3</div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 bg-info text-white text-center">4</div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 bg-secondary text-white text-center">5</div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 bg-dark text-white text-center">6</div>
-        </div>
-    </div>
-   
 
-    <div class="container text-center">
-        <div class="row">
-          <div class="col-md-4 color offset-md-4">.col-md-4</div>
-          <div class="col-md-4 ">.col-md-4 .offset-md-4</div>
-        </div>
-        <div class="row">
-          <div class="col-md-3 offset-md-3 color ">.col-md-3 .offset-md-3</div>
-          <div class="col-md-3 offset-md-3 color">.col-md-3 .offset-md-3</div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 offset-md-3 color">.col-md-6 .offset-md-3</div>
-        </div>
-      </div>
-
-  <!-- Example of a Default Container -->
-    <div class="container badge badge-light">
-      <p>This is a default container. It has a fixed width and adjusts based on the screen size.</p>
-  </div>
-
-  <!-- Example of a Fluid Container -->
-  <div class="container-fluid badge badge-secondary">
-      <p>This is a fluid container. It takes up the full width of the viewport, regardless of screen size.</p>
-  </div>
-
-  <!-- Example of a Responsive Container -->
-
-  <div class="row justify-content-start">
-
-    <div class="badge badge-warning col-4">
-      <p>This is a responsive container. It is fixed-width until the screen size is smaller than "sm" (576px), at which point it becomes fluid.</p>
-  </div>
-  <div class="badge badge-warning offset-sm-4 col-4 ">
-      <p>This is a responsive container. It is fixed-width until the screen size is smaller than "sm" (576px), at which point it becomes fluid.</p>
-  </div>
-  
-  <div class="container-md badge badge-info text-white">
-      <p>This is a responsive container. It is fixed-width until the screen size is smaller than "md" (768px), at which point it becomes fluid.</p>
-  </div>
-
-  <div class="container-lg badge badge-danger text-white">
-      <p>This is a responsive container. It is fixed-width until the screen size is smaller than "lg" (992px), at which point it becomes fluid.</p>
-  </div>
-
-  <div class="container-xl badge badge-success text-white">
-      <p>This is a responsive container. It is fixed-width until the screen size is smaller than "xl" (1200px), at which point it becomes fluid.</p>
-  </div>
-
-  <div class="container-xxl badge badge-primary text-white">
-      <p>This is a responsive container. It is fixed-width until the screen size is smaller than "xxl" (1400px), at which point it becomes fluid.</p>
-  </div>
-    
-  <nav class="navbar">
-    <div class="navbar-brand">
-        <div>Hola</div>
-    </div>
-    <div class="navbar-nav">
-        <div class="nav-item">
-            Hola
-        </div>
-        <a class="nav-item" href="">Hola</a>
-    </div>
-  </nav>
 </body>
 </html>
