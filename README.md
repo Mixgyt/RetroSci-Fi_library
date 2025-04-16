@@ -66,17 +66,18 @@ Lorem ipsum
   </table>
 </div>
 
+
 ## Ejemplos de implementación 
 
-![alt text](./iform/formulario.png)
+![alt text](./img//form/formulario.png)
 
 ### Clase de colores neon 
-
-Aplicacion de gradientes neon a los colores primarios version neon:
+cacion de gradientes neon a los colores primarios version neon:
 
 Para usarlo debes Aplicar las siguientes clases para obtener el fondo de color deseado.
 
 Clases base:
+
 ```css 
 .bg-primary-neon
 .bg-secondary-neon
@@ -98,6 +99,7 @@ Para aplicar un estilo hover debes agregar la clase `.hover-neon`, si se necesit
 .hover-neon /* Aplcica un estilo de hover al pasar el cursor */
 .hover-neon-active /* Activa el estilo hover sin necesidad de pasar el cursor*/
 ```
+
 ![Imagen de los colores neon](./img/backgrounds/hover-neon.png)
 
 # Estructura grid layout
@@ -188,6 +190,7 @@ La clase `gy` controla el espaciado vertical entre las filas dentro de un `row`.
 Los valores de `gap`, `gx`, y `gy` :
 
 **Clases generadas:**
+
 - `.g-0`, `.gx-0`, `.gy-0`: Sin espaciado.
 - `.g-1`, `.gx-1`, `.gy-1`: Espaciado de `0.25rem`.
 - `.g-2`, `.gx-2`, `.gy-2`: Espaciado de `0.5rem`.
@@ -205,6 +208,7 @@ Los valores de `gap`, `gx`, y `gy` :
 </div>
 ```
 ---
+
 # Clase col
 
 La clase `col` Se utiliza para definir el ancho de las columnas dentro de una fila (`row`). Las columnas son flexibles y se ajustan automáticamente al espacio disponible, pero también puedes personalizarlas con variantes específicas.
@@ -220,12 +224,14 @@ La clase `.col` hace que una columna ocupe un ancho igual al de las demás colum
     <div class="col">Columna 1</div>
     <div class="col">Columna 2</div>
     <div class="col">Columna 3</div>
+
 </div>
 ```
 
 ## 2. Columnas de Tamaño Fijo: `.col-{n}`
 
 ### Tamaño Fijo
+
 Define el ancho de la columna en proporción al total (12 columnas):
 
 - `.col-1`, `.col-2`, ..., `.col-12`
@@ -235,6 +241,7 @@ Define el ancho de la columna en proporción al total (12 columnas):
 <div class="row">
     <div class="col-4">Columna 1</div>
     <div class="col-8">Columna 2</div>
+
 </div>
 ```
 
@@ -243,11 +250,13 @@ Define el ancho de la columna en diferentes puntos de quiebre (breakpoints):
 
 - `.col-sm-*`, `.col-md-*`, `.col-lg-*`, `.col-xl-*`, `.col-xxl-*`
 
+
 **Ejemplo:**  
 ```html
 <div class="row">
     <div class="col-12 col-md-6 col-lg-4">Columna 1</div>
     <div class="col-12 col-md-6 col-lg-8">Columna 2</div>
+
 </div>
 ```
 
@@ -260,6 +269,7 @@ Define el ancho de la columna en diferentes puntos de quiebre (breakpoints):
 <div class="row">
     <div class="col-auto">Columna ajustada al contenido</div>
     <div class="col">Columna restante</div>
+
 </div>
 ```
 
@@ -268,6 +278,7 @@ Define el ancho de la columna en diferentes puntos de quiebre (breakpoints):
 Puedes especificar el comportamiento en diferentes breakpoints.
 
 - `.col-sm-auto`, `.col-md-auto`, `.col-lg-auto`, `.col-xl-auto`, `.col-xxl-auto`
+
 
 **Ejemplo:**  
 ```html
@@ -345,11 +356,11 @@ La clase `.grid` es el contenedor principal que define un diseño basado en un s
 La clase `.g-col-{n}` define las columnas dentro de un contenedor `.grid`. 
 
 #### Tamaño fijo:
+
 - `.g-col-{n}`: Define el ancho de la columna en proporción al total de 12 columnas. Por ejemplo:
 
 - `.g-col-6`: Ocupa 6/12 del ancho total (50%).
 - `.g-col-4`: Ocupa 4/12 del ancho total (33.33%).
-
 
 ### Ejemplo:
 
@@ -368,6 +379,7 @@ La clase `.g-col-{n}` define las columnas dentro de un contenedor `.grid`.
 
 ```html
 
+
 <div class="grid">
   <div class="g-col-6 g-col-md-4">Columna 1</div>
   <div class="g-col-6 g-col-md-4">Columna 2</div>
@@ -385,6 +397,7 @@ Las variantes responsivas como `g-row-sm-<n>`, `g-row-md-<n>`, `g-row-lg-<n>`, e
 ### Ejemplo basico
 
 ```html 
+
 <div class="grid">
   <div class="g-row-2">Este elemento ocupa 2 filas</div>
   <div class="g-row-1">Este elemento ocupa 1 fila</div>
@@ -416,6 +429,7 @@ Las variantes responsivas como `g-row-sm-<n>`, `g-row-md-<n>`, `g-row-lg-<n>`, e
 ### Ejemplo de combinacion usando filas y columnas 
 
 ```html 
+
 <div class="grid">
   <div class="g-col-2 g-row-3">Este elemento ocupa 2 columnas y 3 filas</div>
   <div class="g-col-1 g-row-1">Este elemento ocupa 1 columna y 1 fila</div>
@@ -429,6 +443,7 @@ La clase `gap` controla el espaciado general entre las columnas y filas dentro d
 
 **Clases generadas:**
 - `.gap-0`:  Sin espaciado.
+
 - `.gap-1`: Espaciado de `0.25rem`.
 - `.gap-2`: Espaciado de `0.5rem`.
 - `.gap-3`: Espaciado de `0.75rem`.
@@ -442,14 +457,154 @@ La clase `gap` controla el espaciado general entre las columnas y filas dentro d
 </div>
 ```
 
+# Clase `Containers`
+
+Los `Containers` son elementos fundamentales para centrar y contener contenido horizontalmente. Puedes utilizar clases para contenedores fluidos o con ancho limitado por `breakpoint`.
+
+**Breakpoints disponibles:**
+
+- `.container-sm`
+- `.container-md`
+- `.container-lg`
+- `.container-xl`
+- `.container-xxl`
+- `.container-fluid`
+
+### Clases disponibles
+
+```html
+<div class="container">Contenido centrado y con padding</div>
+<div class="container-fluid">Contenido 100% del ancho disponible</div>
+<div class="container-sm">Ancho máximo desde breakpoint SM (≥576px)</div>
+<div class="container-md">Ancho máximo desde breakpoint MD (≥768px)</div>
+<div class="container-lg">Ancho máximo desde breakpoint LG (≥992px)</div>
+<div class="container-xl">Ancho máximo desde breakpoint XL (≥1200px)</div>
+<div class="container-xxl">Ancho máximo desde breakpoint XXL (≥1400px)</div>
+```
+
+# Clase `Navbar`
+
+El componente `Navbar` permite crear menús de navegación personalizables y responsivos, con soporte para temas y listas desplegables.
+
+**Temas disponibles:**
+
+- `.navbar-primary`
+- `.navbar-secondary`
+- `.navbar-success`
+- `.navbar-info`
+- `.navbar-warning`
+- `.navbar-danger`
+- `.navbar-light`
+- `.navbar-alert`
+
+### Ejemplo basico
+
+```html
+<div class="navbar-primary" id="main-navbar">
+  <div class="navbar-header">
+    <div class="navbar-brand">Mi Marca</div>
+    <button class="navbar-toggle" onclick="toggleMenu('main-navbar')">
+      <img src="img/menu.png" />
+    </button>
+  </div>
+  <div class="navbar-nav">
+    <div class="nav-item">Inicio</div>
+    <div class="nav-item dropdown">
+      Servicios
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Diseño</a>
+        <a class="dropdown-item" href="#">Desarrollo</a>
+        <a class="dropdown-item" href="#">Consultoría</a>
+      </div>
+    </div>
+    <div class="nav-item">Contacto</div>
+  </div>
+</div>
+```
+
+# Clase `Badges`
+
+Los `Badges` son pequeños elementos visuales para mostrar estados, etiquetas o valores.
+
+**Temas disponibles:**
+
+- `.badge-primary`
+- `.badge-secondary`
+- `.badge-success`
+- `.badge-info`
+- `.badge-warning`
+- `.badge-danger`
+- `.badge-light`
+- `.badge-alert`
+
+### Ejemplos basicos
+
+```html
+<span class="badge-primary">Nuevo</span>
+<span class="badge-success">Verificado</span>
+<span class="badge-light">Actualizado</span>
+```
+
+# Clase `Alerts`
+
+Las `Alerts` se utilizan para mostrar mensajes importantes al usuario. Pueden incluir íconos y se eliminan automáticamente luego de unos segundos.
+
+
+**Temas disponibles:**
+
+- `.alert-primary`
+- `.alert-secondary`
+- `.alert-success`
+- `.alert-info`
+- `.alert-warning`
+- `.alert-danger`
+- `.alert-light`
+- `.alert-alert`
+
+### Codigo para configurar las alerts
+
+```js
+mostrarAlerta({
+  mensaje: "Operación exitosa",
+  tipo: "success", // o primary, danger, etc.
+  tiempo: 5000 //tiempo de duracion de la alert
+});
+```
+### Ejemplo de una alert
+
+```html
+<div class="alert alert-success">
+  <img src="img/success.png" class="alert-icon" />
+  <span>Operación exitosa</span>
+  <button class="btn btn-danger">X</button>
+</div>
+```
+
+### La alert bajo una accion
+
+```html
+<button class="btn btn-success" onclick="mostrarAlerta({ mensaje: 'Se guardo correctamente', tipo: 'success'})">Exito</button>
+```
+
+### Personalizar los iconos
+
+Los iconos se asignan automaticamente según el tipo de `Alerts`:
+
+```js
+const iconosAlerta = {
+  success: "img/success.png",
+  danger: "img/danger.png",
+  warning: "img/warning.png",
+  info: "img/info.png",
+};
+```
 
 ## 👨🏻‍💻 Integrantes
 
-✅ - Cesar Enoc Aparicio Reyes (**AA23026**) <br> 
+✅ - Cesar Enoc Aparicio Reyes (**AA23026**) <br>
 ✅ - Cesar Alexander Garay Ortez (**GO22007**) <br>
 ✅ - Gerson Mauricio Alegria Caballero (**AC2301**) <br>
 ✅ - Juan Antonio Sandoval Paiz (**SP23002**) <br>
-
 
 ## Tecnologias y herramientas usadas
 
