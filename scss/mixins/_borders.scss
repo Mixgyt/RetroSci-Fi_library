@@ -6,15 +6,15 @@
 }
 
 @mixin make-border($grosor, $color, $position){
-    border-#{map.get(variables.$positions,$position)}: $grosor solid $color;
+    border-#{map.get(variables.$positions,$position)}: $grosor solid $color !important;
 }
 
 @mixin change-color($color, $alpha){
-    border-color: rgba($color, $alpha);
+    border-color: rgba($color, $alpha) !important;
 }
 
 @mixin rounded-complete($radius){
-    border-radius: $radius !important;
+    border-radius: #{$radius} !important;
 }
 
 @mixin rounded($radius, $position){

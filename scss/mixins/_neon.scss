@@ -66,15 +66,16 @@
 
 @mixin boder-neon-complete($intensity: 0.8){
   &.border{
-    @include border-neon(v.$default-border-color,"");
+    @include make-border-neon(v.$default-border-color,"");
     
     &.hover-neon:hover{
       @include neon-hover(v.$default-border-color);
     }
   }
+
   @each $name, $color in v.$theme-colors {
       &.border-#{$name} {
-        @include border-neon($color,"");
+        @include make-border-neon($color,"");
         &.hover-neon:hover{
           @include neon-hover($color);
         }
@@ -82,12 +83,66 @@
   }
 }
 
-//Este mixin lo modificare despues para poder generar el efecto neon solo en lados especificos Att:Aparicio
-@mixin border-neon($color, $position, $intensity: 0.8,){
-    box-shadow: 
-      0 0 10px rgba($color, $intensity * 0.5),
-      0 0 20px rgba($color, $intensity * 0.3),
-      0 0 30px rgba($color, $intensity * 0.1);
-    transition: all 0.3s ease;
+@mixin border-neon($position){
+  &.border{
+    @include make-border-neon(v.$default-border-color,$position);
+    
+    &.hover-neon:hover{
+      @include neon-hover(v.$default-border-color);
+    }
+  }
+
+  @each $titulo, $direccion in v.$positions{
+    &.border-#{$titulo}{
+      @include make-border-neon(v.$default-border-color,$position);
+      &.hover-neon:hover{
+        @include neon-hover(v.$default-border-color);
+      }
+    }
+  }
+
+  @each $name, $color in v.$theme-colors {
+    &.border-#{$name} {
+      @include make-border-neon($color,$position);
+      &.hover-neon:hover{
+        @include neon-hover($color);
+      }
+    }
+  }
 }
 
+//Funcion extra terminada
+@mixin make-border-neon($color, $position, $intensity: 0.8){
+  $Ofx: 0;
+  $Ofy: 0;
+  $Blur1: 10px; 
+  $Blur2: 20px; 
+  $Blur3: 30px; 
+
+  @if($position == "start"){
+    $Ofx: -5px;
+    $Blur1: 10px;
+    $Blur2: 5px;
+  }
+  @else if($position == "end"){
+    $Ofx: 5px;
+    $Blur1: 10px;
+    $Blur2: 5px;
+  }
+  @else if($position == "top"){
+    $Ofy: -5px;
+    $Blur1: 10px;
+    $Blur2: 5px;
+  }
+  @else if($position == "bottom"){
+    $Ofy: 5px;
+    $Blur1: 7px;
+    $Blur2: 5px;
+  }
+
+    box-shadow: 
+      #{$Ofx} #{$Ofy} #{$Blur1} rgba($color, $intensity * 0.5),
+      #{$Ofx} #{$Ofy} #{$Blur2} rgba($color, $intensity * 0.3),
+      #{$Ofx} #{$Ofy} #{$Blur3} rgba($color, $intensity * 0.1);
+    transition: all 0.3s ease;
+}
