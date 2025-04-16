@@ -1,0 +1,13 @@
+@use "../variables" as *;
+
+@mixin form-base{
+    width: 100%;
+    display: block;
+    margin-bottom: 8px;
+    border-radius: 7px;
+    background: $light;
+
+    &:focus {
+            box-shadow: 0 0 4px 4px $primary;
+        }
+}

@@ -8,6 +8,8 @@ $warning: #fbc359;
 $danger: #e70103;
 $light: #f9f2f2;
 $alert: #bb3a2d;
+$white: #ffff;
+$dark: #0000;
 
 //Colores base
 $theme-colors: (
@@ -19,6 +21,8 @@ $theme-colors: (
   "danger": $danger,
   "light": $light,
   "alert": $alert,
+  "white":$white,
+  "dark":$dark,
 );
 
 //Colores subtle
@@ -35,14 +39,14 @@ $subtle-colors:(
 
 //Colores emphasis usados para el texto
 $emphasis-colors:(
-  "primary":color.mix(white,$primary,60%),
-  "secondary":color.mix(white,$secondary,60%),
-  "success":color.mix(white,$success,60%),
-  "info":color.mix(white,$info,60%),
-  "warning":color.mix(white,$warning,60%),
-  "danger":color.mix(white,$danger,60%),
-  "light":color.mix(white,$light,60%),
-  "alert":color.mix(white,$alert,60%),
+  "primary-emphasis":color.mix(white,$primary,60%),
+  "secondary-emphasis":color.mix(white,$secondary,60%),
+  "success-emphasis":color.mix(white,$success,60%),
+  "info-emphasis":color.mix(white,$info,60%),
+  "warning-emphasis":color.mix(white,$warning,60%),
+  "danger-emphasis":color.mix(white,$danger,60%),
+  "light-emphasis":color.mix(white,$light,60%),
+  "alert-emphasis":color.mix(white,$alert,60%),
 );
 
 //variables del layout
@@ -82,7 +86,8 @@ $spacers:(
   "2":$spacer * .5,
   "3":$spacer,
   "4":$spacer * 1.5,
-  "5":$spacer * 3
+  "5":$spacer * 3,
+  "auto":auto,
 );
 
 //Bordes estandar
@@ -121,4 +126,11 @@ $standart-positions:(
     end: "end",
     bottom: "bottom",
     start: "start"
-);  
+);
+
+$positions: (
+    "start":"left",
+    "end":"right",
+    "top":"top",
+    "bottom":"bottom",
+);

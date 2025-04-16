@@ -1,0 +1,38 @@
+@use "../variables";
+@use "../mixins/backgrounds" as back;
+@use "../mixins/neon";
+
+@each $nombre, $color in variables.$theme-colors{
+    .bg-#{$nombre}{
+        --sci-bg-opacity: 1;
+        @include back.background-color($color, var(--sci-bg-opacity));
+    }
+
+    .bg-#{$nombre}-neon {
+        --sci-bg-opacity: 1;
+        @include neon.neon-gradient($color, 135deg, var(--sci-bg-opacity));
+    }
+}
+
+@each $nombre, $color in variables.$subtle-colors{
+    .bg-#{$nombre}{
+        --sci-bg-opacity: 1;
+        @include back.background-color($color, var(--sci-bg-opacity));
+    }
+
+    .bg-#{$nombre}-neon {
+        --sci-bg-opacity: 1;
+        @include neon.neon-gradient($color, 135deg, var(--sci-bg-opacity));
+    }
+}
+
+@for $i from 1 through 4{
+    @if($i == 1){
+        .bg-opacity-10{
+            --sci-bg-opacity: .1;
+        }
+    }
+    .bg-opacity-#{calc($i/4)*100}{
+        --sci-bg-opacity: #{calc($i/4)};
+    }
+}
