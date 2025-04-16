@@ -1,8 +1,12 @@
-# RETROSCI-FI_LIBRARY
+# RETROSCI-FI LIBRARY
+
+![Tematica](./img/Retro.webp)
 
  **RetroSci-fi** es una librería de componentes inspirada en la ciencia ficción retro de Japón. Basada en Bootstrap, está desarrollada completamente desde cero con SASS, usando clases reutilizables, estructura modular y un sistema de diseño personalizable.
 
-##  Cómo usar la librería
+ ![Tematica](./img/tematica.png)
+
+###  Cómo usar la librería
 
 Lorem ipsum
 
@@ -62,7 +66,11 @@ Lorem ipsum
   </table>
 </div>
 
-# Clase de colores neon 
+## Ejemplos de implementación 
+
+![alt text](./iform/formulario.png)
+
+### Clase de colores neon 
 
 Aplicacion de gradientes neon a los colores primarios version neon:
 
@@ -82,7 +90,7 @@ Clases base:
 
 ![Imagen de los colores neon](./img/backgrounds/bg-color-neon.png)
 
-## Clases para aplicar hover a `bg-{color}-neon`
+### Clases para aplicar hover a `bg-{color}-neon`
 
 Para aplicar un estilo hover debes agregar la clase `.hover-neon`, si se necesita eplicar estilo neon sin necesida de hover usar la clase `.hover-neon-active` resultado que se obtiene:
 
