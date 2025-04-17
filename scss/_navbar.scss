@@ -1,20 +1,20 @@
 @use "variables";
 @use "fonts";
 @use "sass:color" as color;
-
+@use "mixins/buttons" as buttons;
 // Estilo base
 @mixin navbar-base($bg, $fg) {
-  margin: 20px;
+  //margin: 20px; // El margin se le agrega con las clases margin 
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding: 0px 20px;
   background-color: $bg;
   color: $fg;
   font-family: fonts.$font-mplus;
   font-weight: fonts.$font-weight-medium;
-  border: 2px solid $fg;
-  border-radius: 25px;
+  // border: 2px solid $fg; se le agrega con clases de border
+  //border-radius: 25px; clases de rounded 
   box-shadow: 0 0 0 2px $bg;
 
   .navbar-header {
@@ -35,20 +35,8 @@
     display: flex;
     gap: 15px;
 
-    .nav-item {
-      font-family: fonts.$font-mukta;
-      font-weight: fonts.$font-weight-bold;
-      font-size: 20px;
-      color: $fg;
-      padding: 10px;
-      border-radius: 10px;
-      transition: 0.4s;
-      text-decoration: none;
-      &:hover {
-        background-color: $fg;
-        color: $bg;
-        cursor: pointer;
-      }
+    .nav-item{
+       @include buttons.button-style($bg, $fg);
     }
   }
 }
@@ -117,7 +105,27 @@
     height: 30px;
   }
 }
+@keyframes navbar-slide-down {
+  from {
+    max-height: 0;
+    opacity: 0;
+  }
+  to {
+    max-height: 500px; // Ajusta este valor según el contenido
+    opacity: 1;
+  }
+}
 
+@keyframes navbar-slide-up {
+  from {
+    max-height: 500px; // Ajusta este valor según el contenido
+    opacity: 1;
+  }
+  to {
+    max-height: 0;
+    opacity: 0;
+  }
+}
 @media (max-width: 768px) {
   .navbar-toggle {
     display: block;
@@ -127,13 +135,26 @@
     flex-direction: column;
     align-items: flex-start;
 
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out, opacity 0.3s ease;
+
     .navbar-nav {
-      display: none;
+      display: flex;
       width: 100%;
       flex-direction: column;
+      overflow: hidden;
+      max-height: 0;
+      opacity: 0;
+      transition: max-height 0.4s ease, opacity 0.7s ease;
 
       &.active {
-        display: flex;
+        max-height: 500px; // Adjust based on content height
+        opacity: 1;
+      }
+
+      &.inactive {
+        max-height: 0;
+        opacity: 0;
       }
     }
   }

@@ -74,3 +74,6 @@
     }
   }
 }
+.border-r {
+  @include bord.border-r();
+}
