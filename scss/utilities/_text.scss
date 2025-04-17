@@ -1,0 +1,150 @@
+@use "../variables";
+@use "../mixins/texts" as text;
+
+//Aplica el efecto neon al texto
+.text-neon{
+    --sci-text-opacity: 1;
+    @include text.text-neon(variables.$primary,var(--sci-text-opacity));
+}
+
+@each $nombre, $color in variables.$theme-colors{
+    .text-#{$nombre}{
+        --sci-text-opacity: 1;
+        @include text.text-color($color, var(--sci-text-opacity));
+    }
+
+    .text-#{$nombre}-neon{
+        --sci-text-opacity: 1;
+        @include text.text-color($color, var(--sci-text-opacity));
+        @include text.text-neon($color, var(--sci-text-opacity));
+    }
+}
+
+@each $nombre, $color in variables.$subtle-colors{
+    .text-#{$nombre}{
+        --sci-text-opacity: 1;
+        @include text.text-color($color, var(--sci-text-opacity));
+    }
+
+    .text-#{$nombre}-neon{
+        --sci-text-opacity: 1;
+        @include text.text-color($color, var(--sci-text-opacity));
+        @include text.text-neon($color, var(--sci-text-opacity));
+    }
+}
+
+@each $nombre, $color in variables.$emphasis-colors{
+    .text-#{$nombre}{
+        --sci-text-opacity: 1;
+        @include text.text-color($color, var(--sci-text-opacity));
+    }
+
+    .text-#{$nombre}-neon{
+        --sci-text-opacity: 1;
+        @include text.text-color($color, var(--sci-text-opacity));
+        @include text.text-neon($color, var(--sci-text-opacity));
+    }
+}
+
+@for $i from 1 through 4{
+    .text-opacity-#{calc($i/4)*100}{
+        --sci-text-opacity: #{calc($i/4)};
+    }
+}
+
+@each $nombre, $position in variables.$positions{
+    @if($nombre != "top" and $nombre != "bottom"){
+        .text-#{$nombre}{
+            @include text.align($position)
+        }
+    }
+}
+
+@each $tipo, $breakpoint in variables.$grid-breakpoints{
+    @media(min-width: $breakpoint){
+        @each $nombre, $position in variables.$positions{
+            @if($nombre != "top" and $nombre != "bottom"){
+                .text-#{$tipo}-#{$nombre}{
+                    @include text.align($position)
+                }
+            }
+        }
+    }
+}
+
+//Tamaños de texto
+@each $nombre, $size in variables.$text-sizes{
+    //Tamaños de fuentes
+    .fs-#{$nombre}{
+        @include text.size($size)
+    }
+
+    //Clases para titulos
+    .h#{$nombre}{
+        @include text.header($nombre, $size);
+    }
+}
+
+@each $nombre, $altura in variables.$line-heights{
+    .lh-#{$nombre}{
+        @include text.line-height($altura);
+    }
+}
+
+
+//Grosor de la fuente
+@each $nombre, $estilo in variables.$text-styles{
+    @if($nombre != "normal" and $nombre != "italic"){
+        .fw-#{$nombre}{
+            @include text.weight($estilo)
+        }
+    }
+    @else if($nombre == "normal"){
+        .fw-#{$nombre}{
+            @include text.weight($estilo)
+        }
+        .fst-#{$nombre}{
+            @include text.style($nombre)
+        }
+    }
+    @else{
+        .fst-#{$nombre}{
+            @include text.weight($estilo)
+        }
+    }
+}
+
+@each $nombre, $decoration in variables.$text-decorations{
+    .text-decoration-#{$nombre}{
+        @include text.decoration($decoration);
+    }
+}
+
+.text-lowercase{
+    text-transform: lowercase;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+.text-capitalize{
+    text-transform: capitalize;
+}
+
+.text-wrap{
+    white-space: normal;
+}
+
+.text-nowrap{
+    white-space: nowrap;
+}
+
+.text-break{
+    word-break: break-word;
+    word-wrap: break-word;
+}
+
+.text-reset{
+    color: inherit;
+}
