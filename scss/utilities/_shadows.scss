@@ -1,0 +1,15 @@
+@use "../variables";
+@use "../mixins/shadows" as sh;
+
+@each $nombre, $parametros in variables.$shadows{
+    @if($nombre != "regular"){
+        .shadow-#{$nombre}{
+            @include sh.shadow-base($parametros);
+        }
+    }
+    @else{
+        .shadow{
+            @include sh.shadow-base($parametros);
+        }
+    }
+}

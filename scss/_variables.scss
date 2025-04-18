@@ -184,3 +184,10 @@ $position-types:(
 $translates-types:(
   "middle": x y
 );
+
+$shadows:(
+  "sm": 0 .125rem .25rem rgba(#000, .075),
+  "regular": 0 .5rem 1rem rgba(#000, .15),
+  "lg": 0 1rem 3rem rgba(#000, .175),
+  "none": none
+);
