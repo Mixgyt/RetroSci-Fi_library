@@ -1,11 +1,13 @@
 # RETROSCI-FI LIBRARY
 
-![Tematica](./img/Retro.webp)
+<div align="center">
+  <img src="./img/Retro.webp" alt="Botones">
+</div>
 
  **RetroSci-fi** es una librería de componentes inspirada en la ciencia ficción retro de Japón. Basada en Bootstrap, está desarrollada completamente desde cero con SASS, usando clases reutilizables, estructura modular y un sistema de diseño personalizable.
 
  <!-- ![Tematica](./img/tematica.png) -->
-# 🚀 Inicio Rápido
+## 🚀 Inicio Rápido
 
 Hay varias opciones rápidas para comenzar a usar la librería:
 - **Descargar la última versión**  [Descargar ZIP](https://github.com/Mixgyt/RetroSci-Fi_library/archive/refs/heads/master.zip)
@@ -79,10 +81,29 @@ Hay varias opciones rápidas para comenzar a usar la librería:
 </div>
 
 
-## Ejemplos de implementación 
+## 🛠️ Ejemplos de implementación
+### Botones
+<div align="center">
+  <img src="./img/buttons.png" alt="Botones">
+</div>
+
+### Navbar
+<div align="center">
+  <img src="./img/nav.png" alt="Formulario">
+</div>
+
+### Formularios
+<div align="center">
+  <img src="./img/form/formulario.png" alt="Formulario">
+</div>
 
 <div align="center">
-  <img src="./img//form/formulario.png" alt="Formulario">
+  <img src="./img/form/layout-form.png" alt="Formulario">
+</div>
+
+### Card
+<div align="center">
+  <img src="./img/card.png" alt="Tarjetas">
 </div>
 
 ### Clase de colores neon 
@@ -117,9 +138,9 @@ Para aplicar un estilo hover debes agregar la clase `.hover-neon`, si se necesit
 ![Imagen de los colores neon](./img/backgrounds/hover-neon.png)
 
 
-### Implementación de los estilos en tu página web
+## 💻 Implementación de los estilos en tu página web
 
-#### Opción 1: Descarga con **npm**
+### Opción 1: Descarga con **npm**
 
 1. **Instalar la librería**  
    Ejecuta el siguiente comando en tu terminal para instalar la librería:
@@ -173,7 +194,7 @@ Para aplicar un estilo hover debes agregar la clase `.hover-neon`, si se necesit
 
 ✅ - Cesar Enoc Aparicio Reyes (**AA23026**) <br>
 ✅ - Cesar Alexander Garay Ortez (**GO22007**) <br>
-✅ - Gerson Mauricio Alegria Caballero (**AC2301**) <br>
+✅ - Gerson Mauricio Alegria Caballero (**AC23014**) <br>
 ✅ - Juan Antonio Sandoval Paiz (**SP23002**) <br>
 
 ## Tecnologias y herramientas usadas
