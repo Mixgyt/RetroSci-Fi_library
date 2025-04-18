@@ -1,6 +1,5 @@
 # Ingorar archivo con estas extensiones
 *.diff
-*.html
 *.err
 *.log
 *.orig
