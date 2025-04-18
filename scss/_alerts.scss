@@ -1,60 +1,310 @@
-@use "variables";
-@use "fonts";
-@use "sass:color" as color;
+@use "variables" as v;
+@use "fonts" as fonts;
 
-// Estilo base
-@mixin alert-base($bg, $fg, $border) {
-  position: relative;
-  font-family: fonts.$font-mukta;
-  font-weight: fonts.$font-weight-medium;
-  font-size: 18px;
-  padding: 10px 40px;
-  border-radius: 15px;
-  border: 2px solid $border;
-  text-align: center;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  max-width: 100%;
-  margin-bottom: 5px;
-  background-color: $bg;
-  color: $fg;
-}
+$success-color: v.$success;
+$error-color: v.$danger; 
+$warning-color: v.$warning;
+$info-color: v.$info; 
 
-//las difreentes tipos de alertas
-@each $nombre, $color in variables.$theme-colors {
-  $fg: if(color.channel($color, "lightness", $space: hsl) > 60%, #000, #fff);
-  $border: if($nombre == "secondary", variables.$primary, variables.$secondary);
+$text-color: lighten(v.$secondary, 15%);
+$background-color: v.$white;
+$shadow-color: rgba(0, 0, 0, 0.1);
 
-  .alert-#{$nombre} {
-    @include alert-base($color, $fg, $border);
-  }
-}
 
-//Esta clase sirve para que las alertas salgan arriba
-.alert-container {
-    position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 9999;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px; // espacio entre alertas
-    width: 90%;
-    max-width: 1200px;
-    padding: 0 20px;
-  }
-
-  //el icono para las alerts
+@mixin alert-type($color) {
+  border-left: 4px solid $color;
+  
   .alert-icon {
+    color: $color;
+  }
+  
+  .alert-progress::after {
+    background-color: $color;
+  }
+}
+
+@mixin icon-type($color, $content) {
+  background-color: $color;
+  position: relative;
+  
+  &:before {
+    content: $content;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+  }
+}
+
+.alerts-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  width: 100%;
+
+  font-family: fonts.$font-sawarabi;
+}
+
+.custom-alert {
+  display: flex;
+  align-items: flex-start;
+  padding: 16px;
+  background-color: $background-color;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px $shadow-color;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  
+  
+  &.alert-enter {
+    animation: slideIn 0.3s ease forwards;
+  }
+  
+  &.alert-exit {
+    animation: slideOut 0.3s ease forwards;
+  }
+}
+
+.alert-success {
+  @include alert-type($success-color);
+}
+
+.alert-error {
+  @include alert-type($error-color);
+}
+
+.alert-warning {
+  @include alert-type($warning-color);
+}
+
+.alert-info {
+  @include alert-type($info-color);
+}
+
+.alert-icon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  margin-right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-success, .icon-error, .icon-warning, .icon-info {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.icon-success {
+  @include icon-type($success-color, "✓");
+}
+
+.icon-error {
+  @include icon-type($error-color, "✕");
+}
+
+.icon-warning {
+  @include icon-type($warning-color, "!");
+}
+
+.icon-info {
+  @include icon-type($info-color, "i");
+}
+
+.alert-content {
+  flex-grow: 1;
+}
+
+.alert-title {
+  margin: 0 0 4px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: $text-color;
+}
+
+.alert-message {
+  margin: 0;
+  font-size: 14px;
+  color: lighten($text-color, 20%);
+}
+
+.alert-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: lighten($text-color, 40%);
+  
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s;
+  font-size: 24px;
+  line-height: 1;
+  
+  &:hover {
+    color: $text-color;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.alert-progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    animation: progress 5s linear forwards;
+  }
+}
+
+@keyframes progress {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}
+
+@media (max-width: 480px) {
+  .alerts-container {
+    right: 10px;
+    left: 10px;
+    max-width: calc(100% - 20px);
+  }
+  
+  .custom-alert {
+    padding: 12px;
+  }
+  
+  .alert-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 12px;
+  }
+  
+  .icon-success, .icon-error, .icon-warning, .icon-info {
     width: 24px;
     height: 24px;
-    display: inline-block;
-    vertical-align: middle;
-    margin: 10px;
   }
+  
+  .alert-title {
+    font-size: 16px;
+  }
+  
+  .alert-message {
+    font-size: 13px;
+  }
+}
+
+
+.custom-alert {
+  
+  transition: transform 0.2s, box-shadow 0.2s;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.alert-slide-up {
+  &.alert-enter {
+    animation: slideUp 0.3s ease forwards;
+  }
+  
+  &.alert-exit {
+    animation: slideDown 0.3s ease forwards;
+  }
+}
+
+.alert-fade {
+  &.alert-enter {
+    animation: fadeIn 0.3s ease forwards;
+  }
+  
+  &.alert-exit {
+    animation: fadeOut 0.3s ease forwards;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
