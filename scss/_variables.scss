@@ -172,3 +172,15 @@ $positions: (
     "bottom":"bottom",
     "center":"center"
 );
+
+$position-types:(
+  "static":static,
+  "relative":relative,
+  "absolute":absolute,
+  "fixed":fixed,
+  "sticky":sticky
+);
+
+$translates-types:(
+  "middle": x y
+);
