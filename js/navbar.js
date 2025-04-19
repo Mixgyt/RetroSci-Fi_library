@@ -1,5 +1,5 @@
 //funcion hamburguesa para los navbar
-function toggleMenu(navbarId) {
+export function toggleMenu(navbarId) {
     const navbar = document.getElementById(navbarId);
     const nav = navbar.querySelector(".navbar-nav");
   

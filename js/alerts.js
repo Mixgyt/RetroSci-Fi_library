@@ -1,6 +1,6 @@
 const Alertas = {
-    crearAlerta: function({ tipo = 'info', titulo = '', mensaje = '', autoDesaparecer = true, duracion = 5000 }) {
-       
+    crearAlerta: function({ tipo = 'info', titulo = '', mensaje = '', alert_neon = true , autoDesaparecer = true, duracion = 5000, bg = "", text_color = "", borde = "" }) {
+
         let contenedor = document.querySelector('.alerts-container'); //contenedor de alertas si no existe
         if (!contenedor) {
             contenedor = document.createElement('div');
@@ -43,9 +43,31 @@ const Alertas = {
         };
         alerta.appendChild(botonCerrar);
 
+        if (alert_neon) {
+            alerta.classList.add('alert-neon');
+            icono.classList.add('alert-neon');
+        }
+        if (bg != "") {
+            alerta.classList.add(bg);
+        
+        }
+        if (borde != "") {
+            alerta.classList.add(borde);
+        }
+
+        if (text_color != "") {
+            alerta.classList.add(text_color);
+            tituloElemento.classList.add(text_color);
+            mensajeElemento.classList.add(text_color);
+            botonCerrar.classList.add(text_color);
+        }
+
+        if (autoDesaparecer) {
         const barraProgreso = document.createElement('div');
         barraProgreso.className = 'alert-progress';
         alerta.appendChild(barraProgreso);
+        }
+          
         
         contenedor.appendChild(alerta);
 

@@ -14,8 +14,12 @@ $shadow-color: rgba(0, 0, 0, 0.1);
 @mixin alert-type($color) {
   border-left: 4px solid $color;
   
+  &.alert-neon {
+    box-shadow: 0 0 10px $color, 0 0 20px lighten($color, 20%);
+  }
   .alert-icon {
     color: $color;
+    text-shadow: 0 0 5px $color;
   }
   
   .alert-progress::after {
@@ -27,6 +31,9 @@ $shadow-color: rgba(0, 0, 0, 0.1);
   background-color: $color;
   position: relative;
   
+  &.alert-neon {
+    box-shadow: 0 0 15px $color, 0 0 30px lighten($color, 25%);
+  }
   &:before {
     content: $content;
     color: white;
@@ -62,7 +69,11 @@ $shadow-color: rgba(0, 0, 0, 0.1);
   overflow: hidden;
   position: relative;
   width: 100%;
-  
+
+  &.black-background {
+    background-color: #18171c;
+    color: v.$white;
+  }
   
   &.alert-enter {
     animation: slideIn 0.3s ease forwards;

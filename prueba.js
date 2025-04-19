@@ -1,7 +1,3 @@
-import Alertas from './js/alerts.js';
-
-
-
 const alertaButton = document.getElementById('alertaButton');
 const alertaButton1 = document.getElementById('alertaButton-1');
 const alertaButton2 = document.getElementById('alertaButton-2');
@@ -35,9 +31,14 @@ alertaButton2.addEventListener('click', () => {
 });
 alertaButton3.addEventListener('click', () => {
     Alertas.crearAlerta({
-        tipo: 'info',
+        tipo: 'success',
         titulo: '¡good!',
         mensaje: 'No desaparece hasta hacer click',
         autoDesaparecer: false,
+
+        alert_neon: false, //true predeterminado
+        bg: "bg-secondary-neon",
+        text_color: "text-warning-neon",
+        borde: "border-warning",
     });
 });

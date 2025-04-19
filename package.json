@@ -8,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "sass --watch scss/:dist/css/",
     "css-compile": "sass --style expanded --source-map --embed-sources --no-error-css scss/:dist/css/",
-    "scss-watch": "sass --watch scss/:dist/css/"
+    "scss-watch": "sass --watch scss/:dist/css/",
+    "js-compile": "npx esbuild js/main.js --bundle --outfile=dist/js/retrosci-fi.js --minify"
   },
   "repository": {
     "type": "git",
