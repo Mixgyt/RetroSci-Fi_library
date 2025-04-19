@@ -2,16 +2,7 @@
 @use "fonts";
 @use "sass:color" as color;
 
-// Función para determinar el color automático del texto
-@function auto-text-color($bg) {
-  @return if(
-    color.channel($bg, "lightness", $space: hsl) > 60%,
-    variables.$secondary,
-    variables.$light
-  );
-}
-
-// Estilo general del navbar
+// Estilo base
 .navbar {
   margin: 20px;
   display: flex;
@@ -89,9 +80,10 @@
   }
 }
 
-// Generamos los temas de color para navbar con clases bg-[color]
+// Generamos clases bg-[color]
 @each $name, $bg in variables.$theme-colors {
-  $fg: auto-text-color($bg);
+  //Para el contraste
+  $fg: if($name == "secondary", variables.$primary, variables.$secondary);
 
   .bg-#{$name} {
     background-color: $bg !important;
@@ -99,8 +91,6 @@
     border: 2px solid $fg !important;
     box-shadow: 0 0 0 2px $bg !important;
 
-    // Afecta textos y bordes internos del navbar
-    .navbar-brand,
     .nav-item {
       color: $fg !important;
 
@@ -127,7 +117,7 @@
   }
 }
 
-// Botón hamburguesa
+// Boton hamburguesa
 .navbar-toggle {
   display: none;
   background: none;
