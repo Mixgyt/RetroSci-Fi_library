@@ -11,7 +11,6 @@
   padding: 20px;
   font-family: fonts.$font-mplus;
   font-weight: fonts.$font-weight-medium;
-  border-radius: 25px;
 
   .navbar-header {
     display: flex;
@@ -35,7 +34,6 @@
       font-weight: fonts.$font-weight-bold;
       font-size: 20px;
       padding: 10px;
-      border-radius: 10px;
       transition: 0.4s;
       text-decoration: none;
 
@@ -52,7 +50,6 @@
         position: absolute;
         top: 56px;
         left: 0;
-        border-radius: 15px;
         padding: 10px;
         z-index: 100;
         box-shadow: 0 0 0 2px;
@@ -61,7 +58,6 @@
           font-family: fonts.$font-mukta;
           font-weight: fonts.$font-weight-bold;
           padding: 8px 12px;
-          border-radius: 10px;
           transition: 0.3s;
           white-space: nowrap;
           display: block;
@@ -75,43 +71,6 @@
 
       &:hover .dropdown-menu {
         display: block;
-      }
-    }
-  }
-}
-
-// Generamos clases bg-[color]
-@each $name, $bg in variables.$theme-colors {
-  //Para el contraste
-  $fg: if($name == "secondary", variables.$primary, variables.$secondary);
-
-  .bg-#{$name} {
-    background-color: $bg !important;
-    color: $fg !important;
-    border: 2px solid $fg !important;
-    box-shadow: 0 0 0 2px $bg !important;
-
-    .nav-item {
-      color: $fg !important;
-
-      &:hover {
-        background-color: $fg !important;
-        color: $bg !important;
-      }
-    }
-
-    .dropdown-menu {
-      background-color: $bg !important;
-      border: 2px solid $fg !important;
-      box-shadow: 0 0 0 2px $fg !important;
-
-      .dropdown-item {
-        color: $fg !important;
-
-        &:hover {
-          background-color: $fg !important;
-          color: $bg !important;
-        }
       }
     }
   }
