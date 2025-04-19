@@ -1,0 +1,93 @@
+@use "../variables" as v;
+@use "backgrounds" as back;
+
+@mixin neon-effect($color, $intensity){
+  box-shadow: 
+    0 0 10px rgba($color, calc($intensity * 0.5)), //brillo neon sutil 
+    0 0 20px rgba($color, calc($intensity * 0.3)),
+    0 0 30px rgba($color, calc($intensity * 0.1));
+
+  transition: all 0.3s ease;
+}
+
+@mixin text-neon-effect($color, $intensity){
+  text-shadow: 
+    0 0 10px rgba($color, calc($intensity * 0.5)),
+    0 0 20px rgba($color, calc($intensity * 0.3)),
+    0 0 30px rgba($color, calc($intensity * 0.1));
+
+  transition: all 0.3s ease;
+}
+
+@mixin neon-gradient($color, $angle: 135deg, $intensity: 0.8) {
+  @include back.background-gradient($color,$angle,$intensity);
+  @include neon-effect($color, $intensity);
+  @include neon-hover($color);
+}
+  
+@mixin intense-neon-gradient($color, $angle: 135deg) {
+    @include neon-gradient($color, $angle, 1);
+    @include neon-hover($color);
+}
+
+@mixin neon-hover($color){
+  &.hover-neon:hover {
+    transform: translateY(-2px);
+    box-shadow: 
+      0 0 20px rgba($color, 0.7),
+      0 0 40px rgba($color, 0.5),
+      0 0 60px rgba($color, 0.3);
+  }
+  
+  &.hover-neon-active {
+    box-shadow: 
+      0 0 15px rgba($color, 0.7),
+      0 0 30px rgba($color, 0.5),
+      0 0 45px rgba($color, 0.3);
+  } 
+}
+
+@mixin text-neon-hover($color){
+  &.hover-neon:hover {
+    transform: translateY(-2px);
+    text-shadow: 
+      0 0 20px rgba($color, 0.7),
+      0 0 40px rgba($color, 0.5),
+      0 0 60px rgba($color, 0.3);
+  }
+  
+  &.hover-neon-active {
+    text-shadow: 
+      0 0 15px rgba($color, 0.7),
+      0 0 30px rgba($color, 0.5),
+      0 0 45px rgba($color, 0.3);
+  }
+}
+
+@mixin boder-neon-complete($intensity: 0.8){
+  &.border{
+    @include border-neon(v.$default-border-color,"");
+    
+    &.hover-neon:hover{
+      @include neon-hover(v.$default-border-color);
+    }
+  }
+  @each $name, $color in v.$theme-colors {
+      &.border-#{$name} {
+        @include border-neon($color,"");
+        &.hover-neon:hover{
+          @include neon-hover($color);
+        }
+      }
+  }
+}
+
+//Este mixin lo modificare despues para poder generar el efecto neon solo en lados especificos Att:Aparicio
+@mixin border-neon($color, $position, $intensity: 0.8,){
+    box-shadow: 
+      0 0 10px rgba($color, $intensity * 0.5),
+      0 0 20px rgba($color, $intensity * 0.3),
+      0 0 30px rgba($color, $intensity * 0.1);
+    transition: all 0.3s ease;
+}
+

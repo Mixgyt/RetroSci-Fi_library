@@ -1,0 +1,11 @@
+@use "../variables" as *;
+@use 'sass:color' as color;
+@use "../mixins/form" as *;
+
+.form-select{
+    @include form-base;
+    padding: 5px 10px;
+    font-size: 1rem;
+    color: if(color.channel($primary, "lightness", $space: hsl) > 60%, #000, #fff);
+    border: 2px solid $primary;
+}

@@ -1,0 +1,65 @@
+@use "../variables";
+
+@each $tipo, $espaciado in variables.$spacers{
+    //Paddings
+    .p-#{$tipo}{
+        padding: $espaciado;
+    }
+
+    .pt-#{$tipo}{
+        padding-top: $espaciado;
+    }
+
+    .pb-#{$tipo}{
+        padding-bottom: $espaciado;
+    }
+
+    .ps-#{$tipo}{
+        padding-left: $espaciado;
+    }
+
+    .pe-#{$tipo}{
+        padding-right: $espaciado;
+    }
+
+    .px-#{$tipo}{
+        padding-left: $espaciado;
+        padding-right: $espaciado;
+    }
+
+    .py-#{$tipo}{
+        padding-top: $espaciado;
+        padding-bottom: $espaciado;
+    }
+
+    //Margins
+    .m-#{$tipo}{
+        margin: $espaciado;
+    }
+
+    .mt-#{$tipo}{
+        margin-top: $espaciado;
+    }
+
+    .mb-#{$tipo}{
+        margin-bottom: $espaciado;
+    }
+
+    .ms-#{$tipo}{
+        margin-left: $espaciado;
+    }
+
+    .me-#{$tipo}{
+        margin-right: $espaciado;
+    }
+
+    .mx-#{$tipo}{
+        margin-left: $espaciado;
+        margin-right: $espaciado;
+    }
+
+    .my-#{$tipo}{
+        margin-top: $espaciado;
+        margin-bottom: $espaciado;
+    }
+}

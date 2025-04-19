@@ -7,41 +7,80 @@
     <title>Test de sci-fi library</title>
 
     <link rel="stylesheet" href="dist/css/sci-fi.css">
+
+    <style>
+        .ancho {
+            height: 100px;
+        }
+        .ancho-2 {
+            height: 200px;
+        }
+    </style>
 </head>
 
 <body>
-    <script src="alerts.js"></script>
+    <script src="./alerts.js"></script>
 
 
-    <div class="container">
+    <br><br>
 
-        <h1>hola</h1>
+<div class="container">
+    <div class="row row-cols-6 g-5">
+        <div class="col primary-neon ancho border-primary rounded-5 border-2 border-neon">1</div>
+        <div class="col secondary-neon ancho border rounded border-success border-neon hover-neon">2</div>
+        <div class="col success-neon ancho border rounded border-alert border-neon">3</div>
+        <div class="col danger-neon ancho border rounded border-danger border-neon">4</div>
+        <div class="col warning-neon ancho border rounded border-info border-neon">5</div>
+        <div class="col info-neon ancho border rounded border-warning border-neon">6</div>
+        <div class="col light-neon ancho border rounded border-light border-neon">7</div>
+        <div class="col alert-neon ancho border-secundary">8</div>
+    </div>
+</div>
 
-        <div class="row">
-            <div class="col-8 color">primer columna</div>
-            <div class="col-4 color">hola</div>
-        </div>
 
-        <div class="row">
-            <div class="col-8 color">primer columna</div>
-            <div class="col-4 color">hola</div>
-        </div>
+<div class="container">
 
+    <div class="grid gap-1">
+
+        <div class="g-col-6 ancho bg-primary-neon"></div>
+        <div class="g-col-6 ancho bg-primary-neon"></div>
+
+        <div class="g-col-3 ancho bg-primary-neon"></div>
+        <div class="g-col-3  bg-warning-neon"></div>
+
+        <div class=" g-row-2 g-col-6 g-row-2   bg-success-neon hover-neon"></div>
+
+        <div class="g-col-6 ancho-2 bg-primary-neon "></div>
+
+        <div class="g-col-12 ancho bg-alert-neon hover-neon"></div>
+        
 
     </div>
+
+
+    <div class="grid gap-2">
+        <div class="g-col-6">Columna 1</div>
+        <div class="g-col-6 g-row-2 bg-primary text-white">
+          Esta ocupa 2 filas
+        </div>
+        <div class="g-col-6 text-neon hover-neon">Columna Neon</div>
+        <div class="g-col-6">Columna 4</div>
+      </div>
+      
+</div>
+
 
 
     <div class="container">
         <div class="row">
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 bg-success ">1</div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 ">2</div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 bg-danger text-white text-center">3</div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 bg-danger text-white text-ce">3</div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 bg-info text-white text-center">4</div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 bg-secondary text-white text-center">5</div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 bg-dark text-white text-center">6</div>
         </div>
     </div>
-
 
     <div class="container text-center">
         <div class="row">

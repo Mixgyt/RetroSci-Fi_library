@@ -1,0 +1,28 @@
+@use "../mixins/hidden" as h;
+
+//Aqui esta junto la opacidad con la visibilidad
+
+//Parte relacionada con las opacidad
+@for $i from 1 through 4{
+    @if($i == 1){
+        .opacity-0{
+            opacity: 0;
+        }
+    }
+    .opacity-#{calc($i/4)*100}{
+        opacity: calc($i/4);
+    }
+}
+//Parte relacinada con la visibilidad
+.visible{
+    visibility: visible;
+}
+
+.invisible{
+    visibility: hidden;
+}
+
+//Oculmaniento de elementos
+.visually-hidden{
+    @include h.hidden-element();
+}

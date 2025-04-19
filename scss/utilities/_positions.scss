@@ -1,0 +1,35 @@
+@use "../variables";
+
+@each $nombre, $tipo in variables.$position-types{
+    .position-#{$nombre}{
+        position: $tipo;
+    }
+}
+
+@each $nombre, $position in variables.$positions{
+    @if($nombre != "center"){
+        @for $i from 0 through 2{
+            @if($i == 0){
+                .#{$nombre}-#{$i}{
+                    #{$position}: 0;
+                }
+            }
+            @else{
+                .#{$nombre}-#{calc(100/$i)}{
+                    #{$position}: #{calc(100/$i)}#{"%"};
+                }
+            }
+        }
+    }
+}
+
+@each $nombre, $tipo in variables.$translates-types{
+    .translate-#{$nombre}{
+        transform: translate(-50%,-50%);
+    }
+    @each $eje in $tipo{
+        .translate-#{$nombre}-#{$eje}{
+            transform: translate#{to-upper-case($eje)}(-50%);
+        }
+    }
+}

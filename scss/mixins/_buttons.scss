@@ -1,0 +1,116 @@
+@use "../variables" as *;
+@use "sass:color" as color;
+@use "../fonts";
+@mixin button-color($bg-color) {
+    $text-color: if(color.channel($bg-color, "lightness", $space: hsl) > 60%, #000, #fff);
+
+    background-color: $bg-color;
+    border: 1px solid color.mix(white, $bg-color, 30%);
+    color: $text-color;
+    transition: all 0.5s;
+    &:hover {
+        background: color.adjust($bg-color, $lightness: -10%);
+    }
+}
+
+@mixin button-style($bg: rgb(61, 106, 255), $fg:black) { //bg backgorund color de fondo del boton
+    position: relative;
+    padding: 7px 10px;
+    border-radius: 7px;
+    
+
+    font-family: fonts.$font-mukta;
+    font-weight: fonts.$font-weight-bold;
+    font-size: 20px;
+    font-weight:100;
+  
+  
+    text-decoration: none;
+
+    color: $fg;
+
+    overflow: hidden;
+
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+        background: darken($bg, 10%); //se altera el color del fondo 10% mas oscuro
+        color: lighten($bg, 80%);
+        font-weight: 200;
+        box-shadow: 0 0 30px 5px darken($bg, 10%);
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+    }
+
+    &:hover::before {
+        -webkit-animation: sh02 0.5s 0s linear;
+        -moz-animation: sh02 0.5s 0s linear;
+        animation: sh02 0.5s 0s linear;
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        width: 0px;
+        height: 86%;
+        position: absolute;
+        top: 7%;
+        left: 0%;
+        opacity: 0;
+        background: #fff;
+        box-shadow: 0 0 50px 30px #fff;
+        -webkit-transform: skewX(-20deg);
+        -moz-transform: skewX(-20deg);
+        -ms-transform: skewX(-20deg);
+        -o-transform: skewX(-20deg);
+        transform: skewX(-20deg);
+    }
+
+    @keyframes sh02 {
+        from {
+            opacity: 0;
+            left: 0%;
+        }
+
+        50% {
+            opacity: 1;
+        }
+
+        to {
+            opacity: 0;
+            left: 100%;
+
+        }
+    }
+
+    &:active {
+        box-shadow: 0 0 0 0 transparent;
+        -webkit-transition: box-shadow 0.2s ease-in;
+        -moz-transition: box-shadow 0.2s ease-in;
+        transition: box-shadow 0.2s ease-in;
+    }
+    &.border-button {
+        border: 2px solid $bg;
+        background: transparent;
+
+        font-weight: 200;
+        box-shadow: 0 0 0 0 transparent;
+        -webkit-transition: all 0.2s ease-in;
+        -moz-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in;
+
+        &:hover {
+            background: $bg;
+            color: #fff;
+            font-weight: 200;
+            box-shadow: 0 0 30px 5px darken($bg, 10%);
+            -webkit-transition: all 0.2s ease-out;
+            -moz-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
+        }
+    }
+}

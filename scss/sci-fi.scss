@@ -11,6 +11,8 @@
 //Componentes
 @use "alerts";
 @use "badges";
+@use "form";
+@use "card";
 @use "buttons";
 @use "navbar";
 @use "general";
@@ -18,3 +20,11 @@
 
 //Clases utilitarias
 @use "utilities/borders";
+@use "utilities/backgrounds";
+@use "utilities/spacing";
+@use "utilities/text";
+@use "utilities/positions";
+@use "utilities/shadows";
+@use "utilities/visibility";
+
+@use "mixins/neon";

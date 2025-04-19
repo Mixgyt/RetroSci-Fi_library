@@ -1,5 +1,6 @@
 @use "../variables";
 @use "../mixins/borders" as bord;
+@use "../mixins/neon" as neon;
 @use "sass:map";
 
 //En bordes tambien incluyo el border-radius en este caso rounded
@@ -7,6 +8,11 @@
   //Borde predeterminado de 2px
   @include bord.make-border-complete(map.get(variables.$borders, "2"), variables.$default-border-color);
 }
+
+.border-neon{
+  @include neon.boder-neon-complete();
+}
+
 //Bordes redondeados
 .rounded {
   @include bord.rounded-complete(variables.$default-border-radius);
@@ -67,4 +73,7 @@
       @include bord.rounded($radius,$posicion);
     }
   }
+}
+.border-r {
+  @include bord.border-r();
 }
