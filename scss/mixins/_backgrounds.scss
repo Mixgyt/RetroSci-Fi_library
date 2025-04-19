@@ -1,5 +1,9 @@
+@use "sass:color";
+
 @mixin background-color($color, $opacity){
     background: rgba($color, $opacity);
+    $text-color: if(color.channel($color, "lightness", $space: hsl) > 60%, #000, #fff);
+    color: $text-color;
 
     &.bg-gradient{
         @include background-gradient($color, 180deg, $opacity);
