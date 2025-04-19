@@ -2,20 +2,25 @@
 @use "fonts";
 @use "sass:color" as color;
 
-// Estilo base
-@mixin navbar-base($bg, $fg) {
+// Función para determinar el color automático del texto
+@function auto-text-color($bg) {
+  @return if(
+    color.channel($bg, "lightness", $space: hsl) > 60%,
+    variables.$secondary,
+    variables.$light
+  );
+}
+
+// Estilo general del navbar
+.navbar {
   margin: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  background-color: $bg;
-  color: $fg;
   font-family: fonts.$font-mplus;
   font-weight: fonts.$font-weight-medium;
-  border: 2px solid $fg;
   border-radius: 25px;
-  box-shadow: 0 0 0 2px $bg;
 
   .navbar-header {
     display: flex;
@@ -27,7 +32,6 @@
   .navbar-brand {
     font-family: fonts.$font-mplus;
     font-size: 30px;
-    color: $fg;
   }
 
   .navbar-nav {
@@ -39,29 +43,16 @@
       font-family: fonts.$font-mukta;
       font-weight: fonts.$font-weight-bold;
       font-size: 20px;
-      color: $fg;
       padding: 10px;
       border-radius: 10px;
       transition: 0.4s;
       text-decoration: none;
+
       &:hover {
-        background-color: $fg;
-        color: $bg;
         cursor: pointer;
       }
     }
-  }
-}
 
-//Diferentes temas para los navbar
-@each $nombre, $color in variables.$theme-colors {
-  $navbar-bg: if($nombre == "secondary", variables.$secondary, $color);
-  $navbar-fg: if($nombre == "secondary", variables.$primary, variables.$secondary);
-
-  .navbar-#{$nombre} {
-    @include navbar-base($navbar-bg, $navbar-fg);
-
-    //vamos a crear las vairaites de dropdown para los navbar
     .nav-item.dropdown {
       position: relative;
 
@@ -70,15 +61,12 @@
         position: absolute;
         top: 56px;
         left: 0;
-        background-color: $navbar-bg;
-        border: 2px solid $navbar-fg;
         border-radius: 15px;
         padding: 10px;
-        box-shadow: 0 0 0 2px $navbar-fg;
         z-index: 100;
+        box-shadow: 0 0 0 2px;
 
         .dropdown-item {
-          color: $navbar-fg;
           font-family: fonts.$font-mukta;
           font-weight: fonts.$font-weight-bold;
           padding: 8px 12px;
@@ -89,8 +77,6 @@
           text-decoration: none;
 
           &:hover {
-            background-color: $navbar-fg;
-            color: $navbar-bg;
             cursor: pointer;
           }
         }
@@ -103,8 +89,45 @@
   }
 }
 
+// Generamos los temas de color para navbar con clases bg-[color]
+@each $name, $bg in variables.$theme-colors {
+  $fg: auto-text-color($bg);
 
-//Modo hamburgeusa
+  .bg-#{$name} {
+    background-color: $bg !important;
+    color: $fg !important;
+    border: 2px solid $fg !important;
+    box-shadow: 0 0 0 2px $bg !important;
+
+    // Afecta textos y bordes internos del navbar
+    .navbar-brand,
+    .nav-item {
+      color: $fg !important;
+
+      &:hover {
+        background-color: $fg !important;
+        color: $bg !important;
+      }
+    }
+
+    .dropdown-menu {
+      background-color: $bg !important;
+      border: 2px solid $fg !important;
+      box-shadow: 0 0 0 2px $fg !important;
+
+      .dropdown-item {
+        color: $fg !important;
+
+        &:hover {
+          background-color: $fg !important;
+          color: $bg !important;
+        }
+      }
+    }
+  }
+}
+
+// Botón hamburguesa
 .navbar-toggle {
   display: none;
   background: none;
@@ -118,6 +141,7 @@
   }
 }
 
+// Responsivo
 @media (max-width: 768px) {
   .navbar-toggle {
     display: block;
@@ -138,4 +162,3 @@
     }
   }
 }
-
