@@ -1,5 +1,5 @@
 const Alertas = {
-    crearAlerta: function({ tipo = 'info', titulo = '', mensaje = '', alert_neon = true , autoDesaparecer = true, duracion = 5000, bg = "", text_color = "", borde = "" }) {
+    crearAlerta: function({ tipo = 'info', titulo = '', mensaje = '', alert_neon = true , autoDesaparecer = true, duracion = 5000, bg = "", text_color = "", borde = "", estilo_brillo = false  }) {
 
         let contenedor = document.querySelector('.alerts-container'); //contenedor de alertas si no existe
         if (!contenedor) {
@@ -42,7 +42,10 @@ const Alertas = {
             setTimeout(() => alerta.remove(), 300);
         };
         alerta.appendChild(botonCerrar);
-
+        if(estilo_brillo)
+        {
+            alerta.classList.add('estilo-brillo');
+        }
         if (alert_neon) {
             alerta.classList.add('alert-neon');
             icono.classList.add('alert-neon');

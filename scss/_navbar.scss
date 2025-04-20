@@ -2,6 +2,8 @@
 @use "fonts";
 @use "sass:color" as color;
 @use "mixins/buttons" as buttons;
+@use "mixins/backgrounds" as bg;
+
 // Estilo base
 .navbar {
   margin: 20px;
@@ -36,8 +38,11 @@
       padding: 10px;
       transition: 0.4s;
       text-decoration: none;
+      color: var(--sci-text-color);
 
       &:hover {
+        background-color: var(--sci-text-color);
+        color: var(--sci-bg-color);
         cursor: pointer;
       }
     }
@@ -46,6 +51,7 @@
       position: relative;
 
       .dropdown-menu {
+        background-color: var(--sci-bg-color);
         display: none;
         position: absolute;
         top: 56px;
@@ -62,14 +68,20 @@
           white-space: nowrap;
           display: block;
           text-decoration: none;
+          color: var(--sci-text-color);
+          margin: 0px 0px 5px 0px;
 
           &:hover {
+            background-color: var(--sci-text-color);
+            color: var(--sci-bg-color);
             cursor: pointer;
           }
         }
       }
 
       &:hover .dropdown-menu {
+        background-color: var(--sci-bg-color);
+        color: var(--sci-text-color);
         display: block;
       }
     }
