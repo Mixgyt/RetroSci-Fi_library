@@ -11,3 +11,23 @@ export function toggleMenu(navbarId) {
       nav.classList.add("active");
     }
   }
+
+  export function closeMenu() {
+
+      const toggleButton = document.querySelector(".slide-menu__toggle");
+      const slideMenu = document.querySelector(".slide-menu");
+    toggleButton.addEventListener("click", () => {
+      if (slideMenu.classList.contains("open")) {
+        slideMenu.classList.remove("open");
+        slideMenu.classList.add("closed");
+      } else {
+        slideMenu.classList.remove("closed");
+        slideMenu.classList.add("open");
+      }
+      
+      // Cambiar el aria-label dinámicamente
+      const isOpen = slideMenu.classList.contains("open");
+      toggleButton.setAttribute("aria-label", isOpen ? "Cerrar menú" : "Abrir menú");
+      });
+ 
+}
