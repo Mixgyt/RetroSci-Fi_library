@@ -14,7 +14,7 @@
 }
 
 @mixin rounded-complete($radius){
-    border-radius: $radius;
+    border-radius: $radius !important;
 }
 
 @mixin rounded($radius, $position){

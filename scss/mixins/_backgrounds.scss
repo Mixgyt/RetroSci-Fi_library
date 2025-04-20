@@ -1,9 +1,14 @@
 @use "sass:color";
+@use "../variables";
 
 @mixin background-color($color, $opacity){
     background: rgba($color, $opacity);
-    $text-color: if(color.channel($color, "lightness", $space: hsl) > 60%, #000, #fff);
-    color: $text-color;
+    --sci-bg-color: #{$color};
+    @include background-text-diff($color);
+
+    @if($color == variables.$secondary){
+        border: 2px solid variables.$primary;
+    }
 
     &.bg-gradient{
         @include background-gradient($color, 180deg, $opacity);
@@ -15,4 +20,10 @@
     $lighter-color: lighten($color, 15%);
     $darker-color: darken($color, 10%);
     background: linear-gradient($angle, rgba($lighter-color, $opacity), rgba($darker-color, $opacity));
+}
+
+@mixin background-text-diff($color){
+    $text-color: if(color.channel($color, "lightness", $space: hsl) > 60%, #000, #fff);
+    color: $text-color;
+    --sci-text-color: #{$text-color};
 }
