@@ -1,11 +1,7 @@
-<?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
- "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000"
- preserveAspectRatio="xMidYMid meet">
-
-<g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-fill="#000000" stroke="none">
-</g>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="512px" height="512px" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g><path style="opacity:0.99" fill="#fefffe" d="M 511.5,87.5 C 511.5,92.1667 511.5,96.8333 511.5,101.5C 508.593,108.237 503.593,112.737 496.5,115C 335.833,115.667 175.167,115.667 14.5,115C 6.98409,112.649 1.98409,107.816 -0.5,100.5C -0.5,96.1667 -0.5,91.8333 -0.5,87.5C 2.05987,79.7802 7.39321,74.9469 15.5,73C 175.5,72.3333 335.5,72.3333 495.5,73C 503.607,74.9469 508.94,79.7802 511.5,87.5 Z"/></g>
+<g><path style="opacity:0.968" fill="#fefffe" d="M 511.5,250.5 C 511.5,255.167 511.5,259.833 511.5,264.5C 508.288,271.54 502.954,276.374 495.5,279C 335.5,279.667 175.5,279.667 15.5,279C 8.04583,276.374 2.71249,271.54 -0.5,264.5C -0.5,259.833 -0.5,255.167 -0.5,250.5C 3.04809,242.13 9.38143,237.296 18.5,236C 176.5,235.333 334.5,235.333 492.5,236C 501.619,237.296 507.952,242.13 511.5,250.5 Z"/></g>
+<g><path style="opacity:0.968" fill="#fefffe" d="M 511.5,414.5 C 511.5,419.167 511.5,423.833 511.5,428.5C 507.952,436.87 501.619,441.704 492.5,443C 334.5,443.667 176.5,443.667 18.5,443C 9.38143,441.704 3.04809,436.87 -0.5,428.5C -0.5,423.833 -0.5,419.167 -0.5,414.5C 2.71249,407.46 8.04583,402.626 15.5,400C 175.5,399.333 335.5,399.333 495.5,400C 502.954,402.626 508.288,407.46 511.5,414.5 Z"/></g>
 </svg>
