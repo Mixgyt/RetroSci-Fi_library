@@ -23,6 +23,12 @@
     }
 }
 
+@each $name, $color in $theme-colors {
+    .btn-outline-#{$name}{
+        @include button-outline($color);
+    }
+}
+
 .btn-lg{
     padding: 0.75rem 1.25rem;
     font-size: 1.25rem;
