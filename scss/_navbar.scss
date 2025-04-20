@@ -6,7 +6,6 @@
 
 // Estilo base
 .navbar {
-  margin: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -107,14 +106,14 @@
     opacity: 0;
   }
   to {
-    max-height: 500px; // Ajusta este valor según el contenido
+    max-height: 500px;
     opacity: 1;
   }
 }
 
 @keyframes navbar-slide-up {
   from {
-    max-height: 500px; // Ajusta este valor según el contenido
+    max-height: 500px;
     opacity: 1;
   }
   to {
@@ -143,8 +142,11 @@
       opacity: 0;
       transition: max-height 0.4s ease, opacity 0.7s ease;
 
+      margin: 0;
+      padding: 0;
+
       &.active {
-        max-height: 500px; // Adjust based on content height
+        max-height: 500px;
         opacity: 1;
       }
 
