@@ -10,6 +10,7 @@
 
 <body>
     <script src="alerts.js"></script>
+    <script src="dist/js/retrosci-fi.js"></script>
 
     <nav class="navbar bg-primary rounded-pill">
         <div class="navbar-header">
@@ -129,11 +130,11 @@
           </div>
         </div>
       </nav>
-      <nav class="navbar bg-light">
+      <nav class="navbar bg-light" id="nav2">
         <div class="navbar-header">
           <div class="navbar-brand">Mi Marca</div>
-          <button class="navbar-toggle">
-            <img src="menu.svg" alt="Menu">
+          <button class="navbar-toggle" onclick="toggleMenu('nav2')">
+            <img src="img/menu_black.png" alt="Menu">
           </button>
         </div>
         <div class="navbar-nav">
@@ -148,11 +149,11 @@
           </div>
         </div>
       </nav>
-      <nav class="navbar bg-alert">
+      <nav class="navbar bg-alert" id="nav1">
         <div class="navbar-header">
           <div class="navbar-brand">Mi Marca</div>
-          <button class="navbar-toggle">
-            <img src="menu.svg" alt="Menu">
+          <button class="navbar-toggle" onclick="toggleMenu('nav1')">
+            <img src="img/menu_black.png"  alt="Menu">
           </button>
         </div>
         <div class="navbar-nav">

@@ -41,6 +41,8 @@
       color: var(--sci-text-color);
 
       &:hover {
+        background-color: var(--sci-text-color);
+        color: var(--sci-bg-color);
         cursor: pointer;
       }
     }
@@ -78,6 +80,8 @@
       }
 
       &:hover .dropdown-menu {
+        background-color: var(--sci-bg-color);
+        color: var(--sci-text-color);
         display: block;
       }
     }
