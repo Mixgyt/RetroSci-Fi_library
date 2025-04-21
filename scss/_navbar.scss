@@ -12,7 +12,7 @@
   padding: 20px;
   font-family: fonts.$font-mplus;
   font-weight: fonts.$font-weight-medium;
-
+  z-index: 9999;
   .navbar-header {
     display: flex;
     width: 100%;
