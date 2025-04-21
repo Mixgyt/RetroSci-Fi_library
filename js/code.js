@@ -1,4 +1,4 @@
-document.querySelectorAll('.btn-copy').forEach((btn) => {
+document.querySelectorAll('.img-copy').forEach((btn) => {
   btn.addEventListener('click', () => {
     const codeBlock = btn.closest('.code').querySelector('.code-block code');
     const text = codeBlock.innerText;
