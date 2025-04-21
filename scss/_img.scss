@@ -17,3 +17,10 @@
     @extend .img-icon;
     background-image: url('https://raw.githubusercontent.com/Mixgyt/RetroSci-Fi_library/refs/heads/alegria/img/menu_white.svg');
   }
+
+  .img-copy{
+    @extend .img-icon;
+    width: 20px;
+    height: 20px;
+    background-image: url('https://raw.githubusercontent.com/Mixgyt/RetroSci-Fi_library/refs/heads/juan/img/copy-img.svg');
+  }
