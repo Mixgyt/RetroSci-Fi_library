@@ -1,12 +1,12 @@
 .img-icon {
-    width: 32px;
-    height: 32px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
-    display: inline-block;
-  }
+  width: 32px;
+  height: 32px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  display: inline-block;
+}
   
   .img-menu-black {
     @extend .img-icon;
@@ -24,3 +24,78 @@
     height: 20px;
     background-image: url('https://raw.githubusercontent.com/Mixgyt/RetroSci-Fi_library/refs/heads/juan/img/copy-img.svg');
   }
+
+
+.img-menu-black {
+  @extend .img-icon;
+  background-image: url('https://raw.githubusercontent.com/Mixgyt/RetroSci-Fi_library/refs/heads/alegria/img/menu_black.svg');
+}
+
+.img-menu-white {
+  @extend .img-icon;
+  background-image: url('https://raw.githubusercontent.com/Mixgyt/RetroSci-Fi_library/refs/heads/alegria/img/menu_white.svg');
+}
+
+.img-abajo-arrow-black {
+  @extend .img-icon;
+  background-image: url('https://raw.githubusercontent.com/Mixgyt/RetroSci-Fi_library/refs/heads/alegria/img/flechas/abajo-arrow-black.svg');
+}
+
+.img-abajo-arrow-white {
+  @extend .img-icon;
+  background-image: url('https://raw.githubusercontent.com/Mixgyt/RetroSci-Fi_library/refs/heads/alegria/img/flechas/abajo-arrow-white.svg');
+}
+
+.img-arriba-arrow-black {
+  @extend .img-icon;
+  background-image: url('https://raw.githubusercontent.com/Mixgyt/RetroSci-Fi_library/refs/heads/alegria/img/flechas/arriba-arrow-black.svg');
+}
+
+.img-arriba-arrow-white {
+  @extend .img-icon;
+  background-image: url('https://raw.githubusercontent.com/Mixgyt/RetroSci-Fi_library/refs/heads/alegria/img/flechas/arriba-arrow-white.svg');
+}
+
+.img-der-arrow-black {
+  @extend .img-icon;
+  background-image: url('https://raw.githubusercontent.com/Mixgyt/RetroSci-Fi_library/refs/heads/alegria/img/flechas/der-arrow-black.svg');
+}
+
+.img-der-arrow-white {
+  @extend .img-icon;
+  background-image: url('https://raw.githubusercontent.com/Mixgyt/RetroSci-Fi_library/refs/heads/alegria/img/flechas/der-arrow-white.svg');
+}
+
+.img-izq-arrow-black {
+  @extend .img-icon;
+  background-image: url('https://raw.githubusercontent.com/Mixgyt/RetroSci-Fi_library/refs/heads/alegria/img/flechas/izq-arrow-black.svg');
+}
+
+.img-izq-arrow-white {
+  @extend .img-icon;
+  background-image: url('https://raw.githubusercontent.com/Mixgyt/RetroSci-Fi_library/refs/heads/alegria/img/flechas/izq-arrow-white.svg');
+}
+
+.img-logo-black {
+  @extend .img-icon;
+  background-image: url('https://raw.githubusercontent.com/Mixgyt/RetroSci-Fi_library/refs/heads/alegria/img/logos/logo-black.svg');
+}
+
+.img-logo-prin-black {
+  @extend .img-icon;
+  width: 50px;
+  height: 50px;
+  background-image: url('https://raw.githubusercontent.com/Mixgyt/RetroSci-Fi_library/refs/heads/alegria/img/logos/logo-prin-black.svg');
+}
+
+.img-logo-prin-white {
+  @extend .img-icon;
+  width: 50px;
+  height: 50px;
+  background-image: url('https://raw.githubusercontent.com/Mixgyt/RetroSci-Fi_library/refs/heads/alegria/img/logos/logo-prin-white.svg');
+}
+
+.img-logo-white {
+  @extend .img-icon;
+  background-image: url('https://raw.githubusercontent.com/Mixgyt/RetroSci-Fi_library/refs/heads/alegria/img/logos/logo-white.svg');
+}
