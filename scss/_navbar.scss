@@ -21,6 +21,10 @@
   }
 
   .navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
     font-family: fonts.$font-mplus;
     font-size: 30px;
   }

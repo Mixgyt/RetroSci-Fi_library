@@ -57,3 +57,27 @@
   @extend .img-icon;
   background-image: url('https://raw.githubusercontent.com/Mixgyt/RetroSci-Fi_library/refs/heads/alegria/img/flechas/izq-arrow-white.svg');
 }
+
+.img-logo-black {
+  @extend .img-icon;
+  background-image: url('https://raw.githubusercontent.com/Mixgyt/RetroSci-Fi_library/refs/heads/alegria/img/logos/logo-black.svg');
+}
+
+.img-logo-prin-black {
+  @extend .img-icon;
+  width: 50px;
+  height: 50px;
+  background-image: url('https://raw.githubusercontent.com/Mixgyt/RetroSci-Fi_library/refs/heads/alegria/img/logos/logo-prin-black.svg');
+}
+
+.img-logo-prin-white {
+  @extend .img-icon;
+  width: 50px;
+  height: 50px;
+  background-image: url('https://raw.githubusercontent.com/Mixgyt/RetroSci-Fi_library/refs/heads/alegria/img/logos/logo-prin-white.svg');
+}
+
+.img-logo-white {
+  @extend .img-icon;
+  background-image: url('https://raw.githubusercontent.com/Mixgyt/RetroSci-Fi_library/refs/heads/alegria/img/logos/logo-white.svg');
+}
