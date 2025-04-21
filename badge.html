@@ -13,7 +13,9 @@
     <nav class=" navbar bg-secondary estilo-brillo border rounded border-secondary border-neon hover-neon  position-sticky top-0"
         id="nav1">
         <div class="navbar-header">
-            <div class="navbar-brand"><div class="img-logo-prin-white"></div>Retro Sci-Fi</div>
+            <div class="navbar-brand">
+                <div class="img-logo-prin-white"></div>Retro Sci-Fi
+            </div>
             <button class="navbar-toggle" onclick="toggleMenu('nav1')">
                 <div class="img-menu-white"></div>
             </button>
@@ -83,6 +85,40 @@
                     <p>Los badges se escalan para ajustarse al tamaño del elemento principal inmediato mediante el
                         uso de tamaños de fuente y 'em' unidades relativos.</p>
                     <h1>Encabezados</h1>
+                    <!-- ESQUELETO PARA REUTILIZAR A LA HORA DE HACER LA DOCS -->
+                    <div class="code container mt-4">
+                        <div class="code-example">
+                            <!-- COLOCAR EL CODIGO HTML DE EJEMPLO -->
+                            <h1>Ejemplo de encabezado <span class="badge">Nuevo</span></h1>
+                            <h2>Ejemplo de encabezado <span class="badge">Nuevo</span></h2>
+                            <h3>Ejemplo de encabezado <span class="badge">Nuevo</span></h3>
+                            <h4>Ejemplo de encabezado <span class="badge">Nuevo</span></h4>
+                            <h5>Ejemplo de encabezado <span class="badge">Nuevo</span></h5>
+                            <h6>Ejemplo de encabezado <span class="badge">Nuevo</span></h6>
+                        </div>
+                        <!-- PARA COLOCAR LENGUAJE -->
+                        <div class="code-lenguaje">
+                            <div class="row justify-content-between mx-3">
+                                <div>HTML</div>
+                                <div>
+                                    <div class="img-copy" alt="copy"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BLOQUE DE CODIGO -->
+                        <div class="code-block">
+                            <pre><code class="language-html">  
+          <!-- AQUI VA EL CODIGO YA CON  -->
+&lt;h1&gt;Ejemplo de encabezado &lt;span class=&quot;badge&quot;&gt;Nuevo&lt;/span&gt;&lt;/h1&gt;
+&lt;h2&gt;Ejemplo de encabezado &lt;span class=&quot;badge&quot;&gt;Nuevo&lt;/span&gt;&lt;/h2&gt;
+&lt;h3&gt;Ejemplo de encabezado &lt;span class=&quot;badge&quot;&gt;Nuevo&lt;/span&gt;&lt;/h3&gt;
+&lt;h4&gt;Ejemplo de encabezado &lt;span class=&quot;badge&quot;&gt;Nuevo&lt;/span&gt;&lt;/h4&gt;
+&lt;h5&gt;Ejemplo de encabezado &lt;span class=&quot;badge&quot;&gt;Nuevo&lt;/span&gt;&lt;/h5&gt;
+&lt;h6&gt;Ejemplo de encabezado &lt;span class=&quot;badge&quot;&gt;Nuevo&lt;/span&gt;&lt;/h6&gt;
+           <!-- SENTENCIA DE ESCAPE -->
+                            </code></pre>
+                        </div>
+                    </div>
                     <div class="card bg-secondary text-white">
                         <div class="card bg-info text-white">
                             <div class="card-header">
@@ -145,7 +181,8 @@
                 </div>
                 <div class="col-12">
                     <h1>Posicionado</h1>
-                    <p>Utilice utilidades para modificar un .badge y posicionarlo en la esquina de un enlace o botón.</p>
+                    <p>Utilice utilidades para modificar un .badge y posicionarlo en la esquina de un enlace o botón.
+                    </p>
                     <div class="card bg-secondary text-white">
                         <div class="card bg-info text-white">
                             <div class="card-header">
@@ -170,9 +207,10 @@
                             <div class="card-body">
                                 <button type="button" class="btn btn-info position-relative">
                                     Bandeja de entrada
-                                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                                      99+
-                                      <span class="visually-hidden">mensajes no leídos</span>
+                                    <span
+                                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                        99+
+                                        <span class="visually-hidden">mensajes no leídos</span>
                                     </span>
                                 </button>
                             </div>
@@ -181,7 +219,8 @@
                 </div>
                 <div class="col-12">
                     <h1></h1>
-                    <p>También puedes reemplazar la clase .badge con algunas utilidades más sin recuento para obtener un indicador más genérico.</p>
+                    <p>También puedes reemplazar la clase .badge con algunas utilidades más sin recuento para obtener un
+                        indicador más genérico.</p>
                     <div class="card bg-secondary text-white">
                         <div class="card bg-info text-white">
                             <div class="card-header">
@@ -205,7 +244,8 @@
                             <div class="card-body">
                                 <button type="button" class="btn btn-info position-relative">
                                     Perfil
-                                    <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                                    <span
+                                        class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
                                         <span class="visually-hidden">Nuevas Alarmas</span>
                                     </span>
                                 </button>
@@ -253,7 +293,8 @@
                 </div>
                 <div class="col-12">
                     <h1>Redondeado en Badges</h1>
-                    <p>Utilice la clase .rounded-pill de utilidad para hacer que los badges sean más redondeadas con un border-radius.</p>
+                    <p>Utilice la clase .rounded-pill de utilidad para hacer que los badges sean más redondeadas con un
+                        border-radius.</p>
                     <div class="card bg-secondary text-white">
                         <div class="card bg-info text-white">
                             <div class="card-header">
