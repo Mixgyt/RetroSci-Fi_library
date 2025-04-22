@@ -18,6 +18,29 @@ export function closeMenu() {
   const slideMenu = document.querySelector(".slide-menu");
   const iconOpen = toggleButton.querySelector(".icon-open");
   const iconClosed = toggleButton.querySelector(".icon-closed");
+  let arrowDiv; 
+
+  if (toggleButton) {
+    arrowDiv = document.createElement("div");
+    if (slideMenu.classList.contains("closed")) 
+    {
+        if (toggleButton.classList.contains("icon-black")) {
+          arrowDiv.classList.add("img-der-arrow-black");
+        }else
+        {
+          arrowDiv.classList.add("img-der-arrow-white");
+        }
+    }
+    else{
+        if (toggleButton.classList.contains("icon-black")) {
+          arrowDiv.classList.add("img-izq-arrow-black");
+        }else
+        {
+          arrowDiv.classList.add("img-izq-arrow-white");
+        }
+    }
+    toggleButton.appendChild(arrowDiv);
+  }
 
   toggleButton.addEventListener("click", () => {
     
@@ -26,9 +49,31 @@ export function closeMenu() {
     if (slideMenu.classList.contains("open")) {
       slideMenu.classList.remove("open");
       slideMenu.classList.add("closed");
+
+      arrowDiv.classList.remove("img-izq-arrow-white");
+      arrowDiv.classList.remove("img-izq-arrow-black");
+
+      if (toggleButton.classList.contains("icon-black")) {
+        arrowDiv.classList.add("img-der-arrow-black");
+      }else
+      {
+        arrowDiv.classList.add("img-der-arrow-white");
+      }
+     
     } else {
       slideMenu.classList.remove("closed");
       slideMenu.classList.add("open");
+
+      arrowDiv.classList.remove("img-der-arrow-white");
+      arrowDiv.classList.remove("img-der-arrow-black");
+
+      if (toggleButton.classList.contains("icon-black")) {
+        arrowDiv.classList.add("img-izq-arrow-black");
+      }else
+      {
+        arrowDiv.classList.add("img-izq-arrow-white");
+      }
+      
     }
 
     // Cambia iconos manualmente

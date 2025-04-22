@@ -6,6 +6,7 @@
     @include form-base;
     padding: 5px 10px;
     border: 2px solid $primary;
+    margin: 0;
 
         &[type="file"] {
                 padding: 6px;
@@ -22,4 +23,5 @@
                     transition: background-color 0.2s ease-in-out;
                 }
             }
+    
 }
