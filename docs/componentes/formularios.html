@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>retrosci-fi</title>
+    <link rel="icon" type="image/svg" href="../../img/logos/logo-prin-white.svg">
+
+    <link rel="stylesheet" href="../../dist/css/sci-fi.css">
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+</head>
+
+<body class="bg-lightd">
+    <nav class=" navbar bg-secondary estilo-brillo border rounded border-secondary border-neon hover-neon  position-sticky top-0"
+        id="nav1">
+        <div class="navbar-header">
+            <div class="navbar-brand"><div class="img-logo-prin-white"></div>Retro Sci-Fi</div>
+            <button class="navbar-toggle" onclick="toggleMenu('nav1')">
+                <div class="img-menu-white"></div>
+            </button>
+        </div>
+        <div class="navbar-nav">
+            <a class="nav-item rounded-pill" href="#inicio">Inicio</a>
+            <a class="nav-item rounded-pill" href="#estructura">Estructura</a>
+            <a class="nav-item rounded-pill" href="#grid">Grid</a>
+            <a class="nav-item rounded-pill" href="#alerts">Alerts</a>
+        </div>
+    </nav>
+
+    <div div class="grid">
+        <div class="g-col g-col-md-2 g-col-lg-3">
+            <div class="slide-menu open position-fixed">
+                <div class="slide-menu__content">
+                    <h2 class="slide-menu__title">Documentacion</h2>
+                    <ul class="slide-menu__list">
+                        <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../../documentacion.html">Documentacion</a>
+                        </li>
+
+                        <li class="slide-menu__item ">
+                            <a class="estilo-brillo" href="#">Alertas</a>
+                        </li>
+
+                        <p class="">Componentes</p>
+
+                        <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="badge.html">Badge</a>
+                        </li>
+                        <p class="">Disposición</p>
+                        <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="container.html">Container</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="slide-menu__toggle bg-alert-neon mx-3 ">
+                    <div class="img-izq-arrow-white icon-open"></div>
+                    <div class="img-der-arrow-white icon-closed"></div>
+                </button>
+            </div>
+        </div>
+
+
+        <!-- CONTENEDOR PRINCIPAL -->
+        <div class="g-col-12 g-col-md-9  g-col-lg-8 mt-3">
+            <header class="container bg-secondary-neon border-warning text-white text-center py-5">
+                <!-- ############################### -->
+                <!-- COLOCAR TITULO Y MEDIO INTRO -->
+                <!-- ############################### -->
+                <h1>FORMULARIOS</h1>
+                <p>Los formularios permiten la entrada y envío de datos mediante campos interactivos. Esta sección incluye controles de texto, selectores, botones, checks y estilos personalizados que se adaptan a múltiples escenarios de uso.</p>
+            </header>
+
+            <!-- PARA COLOCAR EL CODIGO -->
+            <div class="row g-2 container justify-content-center">               
+                 <!-- ESQUELETO PARA REUTILIZAR A LA HORA DE HACER LA DOCS -->
+                <!-- ############################### -->
+                <!-- PRINCIPIO PARA COLOCAR TEXTO  -->
+                <!-- ############################### -->
+                <div class="container mt-5">
+
+                    <h2 class="text-white">FORMULARO SIMPLE</h2>
+                    <p>Un formulario básico con campos de entrada de texto, contraseña y casillas de verificación. Este tipo de estructura es ideal para recopilación de datos en interfaces simples y accesibles.</p>
+                    <div class="code container">
+                        <div class="code-example">
+                        <!-- COLOCAR EL CODIGO HTML DE EJEMPLO -->
+                           <form>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Correo Electronico</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Acepto los terminos</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                        <!-- PARA COLOCAR LENGUAJE -->
+                        <div class="code-lenguaje">
+                            <div class="row justify-content-between mx-3">
+                                <div>HTML</div>
+                                <div>
+                                    <div class="img-copy" alt="copy"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="code-block">
+                            <!-- BLOQUE DE CODIGO -->
+                            <!-- SOLO ESTE PUEDE LLEVAR ASI RARO LA SANGRIA -->
+                            <pre><code class="language-html">  
+&lt;form&gt;
+    &lt;div class=&quot;mb-3&quot;&gt;
+        &lt;label for=&quot;exampleInputEmail1&quot; class=&quot;form-label&quot;&gt;Email address&lt;/label&gt;
+        &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;exampleInputEmail1&quot; aria-describedby=&quot;emailHelp&quot;&gt;
+        &lt;div id=&quot;emailHelp&quot; class=&quot;form-text&quot;&gt;
+            We'll never share your email with anyone else.
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;mb-3&quot;&gt;
+        &lt;label for=&quot;exampleInputPassword1&quot; class=&quot;form-label&quot;&gt;Password&lt;/label&gt;
+        &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;exampleInputPassword1&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;mb-3 form-check&quot;&gt;
+        &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; id=&quot;exampleCheck1&quot;&gt;
+        &lt;label class=&quot;form-check-label&quot; for=&quot;exampleCheck1&quot;&gt;Check me out&lt;/label&gt;
+    &lt;/div&gt;
+
+    &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+                            </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!-- ############################### -->
+                <!-- FIN PARA COLOCAR TEXTO  -->
+                <!-- ############################### -->
+
+                <!-- NUEVO EJEMPLO -->
+                <div class="container">
+                    <!-- PARA COLOCAR OTRO CODE PRUEBA -->
+                      <!-- ESQUELETO PARA REUTILIZAR A LA HORA DE HACER LA DOCS -->
+                       <h2 class="text-white">Datalists</h2>
+                       <p>Los datalists permiten crear campos de texto con autocompletado usando una lista de opciones predefinidas. Son útiles para ayudar al usuario a escribir datos correctos sin limitarlo completamente como un menú select.</p>
+
+                    <div class="code container mt-4">
+                        <div class="code-example">
+                            <!-- COLOCAR EL CODIGO HTML DE EJEMPLO -->
+                            <label for="exampleDataList" class="form-label">De donde eres</label>
+                            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+                            <datalist id="datalistOptions">
+                                <option value="San Francisco">
+                                <option value="New York">
+                                <option value="Seattle">
+                                <option value="Los Angeles">
+                                <option value="Chicago">
+                            </datalist>
+                        </div>
+                        <!-- PARA COLOCAR LENGUAJE -->
+                        <div class="code-lenguaje">
+                            <div class="row justify-content-between mx-3">
+                            <div>HTML</div>
+                            <div>
+                                <div class="img-copy" alt="copy"></div>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- BLOQUE DE CODIGO -->
+                        <div class="code-block">
+                            <pre><code class="language-html">  
+&lt;label for=&quot;exampleDataList&quot; class=&quot;form-label&quot;&gt;De donde eres&lt;/label&gt;
+&lt;input class=&quot;form-control&quot; list=&quot;datalistOptions&quot; id=&quot;exampleDataList&quot; placeholder=&quot;Type to search...&quot;&gt;
+&lt;datalist id=&quot;datalistOptions&quot;&gt;
+    &lt;option value=&quot;San Francisco&quot;&gt;
+    &lt;option value=&quot;New York&quot;&gt;
+    &lt;option value=&quot;Seattle&quot;&gt;
+    &lt;option value=&quot;Los Angeles&quot;&gt;
+    &lt;option value=&quot;Chicago&quot;&gt;
+&lt;/datalist&gt;
+                            </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!-- ############################### -->
+                <!-- FIN PARA COLOCAR TEXTO  -->
+                <!-- ############################### -->
+                 
+							 <!-- NUEVO EJEMPLO -->
+                <div class="container">
+                    <!-- PARA COLOCAR OTRO CODE PRUEBA -->
+                      <!-- ESQUELETO PARA REUTILIZAR A LA HORA DE HACER LA DOCS -->
+                       <h2 class="text-white">Form Select</h2>
+                       <p> El elemento <code>&lt;select&gt;</code> permite al usuario elegir una opción de una lista desplegable. Es útil cuando se necesita limitar la entrada a un conjunto definido de valores preestablecidos. </p>
+
+                    <div class="code container mt-4">
+                        <div class="code-example">
+                            <!-- COLOCAR EL CODIGO HTML DE EJEMPLO -->
+                             <label for="">Escoja un numero </label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <!-- PARA COLOCAR LENGUAJE -->
+                        <div class="code-lenguaje">
+                            <div class="row justify-content-between mx-3">
+                            <div>HTML</div>
+                            <div>
+                                <div class="img-copy" alt="copy"></div>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- BLOQUE DE CODIGO -->
+                        <div class="code-block">
+                            <pre><code class="language-html"> 
+&lt;label for=&quot;&quot;&gt;Escoja un numero &lt;/label&gt; 
+&lt;select class=&quot;form-select&quot; aria-label=&quot;Default select example&quot;&gt;
+    &lt;option selected&gt;Open this select menu&lt;/option&gt;
+    &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;
+    &lt;option value=&quot;2&quot;&gt;Two&lt;/option&gt;
+    &lt;option value=&quot;3&quot;&gt;Three&lt;/option&gt;
+&lt;/select&gt;
+                            </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!-- ############################### -->
+                <!-- FIN PARA COLOCAR TEXTO  -->
+                <!-- ############################### -->
+
+                <!-- NUEVO EJEMPLO -->
+                <div class="container">
+                    <!-- PARA COLOCAR OTRO CODE PRUEBA -->
+                      <!-- ESQUELETO PARA REUTILIZAR A LA HORA DE HACER LA DOCS -->
+                        <h2 class="text-white">Select multiple</h2>
+                        <p>Este tipo de select permite al usuario elegir múltiples opciones al mismo tiempo. Para seleccionar varios elementos, se utiliza <span class="badge px-4">Cmd</span> + <span class="badge px-4">clic</span> en macOS o <span class="badge px-4">Ctrl</span> + <span class="badge px-4">clic</span> en Windows.</p>
+                        <div class="code container mt-4">
+                            <div class="code-example">
+                                <!-- COLOCAR EL CODIGO HTML DE EJEMPLO -->
+                                <select class="form-select" multiple aria-label="Multiple select example">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <!-- PARA COLOCAR LENGUAJE -->
+                            <div class="code-lenguaje">
+                                <div class="row justify-content-between mx-3">
+                                <div>HTML</div>
+                                <div>
+                                    <div class="img-copy" alt="copy"></div>
+                                </div>
+                                </div>
+                            </div>
+                        <!-- BLOQUE DE CODIGO -->
+                            <div class="code-block">
+                                <pre><code class="language-html">  
+&lt;select class=&quot;form-select&quot; multiple aria-label=&quot;Multiple select example&quot;&gt;
+    &lt;option selected&gt;Open this select menu&lt;/option&gt;
+    &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;
+    &lt;option value=&quot;2&quot;&gt;Two&lt;/option&gt;
+    &lt;option value=&quot;3&quot;&gt;Three&lt;/option&gt;
+&lt;/select&gt;
+                                </code></pre>
+                            </div>
+                    </div>
+                </div>
+
+                <!-- ############################### -->
+                <!-- FIN PARA COLOCAR TEXTO  -->
+                <!-- ############################### -->
+
+                <!-- NUEVO EJEMPLO -->
+                <div class="container">
+                    <!-- PARA COLOCAR OTRO CODE PRUEBA -->
+                      <!-- ESQUELETO PARA REUTILIZAR A LA HORA DE HACER LA DOCS -->
+                       <h2 class="text-white">Form Check</h2>
+                       <p>Los checkboxes permiten seleccionar una o más opciones.</p>
+                    <div class="code container mt-4">
+                        <div class="code-example">
+                            <!-- COLOCAR EL CODIGO HTML DE EJEMPLO -->
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                <label class="form-check-label" for="checkDefault">
+                                    Default checkbox
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="checkChecked" checked>
+                                <label class="form-check-label" for="checkChecked">
+                                    Checked checkbox
+                                </label>
+                            </div>
+                        </div>
+                        <!-- PARA COLOCAR LENGUAJE -->
+                        <div class="code-lenguaje">
+                            <div class="row justify-content-between mx-3">
+                            <div>HTML</div>
+                            <div>
+                                <div class="img-copy" alt="copy"></div>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- BLOQUE DE CODIGO -->
+                        <div class="code-block">
+                            <pre><code class="language-html">  
+&lt;div class=&quot;form-check&quot;&gt;
+    &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; value=&quot;&quot; id=&quot;checkDefault&quot;&gt;
+    &lt;label class=&quot;form-check-label&quot; for=&quot;checkDefault&quot;&gt;
+        Default checkbox
+    &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;form-check&quot;&gt;
+    &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; value=&quot;&quot; id=&quot;checkChecked&quot; checked&gt;
+    &lt;label class=&quot;form-check-label&quot; for=&quot;checkChecked&quot;&gt;
+        Checked checkbox
+    &lt;/label&gt;
+&lt;/div&gt;
+                            </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!-- ############################### -->
+                <!-- FIN PARA COLOCAR TEXTO  -->
+                <!-- ############################### -->
+
+                <!-- NUEVO EJEMPLO -->
+                <div class="container">
+                    <!-- PARA COLOCAR OTRO CODE PRUEBA -->
+                      <!-- ESQUELETO PARA REUTILIZAR A LA HORA DE HACER LA DOCS -->
+                       <h2 class="text-white">Form Radios</h2>
+                       <p>---</p>
+                    <div class="code container mt-4">
+                        <div class="code-example">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                                <label class="form-check-label" for="radioDefault1">
+                                    Default radio
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" checked>
+                                <label class="form-check-label" for="radioDefault2">
+                                    Default checked radio
+                                </label>
+                            </div>
+                        </div>
+                        <!-- PARA COLOCAR LENGUAJE -->
+                        <div class="code-lenguaje">
+                            <div class="row justify-content-between mx-3">
+                            <div>HTML</div>
+                            <div>
+                                <div class="img-copy" alt="copy"></div>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- BLOQUE DE CODIGO -->
+                        <div class="code-block">
+                            <pre><code class="language-html">  
+&lt;div class=&quot;form-check&quot;&gt;
+    &lt;input class=&quot;form-check-input&quot; type=&quot;radio&quot; name=&quot;radioDefault&quot; id=&quot;radioDefault1&quot;&gt;
+    &lt;label class=&quot;form-check-label&quot; for=&quot;radioDefault1&quot;&gt;
+        Default radio
+    &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;form-check&quot;&gt;
+    &lt;input class=&quot;form-check-input&quot; type=&quot;radio&quot; name=&quot;radioDefault&quot; id=&quot;radioDefault2&quot; checked&gt;
+    &lt;label class=&quot;form-check-label&quot; for=&quot;radioDefault2&quot;&gt;
+        Default checked radio
+    &lt;/label&gt;
+&lt;/div&gt;
+                            </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!-- ############################### -->
+                <!-- FIN PARA COLOCAR TEXTO  -->
+                <!-- ############################### -->
+
+                <!-- NUEVO EJEMPLO -->
+                <div class="container">
+                    <!-- PARA COLOCAR OTRO CODE PRUEBA -->
+                      <!-- ESQUELETO PARA REUTILIZAR A LA HORA DE HACER LA DOCS -->
+                       <h2 class="text-white">Input group</h2>
+                       <p>Los <span class="badge bg-secondary-neon text-white">input group</span> permiten combinar campos de entrada con elementos adicionales como texto o iconos. Se usan para mejorar la experiencia del usuario al mostrar un contexto claro, como el símbolo <code>@</code> en un campo de usuario.</p>
+                    <div class="code container mt-4">
+                        <div class="code-example">
+                            <!-- COLOCAR EL CODIGO HTML DE EJEMPLO -->
+                            <div class="input-group flex-nowrap">
+                                <span class="input-group-text" id="addon-wrapping">@</span>
+                                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+                            </div>
+                        </div>
+                        <!-- PARA COLOCAR LENGUAJE -->
+                        <div class="code-lenguaje">
+                            <div class="row justify-content-between mx-3">
+                            <div>HTML</div>
+                            <div>
+                                <div class="img-copy" alt="copy"></div>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- BLOQUE DE CODIGO -->
+                        <div class="code-block">
+                            <pre><code class="language-html">  
+                              &lt;div class=&quot;input-group flex-nowrap&quot;&gt;
+    &lt;span class=&quot;input-group-text&quot; id=&quot;addon-wrapping&quot;&gt;@&lt;/span&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Username&quot; aria-label=&quot;Username&quot; aria-describedby=&quot;addon-wrapping&quot;&gt;
+&lt;/div&gt;
+                            </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!-- ############################### -->
+                <!-- FIN PARA COLOCAR TEXTO  -->
+                <!-- ############################### -->
+
+                <!-- NUEVO EJEMPLO -->
+                <div class="container">
+                    <!-- PARA COLOCAR OTRO CODE PRUEBA -->
+                      <!-- ESQUELETO PARA REUTILIZAR A LA HORA DE HACER LA DOCS -->
+                       <h2 class="text-white">Input group ejemplos</h2>
+                       <p>Los <code>input group</code> permiten extender campos de entrada añadiendo texto, botones o áreas de texto a los lados. Son útiles para mostrar formatos, símbolos o para construir campos compuestos como nombres de usuario, precios o URLs.</p>
+
+                    <div class="code container mt-4">
+                        <div class="code-example">
+                            <!-- COLOCAR EL CODIGO HTML DE EJEMPLO -->
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">@</span>
+                                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <span class="input-group-text" id="basic-addon2">@example.com</span>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="basic-url" class="form-label">Your vanity URL</label>
+                                <div class="input-group">
+                                    <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+                                </div>
+                                <div class="form-text" id="basic-addon4">Example help text goes outside the input group.</div>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">$</span>
+                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                <span class="input-group-text">.00</span>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+                                <span class="input-group-text">@</span>
+                                <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+                            </div>
+
+                            <div class="input-group">
+                                <span class="input-group-text">With textarea</span>
+                                <textarea class="form-control" aria-label="With textarea"></textarea>
+                            </div>
+                        </div>
+                        <!-- PARA COLOCAR LENGUAJE -->
+                        <div class="code-lenguaje">
+                            <div class="row justify-content-between mx-3">
+                            <div>HTML</div>
+                            <div>
+                                <div class="img-copy" alt="copy"></div>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- BLOQUE DE CODIGO -->
+                        <div class="code-block">
+                            <pre><code class="language-html">  
+&lt;div class=&quot;input-group mb-3&quot;&gt;
+    &lt;span class=&quot;input-group-text&quot; id=&quot;basic-addon1&quot;&gt;@&lt;/span&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Username&quot; aria-label=&quot;Username&quot; aria-describedby=&quot;basic-addon1&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;input-group mb-3&quot;&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Recipient's username&quot; aria-label=&quot;Recipient's username&quot; aria-describedby=&quot;basic-addon2&quot;&gt;
+    &lt;span class=&quot;input-group-text&quot; id=&quot;basic-addon2&quot;&gt;@example.com&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;mb-3&quot;&gt;
+    &lt;label for=&quot;basic-url&quot; class=&quot;form-label&quot;&gt;Your vanity URL&lt;/label&gt;
+    &lt;div class=&quot;input-group&quot;&gt;
+        &lt;span class=&quot;input-group-text&quot; id=&quot;basic-addon3&quot;&gt;https://example.com/users/&lt;/span&gt;
+        &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;basic-url&quot; aria-describedby=&quot;basic-addon3 basic-addon4&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;form-text&quot; id=&quot;basic-addon4&quot;&gt;Example help text goes outside the input group.&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;input-group mb-3&quot;&gt;
+    &lt;span class=&quot;input-group-text&quot;&gt;$&lt;/span&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; aria-label=&quot;Amount (to the nearest dollar)&quot;&gt;
+    &lt;span class=&quot;input-group-text&quot;&gt;.00&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;input-group mb-3&quot;&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Username&quot; aria-label=&quot;Username&quot;&gt;
+    &lt;span class=&quot;input-group-text&quot;&gt;@&lt;/span&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Server&quot; aria-label=&quot;Server&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;input-group&quot;&gt;
+    &lt;span class=&quot;input-group-text&quot;&gt;With textarea&lt;/span&gt;
+    &lt;textarea class=&quot;form-control&quot; aria-label=&quot;With textarea&quot;&gt;&lt;/textarea&gt;
+&lt;/div&gt;
+                            </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!-- ############################### -->
+                <!-- FIN PARA COLOCAR TEXTO  -->
+                <!-- ############################### -->
+
+                							 <!-- NUEVO EJEMPLO -->
+                <div class="container">
+                    <!-- PARA COLOCAR OTRO CODE PRUEBA -->
+                      <!-- ESQUELETO PARA REUTILIZAR A LA HORA DE HACER LA DOCS -->
+                       <h2 class="text-white">Input group con checkbox y radio</h2>
+                       <p>Podés integrar checkboxes o radios dentro de un <code>input group</code> para agregar opciones de selección directa junto a campos de texto. Esto es útil cuando se desea asociar rápidamente una acción o estado a la entrada.</p>
+
+                    <div class="code container mt-4">
+                        <div class="code-example">
+                            <!-- COLOCAR EL CODIGO HTML DE EJEMPLO -->
+                            <div class="input-group">
+                                <div class="input-group-text">
+                                    <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                </div>
+                                <input type="text" class="form-control" aria-label="Text input with checkbox">
+                            </div>
+
+                            <div class="input-group">
+                                <div class="input-group-text">
+                                    <input class="form-check-input mt-0" type="radio" value="" aria-label="Radio button for following text input">
+                                </div>
+                                <input type="text" class="form-control" aria-label="Text input with radio button">
+                            </div>    
+                        </div> 
+                        <!-- PARA COLOCAR LENGUAJE -->
+                        <div class="code-lenguaje">
+                            <div class="row justify-content-between mx-3">
+                            <div>HTML</div>
+                            <div>
+                                <div class="img-copy" alt="copy"></div>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- BLOQUE DE CODIGO -->
+                        <div class="code-block">
+                            <pre><code class="language-html">  
+&lt;div class=&quot;input-group&quot;&gt;
+    &lt;div class=&quot;input-group-text&quot;&gt;
+        &lt;input class=&quot;form-check-input mt-0&quot; type=&quot;checkbox&quot; value=&quot;&quot; aria-label=&quot;Checkbox for following text input&quot;&gt;
+    &lt;/div&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; aria-label=&quot;Text input with checkbox&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;input-group&quot;&gt;
+    &lt;div class=&quot;input-group-text&quot;&gt;
+        &lt;input class=&quot;form-check-input mt-0&quot; type=&quot;radio&quot; value=&quot;&quot; aria-label=&quot;Radio button for following text input&quot;&gt;
+    &lt;/div&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; aria-label=&quot;Text input with radio button&quot;&gt;
+&lt;/div&gt;
+                            </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!-- ############################### -->
+                <!-- FIN PARA COLOCAR TEXTO  -->
+                <!-- ############################### -->
+
+                <!-- FORM GRID -->
+                <div class="container">
+                    <!-- PARA COLOCAR OTRO CODE PRUEBA -->
+                      <!-- ESQUELETO PARA REUTILIZAR A LA HORA DE HACER LA DOCS -->
+                       <h2 class="text-white">Form grid</h2>
+                       <p>El sistema de grillas de Bootstrap permite alinear múltiples campos en una misma fila. Usando las clases <code>row</code> y <code>col</code>, podés organizar formularios de forma responsiva y ordenada.</p>
+                    <div class="code container mt-4">
+                        <div class="code-example">
+                            <!-- COLOCAR EL CODIGO HTML DE EJEMPLO -->
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- PARA COLOCAR LENGUAJE -->
+                        <div class="code-lenguaje">
+                            <div class="row justify-content-between mx-3">
+                            <div>HTML</div>
+                            <div>
+                                <div class="img-copy" alt="copy"></div>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- BLOQUE DE CODIGO -->
+                        <div class="code-block">
+                            <pre><code class="language-html">  
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col&quot;&gt;
+        &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;First name&quot; aria-label=&quot;First name&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;
+        &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Last name&quot; aria-label=&quot;Last name&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                            </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!-- ############################### -->
+                <!-- FIN PARA COLOCAR TEXTO  -->
+                <!-- ############################### -->
+                							 <!-- NUEVO EJEMPLO -->
+                <div class="container">
+                    <!-- PARA COLOCAR OTRO CODE PRUEBA -->
+                      <!-- ESQUELETO PARA REUTILIZAR A LA HORA DE HACER LA DOCS -->
+                    <h2 class="text-white">Ejemplo de formulario </h2>
+                    <p>Este formulario incluye campos de entrada básicos como nombre, correo, contraseña, así como opciones de selección mediante radios y checkboxes.</p>
+                    <div class="code container mt-4">
+                        <div class="code-example">
+                            <!-- COLOCAR EL CODIGO HTML DE EJEMPLO -->
+                            <label for="" class="form-label">añade tu nombre</label>
+                            <input type="text" class="form-control" placeholder="Nombre completo">
+                            
+                            <label for="" class="form-label">añade tu correo</label>
+                            <input type="email" class="form-control" placeholder="Correo electrónico">
+                            <label for="" class="form-label">Ingrese su contraseña</label>
+                            <input type="password" class="form-control" placeholder="Contraseña">
+                            <div class="form-check">
+                                <label><input type="radio" name="sexo" class="form-check-input"> Hombre</label>
+                                <label><input type="radio" name="sexo" class="form-check-input"> Mujer</label>
+                            </div>         
+                            <div class="form-check">
+                                <label><input type="checkbox" class="form-check-input"> Acepto los términos</label>
+                            </div>
+                        
+                            <div class="form-check row justify-content-center">
+                                <div class="col-3"><label for="" class="form-label">Genero</label></div>
+                                <div class="col">
+                                    <label><input type="radio" name="genero" class="form-check-input"> Hombre</label>
+                                    <label><input type="radio" name="genero" class="form-check-input"> Mujer</label>
+                                </div>
+                            </div>
+                            <input type="submit" class="form-control btn btn-outline-primary" value="Enviar formulario">
+
+                        </div>
+                        <!-- PARA COLOCAR LENGUAJE -->
+                        <div class="code-lenguaje">
+                            <div class="row justify-content-between mx-3">
+                            <div>HTML</div>
+                            <div>
+                                <div class="img-copy" alt="copy"></div>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- BLOQUE DE CODIGO -->
+                        <div class="code-block">
+                            <pre><code class="language-html">  
+&lt;label for=&quot;&quot; class=&quot;form-label&quot;&gt;A&ntilde;ade tu nombre&lt;/label&gt;
+&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Nombre completo&quot;&gt;
+
+&lt;label for=&quot;&quot; class=&quot;form-label&quot;&gt;A&ntilde;ade tu correo&lt;/label&gt;
+&lt;input type=&quot;email&quot; class=&quot;form-control&quot; placeholder=&quot;Correo electr&oacute;nico&quot;&gt;
+
+&lt;label for=&quot;&quot; class=&quot;form-label&quot;&gt;Ingrese su contrase&ntilde;a&lt;/label&gt;
+&lt;input type=&quot;password&quot; class=&quot;form-control&quot; placeholder=&quot;Contrase&ntilde;a&quot;&gt;
+
+&lt;div class=&quot;form-check&quot;&gt;
+    &lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;sexo&quot; class=&quot;form-check-input&quot;&gt; Hombre&lt;/label&gt;
+    &lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;sexo&quot; class=&quot;form-check-input&quot;&gt; Mujer&lt;/label&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;form-check&quot;&gt;
+    &lt;label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot;&gt; Acepto los t&eacute;rminos&lt;/label&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;form-check row justify-content-center&quot;&gt;
+    &lt;div class=&quot;col-3&quot;&gt;&lt;label for=&quot;&quot; class=&quot;form-label&quot;&gt;G&eacute;nero&lt;/label&gt;&lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;
+        &lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;genero&quot; class=&quot;form-check-input&quot;&gt; Hombre&lt;/label&gt;
+        &lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;genero&quot; class=&quot;form-check-input&quot;&gt; Mujer&lt;/label&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;input type=&quot;submit&quot; class=&quot;form-control btn btn-outline-primary&quot; value=&quot;Enviar formulario&quot;&gt;
+                            </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!-- ############################### -->
+                <!-- FIN PARA COLOCAR TEXTO  -->
+                <!-- ############################### -->
+
+                <!-- NUEVO EJEMPLO -->
+                <div class="container">
+                    <!-- PARA COLOCAR OTRO CODE PRUEBA -->
+                      <!-- ESQUELETO PARA REUTILIZAR A LA HORA DE HACER LA DOCS -->
+                       <h2 class="text-white">Ejemplo de formulario con layout</h2>
+                       <p>Este formulario utiliza un sistema de grillas para distribuir los campos de manera flexible y responsiva. Es útil para formularios complejos que requieren una alineación más controlada entre múltiples columnas y filas.</p>
+
+                    <div class="code container mt-4">
+                        <div class="code-example">
+                            <!-- COLOCAR EL CODIGO HTML DE EJEMPLO -->
+                            <form class="row g-5 m-2">
+                                <h2 class="col-12">Formulario layout</h2>
+
+                                <div class="col-6">
+                                    <label for="inputEmail4" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="inputEmail4">
+                                </div>
+
+                                <div class="col-6">
+                                    <label for="inputPassword4" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="inputPassword4">
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="inputAddress" class="form-label">Address</label>
+                                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="inputAddress2" class="form-label">Address 2</label>
+                                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                </div>
+
+                                <div class="col-5">
+                                    <label for="inputCity" class="form-label">City</label>
+                                    <input type="text" class="form-control" id="inputCity">
+                                </div>
+
+                                <div class="col-4">
+                                    <label for="inputState" class="form-label">State</label>
+                                    <select id="inputState" class="form-select">
+                                        <option selected>Choose...</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-3">
+                                    <label for="inputZip" class="form-label">Zip</label>
+                                    <input type="text" class="form-control" id="inputZip">
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <label class="form-check-label" for="gridCheck">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                                            Check me out
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary">Sign in</button>
+                                </div>
+
+                                <div class="col-12"><br></div>
+                            </form>
+                        </div>
+                        <!-- PARA COLOCAR LENGUAJE -->
+                        <div class="code-lenguaje">
+                            <div class="row justify-content-between mx-3">
+                            <div>HTML</div>
+                            <div>
+                                <div class="img-copy" alt="copy"></div>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- BLOQUE DE CODIGO -->
+                        <div class="code-block">
+                            <pre><code class="language-html">  
+&lt;form class=&quot;row g-5 m-2&quot;&gt;
+    &lt;h2 class=&quot;col-12&quot;&gt;Formulario layout&lt;/h2&gt;
+
+    &lt;div class=&quot;col-6&quot;&gt;
+        &lt;label for=&quot;inputEmail4&quot; class=&quot;form-label&quot;&gt;Email&lt;/label&gt;
+        &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;inputEmail4&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;col-6&quot;&gt;
+        &lt;label for=&quot;inputPassword4&quot; class=&quot;form-label&quot;&gt;Password&lt;/label&gt;
+        &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;inputPassword4&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;col-12&quot;&gt;
+        &lt;label for=&quot;inputAddress&quot; class=&quot;form-label&quot;&gt;Address&lt;/label&gt;
+        &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;inputAddress&quot; placeholder=&quot;1234 Main St&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;col-12&quot;&gt;
+        &lt;label for=&quot;inputAddress2&quot; class=&quot;form-label&quot;&gt;Address 2&lt;/label&gt;
+        &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;inputAddress2&quot; placeholder=&quot;Apartment, studio, or floor&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;col-5&quot;&gt;
+        &lt;label for=&quot;inputCity&quot; class=&quot;form-label&quot;&gt;City&lt;/label&gt;
+        &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;inputCity&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;col-4&quot;&gt;
+        &lt;label for=&quot;inputState&quot; class=&quot;form-label&quot;&gt;State&lt;/label&gt;
+        &lt;select id=&quot;inputState&quot; class=&quot;form-select&quot;&gt;
+            &lt;option selected&gt;Choose...&lt;/option&gt;
+            &lt;option&gt;...&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;col-3&quot;&gt;
+        &lt;label for=&quot;inputZip&quot; class=&quot;form-label&quot;&gt;Zip&lt;/label&gt;
+        &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;inputZip&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;col-12&quot;&gt;
+        &lt;div class=&quot;form-check&quot;&gt;
+            &lt;label class=&quot;form-check-label&quot; for=&quot;gridCheck&quot;&gt;
+                &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;gridCheck&quot;&gt;
+                Check me out
+            &lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;col-12&quot;&gt;
+        &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;Sign in&lt;/button&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;col-12&quot;&gt;&lt;br&gt;&lt;/div&gt;
+&lt;/form&gt;
+                            </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!-- ############################### -->
+                <!-- FIN PARA COLOCAR TEXTO  -->
+                <!-- ############################### -->
+
+                <!-- NUEVO EJEMPLO -->
+                <div class="container">
+                    <!-- PARA COLOCAR OTRO CODE PRUEBA -->
+                      <!-- ESQUELETO PARA REUTILIZAR A LA HORA DE HACER LA DOCS -->
+                       <h2 class="text-white">Formulario completo con elementos múltiples</h2>
+                       <p>Este formulario incluye una gran variedad de controles de entrada como campos de texto, contraseñas, áreas de texto, selects (simples y múltiples), botones de radio, checkboxes, switches, inputs tipo file y rangos. Es una referencia completa para entender cómo estructurar y organizar formularios con múltiples elementos de entrada.</p>
+
+                    <div class="code container mt-4">
+                        <div class="code-example">
+                            <!-- COLOCAR EL CODIGO HTML DE EJEMPLO -->
+                            <form>
+                                <fieldset class="p-4">
+                                    <legend>Legend</legend>
+                                    <div>
+                                        <label for="exampleInputEmail1" class="form-label mt-4">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                    </div>
+
+                                    <div>
+                                        <label for="exampleInputPassword1" class="form-label mt-4">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" autocomplete="off">
+                                    </div>
+
+                                    <div>
+                                        <label for="exampleSelect1" class="form-label mt-4">Example select</label>
+                                        <select class="form-select" id="exampleSelect1">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+
+                                    <div>
+                                        <label for="exampleSelect1" class="form-label mt-4">Example disabled select</label>
+                                        <select class="form-select" id="exampleDisabledSelect1" disabled>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+
+                                    <div>
+                                        <label for="exampleSelect2" class="form-label mt-4">Example multiple select</label>
+                                        <select multiple class="form-select" id="exampleSelect2">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+
+                                    <div>
+                                        <label for="exampleTextarea" class="form-label mt-4">Example textarea</label>
+                                        <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                                    </div>
+
+                                    <div>
+                                        <label for="formFile" class="form-label mt-4">Default file input example</label>
+                                        <input class="form-control" type="file" id="formFile">
+                                    </div>
+
+                                    <fieldset>
+                                        <legend class="mt-4">Radio buttons</legend>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                            <label class="form-check-label" for="optionsRadios1">
+                                                Option one is this and that—be sure to include why it's great
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                            <label class="form-check-label" for="optionsRadios2">
+                                                Option two can be something else and selecting it will deselect option one
+                                            </label>
+                                        </div>
+                                        <div class="form-check disabled">
+                                            <input class="form-check-input" type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+                                            <label class="form-check-label" for="optionsRadios3">
+                                                Option three is disabled
+                                            </label>
+                                        </div>
+                                    </fieldset>
+
+                                    <fieldset>
+                                        <legend class="mt-4">Checkboxes</legend>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Default checkbox
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                Checked checkbox
+                                            </label>
+                                        </div>
+                                    </fieldset>
+
+                                    <fieldset>
+                                        <legend class="mt-4">Switches</legend>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                            <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+                                        </div>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                            <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+                                        </div>
+                                    </fieldset>
+
+                                    <fieldset>
+                                        <legend class="mt-4">Ranges</legend>
+                                        <label for="customRange1" class="form-label">Example range</label>
+                                        <input type="range" class="form-range" id="customRange1">
+
+                                        <label for="disabledRange" class="form-label">Disabled range</label>
+                                        <input type="range" class="form-range" id="disabledRange" disabled>
+
+                                        <label for="customRange3" class="form-label">Example range</label>
+                                        <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
+                                    </fieldset>
+
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <!-- PARA COLOCAR LENGUAJE -->
+                        <div class="code-lenguaje">
+                            <div class="row justify-content-between mx-3">
+                            <div>HTML</div>
+                            <div>
+                                <div class="img-copy" alt="copy"></div>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- BLOQUE DE CODIGO -->
+                        <div class="code-block">
+                            <pre><code class="language-html">  
+&lt;form&gt;
+    &lt;fieldset class=&quot;p-4&quot;&gt;
+        &lt;legend&gt;Legend&lt;/legend&gt;
+
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;label for=&quot;staticEmail&quot; class=&quot;col-sm-2 col-form-label&quot;&gt;Email&lt;/label&gt;
+            &lt;div class=&quot;col-sm-10&quot;&gt;
+                &lt;input type=&quot;text&quot; readonly class=&quot;form-control&quot; id=&quot;staticEmail&quot; value=&quot;email@example.com&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div&gt;
+            &lt;label for=&quot;exampleInputEmail1&quot; class=&quot;form-label mt-4&quot;&gt;Email address&lt;/label&gt;
+            &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;exampleInputEmail1&quot; aria-describedby=&quot;emailHelp&quot; placeholder=&quot;Enter email&quot;&gt;
+            &lt;small id=&quot;emailHelp&quot; class=&quot;form-text text-muted&quot;&gt;We'll never share your email with anyone else.&lt;/small&gt;
+        &lt;/div&gt;
+
+        &lt;div&gt;
+            &lt;label for=&quot;exampleInputPassword1&quot; class=&quot;form-label mt-4&quot;&gt;Password&lt;/label&gt;
+            &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;exampleInputPassword1&quot; placeholder=&quot;Password&quot; autocomplete=&quot;off&quot;&gt;
+        &lt;/div&gt;
+
+        &lt;div&gt;
+            &lt;label for=&quot;exampleSelect1&quot; class=&quot;form-label mt-4&quot;&gt;Example select&lt;/label&gt;
+            &lt;select class=&quot;form-select&quot; id=&quot;exampleSelect1&quot;&gt;
+                &lt;option&gt;1&lt;/option&gt;
+                &lt;option&gt;2&lt;/option&gt;
+                &lt;option&gt;3&lt;/option&gt;
+                &lt;option&gt;4&lt;/option&gt;
+                &lt;option&gt;5&lt;/option&gt;
+            &lt;/select&gt;
+        &lt;/div&gt;
+
+        &lt;div&gt;
+            &lt;label for=&quot;exampleSelect1&quot; class=&quot;form-label mt-4&quot;&gt;Example disabled select&lt;/label&gt;
+            &lt;select class=&quot;form-select&quot; id=&quot;exampleDisabledSelect1&quot; disabled&gt;
+                &lt;option&gt;1&lt;/option&gt;
+                &lt;option&gt;2&lt;/option&gt;
+                &lt;option&gt;3&lt;/option&gt;
+                &lt;option&gt;4&lt;/option&gt;
+                &lt;option&gt;5&lt;/option&gt;
+            &lt;/select&gt;
+        &lt;/div&gt;
+
+        &lt;div&gt;
+            &lt;label for=&quot;exampleSelect2&quot; class=&quot;form-label mt-4&quot;&gt;Example multiple select&lt;/label&gt;
+            &lt;select multiple class=&quot;form-select&quot; id=&quot;exampleSelect2&quot;&gt;
+                &lt;option&gt;1&lt;/option&gt;
+                &lt;option&gt;2&lt;/option&gt;
+                &lt;option&gt;3&lt;/option&gt;
+                &lt;option&gt;4&lt;/option&gt;
+                &lt;option&gt;5&lt;/option&gt;
+            &lt;/select&gt;
+        &lt;/div&gt;
+
+        &lt;div&gt;
+            &lt;label for=&quot;exampleTextarea&quot; class=&quot;form-label mt-4&quot;&gt;Example textarea&lt;/label&gt;
+            &lt;textarea class=&quot;form-control&quot; id=&quot;exampleTextarea&quot; rows=&quot;3&quot;&gt;&lt;/textarea&gt;
+        &lt;/div&gt;
+
+        &lt;div&gt;
+            &lt;label for=&quot;formFile&quot; class=&quot;form-label mt-4&quot;&gt;Default file input example&lt;/label&gt;
+            &lt;input class=&quot;form-control&quot; type=&quot;file&quot; id=&quot;formFile&quot;&gt;
+        &lt;/div&gt;
+
+        &lt;fieldset&gt;
+            &lt;legend class=&quot;mt-4&quot;&gt;Radio buttons&lt;/legend&gt;
+            &lt;div class=&quot;form-check&quot;&gt;
+                &lt;input class=&quot;form-check-input&quot; type=&quot;radio&quot; name=&quot;optionsRadios&quot; id=&quot;optionsRadios1&quot; value=&quot;option1&quot; checked&gt;
+                &lt;label class=&quot;form-check-label&quot; for=&quot;optionsRadios1&quot;&gt;
+                    Option one is this and that&mdash;be sure to include why it's great
+                &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-check&quot;&gt;
+                &lt;input class=&quot;form-check-input&quot; type=&quot;radio&quot; name=&quot;optionsRadios&quot; id=&quot;optionsRadios2&quot; value=&quot;option2&quot;&gt;
+                &lt;label class=&quot;form-check-label&quot; for=&quot;optionsRadios2&quot;&gt;
+                    Option two can be something else and selecting it will deselect option one
+                &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-check disabled&quot;&gt;
+                &lt;input class=&quot;form-check-input&quot; type=&quot;radio&quot; name=&quot;optionsRadios&quot; id=&quot;optionsRadios3&quot; value=&quot;option3&quot; disabled&gt;
+                &lt;label class=&quot;form-check-label&quot; for=&quot;optionsRadios3&quot;&gt;
+                    Option three is disabled
+                &lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/fieldset&gt;
+
+        &lt;fieldset&gt;
+            &lt;legend class=&quot;mt-4&quot;&gt;Checkboxes&lt;/legend&gt;
+            &lt;div class=&quot;form-check&quot;&gt;
+                &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; value=&quot;&quot; id=&quot;flexCheckDefault&quot;&gt;
+                &lt;label class=&quot;form-check-label&quot; for=&quot;flexCheckDefault&quot;&gt;
+                    Default checkbox
+                &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-check&quot;&gt;
+                &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; value=&quot;&quot; id=&quot;flexCheckChecked&quot; checked&gt;
+                &lt;label class=&quot;form-check-label&quot; for=&quot;flexCheckChecked&quot;&gt;
+                    Checked checkbox
+                &lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/fieldset&gt;
+
+        &lt;fieldset&gt;
+            &lt;legend class=&quot;mt-4&quot;&gt;Switches&lt;/legend&gt;
+            &lt;div class=&quot;form-check form-switch&quot;&gt;
+                &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;flexSwitchCheckDefault&quot;&gt;
+                &lt;label class=&quot;form-check-label&quot; for=&quot;flexSwitchCheckDefault&quot;&gt;Default switch checkbox input&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-check form-switch&quot;&gt;
+                &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;flexSwitchCheckChecked&quot; checked&gt;
+                &lt;label class=&quot;form-check-label&quot; for=&quot;flexSwitchCheckChecked&quot;&gt;Checked switch checkbox input&lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/fieldset&gt;
+
+        &lt;fieldset&gt;
+            &lt;legend class=&quot;mt-4&quot;&gt;Ranges&lt;/legend&gt;
+            &lt;label for=&quot;customRange1&quot; class=&quot;form-label&quot;&gt;Example range&lt;/label&gt;
+            &lt;input type=&quot;range&quot; class=&quot;form-range&quot; id=&quot;customRange1&quot;&gt;
+
+            &lt;label for=&quot;disabledRange&quot; class=&quot;form-label&quot;&gt;Disabled range&lt;/label&gt;
+            &lt;input type=&quot;range&quot; class=&quot;form-range&quot; id=&quot;disabledRange&quot; disabled&gt;
+
+            &lt;label for=&quot;customRange3&quot; class=&quot;form-label&quot;&gt;Example range&lt;/label&gt;
+            &lt;input type=&quot;range&quot; class=&quot;form-range&quot; min=&quot;0&quot; max=&quot;5&quot; step=&quot;0.5&quot; id=&quot;customRange3&quot;&gt;
+        &lt;/fieldset&gt;
+
+        &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;Submit&lt;/button&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;
+                            </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!-- ############################### -->
+                <!-- FIN PARA COLOCAR TEXTO  -->
+                <!-- ############################### -->
+            </div>   
+        </div>  
+    </div>  
+
+    <footer class="container-fluid bg-dark text-white text-center py-3 mt-5">
+        <p>© 2025 Retro Sci-Fi Library.</p>
+    </footer>
+
+    <script src="../../dist/js/retrosci-fi.js"></script>
+
+    <script>document.addEventListener("DOMContentLoaded", () => { closeMenu(); });</script>
+</body>
+</html>
