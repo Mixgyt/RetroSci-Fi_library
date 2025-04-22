@@ -4,10 +4,10 @@
 .input-group {
     display: flex;
     width: 100%;
-    margin-bottom: 1rem;
     // Para aplicar border radius
     border-radius: 0.5rem;
     overflow: hidden;
+    margin: 0;
 
     .form-control {
         flex: 1 1 auto;
@@ -23,5 +23,6 @@
         color: if(color.channel($primary, "lightness", $space: hsl) > 60%, #000, #fff);
         font-weight: 600;
         border: 2px solid $primary;
+        margin: 0;
     }
 }

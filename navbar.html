@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="dist/css/sci-fi.css">
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+</head>
+
+<body class="bg-lightd">
+    <nav class=" navbar bg-secondary estilo-brillo border rounded border-secondary hover-neon  position-sticky top-0"
+        id="nav1">
+        <div class="navbar-header">
+            <div class="navbar-brand">
+                <div class="img-logo-prin-white"></div>Retro Sci-Fi
+            </div>
+            <button class="navbar-toggle" onclick="toggleMenu('nav1')">
+                <div class="img-menu-white"></div>
+            </button>
+        </div>
+        <div class="navbar-nav">
+            <a class="nav-item rounded-pill" href="#inicio">Inicio</a>
+            <a class="nav-item rounded-pill" href="#estructura">Estructura</a>
+            <a class="nav-item rounded-pill" href="#grid">Grid</a>
+            <a class="nav-item rounded-pill" href="#alerts">Alerts</a>
+        </div>
+    </nav>
+
+    <div div class="grid">
+        <div class="g-col g-col-md-2 g-col-lg-3">
+
+            <div class="">
+
+                <div class=""> <!-- Crear el contenedo para el aside bar (o usar las clases de posision)-->
+
+                    <div class="slide-menu open position-fixed">
+                        <div class="slide-menu__content">
+                            <h2 class="slide-menu__title">Documentacion</h2>
+                            <ul class="slide-menu__list">
+                                <li class="slide-menu__item">
+                                    <a class="estilo-brillo" href="documentacion.html">Documentacion</a>
+                                </li>
+
+                                <li class="slide-menu__item ">
+                                    <a class="estilo-brillo" href="#">Alertas</a>
+                                </li>
+
+                                <p class="">Componentes</p>
+
+                                <li class="slide-menu__item">
+                                    <a class="estilo-brillo" href="badge.html">Badge</a>
+                                </li>
+
+
+                                <p class="">Disposición</p>
+
+                                <li class="slide-menu__item">
+                                    <a class="estilo-brillo" href="container.html">Container</a>
+                                </li>
+                                <li class="slide-menu__item">
+                                    <a class="estilo-brillo" href="navbar.html">Navbar</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="slide-menu__toggle bg-secondary mx-3 ">
+                            <div class="img-izq-arrow-white icon-open"></div>
+                            <div class="img-der-arrow-white icon-closed"></div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="g-col-12 g-col-md-9  g-col-lg-8">
+            <h1> </h1>
+            <header class="container bg-secondary-neon border-warning text-white text-center py-5">
+                <h1>Navbar</h1>
+                <p>El navbar es un componente esencial que permite la navegación entre las diferentes secciones de un sitio web. 
+                    Generalmente se ubica en la parte superior e incluye enlaces, menús desplegables y botones que guían al usuario 
+                    a través del contenido del sitio.</p>                    
+            </header>
+
+
+            <div class="row g-2 container">
+                <div class="col-12">
+                    <h1>Marca</h1>
+                    <p>El .navbar-brand se puede aplicar a la mayoría de los elementos, pero un div funciona mejor, ya
+                        que
+                        algunos elementos pueden requerir clases de utilidad o estilos personalizados.</p>
+                    <!-------------------------------- ESQUELETO PARA REUTILIZAR A LA HORA DE HACER LA DOCS--------------------------------- -->
+                    <div class="code container mt-4">
+                        <div class="code-example">
+                            <!-- COLOCAR EL CODIGO HTML DE EJEMPLO -->
+                            <nav class="navbar bg-info">
+                                <div class="navbar-header">
+                                    <div class="navbar-brand">Navbar</div>
+                                </div>
+                            </nav>
+                        </div>
+                        <!-- PARA COLOCAR LENGUAJE -->
+                        <div class="code-lenguaje">
+                            <div class="row justify-content-between mx-3">
+                                <div>HTML</div>
+                                <div>
+                                    <div class="img-copy" alt="copy"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BLOQUE DE CODIGO -->
+                        <div class="code-block">
+                            <pre><code class="language-html">  
+          <!-- AQUI VA EL CODIGO YA CON  -->
+&lt;nav class=&quot;navbar bg-info&quot;&gt;
+    &lt;div class=&quot;navbar-header&quot;&gt;
+        &lt;div class=&quot;navbar-brand&quot;&gt;Navbar&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;
+           <!-- SENTENCIA DE ESCAPE -->
+                            </code></pre>
+                        </div>
+                    </div>
+                    <!-- ---------------------------------------------------------------------------------------------------------------- -->
+                </div>
+                <div class="col-12">
+                    <h1>Imagen</h1>
+                    <p>Puedes reemplazar el texto dentro de .navbar-brand con una clase dentro de un div.</p>
+                    <!-------------------------------- ESQUELETO PARA REUTILIZAR A LA HORA DE HACER LA DOCS--------------------------------- -->
+                    <div class="code container mt-4">
+                        <div class="code-example">
+                            <!-- COLOCAR EL CODIGO HTML DE EJEMPLO -->
+                            <nav class="navbar bg-info">
+                                <div class="navbar-header">
+                                    <div class="navbar-brand">
+                                        <div class="img-logo-prin-white"></div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                        <!-- PARA COLOCAR LENGUAJE -->
+                        <div class="code-lenguaje">
+                            <div class="row justify-content-between mx-3">
+                                <div>HTML</div>
+                                <div>
+                                    <div class="img-copy" alt="copy"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BLOQUE DE CODIGO -->
+                        <div class="code-block">
+                            <pre><code class="language-html">  
+          <!-- AQUI VA EL CODIGO YA CON  -->
+&lt;nav class=&quot;navbar bg-info&quot;&gt;
+    &lt;div class=&quot;navbar-header&quot;&gt;
+        &lt;div class=&quot;navbar-brand&quot;&gt;
+            &lt;div class=&quot;img-logo-prin-white&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;
+           <!-- SENTENCIA DE ESCAPE -->
+                            </code></pre>
+                        </div>
+                    </div>
+                    <!-- ---------------------------------------------------------------------------------------------------------------- -->
+                </div>
+                <div class="col-12">
+                    <h1>Imagen y texto</h1>
+                    <p>También puedes usar algunas utilidades adicionales para agregar una imagen y texto a la vez.</p>
+                    <!-------------------------------- ESQUELETO PARA REUTILIZAR A LA HORA DE HACER LA DOCS--------------------------------- -->
+                    <div class="code container mt-4">
+                        <div class="code-example">
+                            <!-- COLOCAR EL CODIGO HTML DE EJEMPLO -->
+                            <nav class="navbar bg-info">
+                                <div class="navbar-header">
+                                    <div class="navbar-brand">
+                                        <div class="img-logo-prin-white"></div>
+                                        Navbar
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                        <!-- PARA COLOCAR LENGUAJE -->
+                        <div class="code-lenguaje">
+                            <div class="row justify-content-between mx-3">
+                                <div>HTML</div>
+                                <div>
+                                    <div class="img-copy" alt="copy"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BLOQUE DE CODIGO -->
+                        <div class="code-block">
+                            <pre><code class="language-html">  
+          <!-- AQUI VA EL CODIGO YA CON  -->
+&lt;nav class=&quot;navbar bg-info&quot;&gt;
+    &lt;div class=&quot;navbar-header&quot;&gt;
+        &lt;div class=&quot;navbar-brand&quot;&gt;
+            &lt;div class=&quot;img-logo-prin-white&quot;&gt;&lt;/div&gt;
+            Navbar
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;
+           <!-- SENTENCIA DE ESCAPE -->
+                            </code></pre>
+                        </div>
+                    </div>
+                    <!-- ---------------------------------------------------------------------------------------------------------------- -->
+                </div>
+                <div class="col-12">
+                    <h1>Navegación</h1>
+                    <p>Para poner crear un entorno de navegacion coloca la clase navbar-nav y el nav-item para colocar
+                        el diseño de los apartados.</p>
+                    <!-------------------------------- ESQUELETO PARA REUTILIZAR A LA HORA DE HACER LA DOCS--------------------------------- -->
+                    <div class="code container mt-4">
+                        <div class="code-example">
+                            <!-- COLOCAR EL CODIGO HTML DE EJEMPLO -->
+                            <nav class="navbar bg-info" id="Navegacion">
+                                <button class="navbar-toggle" onclick="toggleMenu('Navegacion')">
+                                    <div class="img-menu-white"></div>
+                                </button>
+                                <div class="navbar-nav">
+                                    <a class="nav-item" href="#">Inicio</a>
+                                    <a class="nav-item" href="#">Servicios</a>
+                                    <a class="nav-item" href="#">Menu</a>
+                                </div>
+                            </nav>
+                        </div>
+                        <!-- PARA COLOCAR LENGUAJE -->
+                        <div class="code-lenguaje">
+                            <div class="row justify-content-between mx-3">
+                                <div>HTML</div>
+                                <div>
+                                    <div class="img-copy" alt="copy"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BLOQUE DE CODIGO -->
+                        <div class="code-block">
+                            <pre><code class="language-html">  
+          <!-- AQUI VA EL CODIGO YA CON  -->
+&lt;nav class=&quot;navbar bg-info&quot; id=&quot;Navegacion&quot;&gt;
+    &lt;button class=&quot;navbar-toggle&quot; onclick=&quot;toggleMenu('Navegacion')&quot;&gt;
+        &lt;div class=&quot;img-menu-white&quot;&gt;&lt;/div&gt;
+    &lt;/button&gt;
+    &lt;div class=&quot;navbar-nav&quot;&gt;
+        &lt;a class=&quot;nav-item&quot; href=&quot;#&quot;&gt;Inicio&lt;/a&gt;
+        &lt;a class=&quot;nav-item&quot; href=&quot;#&quot;&gt;Servicios&lt;/a&gt;
+        &lt;a class=&quot;nav-item&quot; href=&quot;#&quot;&gt;Menu&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;
+           <!-- SENTENCIA DE ESCAPE -->
+                            </code></pre>
+                        </div>
+                    </div>
+                    <!-- ---------------------------------------------------------------------------------------------------------------- -->
+                </div>
+                <div class="col-12">
+                    <h1>Formularios</h1>
+                    <p>Coloque varios controles de formulario y componentes dentro de una barra de navegación:</p>
+                    <!-------------------------------- ESQUELETO PARA REUTILIZAR A LA HORA DE HACER LA DOCS--------------------------------- -->
+                    <div class="code container mt-4">
+                        <div class="code-example">
+                            <!-- COLOCAR EL CODIGO HTML DE EJEMPLO -->
+                            <nav class="navbar bg-info p-1" id="Formularios">
+                                <button class="navbar-toggle" onclick="toggleMenu('Formularios')">
+                                    <div class="img-menu-white"></div>
+                                </button>
+                                <div class="navbar-nav">
+                                    <input type="text" class="form-control" placeholder="Buscar">
+                                    <button class="btn btn-success" type="Buscar">Buscar</button>
+                                </div>
+                            </nav>
+                        </div>
+                        <!-- PARA COLOCAR LENGUAJE -->
+                        <div class="code-lenguaje">
+                            <div class="row justify-content-between mx-3">
+                                <div>HTML</div>
+                                <div>
+                                    <div class="img-copy" alt="copy"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BLOQUE DE CODIGO -->
+                        <div class="code-block">
+                            <pre><code class="language-html">  
+          <!-- AQUI VA EL CODIGO YA CON  -->
+&lt;nav class=&quot;navbar bg-info&quot; id=&quot;Navegacion&quot;&gt;
+    &lt;button class=&quot;navbar-toggle&quot; onclick=&quot;toggleMenu('Navegacion')&quot;&gt;
+        &lt;div class=&quot;img-menu-white&quot;&gt;&lt;/div&gt;
+    &lt;/button&gt;
+    &lt;div class=&quot;navbar-nav&quot;&gt;
+        &lt;a class=&quot;nav-item&quot; href=&quot;#&quot;&gt;Inicio&lt;/a&gt;
+        &lt;a class=&quot;nav-item&quot; href=&quot;#&quot;&gt;Servicios&lt;/a&gt;
+        &lt;a class=&quot;nav-item&quot; href=&quot;#&quot;&gt;Menu&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;
+           <!-- SENTENCIA DE ESCAPE -->
+                            </code></pre>
+                        </div>
+                    </div>
+                    <!-- ---------------------------------------------------------------------------------------------------------------- -->
+                </div>
+                <div class="col-12">
+                    <h1></h1>
+                    <p>Con los formularios puedes crear mas estilos aplicando las clases que ya vimos.</p>
+                    <!-------------------------------- ESQUELETO PARA REUTILIZAR A LA HORA DE HACER LA DOCS--------------------------------- -->
+                    <div class="code container mt-4">
+                        <div class="code-example">
+                            <!-- COLOCAR EL CODIGO HTML DE EJEMPLO -->
+                            <nav class="navbar bg-info p-3" id="Formularios1">
+                                <div class="navbar-header">
+                                    <div class="navbar-brand">
+                                        Navbar
+                                    </div>
+                                    <button class="navbar-toggle" onclick="toggleMenu('Formularios1')">
+                                        <div class="img-menu-white"></div>
+                                    </button>
+                                </div>
+                                <div class="navbar-nav">
+                                    <input type="text" class="form-control" placeholder="Buscar">
+                                    <button class="btn btn-success" type="Buscar">Buscar</button>
+                                </div>
+                            </nav>
+                        </div>
+                        <!-- PARA COLOCAR LENGUAJE -->
+                        <div class="code-lenguaje">
+                            <div class="row justify-content-between mx-3">
+                                <div>HTML</div>
+                                <div>
+                                    <div class="img-copy" alt="copy"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BLOQUE DE CODIGO -->
+                        <div class="code-block">
+                            <pre><code class="language-html">  
+          <!-- AQUI VA EL CODIGO YA CON  -->
+&lt;nav class=&quot;navbar bg-info p-3&quot; id=&quot;Formularios1&quot;&gt;
+    &lt;div class=&quot;navbar-header&quot;&gt;
+        &lt;div class=&quot;navbar-brand&quot;&gt;
+            Navbar
+        &lt;/div&gt;
+        &lt;button class=&quot;navbar-toggle&quot; onclick=&quot;toggleMenu('Formularios1')&quot;&gt;
+            &lt;div class=&quot;img-menu-white&quot;&gt;&lt;/div&gt;
+        &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;navbar-nav&quot;&gt;
+        &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Buscar&quot;&gt;
+        &lt;button class=&quot;btn btn-success&quot; type=&quot;Buscar&quot;&gt;Buscar&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;
+           <!-- SENTENCIA DE ESCAPE -->
+                            </code></pre>
+                        </div>
+                    </div>
+                    <!-- ---------------------------------------------------------------------------------------------------------------- -->
+                </div>
+                <div class="col-12">
+                    <h1></h1>
+                    <p>Tambien podemos usar todo el navbar para un formulario.</p>
+                    <!-------------------------------- ESQUELETO PARA REUTILIZAR A LA HORA DE HACER LA DOCS--------------------------------- -->
+                    <div class="code container mt-4">
+                        <div class="code-example">
+                            <!-- COLOCAR EL CODIGO HTML DE EJEMPLO -->
+                            <nav class="navbar bg-info p-3">
+                                <div class="input-group">
+                                    <span class="input-group-text " id="basic-addon1">@</span>
+                                    <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                                        aria-describedby="basic-addon1">
+                                </div>
+                            </nav>
+                        </div>
+                        <!-- PARA COLOCAR LENGUAJE -->
+                        <div class="code-lenguaje">
+                            <div class="row justify-content-between mx-3">
+                                <div>HTML</div>
+                                <div>
+                                    <div class="img-copy" alt="copy"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BLOQUE DE CODIGO -->
+                        <div class="code-block">
+                            <pre><code class="language-html">  
+          <!-- AQUI VA EL CODIGO YA CON  -->
+&lt;nav class=&quot;navbar bg-info p-3&quot;&gt;
+    &lt;div class=&quot;input-group&quot;&gt;
+        &lt;span class=&quot;input-group-text &quot; id=&quot;basic-addon1&quot;&gt;@&lt;/span&gt;
+        &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Username&quot; aria-label=&quot;Username&quot; aria-describedby=&quot;basic-addon1&quot;&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;
+           <!-- SENTENCIA DE ESCAPE -->
+                            </code></pre>
+                        </div>
+                    </div>
+                    <!-- ---------------------------------------------------------------------------------------------------------------- -->
+                </div>
+                <div class="col-12">
+                    <h1>Botones</h1>
+                    <p>El uso de botones no esta restringido solo a unos pocos si no a todos garcias a la forma
+                        responsiva del navbar.</p>
+                    <!-------------------------------- ESQUELETO PARA REUTILIZAR A LA HORA DE HACER LA DOCS--------------------------------- -->
+                    <div class="code container mt-4">
+                        <div class="code-example">
+                            <!-- COLOCAR EL CODIGO HTML DE EJEMPLO -->
+                            <nav class="navbar bg-secondary-neon p-3">
+                                <button class="btn btn-outline-primary btn-lg " role="button"
+                                    aria-disabled="true">Button Large</button>
+                                <button class="btn btn-outline-success btn-sm " role="button"
+                                    aria-disabled="true">Button small</button>
+                                <a class="btn btn-info disabled" role="button" aria-disabled="true">Link</a>
+                                <button type="button" class="btn btn-primary">Primary</button>
+                                <button type="button" class="btn btn-secondary">Secondary</button>
+                                <button type="button" class="btn btn-success">Success</button>
+                                <button type="button" class="btn btn-outline-info">Info</button>
+                                <button type="button" class="btn btn-warning">Warning</button>
+                                <button type="button" class="btn btn-danger">Danger</button>
+                                <button type="button" class="btn btn-light">Light</button>
+                                <button type="button" class="btn btn-dark">Dark</button>
+                                <button type="button" class="btn btn-link">Link</button>
+                            </nav>
+                        </div>
+                        <!-- PARA COLOCAR LENGUAJE -->
+                        <div class="code-lenguaje">
+                            <div class="row justify-content-between mx-3">
+                                <div>HTML</div>
+                                <div>
+                                    <div class="img-copy" alt="copy"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BLOQUE DE CODIGO -->
+                        <div class="code-block">
+                            <pre><code class="language-html">  
+          <!-- AQUI VA EL CODIGO YA CON  -->
+&lt;nav class=&quot;navbar bg-secondary-neon p-3&quot;&gt;
+    &lt;button class=&quot;btn btn-outline-primary btn-lg &quot; role=&quot;button&quot; aria-disabled=&quot;true&quot;&gt;Button Large&lt;/button&gt;
+    &lt;button class=&quot;btn btn-outline-success btn-sm &quot; role=&quot;button&quot; aria-disabled=&quot;true&quot;&gt;Button small&lt;/button&gt;
+    &lt;a class=&quot;btn btn-info disabled&quot; role=&quot;button&quot; aria-disabled=&quot;true&quot;&gt;Link&lt;/a&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;Secondary&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-success&quot;&gt;Success&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-info&quot;&gt;Info&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-warning&quot;&gt;Warning&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot;&gt;Danger&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-light&quot;&gt;Light&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-dark&quot;&gt;Dark&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-link&quot;&gt;Link&lt;/button&gt;
+&lt;/nav&gt;
+           <!-- SENTENCIA DE ESCAPE -->
+                            </code></pre>
+                        </div>
+                    </div>
+                    <!-- ---------------------------------------------------------------------------------------------------------------- -->
+                </div>
+                <div class="col-12">
+                    <h1>Esquemas de color</h1>
+                    <p>La libreria cuenta con muchas clases para colores solidos o para los colores con neon.</p>
+                    <!-------------------------------- ESQUELETO PARA REUTILIZAR A LA HORA DE HACER LA DOCS--------------------------------- -->
+                    <div class="code container mt-4">
+                        <div class="code-example">
+                            <!-- COLOCAR EL CODIGO HTML DE EJEMPLO -->
+                            <nav class="navbar bg-info p-2" id="Formularios2">
+                                <div class="navbar-header">
+                                    <div class="navbar-brand">
+                                        Navbar
+                                    </div>
+                                    <button class="navbar-toggle" onclick="toggleMenu('Formularios2')">
+                                        <div class="img-menu-white"></div>
+                                    </button>
+                                </div>
+                                <div class="navbar-nav">
+                                    <a class="nav-item" href="#">Inicio</a>
+                                    <a class="nav-item" href="#">Servicios</a>
+                                    <a class="nav-item" href="#">Menu</a>
+                                </div>
+                            </nav>
+                            <nav class="navbar bg-secondary-neon p-2" id="Formularios2">
+                                <div class="navbar-header">
+                                    <div class="navbar-brand">
+                                        Navbar
+                                    </div>
+                                    <button class="navbar-toggle" onclick="toggleMenu('Formularios2')">
+                                        <div class="img-menu-white"></div>
+                                    </button>
+                                </div>
+                                <div class="navbar-nav">
+                                    <a class="nav-item" href="#">Inicio</a>
+                                    <a class="nav-item" href="#">Servicios</a>
+                                    <a class="nav-item" href="#">Menu</a>
+                                </div>
+                            </nav>
+                            <nav class="navbar bg-warning p-2" id="Formularios2">
+                                <div class="navbar-header">
+                                    <div class="navbar-brand">
+                                        Navbar
+                                    </div>
+                                    <button class="navbar-toggle" onclick="toggleMenu('Formularios2')">
+                                        <div class="img-menu-white"></div>
+                                    </button>
+                                </div>
+                                <div class="navbar-nav">
+                                    <a class="nav-item" href="#">Inicio</a>
+                                    <a class="nav-item" href="#">Servicios</a>
+                                    <a class="nav-item" href="#">Menu</a>
+                                </div>
+                            </nav>
+                        </div>
+                        <!-- PARA COLOCAR LENGUAJE -->
+                        <div class="code-lenguaje">
+                            <div class="row justify-content-between mx-3">
+                                <div>HTML</div>
+                                <div>
+                                    <div class="img-copy" alt="copy"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BLOQUE DE CODIGO -->
+                        <div class="code-block">
+                            <pre><code class="language-html">  
+          <!-- AQUI VA EL CODIGO YA CON  -->
+&lt;nav class=&quot;navbar bg-info p-2&quot; id=&quot;Formularios2&quot;&gt;
+&lt;!-- BLOQUE DE CODIGO --&gt;
+&lt;/nav&gt;
+&lt;nav class=&quot;navbar bg-secondary-neon p-2&quot; id=&quot;Formularios2&quot;&gt;
+&lt;!-- BLOQUE DE CODIGO --&gt;
+&lt;/nav&gt;
+&lt;nav class=&quot;navbar bg-warning p-2&quot; id=&quot;Formularios2&quot;&gt;
+&lt;!-- BLOQUE DE CODIGO --&gt;
+&lt;/nav&gt;
+           <!-- SENTENCIA DE ESCAPE -->
+                            </code></pre>
+                        </div>
+                    </div>
+                    <!-- ---------------------------------------------------------------------------------------------------------------- -->
+                </div>
+                <div class="col-12">
+                    <h1>Menú Desplegable</h1>
+                    <p>Dentro de una clase .nav-item puede haber un menu desplegable lo cual es muy conveniente en casos de necesitar mas opciones en una sola opcion</p>
+                    <p>Cuando la pantalla se hace pequeña se crea un menu de hamburguesa por la clase .navbar-toggle.</p>
+                    <!-------------------------------- ESQUELETO PARA REUTILIZAR A LA HORA DE HACER LA DOCS--------------------------------- -->
+                    <div class="code container mt-4">
+                        <div class="code-example">
+                            <!-- COLOCAR EL CODIGO HTML DE EJEMPLO -->
+                            <nav class=" navbar bg-info" id="Desplegable">
+                                <div class="navbar-header">
+                                    <div class="navbar-brand">
+                                        <div class="img-logo-prin-white"></div>Retro Sci-Fi
+                                    </div>
+                                    <button class="navbar-toggle" onclick="toggleMenu('Desplegable')">
+                                        <div class="img-menu-white"></div>
+                                    </button>
+                                </div>
+                                <div class="navbar-nav">
+                                    <a class="nav-item" href="#">Inicio</a>
+                                    <a class="nav-item" href="#">Servicios</a>
+                                    <div class="nav-item dropdown">
+                                      Menú
+                                      <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Opción 1</a>
+                                        <a class="dropdown-item" href="#">Opción 2</a>
+                                      </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                        <!-- PARA COLOCAR LENGUAJE -->
+                        <div class="code-lenguaje">
+                            <div class="row justify-content-between mx-3">
+                                <div>HTML</div>
+                                <div>
+                                    <div class="img-copy" alt="copy"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BLOQUE DE CODIGO -->
+                        <div class="code-block">
+                            <pre><code class="language-html">  
+          <!-- AQUI VA EL CODIGO YA CON  -->
+&lt;nav class=&quot; navbar bg-info&quot; id=&quot;Desplegable&quot;&gt;
+    &lt;div class=&quot;navbar-header&quot;&gt;
+        &lt;div class=&quot;navbar-brand&quot;&gt;
+            &lt;div class=&quot;img-logo-prin-white&quot;&gt;&lt;/div&gt;Retro Sci-Fi
+        &lt;/div&gt;
+        &lt;button class=&quot;navbar-toggle&quot; onclick=&quot;toggleMenu('Desplegable')&quot;&gt;
+            &lt;div class=&quot;img-menu-white&quot;&gt;&lt;/div&gt;
+        &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;navbar-nav&quot;&gt;
+        &lt;a class=&quot;nav-item&quot; href=&quot;#&quot;&gt;Inicio&lt;/a&gt;
+        &lt;a class=&quot;nav-item&quot; href=&quot;#&quot;&gt;Servicios&lt;/a&gt;
+        &lt;div class=&quot;nav-item dropdown&quot;&gt;
+            Men&uacute;
+            &lt;div class=&quot;dropdown-menu&quot;&gt;
+                &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Opci&oacute;n 1&lt;/a&gt;
+                &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Opci&oacute;n 2&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;
+           <!-- SENTENCIA DE ESCAPE -->
+                            </code></pre>
+                        </div>
+                    </div>
+                    <!-- ---------------------------------------------------------------------------------------------------------------- -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="container-fluid bg-dark text-white text-center py-3">
+        <p>© 2025 Retro Sci-Fi Library.</p>
+    </footer>
+
+    <script src="dist/js/retrosci-fi.js"></script>
+
+    <script>document.addEventListener("DOMContentLoaded", () => { closeMenu(); });</script>
+</body>
+
+</html>

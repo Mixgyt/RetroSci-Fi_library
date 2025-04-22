@@ -13,6 +13,7 @@
   font-family: fonts.$font-mplus;
   font-weight: fonts.$font-weight-medium;
   z-index: 9999;
+  gap: 5px;
   .navbar-header {
     display: flex;
     width: 100%;
@@ -158,6 +159,36 @@
         max-height: 0;
         opacity: 0;
       }
+
+      .nav-item.dropdown {
+        position: relative;
+      
+        .dropdown-menu {
+          display: none;
+        }
+      
+        // Mostrar en escritorio con hover
+        @media (min-width: 769px) {
+          &:hover .dropdown-menu {
+            display: block;
+            position: absolute;
+            top: 56px;
+            left: 0;
+            padding: 10px;
+            z-index: 100;
+            background-color: var(--sci-bg-color);
+            box-shadow: 0 0 0 2px;
+          }
+        }
+      
+        // Mostrar en móvil con clase .show (activada con JS)
+        &:hover .dropdown-menu {
+          display: block;
+          position: static;
+          box-shadow: none;
+        }
+      }
+      
     }
   }
 }
