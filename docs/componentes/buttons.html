@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>retrosci-fi</title>
+    <link rel="icon" type="image/svg" href="../../img/logos/logo-prin-white.svg">
+    <link rel="stylesheet" href="../../dist/css/sci-fi.css">
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+</head>
+
+<body class="bg-lightd">
+    <nav class=" navbar bg-secondary estilo-brillo border rounded border-secondary border-neon hover-neon  position-sticky top-0"
+        id="nav1">
+        <div class="navbar-header">
+            <div class="navbar-brand"><div class="img-logo-prin-white"></div>Retro Sci-Fi</div>
+            <button class="navbar-toggle" onclick="toggleMenu('nav1')">
+                <div class="img-menu-white"></div>
+            </button>
+        </div>
+        <div class="navbar-nav">
+            <a class="nav-item rounded-pill" href="#inicio">Inicio</a>
+            <a class="nav-item rounded-pill" href="#estructura">Estructura</a>
+            <a class="nav-item rounded-pill" href="#grid">Grid</a>
+            <a class="nav-item rounded-pill" href="#alerts">Alerts</a>
+        </div>
+    </nav>
+
+    <div div class="grid">
+        <div class="g-col g-col-md-2 g-col-lg-3">
+            <div class="slide-menu open position-fixed">
+                <div class="slide-menu__content">
+                    <h2 class="slide-menu__title">Documentacion</h2>
+                    <ul class="slide-menu__list">
+                        <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../../documentacion.html">Documentacion</a>
+                        </li>
+
+                        <li class="slide-menu__item ">
+                            <a class="estilo-brillo" href="#">Alertas</a>
+                        </li>
+
+                        <p class="">Componentes</p>
+
+                        <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="badge.html">Badge</a>
+                        </li>
+                        <p class="">Disposición</p>
+                        <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="container.html">Container</a>
+                        </li>
+                        <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../componentes/card.html">card</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="slide-menu__toggle icon-black">
+                </button>
+            </div>
+        </div>
+
+
+        <!-- CONTENEDOR PRINCIPAL -->
+        <div class="g-col-12 g-col-md-9  g-col-lg-8 mt-3">
+            <header class="container bg-secondary-neon border-warning text-white text-center py-5 estilo-brillo">
+                <!-- ############################### -->
+                <!-- COLOCAR TITULO Y MEDIO INTRO -->
+                <!-- ############################### -->
+                <h1>Botones</h1>
+                <p>Los botones son elementos clave en la interfaz para ejecutar acciones y navegar por la aplicación. Esta sección presenta estilos, tamaños, estados y variaciones personalizadas de botones que se adaptan al tema Retro Sci-Fi.</p>
+
+            </header>
+
+            <!-- PARA COLOCAR EL CODIGO -->
+            <div class="row g-2 container justify-content-center">               
+                 <!-- ESQUELETO PARA REUTILIZAR A LA HORA DE HACER LA DOCS -->
+                <!-- ############################### -->
+                <!-- PRINCIPIO PARA COLOCAR TEXTO  -->
+                <!-- ############################### -->
+                <div class="container mt-5">
+
+                    <h2 class="text-white">Botones</h2>
+                    <p>
+                        Los botones utilizan clases temáticas basadas en la paleta de
+                        colores del sistema. Cada variante representa un contexto diferente
+                        como acciones primarias, advertencias o estados informativos. Todos
+                        los estilos son personalizables mediante Sass y se adaptan a
+                        la estética Retro Sci-Fi.
+                    </p>
+
+                    <div class="code container">
+                        <div class="code-example">
+                        <!-- COLOCAR EL CODIGO HTML DE EJEMPLO -->
+                            <button type="button" class="btn btn-primary">Primary</button>
+                            <button type="button" class="btn btn-secondary">Secondary</button>
+                            <button type="button" class="btn btn-success">Success</button>
+                            <button type="button" class="btn btn-info">Info</button>
+                            <button type="button" class="btn btn-warning">Warning</button>
+                            <button type="button" class="btn btn-danger">Danger</button>
+                            <button type="button" class="btn btn-light">Light</button>
+                            <button type="button" class="btn btn-dark">Dark</button>
+                        </div>
+                        <!-- PARA COLOCAR LENGUAJE -->
+                        <div class="code-lenguaje">
+                            <div class="row justify-content-between mx-3">
+                                <div>HTML</div>
+                                <div>
+                                    <div class="img-copy" alt="copy"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="code-block">
+                            <!-- BLOQUE DE CODIGO -->
+                            <!-- SOLO ESTE PUEDE LLEVAR ASI RARO LA SANGRIA -->
+                            <pre><code class="language-html">  
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;Secondary&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-success&quot;&gt;Success&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-info&quot;&gt;Info&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-warning&quot;&gt;Warning&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot;&gt;Danger&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-light&quot;&gt;Light&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-dark&quot;&gt;Dark&lt;/button&gt;
+                            </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!-- ############################### -->
+                <!-- FIN PARA COLOCAR TEXTO  -->
+                <!-- ############################### -->
+
+                <!-- NUEVO EJEMPLO -->
+                <div class="container">
+                    <!-- PARA COLOCAR OTRO CODE PRUEBA -->
+                      <!-- ESQUELETO PARA REUTILIZAR A LA HORA DE HACER LA DOCS -->
+                       <h2 class="text-white">Botones desactivados</h2>
+                       <p>
+                        Los botones pueden desactivarse usando el atributo
+                         <span class="badge py-1">disabled</span> para prevenir la interacción del usuario. Los estilos desactivados conservan su apariencia temática, pero aplican opacidad y eliminan efectos hover para indicar visualmente que no están disponibles.</p>
+
+                    <div class="code container mt-4">
+                        <div class="code-example">
+                            <button type="button" class="btn btn-primary" disabled>Primary</button>
+                            <button type="button" class="btn btn-secondary" disabled>Secondary</button>
+                            <button type="button" class="btn btn-success" disabled>Success</button>
+                            <button type="button" class="btn btn-info" disabled>Info</button>
+                            <button type="button" class="btn btn-warning" disabled>Warning</button>
+                            <button type="button" class="btn btn-danger" disabled>Danger</button>
+                            <button type="button" class="btn btn-light" disabled>Light</button>
+                            <button type="button" class="btn btn-dark" disabled>Dark</button>
+                        </div>
+                        <!-- PARA COLOCAR LENGUAJE -->
+                        <div class="code-lenguaje">
+                            <div class="row justify-content-between mx-3">
+                            <div>HTML</div>
+                            <div>
+                                <div class="img-copy" alt="copy"></div>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- BLOQUE DE CODIGO -->
+                        <div class="code-block">
+                            <pre><code class="language-html">  
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; disabled&gt;Primary&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; disabled&gt;Secondary&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-success&quot; disabled&gt;Success&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-info&quot; disabled&gt;Info&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-warning&quot; disabled&gt;Warning&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot; disabled&gt;Danger&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-light&quot; disabled&gt;Light&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-dark&quot; disabled&gt;Dark&lt;/button&gt;
+                            </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!-- ############################### -->
+                <!-- FIN PARA COLOCAR TEXTO  -->
+                <!-- ############################### -->
+                 
+                <!-- NUEVO EJEMPLO -->
+                <div class="container">
+                    <!-- PARA COLOCAR OTRO CODE PRUEBA -->
+                      <!-- ESQUELETO PARA REUTILIZAR A LA HORA DE HACER LA DOCS -->
+                        <h2 class="text-white">Tamaños</h3>
+                        <p>
+                            Los botones pueden adaptarse a diferentes tamaños utilizando
+                            clases utilitarias como <span class="badge">.btn-lg</span> para botones grandes
+                            y <span class="badge">.btn-sm</span> para botones pequeños. Esto permite
+                            mantener coherencia visual en distintos contextos dentro
+                            de la interfaz.
+                        </p>
+
+                    <div class="code container mt-4">
+                        <div class="code-example">
+                            <!-- COLOCAR EL CODIGO HTML DE EJEMPLO -->
+                            <button type="button" class="btn btn-primary btn-lg">Large button</button>
+                            <button type="button" class="btn btn-primary">Default button</button>
+                            <button type="button" class="btn btn-primary btn-sm">Small button</button>
+                        </div>
+                        <!-- PARA COLOCAR LENGUAJE -->
+                        <div class="code-lenguaje">
+                            <div class="row justify-content-between mx-3">
+                            <div>HTML</div>
+                            <div>
+                                <div class="img-copy" alt="copy"></div>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- BLOQUE DE CODIGO -->
+                        <div class="code-block">
+                            <pre><code class="language-html">  
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot;&gt;Large button&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Default button&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot;&gt;Small button&lt;/button&gt;
+                            </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!-- ############################### -->
+                <!-- FIN PARA COLOCAR TEXTO  -->
+                <!-- ############################### -->
+                 							 <!-- NUEVO EJEMPLO -->
+                <div class="container">
+                    <!-- PARA COLOCAR OTRO CODE PRUEBA -->
+                      <!-- ESQUELETO PARA REUTILIZAR A LA HORA DE HACER LA DOCS -->
+                       <h2 class="text-white">Botones con estilo Outline</h2>
+                       <p>Los botones <span class="badge">Outline</span> ofrecen 
+                        una alternativa visual más ligera al estilo sólido. Conservan
+                        el color temático en el borde y el texto, y aplican
+                        un fondo al hacer hover. Son ideales para acciones
+                        secundarias o menos destacadas.
+                    </p>
+
+                    <div class="code container mt-4">
+                        <div class="code-example">
+                            <!-- COLOCAR EL CODIGO HTML DE EJEMPLO -->
+                            <button type="button" class="btn btn-outline-primary">Primary</button>
+                            <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                            <button type="button" class="btn btn-outline-success">Success</button>
+                            <button type="button" class="btn btn-outline-info">Info</button>
+                            <button type="button" class="btn btn-outline-warning">Warning</button>
+                            <button type="button" class="btn btn-outline-danger">Danger</button>
+                            <button type="button" class="btn btn-outline-light">Light</button>
+                            <button type="button" class="btn btn-outline-dark">Dark</button>
+                        </div>
+                        <!-- PARA COLOCAR LENGUAJE -->
+                        <div class="code-lenguaje">
+                            <div class="row justify-content-between mx-3">
+                            <div>HTML</div>
+                            <div>
+                                <div class="img-copy" alt="copy"></div>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- BLOQUE DE CODIGO -->
+                        <div class="code-block">
+                            <pre><code class="language-html">  
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-primary&quot;&gt;Primary&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-secondary&quot;&gt;Secondary&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-success&quot;&gt;Success&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-info&quot;&gt;Info&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-warning&quot;&gt;Warning&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-danger&quot;&gt;Danger&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-light&quot;&gt;Light&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-dark&quot;&gt;Dark&lt;/button&gt;
+                            </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!-- ############################### -->
+                <!-- FIN PARA COLOCAR TEXTO  -->
+                <!-- ############################### -->
+
+                <!-- NUEVO EJEMPLO -->
+                <div class="container">
+                    <!-- PARA COLOCAR OTRO CODE PRUEBA -->
+                       <!-- ESQUELETO PARA REUTILIZAR A LA HORA DE HACER LA DOCS -->
+                        <h2 class="text-white">Botones con efecto de brillo</h2>
+                        <p>
+                            Los botones con la clase <span class="badge">.estilo-brillo</span> 
+                            aplican un efecto de resplandor al pasar el cursor, generando un 
+                            aura visual que destaca la interacción. Este estilo es ideal para 
+                            interfaces llamativas o temas con estética retro-futurista.
+                        </p>
+                        
+
+                    <div class="code container mt-4">
+                        <div class="code-example">
+                            <!-- COLOCAR EL CODIGO HTML DE EJEMPLO -->
+                            <button type="button" class="btn btn-primary estilo-brillo">Primary</button>
+                            <button type="button" class="btn btn-secondary estilo-brillo">Secondary</button>
+                            <button type="button" class="btn btn-success estilo-brillo">Success</button>
+                            <button type="button" class="btn btn-danger estilo-brillo">Danger</button>
+                            <button type="button" class="btn btn-warning estilo-brillo">Warning</button>
+                            <button type="button" class="btn btn-info estilo-brillo">Info</button>
+                            <button type="button" class="btn btn-light estilo-brillo">Light</button>
+                            <button type="button" class="btn btn-dark estilo-brillo">Dark</button>
+                        </div>
+                        <!-- PARA COLOCAR LENGUAJE -->
+                        <div class="code-lenguaje">
+                            <div class="row justify-content-between mx-3">
+                            <div>HTML</div>
+                            <div>
+                                <div class="img-copy" alt="copy"></div>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- BLOQUE DE CODIGO -->
+                        <div class="code-block">
+                            <pre><code class="language-html">  
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary estilo-brillo&quot;&gt;Primary&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary estilo-brillo&quot;&gt;Secondary&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-success estilo-brillo&quot;&gt;Success&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-danger estilo-brillo&quot;&gt;Danger&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-warning estilo-brillo&quot;&gt;Warning&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-info estilo-brillo&quot;&gt;Info&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-light estilo-brillo&quot;&gt;Light&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-dark estilo-brillo&quot;&gt;Dark&lt;/button&gt;
+                            </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!-- ############################### -->
+                <!-- FIN PARA COLOCAR TEXTO  -->
+                <!-- ############################### -->
+            </div>   
+        </div>  
+    </div>  
+
+    <footer class="container-fluid bg-dark text-white text-center py-3 mt-5">
+        <p>© 2025 Retro Sci-Fi Library.</p>
+    </footer>
+
+    <script src="../../dist/js/retrosci-fi.js"></script>
+
+    <script>document.addEventListener("DOMContentLoaded", () => { closeMenu(); });</script>
+    <script>document.addEventListener("DOMContentLoaded", () => { copy(); });</script>
+</body>
+</html>

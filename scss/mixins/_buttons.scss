@@ -1,6 +1,22 @@
 @use "../variables" as *;
 @use "sass:color" as color;
 @use "../fonts";
+
+button:disabled {
+    pointer-events: none;
+    opacity: 0.6;
+    background: none !important;
+    color: #888 !important;
+    box-shadow: none !important;
+    border-color: #ccc !important;
+    &:hover,
+    &:active {
+        background: none !important;
+        box-shadow: none !important;
+        color: #888 !important;
+    }
+}
+
 @mixin button-color($bg-color) {
     $text-color: if(color.channel($bg-color, "lightness", $space: hsl) > 60%, #000, #fff);
 
