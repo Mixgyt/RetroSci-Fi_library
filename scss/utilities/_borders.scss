@@ -10,6 +10,17 @@
 }
 
 .border-neon{
+  &.border{
+    @include neon.border-neon("");
+  }
+  @each $titulo, $posicion in variables.$standart-positions{
+    &.border-#{$titulo}{
+      @include neon.border-neon($titulo);
+    }
+  }
+}
+
+.border-neon-complete{
   @include neon.boder-neon-complete();
 }
 
@@ -27,6 +38,7 @@
 @each $nombre, $color in variables.$theme-colors {
   .border-#{$nombre} {
     --sci-border-opacity: 1;
+    --sci-border-color: #{$color};
     @include bord.change-color($color,var(--sci-border-opacity));
   }
 }
@@ -34,6 +46,7 @@
 @each $nombre, $color in variables.$subtle-colors {
     .border-#{$nombre} {
       --sci-border-opacity: 1;
+      --sci-border-color: #{$color};
       @include bord.change-color($color,var(--sci-border-opacity));
     }
 }
@@ -57,11 +70,15 @@
 
 @each $nombre, $posicion in variables.$standart-positions {
   .border-#{$nombre} {
-    @include bord.make-border(map.get(variables.$borders,"2"),variables.$default-border-color,$posicion);
+    @include bord.make-border(map.get(variables.$borders,"2"),var(--sci-border-color),$posicion);
   }
 
   .border-#{$nombre}-0 {
-    @include bord.make-border(map.get(variables.$borders,"0"),variables.$default-border-color,$posicion)
+    @include bord.make-border(map.get(variables.$borders,"0"),var(--sci-border-color),$posicion)
+  }
+
+  .border-neon-#{$nombre}{
+    @include neon.border-neon($posicion);
   }
 
   .rounded-#{$nombre}{

@@ -9,6 +9,10 @@
     @if($color == variables.$secondary){
         border: 2px solid variables.$primary;
     }
+    //Los bordes solo se eliminan si el contenedor es un body
+    @at-root body#{&}{
+        border: 0px;
+    }
 
     &.bg-gradient{
         @include background-gradient($color, 180deg, $opacity);
