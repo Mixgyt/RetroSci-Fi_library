@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badges</title>
+    <link rel="stylesheet" href="../../dist/css/sci-fi.css">
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+</head>
+
+<body>
+  <nav class=" navbar bg-secondary estilo-brillo border rounded border-secondary hover-neon  position-sticky top-0 p-1"
+  id="nav1">
+  <div class="navbar-header">
+      <div class="navbar-brand"><div class="img-logo-prin-white"></div>Retro Sci-Fi</div>
+      <button class="navbar-toggle" onclick="toggleMenu('nav1')">
+          <div class="img-menu-white"></div>
+      </button>
+  </div>
+  <div class="navbar-nav">
+      <a class="nav-item rounded-pill" href="#inicio">Inicio</a>
+      <a class="nav-item rounded-pill" href="#estructura">Estructura</a>
+      <a class="nav-item rounded-pill" href="#grid">Grid</a>
+      <a class="nav-item rounded-pill" href="#alerts">Alerts</a>
+  </div>
+</nav>
+
+<div class="grid">
+  <div class="g-col g-col-md-2 g-col-lg-3">
+          <div class=""> <!-- Crear el contenedo para el aside bar (o usar las clases de posision)-->
+              <div class="slide-menu open position-fixed">
+                  <div class="slide-menu__content">
+                      <h2 class="slide-menu__title">Documentacion</h2>
+                      <ul class="slide-menu__list">
+
+                        <!--COMIENZO LAYOUT-->
+                          <p class="text-warning-neon">Layout</p>
+
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="#clase-row">Clase .row</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="#clase-row-cols">Clase .row-cols-*</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="#alineacion-filas">Alineación en Filas</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="#clases-espaciado">Espaciado: .g, .gx, .gy</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="#clase-col">Clase .col Básica</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="#columnas-tamano-fijo">Columnas de Tamaño Fijo</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="#columnas-responsivas">Columnas Responsivas</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="#autoajuste-col-auto">Autoajuste con .col-auto</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="#autoajuste-responsivo">Autoajuste Responsivo</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="#alineacion-individual">Alineación Individual de Columnas</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="#desplazamiento-offset">Desplazamiento con Offset</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="#clase-grid">Clase .grid y .g-col-*</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="#filas-grid">Filas en Grid</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="#filas-responsivas">Filas Responsivas</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="#filas-columnas">Combinación Filas + Columnas</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="#espaciado-grid">Espaciado en Grid .gap-*</a>
+                          </li>
+
+                          <!--FIN DE LAYOUT -->
+
+                          <!--COMIENZO DE COMPONENTES-->
+
+                          <p class="text-warning-neon">Componentes</p>
+
+                          <!--BAGGE-->
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../componentes/badge.html">Badge</a>
+                          </li>
+                          <!--FIN BAGGE-->
+
+                          <!--BUTTONS-->
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../componentes/buttons.html">Botones</a>
+                          </li>
+                          <!--FIN BUTTONS-->
+
+                          <!--CARDS-->
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../componentes/card.html">Cards</a>
+                          </li>
+                          <!--FIN CARDS-->
+
+                          <!--CONTAINERS -->
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../componentes/container.html">Contenedores</a>
+                          </li>
+                          <!--FIN CONTAINERS-->
+
+                          <!--FORMULARIOS -->
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../componentes/container.html">Contenedores</a>
+                          </li>
+                          <!--FIN FORMULARIOS-->
+
+                          <!--NAV BAR -->
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../componentes/navbar.html">Contenedores</a>
+                          </li>
+                          <!--FIN NAV BAR-->
+
+                          <!-- ALERTAS-->
+
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../componentes/alertas.html#alerta-basica">Alerta Básica</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../componentes/alertas.html#alerta-accion">Alerta Tras Acción</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../componentes/alertas.html#personalizar-iconos">Personalizar Íconos</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../componentes/alertas.html#configuracion-alertas">Configuración JS Alertas</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../componentes/alertas.html#alerta-cierre">Alerta con Cierre</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../componentes/alertas.html#alertas-automaticas">Alertas Automáticas</a>
+                          </li>
+                          <!-- FIN DE ALERTAS-->
+
+
+                      </ul><!--FIN DEL SLIDE MENU LIST -->
+                  </div>
+                  <button class="slide-menu__toggle">
+                  </button>
+              </div>
+          </div>
+    </div><!-- FIN DEL ASIDE CONTENT-->
+
+  <div class="g-col-12 g-col-md-9  g-col-lg-8">
+
+    <header class="container bg-info-neon text-white text-center py-5">
+      <h1 class="text-neon">Documentación Retro Sci-Fi</h1>
+      <p>Explora las características y estilos de nuestra librería.</p>
+    </header>
+
+
+    <div class="row justify-content-center g-2 container">
+      <div class="col-12">
+          <h1 id="clase-row">Clase <code>.row</code></h1>
+          <p>La clase <code>.row</code> es el contenedor principal para agrupar columnas. Utiliza <code>display: flex</code> y <code>flex-wrap: wrap</code> para organizar las columnas en una fila.</p>
+  
+          <!-- ESQUELETO PARA EJEMPLO -->
+          <div class="code container mt-4">
+              <div class="code-example">
+                  <div class="row">
+                      <div class="col">Columna 1</div>
+                      <div class="col">Columna 2</div>
+                      <div class="col">Columna 3</div>
+                  </div>
+              </div>
+              <div class="code-lenguaje">
+                  <div class="row justify-content-between mx-3">
+                      <div>HTML</div>
+                      <div>
+                          <div class="img-copy" alt="copy"></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="code-block">
+                  <pre><code class="language-html">
+ &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col&quot;&gt;Columna 1&lt;/div&gt;
+      &lt;div class=&quot;col&quot;&gt;Columna 2&lt;/div&gt;
+      &lt;div class=&quot;col&quot;&gt;Columna 3&lt;/div&gt;
+&lt;/div&gt;
+                  </code></pre>
+              </div>
+          </div>
+          <!-- FIN DE EJEMPLO -->
+      </div>
+  </div> <!--fin de la etiqueta row-->
+
+
+  <div class="row g-2 container">
+    <div class="col-12">
+        <h1 id="clase-row-cols">Clase <code>.row-cols-*</code></h1>
+        <p>La clase <code>.row-cols-*</code> permite definir el número de columnas que debe tener una fila sin necesidad de especificar el ancho de cada columna individualmente. Es útil para crear diseños responsivos rápidamente.</p>
+        <p>También se pueden usar variantes responsivas como <code>.row-cols-sm-*</code>, <code>.row-cols-md-*</code>, etc., para ajustar el número de columnas según el tamaño de la pantalla.</p>
+
+        <!-- ESQUELETO PARA EJEMPLO -->
+        <div class="code container mt-4">
+            <div class="code-example">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                    <div class="col">Columna 1</div>
+                    <div class="col">Columna 2</div>
+                    <div class="col">Columna 3</div>
+                    <div class="col">Columna 4</div>
+                    <div class="col">Columna 5</div>
+                    <div class="col">Columna 6</div>
+                </div>
+            </div>
+            <div class="code-lenguaje">
+                <div class="row justify-content-between mx-3">
+                    <div>HTML</div>
+                    <div>
+                        <div class="img-copy" alt="copy"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="code-block">
+                <pre><code class="language-html">
+&lt;div class=&quot;row row-cols-1 row-cols-md-2 row-cols-lg-4&quot;&gt;
+    &lt;div class=&quot;col&quot;&gt;Columna 1&lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;Columna 2&lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;Columna 3&lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;Columna 4&lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;Columna 5&lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;Columna 6&lt;/div&gt;
+&lt;/div&gt;
+                </code></pre>
+            </div>
+        </div>
+        <!-- FIN DE EJEMPLO -->
+    </div>
+</div>
+
+  
+
+<div class="row g-2 container">
+  <div class="col-12">
+      <h1 id="alineacion-filas">Alineación en Filas</h1>
+      <p>Las clases <code>align-items-*</code> y <code>justify-content-*</code> permiten alinear vertical u horizontalmente los elementos dentro de una fila.</p>
+
+      <div class="code container mt-4">
+          <div class="code-example">
+              <div class="row align-items-center justify-content-between" style="height: 150px;">
+                  <div class="col-3 bg-primary text-white">Inicio</div>
+                  <div class="col-3 bg-success text-white">Centro</div>
+                  <div class="col-3 bg-danger text-white">Final</div>
+              </div>
+          </div>
+          <div class="code-lenguaje">
+              <div class="row justify-content-between mx-3">
+                  <div>HTML</div>
+                  <div><div class="img-copy" alt="copy"></div></div>
+              </div>
+          </div>
+          <div class="code-block">
+<pre><code class="language-html">
+&lt;div class=&quot;row align-items-center justify-content-between&quot; style=&quot;height: 150px;&quot;&gt;
+  &lt;div class=&quot;col-3 bg-primary text-white&quot;&gt;Inicio&lt;/div&gt;
+  &lt;div class=&quot;col-3 bg-success text-white&quot;&gt;Centro&lt;/div&gt;
+  &lt;div class=&quot;col-3 bg-danger text-white&quot;&gt;Final&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<div class="row g-2 container">
+  <div class="col-12">
+      <h1 id="clases-espaciado">Clases de Espaciado</h1>
+      <p>Las clases <code>g</code>, <code>gx</code> y <code>gy</code> controlan el espaciado entre columnas y filas en una fila.</p>
+
+      <div class="code container mt-4">
+          <div class="code-example">
+              <div class="row gx-4 gy-2">
+                  <div class="col bg-info text-white">Columna 1</div>
+                  <div class="col bg-warning text-dark">Columna 2</div>
+                  <div class="col bg-secondary text-white">Columna 3</div>
+              </div>
+          </div>
+          <div class="code-lenguaje">
+              <div class="row justify-content-between mx-3">
+                  <div>HTML</div>
+                  <div><div class="img-copy" alt="copy"></div></div>
+              </div>
+          </div>
+          <div class="code-block">
+<pre><code class="language-html">
+&lt;div class=&quot;row gx-4 gy-2&quot;&gt;
+  &lt;div class=&quot;col bg-info text-white&quot;&gt;Columna 1&lt;/div&gt;
+  &lt;div class=&quot;col bg-warning text-dark&quot;&gt;Columna 2&lt;/div&gt;
+  &lt;div class=&quot;col bg-secondary text-white&quot;&gt;Columna 3&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="row g-2 container">
+  <div class="col-12">
+      <h1 id="clase-col">Clase <code>.col</code></h1>
+      <p>La clase <code>.col</code> divide el espacio disponible entre las columnas de forma equitativa.</p>
+
+      <div class="code container mt-4">
+          <div class="code-example">
+              <div class="row">
+                  <div class="col bg-primary text-white">Columna 1</div>
+                  <div class="col bg-success text-white">Columna 2</div>
+                  <div class="col bg-danger text-white">Columna 3</div>
+              </div>
+          </div>
+          <div class="code-lenguaje">
+              <div class="row justify-content-between mx-3">
+                  <div>HTML</div>
+                  <div><div class="img-copy" alt="copy"></div></div>
+              </div>
+          </div>
+          <div class="code-block">
+<pre><code class="language-html">
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col bg-primary text-white&quot;&gt;Columna 1&lt;/div&gt;
+  &lt;div class=&quot;col bg-success text-white&quot;&gt;Columna 2&lt;/div&gt;
+  &lt;div class=&quot;col bg-danger text-white&quot;&gt;Columna 3&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<div class="row g-2 container">
+  <div class="col-12">
+      <h1 id="columnas-tamano-fijo">Columnas de Tamaño Fijo</h1>
+      <p>Con <code>.col-{n}</code> podés asignar un tamaño específico (de 1 a 12) a cada columna.</p>
+
+      <div class="code container mt-4">
+          <div class="code-example">
+              <div class="row">
+                  <div class="col-4 bg-warning text-dark">Columna 1</div>
+                  <div class="col-8 bg-info text-white">Columna 2</div>
+              </div>
+          </div>
+          <div class="code-lenguaje">
+              <div class="row justify-content-between mx-3">
+                  <div>HTML</div>
+                  <div><div class="img-copy" alt="copy"></div></div>
+              </div>
+          </div>
+          <div class="code-block">
+<pre><code class="language-html">
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-4 bg-warning text-dark&quot;&gt;Columna 1&lt;/div&gt;
+  &lt;div class=&quot;col-8 bg-info text-white&quot;&gt;Columna 2&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<div class="row g-2 container">
+  <div class="col-12">
+      <h1 id="columnas-responsivas">Columnas Responsivas</h1>
+      <p>Podés usar clases como <code>.col-sm-*</code>, <code>.col-md-*</code>, etc. para definir tamaños según el ancho de la pantalla.</p>
+
+      <div class="code container mt-4">
+          <div class="code-example">
+              <div class="row">
+                  <div class="col-12 col-md-6 col-lg-4 bg-success text-white">Columna 1</div>
+                  <div class="col-12 col-md-6 col-lg-8 bg-secondary text-white">Columna 2</div>
+              </div>
+          </div>
+          <div class="code-lenguaje">
+              <div class="row justify-content-between mx-3">
+                  <div>HTML</div>
+                  <div><div class="img-copy" alt="copy"></div></div>
+              </div>
+          </div>
+          <div class="code-block">
+<pre><code class="language-html">
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-12 col-md-6 col-lg-4 bg-success text-white&quot;&gt;Columna 1&lt;/div&gt;
+  &lt;div class=&quot;col-12 col-md-6 col-lg-8 bg-secondary text-white&quot;&gt;Columna 2&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+<div class="row g-2 container">
+  <div class="col-12">
+      <h1 id="autoajuste-col-auto">Autoajuste con <code>.col-auto</code></h1>
+      <p>La clase <code>.col-auto</code> ajusta el ancho de la columna al contenido, mientras que las demás columnas ocupan el espacio restante.</p>
+
+      <div class="code container mt-4">
+          <div class="code-example">
+              <div class="row">
+                  <div class="col-auto bg-warning text-dark">Ajustado</div>
+                  <div class="col bg-info text-white">Resto</div>
+              </div>
+          </div>
+          <div class="code-lenguaje">
+              <div class="row justify-content-between mx-3">
+                  <div>HTML</div>
+                  <div><div class="img-copy" alt="copy"></div></div>
+              </div>
+          </div>
+          <div class="code-block">
+<pre><code class="language-html">
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-auto bg-warning text-dark&quot;&gt;Ajustado&lt;/div&gt;
+  &lt;div class=&quot;col bg-info text-white&quot;&gt;Resto&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+<div class="row g-2 container">
+  <div class="col-12">
+      <h1 id="autoajuste-responsivo">Autoajuste Responsivo</h1>
+      <p>Con <code>.col-{breakpoint}-auto</code> podés aplicar autoajuste en determinados tamaños de pantalla.</p>
+
+      <div class="code container mt-4">
+          <div class="code-example">
+              <div class="row">
+                  <div class="col-auto col-md-auto bg-primary text-white">Contenido</div>
+                  <div class="col bg-secondary text-white">Flexible</div>
+              </div>
+          </div>
+          <div class="code-lenguaje">
+              <div class="row justify-content-between mx-3">
+                  <div>HTML</div>
+                  <div><div class="img-copy" alt="copy"></div></div>
+              </div>
+          </div>
+          <div class="code-block">
+<pre><code class="language-html">
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-auto col-md-auto bg-primary text-white&quot;&gt;Contenido&lt;/div&gt;
+  &lt;div class=&quot;col bg-secondary text-white&quot;&gt;Flexible&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+<div class="row g-2 container">
+  <div class="col-12">
+      <h1 id="alineacion-individual">Alineación Individual de Columnas</h1>
+      <p>Las clases <code>align-self-*</code> permiten alinear individualmente cada columna dentro de una fila.</p>
+
+      <div class="code container mt-4">
+          <div class="code-example">
+              <div class="row" style="height: 200px;">
+                  <div class="col align-self-start bg-success text-white">Inicio</div>
+                  <div class="col align-self-center bg-warning text-dark">Centro</div>
+                  <div class="col align-self-end bg-danger text-white">Final</div>
+              </div>
+          </div>
+          <div class="code-lenguaje">
+              <div class="row justify-content-between mx-3">
+                  <div>HTML</div>
+                  <div><div class="img-copy" alt="copy"></div></div>
+              </div>
+          </div>
+          <div class="code-block">
+<pre><code class="language-html">
+&lt;div class=&quot;row&quot; style=&quot;height: 200px;&quot;&gt;
+  &lt;div class=&quot;col align-self-start bg-success text-white&quot;&gt;Inicio&lt;/div&gt;
+  &lt;div class=&quot;col align-self-center bg-warning text-dark&quot;&gt;Centro&lt;/div&gt;
+  &lt;div class=&quot;col align-self-end bg-danger text-white&quot;&gt;Final&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+<div class="row g-2 container">
+  <div class="col-12">
+      <h1 id="desplazamiento-offset">Desplazamiento con <code>.offset-*</code></h1>
+      <p>La clase <code>.offset-*</code> permite desplazar columnas hacia la derecha agregando espacio a la izquierda.</p>
+
+      <div class="code container mt-4">
+          <div class="code-example">
+              <div class="row">
+                  <div class="col-4 offset-2 bg-primary text-white text-center">Columna 1</div>
+                  <div class="col-6 bg-secondary text-white text-center">Columna 2</div>
+              </div>
+              <div class="row mt-4">
+                  <div class="col-6 offset-md-3 bg-success text-white text-center">Centrada</div>
+              </div>
+          </div>
+          <div class="code-lenguaje">
+              <div class="row justify-content-between mx-3">
+                  <div>HTML</div>
+                  <div><div class="img-copy" alt="copy"></div></div>
+              </div>
+          </div>
+          <div class="code-block">
+<pre><code class="language-html">
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-4 offset-2 bg-primary text-white text-center&quot;&gt;Columna 1&lt;/div&gt;
+  &lt;div class=&quot;col-6 bg-secondary text-white text-center&quot;&gt;Columna 2&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row mt-4&quot;&gt;
+  &lt;div class=&quot;col-6 offset-md-3 bg-success text-white text-center&quot;&gt;Centrada&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+<div class="row g-2 container">
+  <div class="col-12">
+      <h1 id="clase-grid">Clase <code>.grid</code> y <code>.g-col-*</code></h1>
+      <p>La clase <code>.grid</code> organiza elementos en un sistema de cuadrícula. Las clases <code>.g-col-*</code> definen cuántas columnas ocupa un elemento (de un total de 12).</p>
+
+      <div class="code container mt-4">
+          <div class="code-example">
+              <div class="grid">
+                  <div class="g-col-4 bg-primary text-white">Columna 1</div>
+                  <div class="g-col-4 bg-warning text-dark">Columna 2</div>
+                  <div class="g-col-4 bg-success text-white">Columna 3</div>
+              </div>
+          </div>
+          <div class="code-lenguaje">
+              <div class="row justify-content-between mx-3">
+                  <div>HTML</div>
+                  <div><div class="img-copy" alt="copy"></div></div>
+              </div>
+          </div>
+          <div class="code-block">
+<pre><code class="language-html">
+&lt;div class=&quot;grid&quot;&gt;
+  &lt;div class=&quot;g-col-4 bg-primary text-white&quot;&gt;Columna 1&lt;/div&gt;
+  &lt;div class=&quot;g-col-4 bg-warning text-dark&quot;&gt;Columna 2&lt;/div&gt;
+  &lt;div class=&quot;g-col-4 bg-success text-white&quot;&gt;Columna 3&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<div class="row g-2 container">
+  <div class="col-12">
+      <h1 id="filas-grid">Filas en Grid: <code>.g-row-{n}</code></h1>
+      <p>Esta clase define cuántas filas debe ocupar un elemento en un <code>.grid</code>.</p>
+
+      <div class="code container mt-4">
+          <div class="code-example">
+              <div class="grid " style="height: 200px;">
+                  <div class="g-col-6 g-row-2 bg-danger-neon text-white">2 filas</div>
+                  <div class="g-col-6 g-row-1 bg-secondary text-white">1 fila</div>
+              </div>
+          </div>
+          <div class="code-lenguaje">
+              <div class="row justify-content-between mx-3">
+                  <div>HTML</div>
+                  <div><div class="img-copy" alt="copy"></div></div>
+              </div>
+          </div>
+          <div class="code-block">
+<pre><code class="language-html">&lt;div class=&quot;grid &quot; style=&quot;height: 200px;&quot;&gt;
+    &lt;div class=&quot;g-col-6 g-row-2 bg-danger-neon text-white&quot;&gt;2 filas&lt;/div&gt;
+    &lt;div class=&quot;g-col-6 g-row-1 bg-secondary text-white&quot;&gt;1 fila&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<div class="row g-2 container">
+  <div class="col-12">
+      <h1 id="filas-responsivas">Filas Responsivas</h1>
+      <p>Define filas en distintos tamaños de pantalla con <code>.g-row-sm-*</code>, <code>.g-row-md-*</code>, etc.</p>
+
+      <div class="code container mt-4">
+          <div class="code-example">
+            <div class="grid">
+                <div class="g-col-12 g-row-sm-1 g-row-md-2 g-row-lg-3 g-row-xl-4 bg-success text-white text-center p-2">
+                  <p class="fw-bold">Este elemento cambia de altura:</p>
+                  <ul class="list-unstyled">
+                    <li>1 fila en <strong>pantallas pequeñas</strong></li>
+                    <li>2 filas en <strong>medianas</strong></li>
+                    <li>3 filas en <strong>grandes</strong></li>
+                    <li>4 filas en <strong>extra grandes</strong></li>
+                  </ul>
+                </div>
+                <div class="g-col-6 g-row-1 bg-warning text-dark text-center p-2">
+                  Fijo: 1 fila
+                </div>
+                <div class="g-col-6 g-row-2 bg-info text-white text-center p-2">
+                  Fijo: 2 filas
+                </div>
+              </div>
+          </div>
+          <div class="code-lenguaje">
+              <div class="row justify-content-between mx-3">
+                  <div>HTML</div>
+                  <div><div class="img-copy" alt="copy"></div></div>
+              </div>
+          </div>
+          <div class="code-block">
+<pre><code class="language-html">&lt;div class=&quot;grid&quot;&gt;
+    &lt;div class=&quot;g-col-12 g-row-sm-1 g-row-md-2 g-row-lg-3 g-row-xl-4 bg-success text-white text-center p-2&quot;&gt;
+      &lt;p class=&quot;fw-bold&quot;&gt;Este elemento cambia de altura:&lt;/p&gt;
+      &lt;ul class=&quot;list-unstyled&quot;&gt;
+        &lt;li&gt;1 fila en &lt;strong&gt;pantallas peque&ntilde;as&lt;/strong&gt;&lt;/li&gt;
+        &lt;li&gt;2 filas en &lt;strong&gt;medianas&lt;/strong&gt;&lt;/li&gt;
+        &lt;li&gt;3 filas en &lt;strong&gt;grandes&lt;/strong&gt;&lt;/li&gt;
+        &lt;li&gt;4 filas en &lt;strong&gt;extra grandes&lt;/strong&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;g-col-6 g-row-1 bg-warning text-dark text-center p-2&quot;&gt;
+      Fijo: 1 fila
+    &lt;/div&gt;
+    &lt;div class=&quot;g-col-6 g-row-2 bg-info text-white text-center p-2&quot;&gt;
+      Fijo: 2 filas
+    &lt;/div&gt;
+  &lt;/div&gt;
+</code></pre>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+<div class="row g-2 container">
+  <div class="col-12">
+      <h1 id="filas-columnas">Filas + Columnas</h1>
+      <p>Se pueden combinar <code>.g-col-*</code> y <code>.g-row-*</code> para crear estructuras más complejas.</p>
+
+      <div class="code container mt-4">
+          <div class="code-example">
+              <div class="grid" style="height: 100px;">
+                  <div class="g-col-6 g-row-3 bg-info-neon text-white">6 columnas y 3 filas</div>
+                  <div class="g-col-6 g-row-1 bg-secondary text-white">6x1</div>
+              </div>
+          </div>
+          <div class="code-lenguaje">
+              <div class="row justify-content-between mx-3">
+                  <div>HTML</div>
+                  <div><div class="img-copy" alt="copy"></div></div>
+              </div>
+          </div>
+          <div class="code-block">
+<pre><code class="language-html">
+&lt;div class=&quot;grid&quot; style=&quot;height: 100px;&quot;&gt; 
+  &lt;div class=&quot;g-col-6 g-row-3 bg-info-neon text-white&quot;&gt;6 columnas y 3 filas&lt;/div&gt;
+  &lt;div class=&quot;g-col-6 g-row-1 bg-secondary text-white&quot;&gt;6x1&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+<div class="row g-2 container">
+  <div class="col-12">
+      <h1 id="espaciado-grid">Espaciado en Grid: <code>.gap-*</code></h1>
+      <p>Controla el espaciado entre columnas y filas dentro de un contenedor <code>.grid</code>.</p>
+
+      <div class="code container mt-4">
+          <div class="code-example">
+              <div class="grid gap-4">
+                  <div class="g-col-5 bg-warning text-dark">Elemento 1</div>
+                  <div class="g-col-5 bg-success text-white">Elemento 2</div>
+              </div>
+          </div>
+          <div class="code-lenguaje">
+              <div class="row justify-content-between mx-3">
+                  <div>HTML</div>
+                  <div><div class="img-copy" alt="copy"></div></div>
+              </div>
+          </div>
+          <div class="code-block">
+<pre><code class="language-html">
+&lt;div class=&quot;grid gap-4&quot;&gt;
+  &lt;div class=&quot;g-col-5 bg-warning text-dark&quot;&gt;Elemento 1&lt;/div&gt;
+  &lt;div class=&quot;g-col-5 bg-success text-white&quot;&gt;Elemento 2&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+          </div>
+      </div>
+  </div>
+</div>
+
+  </div><!--fIN DEL container g-col-12 -->
+
+
+</div> 
+
+
+<footer class="container-fluid bg-dark text-white text-center py-3">
+  <p>© 2025 Retro Sci-Fi Library.</p>
+</footer>
+
+    <script src="../../dist/js/retrosci-fi.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", () => { closeMenu(); });</script>
+</body>
+
+</html>
