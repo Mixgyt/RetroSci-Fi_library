@@ -9,6 +9,7 @@
 @use "utilidades";
 
 //Componentes
+@use "img";
 @use "alerts";
 @use "badges";
 @use "form";
@@ -17,6 +18,8 @@
 @use "navbar";
 @use "general";
 @use 'form/form-control';
+@use "asidevar";
+@use "code";
 
 //Clases utilitarias
 @use "utilities/borders";

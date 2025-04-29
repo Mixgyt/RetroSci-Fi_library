@@ -1,0 +1,38 @@
+@use "variables" as *;
+@use "sass:color" as color;
+@use 'codes/code-base';
+@use 'codes/code-block';
+@use 'codes/code-tokens';
+
+.code {
+    border: 1px solid $primary;
+    border-radius: 0.5rem;
+    padding: 2rem 0rem 0;
+    overflow: hidden;
+
+    .code-example{
+        padding: 0.4rem 1rem;
+    }
+
+    .code-lenguaje {
+        font-family: monospace;
+        padding: 0.4rem 1rem;
+        border: 1px solid $primary;
+        color: $light;
+    }
+
+    .code-block {
+        background-color: $secondary;
+        overflow-y: scroll;
+        div{
+            background-color: $dark;
+        }
+        code {
+
+            white-space: pre;
+            display: block;
+        }
+    }
+}
+
+

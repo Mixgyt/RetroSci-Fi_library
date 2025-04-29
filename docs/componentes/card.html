@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badges</title>
+    <link rel="stylesheet" href="../../dist/css/sci-fi.css">
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+</head>
+
+<body class="bg-lightd">
+    <nav class=" navbar bg-secondary estilo-brillo border rounded border-secondary border-neon hover-neon  position-sticky top-0"
+        id="nav1">
+        <div class="navbar-header">
+            <div class="navbar-brand"><div class="img-logo-prin-white"></div>Retro Sci-Fi</div>
+            <button class="navbar-toggle" onclick="toggleMenu('nav1')">
+                <div class="img-menu-white"></div>
+            </button>
+        </div>
+        <div class="navbar-nav">
+            <a class="nav-item rounded-pill" href="#inicio">Inicio</a>
+            <a class="nav-item rounded-pill" href="#estructura">Estructura</a>
+            <a class="nav-item rounded-pill" href="#grid">Grid</a>
+            <a class="nav-item rounded-pill" href="#alerts">Alerts</a>
+        </div>
+    </nav>
+
+    <div div class="grid">
+        <div class="g-col g-col-md-2 g-col-lg-3">
+
+            <div class="">
+
+                <div class=""> <!-- Crear el contenedo para el aside bar (o usar las clases de posision)-->
+                    <div class="slide-menu open position-fixed">
+                        <div class="slide-menu__content">
+                            <h2 class="slide-menu__title">Documentacion</h2>
+                            <ul class="slide-menu__list">
+                                <li class="slide-menu__item">
+                                    <a class="estilo-brillo" href="../../documentacion.html">Documentacion</a>
+                                </li>
+
+                                <li class="slide-menu__item ">
+                                    <a class="estilo-brillo" href="#">Alertas</a>
+                                </li>
+
+                                <p class="">Componentes</p>
+
+                                <li class="slide-menu__item">
+                                    <a class="estilo-brillo" href="badge.html">Badge</a>
+                                </li>
+
+
+                                <p class="">Disposición</p>
+
+                                <li class="slide-menu__item">
+                                    <a class="estilo-brillo" href="container.html">Container</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="slide-menu__toggle bg-alert-neon mx-3 ">
+                            <div class="img-izq-arrow-white icon-open"></div>
+                            <div class="img-der-arrow-white icon-closed"></div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="g-col-12 g-col-md-9  g-col-lg-8 mt-3">
+            <header class="container bg-secondary-neon border-warning text-white text-center py-5">
+                <h1>Card</h1>
+                <p>Una <b>CARD</b> es un contenedor de contenido flexible y extensible. Incluye opciones para encabezados y pies de página, una amplia variedad de contenido, colores de fondo contextuales y potentes opciones de visualización. </p>
+            </header>
+
+
+            <div class="row g-2 container justify-content-center">
+                <div class="col-12">
+                    <h1>Ejemplos</h1>
+                    <div class="card bg-secondary text-white">
+                        <div class="card bg-info text-white">
+                            <div class="card-header row justify-content-between align-items-center mx-3">
+                                <p>HTML</p>
+                                <div class="img-copy"></div>
+                            </div>
+                            <div class="card-body">
+                                <pre><code class="language-html">
+    &lt;div class=&quot;container mt-5&quot;&gt;
+      &lt;div class=&quot;row justify-content-center gap-2&quot;&gt;
+        &lt;div class=&quot; card text-dark bg-primary text- mb-3&quot; style=&quot;max-width: 18rem;&quot;&gt;
+          &lt;div class=&quot;card-header&quot;&gt;Header&lt;/div&gt;
+          &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Primary card title&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot; card bg-secondary mb-3&quot; style=&quot;max-width: 18rem;&quot;&gt;
+          &lt;div class=&quot;card-header&quot;&gt;Header&lt;/div&gt;
+          &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Secondary card title&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card bg-success mb-3&quot; style=&quot;max-width: 18rem;&quot;&gt;
+          &lt;div class=&quot;card-header&quot;&gt;Header&lt;/div&gt;
+          &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Success card title&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card bg-danger mb-3&quot; style=&quot;max-width: 18rem;&quot;&gt;
+          &lt;div class=&quot;card-header&quot;&gt;Header&lt;/div&gt;
+          &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Danger card title&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card text-dark bg-warning mb-3&quot; style=&quot;max-width: 18rem;&quot;&gt;
+          &lt;div class=&quot;card-header&quot;&gt;Header&lt;/div&gt;
+          &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Warning card title&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card bg-info mb-3&quot; style=&quot;max-width: 18rem;&quot;&gt;
+          &lt;div class=&quot;card-header&quot;&gt;Header&lt;/div&gt;
+          &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Info card title&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card text-dark bg-light mb-3&quot; style=&quot;max-width: 18rem;&quot;&gt;
+          &lt;div class=&quot;card-header&quot;&gt;Header&lt;/div&gt;
+          &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Light card title&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card bg-dark mb-3&quot; style=&quot;max-width: 18rem;&quot;&gt;
+          &lt;div class=&quot;card-header&quot;&gt;Header&lt;/div&gt;
+          &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Dark card title&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+                                </code></pre>
+                            </div>
+                        </div>
+                        <div class="card bg-success text-white">
+                            <div class="card-header">
+                                <p>Resultado</p>
+                            </div>
+                            <div class="card-body">
+                                   <div class="container mt-5">
+      <div class="row justify-content-center gap-2">
+        <div class=" card text-dark bg-primary text- mb-3" style="max-width: 18rem;">
+          <div class="card-header">Header</div>
+          <div class="card-body">
+            <h5 class="card-title">Primary card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+        <div class=" card bg-secondary mb-3" style="max-width: 18rem;">
+          <div class="card-header">Header</div>
+          <div class="card-body">
+            <h5 class="card-title">Secondary card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+        <div class="card bg-success mb-3" style="max-width: 18rem;">
+          <div class="card-header">Header</div>
+          <div class="card-body">
+            <h5 class="card-title">Success card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+        <div class="card bg-danger mb-3" style="max-width: 18rem;">
+          <div class="card-header">Header</div>
+          <div class="card-body">
+            <h5 class="card-title">Danger card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+        <div class="card text-dark bg-warning mb-3" style="max-width: 18rem;">
+          <div class="card-header">Header</div>
+          <div class="card-body">
+            <h5 class="card-title">Warning card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+        <div class="card bg-info mb-3" style="max-width: 18rem;">
+          <div class="card-header">Header</div>
+          <div class="card-body">
+            <h5 class="card-title">Info card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+        <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
+          <div class="card-header">Header</div>
+          <div class="card-body">
+            <h5 class="card-title">Light card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+        <div class="card bg-dark mb-3" style="max-width: 18rem;">
+          <div class="card-header">Header</div>
+          <div class="card-body">
+            <h5 class="card-title">Dark card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ESQUELETO PARA REUTILIZAR A LA HORA DE HACER LA DOCS -->
+<div class="code container mt-4">
+  <div class="code-example">
+      <!-- COLOCAR EL CODIGO HTML DE EJEMPLO -->
+            <label for="" class="form-label">añade tu nombre</label>
+            <input type="text" class="form-control" placeholder="Nombre completo">
+            
+            <label for="" class="form-label">añade tu correo</label>
+            <input type="email" class="form-control" placeholder="Correo electrónico">
+            <label for="" class="form-label">Ingrese su contraseña</label>
+            <input type="password" class="form-control" placeholder="Contraseña">
+            <div class="form-check form-check-inline">
+                <label><input type="radio" name="sexo" class="form-check-input"> Hombre</label>
+                <label><input type="radio" name="sexo" class="form-check-input"> Mujer</label>
+            </div>         
+            <div class="form-check">
+            <label><input type="checkbox" class="form-check-input"> Acepto los términos</label>
+            </div>
+  </div>
+  <!-- PARA COLOCAR LENGUAJE -->
+  <div class="code-lenguaje">
+    <div class="row justify-content-between mx-3">
+      <div>HTML</div>
+      <div>
+        <div class="img-copy" alt="copy"></div>
+      </div>
+    </div>
+  </div>
+ <!-- BLOQUE DE CODIGO -->
+  <div class="code-block">
+    <pre><code class="language-html">  
+   &lt;label for=&quot;&quot; class=&quot;form-label&quot;&gt;a&ntilde;ade tu nombre&lt;/label&gt;
+            &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Nombre completo&quot;&gt;
+            
+            &lt;label for=&quot;&quot; class=&quot;form-label&quot;&gt;a&ntilde;ade tu correo&lt;/label&gt;
+            &lt;input type=&quot;email&quot; class=&quot;form-control&quot; placeholder=&quot;Correo electr&oacute;nico&quot;&gt;
+            &lt;label for=&quot;&quot; class=&quot;form-label&quot;&gt;Ingrese su contrase&ntilde;a&lt;/label&gt;
+            &lt;input type=&quot;password&quot; class=&quot;form-control&quot; placeholder=&quot;Contrase&ntilde;a&quot;&gt;
+            &lt;div class=&quot;form-check form-check-inline&quot;&gt;
+                &lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;sexo&quot; class=&quot;form-check-input&quot;&gt; Hombre&lt;/label&gt;
+                &lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;sexo&quot; class=&quot;form-check-input&quot;&gt; Mujer&lt;/label&gt;
+            &lt;/div&gt;         
+            &lt;div class=&quot;form-check&quot;&gt;
+            &lt;label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot;&gt; Acepto los t&eacute;rminos&lt;/label&gt;
+            &lt;/div&gt;
+    </code></pre>
+  </div>
+</div>    
+
+<div class="code container mt-4">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, aperiam aliquam earum accusamus assumenda nam velit in placeat culpa expedita temporibus fuga. Error perspiciatis quisquam iusto aliquid ducimus, in repellendus.
+</div>
+
+
+                <!-- FIN DE CARD 1 -->
+
+<!-- ESQUELETO PARA REUTILIZAR A LA HORA DE HACER LA DOCS -->
+<div class="code container mt-4 bg-secondary-neon">
+
+  <div class="code-example">
+      <!-- COLOCAR EL CODIGO HTML DE EJEMPLO -->
+                         <div class="container mt-5">
+      <div class="row justify-content-center gap-2">
+        <div class=" card text-dark bg-primary text- mb-3" style="max-width: 18rem;">
+          <div class="card-header">Header</div>
+          <div class="card-body">
+            <h5 class="card-title">Primary card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+        <div class=" card bg-secondary mb-3" style="max-width: 18rem;">
+          <div class="card-header">Header</div>
+          <div class="card-body">
+            <h5 class="card-title">Secondary card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+        <div class="card bg-success mb-3" style="max-width: 18rem;">
+          <div class="card-header">Header</div>
+          <div class="card-body">
+            <h5 class="card-title">Success card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+        <div class="card bg-danger mb-3" style="max-width: 18rem;">
+          <div class="card-header">Header</div>
+          <div class="card-body">
+            <h5 class="card-title">Danger card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+        <div class="card text-dark bg-warning mb-3" style="max-width: 18rem;">
+          <div class="card-header">Header</div>
+          <div class="card-body">
+            <h5 class="card-title">Warning card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+        <div class="card bg-info mb-3" style="max-width: 18rem;">
+          <div class="card-header">Header</div>
+          <div class="card-body">
+            <h5 class="card-title">Info card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+        <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
+          <div class="card-header">Header</div>
+          <div class="card-body">
+            <h5 class="card-title">Light card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+        <div class="card bg-dark mb-3" style="max-width: 18rem;">
+          <div class="card-header">Header</div>
+          <div class="card-body">
+            <h5 class="card-title">Dark card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- PARA COLOCAR LENGUAJE -->
+  <div class="code-lenguaje">
+    <div class="row justify-content-between mx-3">
+      <div>HTML</div>
+      <div>
+        <div class="img-copy" alt="copy"></div>
+      </div>
+    </div>
+  </div>
+ <!-- BLOQUE DE CODIGO -->
+  <div class="code-block">
+        <!-- AQUI VA EL CODIGO YA CON  -->
+         <!-- SENTENCIA DE ESCAPE -->
+    <pre><code class="language-html">  
+&lt;div class=&quot;container mt-5&quot;&gt;
+      &lt;div class=&quot;row justify-content-center gap-2&quot;&gt;
+        &lt;div class=&quot; card text-dark bg-primary text- mb-3&quot; style=&quot;max-width: 18rem;&quot;&gt;
+          &lt;div class=&quot;card-header&quot;&gt;Header&lt;/div&gt;
+          &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Primary card title&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot; card bg-secondary mb-3&quot; style=&quot;max-width: 18rem;&quot;&gt;
+          &lt;div class=&quot;card-header&quot;&gt;Header&lt;/div&gt;
+          &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Secondary card title&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card bg-success mb-3&quot; style=&quot;max-width: 18rem;&quot;&gt;
+          &lt;div class=&quot;card-header&quot;&gt;Header&lt;/div&gt;
+          &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Success card title&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card bg-danger mb-3&quot; style=&quot;max-width: 18rem;&quot;&gt;
+          &lt;div class=&quot;card-header&quot;&gt;Header&lt;/div&gt;
+          &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Danger card title&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card text-dark bg-warning mb-3&quot; style=&quot;max-width: 18rem;&quot;&gt;
+          &lt;div class=&quot;card-header&quot;&gt;Header&lt;/div&gt;
+          &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Warning card title&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card bg-info mb-3&quot; style=&quot;max-width: 18rem;&quot;&gt;
+          &lt;div class=&quot;card-header&quot;&gt;Header&lt;/div&gt;
+          &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Info card title&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card text-dark bg-light mb-3&quot; style=&quot;max-width: 18rem;&quot;&gt;
+          &lt;div class=&quot;card-header&quot;&gt;Header&lt;/div&gt;
+          &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Light card title&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card bg-dark mb-3&quot; style=&quot;max-width: 18rem;&quot;&gt;
+          &lt;div class=&quot;card-header&quot;&gt;Header&lt;/div&gt;
+          &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;Dark card title&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    </code></pre>
+  </div>
+</div>
+
+
+                <div class="col-12">
+                    <h1>Botones</h1>
+                    <p>Los badges se pueden usar como parte de enlaces o botones para proporcionar un contador.</p>
+                    <div class="card bg-secondary text-white">
+                        <div class="card bg-info text-white">
+                            <div class="card-header">
+                                <p>HTML</p>
+                            </div>
+                            <div class="card-body">
+                                <pre><code class="language-html">
+&lt;button type=&quot;button&quot; class=&quot;btn btn-info&quot;&gt;
+    Notificaciones &lt;span class=&quot;badge&quot;&gt;4&lt;/span&gt;
+&lt;/button&gt;
+                                </code></pre>
+                            </div>
+                        </div>
+                        <div class="card bg-success text-white">
+                            <div class="card-header">
+                                <p>Resultado</p>
+                            </div>
+                            <div class="card-body">
+                                <button type="button" class="btn btn-info">
+                                    Notificaciones <span class="badge">4</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12">
+                    <h1>Posicionado</h1>
+                    <p>Utilice utilidades para modificar un .badge y posicionarlo en la esquina de un enlace o botón.</p>
+                    <div class="card bg-secondary text-white">
+                        <div class="card bg-info text-white">
+                            <div class="card-header">
+                                <p>HTML</p>
+                            </div>
+                            <div class="card-body">
+                                <pre><code class="language-html">
+&lt;button type=&quot;button&quot; class=&quot;btn btn-info position-relative&quot;&gt;
+    Bandeja de entrada
+    &lt;span class=&quot;position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger&quot;&gt;
+        99+
+        &lt;span class=&quot;visually-hidden&quot;&gt;mensajes no le&iacute;dos&lt;/span&gt;
+    &lt;/span&gt;
+&lt;/button&gt;
+                                </code></pre>
+                            </div>
+                        </div>
+                        <div class="card bg-success text-white">
+                            <div class="card-header">
+                                <p>Resultado</p>
+                            </div>
+                            <div class="card-body">
+                                <button type="button" class="btn btn-info position-relative">
+                                    Bandeja de entrada
+                                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                      99+
+                                      <span class="visually-hidden">mensajes no leídos</span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <h1></h1>
+                    <p>También puedes reemplazar la clase .badge con algunas utilidades más sin recuento para obtener un indicador más genérico.</p>
+                    <div class="card bg-secondary text-white">
+                        <div class="card bg-info text-white">
+                            <div class="card-header">
+                                <p>HTML</p>
+                            </div>
+                            <div class="card-body">
+                                <pre><code class="language-html">
+&lt;button type=&quot;button&quot; class=&quot;btn btn-info position-relative&quot;&gt;
+    Perfil
+    &lt;span class=&quot;position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle&quot;&gt;
+        &lt;span class=&quot;visually-hidden&quot;&gt;Nuevas Alarmas&lt;/span&gt;
+    &lt;/span&gt;
+&lt;/button&gt;
+                                </code></pre>
+                            </div>
+                        </div>
+                        <div class="card bg-success text-white">
+                            <div class="card-header">
+                                <p>Resultado</p>
+                            </div>
+                            <div class="card-body">
+                                <button type="button" class="btn btn-info position-relative">
+                                    Perfil
+                                    <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                                        <span class="visually-hidden">Nuevas Alarmas</span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <h1>Colores de fondo</h1>
+                    <p>Establezca un background-color para primer plano con contraste en color para el texto.</p>
+                    <div class="card bg-secondary text-white">
+                        <div class="card bg-info text-white">
+                            <div class="card-header">
+                                <p>HTML</p>
+                            </div>
+                            <div class="card-body">
+                                <pre><code class="language-html">
+&lt;span class=&quot;badge bg-primary&quot;&gt;Primary&lt;/span&gt;
+&lt;span class=&quot;badge bg-secondary&quot;&gt;Secondary&lt;/span&gt;
+&lt;span class=&quot;badge bg-success&quot;&gt;Success&lt;/span&gt;
+&lt;span class=&quot;badge bg-danger&quot;&gt;Danger&lt;/span&gt;
+&lt;span class=&quot;badge bg-warning&quot;&gt;Warning&lt;/span&gt;
+&lt;span class=&quot;badge bg-info&quot;&gt;Info&lt;/span&gt;
+&lt;span class=&quot;badge bg-light&quot;&gt;Light&lt;/span&gt;
+&lt;span class=&quot;badge bg-alert&quot;&gt;Alert&lt;/span&gt;
+                                </code></pre>
+                            </div>
+                        </div>
+                        <div class="card bg-success text-white">
+                            <div class="card-header">
+                                <p>Resultado</p>
+                            </div>
+                            <div class="card-body">
+                                <span class="badge bg-primary">Primary</span>
+                                <span class="badge bg-secondary">Secondary</span>
+                                <span class="badge bg-success">Success</span>
+                                <span class="badge bg-danger">Danger</span>
+                                <span class="badge bg-warning">Warning</span>
+                                <span class="badge bg-info">Info</span>
+                                <span class="badge bg-light">Light</span>
+                                <span class="badge bg-alert">Alert</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <h1>Redondeado en Badges</h1>
+                    <p>Utilice la clase .rounded-pill de utilidad para hacer que los badges sean más redondeadas con un border-radius.</p>
+                    <div class="card bg-secondary text-white">
+                        <div class="card bg-info text-white">
+                            <div class="card-header">
+                                <p>HTML</p>
+                            </div>
+                            <div class="card-body">
+                                <pre><code class="language-html">
+&lt;span class=&quot;badge rounded-pill bg-primary&quot;&gt;Primary&lt;/span&gt;
+&lt;span class=&quot;badge rounded-pill bg-secondary&quot;&gt;Secondary&lt;/span&gt;
+&lt;span class=&quot;badge rounded-pill bg-success&quot;&gt;Success&lt;/span&gt;
+&lt;span class=&quot;badge rounded-pill bg-danger&quot;&gt;Danger&lt;/span&gt;
+&lt;span class=&quot;badge rounded-pill bg-warning&quot;&gt;Warning&lt;/span&gt;
+&lt;span class=&quot;badge rounded-pill bg-info&quot;&gt;Info&lt;/span&gt;
+&lt;span class=&quot;badge rounded-pill bg-light&quot;&gt;Light&lt;/span&gt;
+&lt;span class=&quot;badge rounded-pill bg-alert&quot;&gt;Alert&lt;/span&gt;
+                                </code></pre>
+                            </div>
+                        </div>
+                        <div class="card bg-success text-white">
+                            <div class="card-header">
+                                <p>Resultado</p>
+                            </div>
+                            <div class="card-body">
+                                <span class="badge rounded-pill bg-primary">Primary</span>
+                                <span class="badge rounded-pill bg-secondary">Secondary</span>
+                                <span class="badge rounded-pill bg-success">Success</span>
+                                <span class="badge rounded-pill bg-danger">Danger</span>
+                                <span class="badge rounded-pill bg-warning">Warning</span>
+                                <span class="badge rounded-pill bg-info">Info</span>
+                                <span class="badge rounded-pill bg-light">Light</span>
+                                <span class="badge rounded-pill bg-alert">Alert</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="container-fluid bg-dark text-white text-center py-3">
+        <p>© 2025 Retro Sci-Fi Library.</p>
+    </footer>
+
+    <script src="../../dist/js/retrosci-fi.js"></script>
+
+    <script>document.addEventListener("DOMContentLoaded", () => { closeMenu(); });</script>
+</body>
+
+</html>

@@ -3,34 +3,17 @@
 @use "sass:color" as color;
 @use "mixins/borders" as border;
 
-// Estilo base para todos los badges
-@mixin badge-base($bg-color) {
-  font-family: fonts.$font-mukta;
+.badge {
+  background-color: variables.$primary;
+  color: black;
+  display: inline-block;
+  padding: 0.35em 0.65em;
+  font-size: 0.75em;
   font-weight: fonts.$font-weight-bold;
-  padding: 0 5px;
-  font-size: 16px;
+  line-height: 1;
   text-align: center;
-  border-radius: 0.5rem;
-  margin: 10px auto;
-  background-color: $bg-color;
-  border: 1px solid variables.$secondary;
-  color: if(
-    color.channel($bg-color, "lightness", $space: hsl) > 60%,
-    #000,
-    #fff
-  );
-}
-
-//Todas las variantes con los diferentes colores para los badge
-@each $nombre, $color in variables.$theme-colors {
-  .badge-#{$nombre} {
-    @include badge-base($color);
-
-    @if ($nombre == "secondary") {
-      @include border.make-border-complete(
-        variables.$default-border,
-        variables.$default-border-color
-      );
-    }
-  }
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: map-get(variables.$borders-radius, "5");
+  font-family: fonts.$font-mukta;
 }

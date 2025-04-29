@@ -1,0 +1,78 @@
+    @use '../variables' as *;
+    
+    .token {
+    &.comment,
+    &.prolog,
+    &.doctype,
+    &.cdata {
+        color: #8292a2;
+    }
+
+    &.punctuation {
+        color: #f8f8f2;
+    }
+
+    &.namespace {
+        opacity: 0.7;
+    }
+
+    &.property,
+    &.tag,
+    &.constant,
+    &.symbol,
+    &.deleted {
+        color: $danger;
+    }
+
+    &.boolean,
+    &.number {
+        color: #ae81ff;
+    }
+
+    &.selector,
+    &.attr-name,
+    &.string,
+    &.char,
+    &.builtin,
+    &.inserted {
+        color: $warning;
+    }
+
+    &.operator,
+    &.entity,
+    &.url,
+    .language-css &.string,
+    .style &.string,
+    &.variable {
+        color: #f8f8f2;
+    }
+
+    &.atrule,
+    &.attr-value,
+    &.function,
+    &.class-name {
+        color: $success;
+    }
+
+    &.keyword {
+        color: #66d9ef;
+    }
+
+    &.regex,
+    &.important {
+        color: #fd971f;
+    }
+
+    &.important,
+    &.bold {
+        font-weight: bold;
+    }
+
+    &.italic {
+        font-style: italic;
+    }
+
+    &.entity {
+        cursor: help;
+    }
+}

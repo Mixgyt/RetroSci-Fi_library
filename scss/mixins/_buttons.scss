@@ -7,28 +7,26 @@
     background-color: $bg-color;
     border: 1px solid color.mix(white, $bg-color, 30%);
     color: $text-color;
-    transition: all 0.5s;
+    transition: all 0.5s ease-in;
     &:hover {
         background: color.adjust($bg-color, $lightness: -10%);
+        box-shadow: 0 0 4px 2px $bg-color;
     }
 }
 
-@mixin button-style($bg: rgb(61, 106, 255), $fg:black) { //bg backgorund color de fondo del boton
+@mixin button-outline($color) {
+    border: 1px solid $color;
+    box-shadow: 0 0 4px 2px $color;
+    background-color: transparent;
+    color: $color;
+    transition: all 0.5s ease-in;
+    &:hover{
+        @include button-color($color);
+    }
+}
+
+@mixin button-style($bg: transparent, $fg: black) {
     position: relative;
-    padding: 7px 10px;
-    border-radius: 7px;
-    
-
-    font-family: fonts.$font-mukta;
-    font-weight: fonts.$font-weight-bold;
-    font-size: 20px;
-    font-weight:100;
-  
-  
-    text-decoration: none;
-
-    color: $fg;
-
     overflow: hidden;
 
     box-shadow: 0 0 0 0 transparent;
@@ -37,7 +35,7 @@
     transition: all 0.2s ease-in;
 
     &:hover {
-        background: darken($bg, 10%); //se altera el color del fondo 10% mas oscuro
+        background: darken($bg, 10%);
         color: lighten($bg, 80%);
         font-weight: 200;
         box-shadow: 0 0 30px 5px darken($bg, 10%);
@@ -46,11 +44,40 @@
         transition: all 0.2s ease-out;
     }
 
-    &:hover::before {
-        -webkit-animation: sh02 0.5s 0s linear;
-        -moz-animation: sh02 0.5s 0s linear;
-        animation: sh02 0.5s 0s linear;
+    @include estilo-brillo();
+
+    &:active {
+        box-shadow: 0 0 0 0 transparent;
+        -webkit-transition: box-shadow 0.2s ease-in;
+        -moz-transition: box-shadow 0.2s ease-in;
+        transition: box-shadow 0.2s ease-in;
     }
+
+    &.border-button {
+        border: 2px solid $bg;
+        background: transparent;
+
+        font-weight: 200;
+        box-shadow: 0 0 0 0 transparent;
+        -webkit-transition: all 0.2s ease-in;
+        -moz-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in;
+
+        &:hover {
+            background: $bg;
+            color: #fff;
+            font-weight: 200;
+            box-shadow: 0 0 30px 5px darken($bg, 10%);
+            -webkit-transition: all 0.2s ease-out;
+            -moz-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
+        }
+    }
+}
+
+@mixin estilo-brillo() {
+    position: relative;
+    overflow: hidden;
 
     &::before {
         content: '';
@@ -70,6 +97,12 @@
         transform: skewX(-20deg);
     }
 
+    &:hover::before {
+        -webkit-animation: sh02 0.5s 0s linear;
+        -moz-animation: sh02 0.5s 0s linear;
+        animation: sh02 0.5s 0s linear;
+    }
+
     @keyframes sh02 {
         from {
             opacity: 0;
@@ -83,34 +116,6 @@
         to {
             opacity: 0;
             left: 100%;
-
-        }
-    }
-
-    &:active {
-        box-shadow: 0 0 0 0 transparent;
-        -webkit-transition: box-shadow 0.2s ease-in;
-        -moz-transition: box-shadow 0.2s ease-in;
-        transition: box-shadow 0.2s ease-in;
-    }
-    &.border-button {
-        border: 2px solid $bg;
-        background: transparent;
-
-        font-weight: 200;
-        box-shadow: 0 0 0 0 transparent;
-        -webkit-transition: all 0.2s ease-in;
-        -moz-transition: all 0.2s ease-in;
-        transition: all 0.2s ease-in;
-
-        &:hover {
-            background: $bg;
-            color: #fff;
-            font-weight: 200;
-            box-shadow: 0 0 30px 5px darken($bg, 10%);
-            -webkit-transition: all 0.2s ease-out;
-            -moz-transition: all 0.2s ease-out;
-            transition: all 0.2s ease-out;
         }
     }
 }

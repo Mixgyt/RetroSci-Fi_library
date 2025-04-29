@@ -6,14 +6,14 @@
 
 // Estilo base
 .navbar {
-  margin: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px;
   font-family: fonts.$font-mplus;
   font-weight: fonts.$font-weight-medium;
-
+  z-index: 9999;
+  gap: 5px;
   .navbar-header {
     display: flex;
     width: 100%;
@@ -22,6 +22,10 @@
   }
 
   .navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
     font-family: fonts.$font-mplus;
     font-size: 30px;
   }
@@ -41,6 +45,8 @@
       color: var(--sci-text-color);
 
       &:hover {
+        background-color: var(--sci-text-color);
+        color: var(--sci-bg-color);
         cursor: pointer;
       }
     }
@@ -78,6 +84,8 @@
       }
 
       &:hover .dropdown-menu {
+        background-color: var(--sci-bg-color);
+        color: var(--sci-text-color);
         display: block;
       }
     }
@@ -103,14 +111,14 @@
     opacity: 0;
   }
   to {
-    max-height: 500px; // Ajusta este valor según el contenido
+    max-height: 500px;
     opacity: 1;
   }
 }
 
 @keyframes navbar-slide-up {
   from {
-    max-height: 500px; // Ajusta este valor según el contenido
+    max-height: 500px;
     opacity: 1;
   }
   to {
@@ -139,8 +147,11 @@
       opacity: 0;
       transition: max-height 0.4s ease, opacity 0.7s ease;
 
+      margin: 0;
+      padding: 0;
+
       &.active {
-        max-height: 500px; // Adjust based on content height
+        max-height: 500px;
         opacity: 1;
       }
 
@@ -148,6 +159,36 @@
         max-height: 0;
         opacity: 0;
       }
+
+      .nav-item.dropdown {
+        position: relative;
+      
+        .dropdown-menu {
+          display: none;
+        }
+      
+        // Mostrar en escritorio con hover
+        @media (min-width: 769px) {
+          &:hover .dropdown-menu {
+            display: block;
+            position: absolute;
+            top: 56px;
+            left: 0;
+            padding: 10px;
+            z-index: 100;
+            background-color: var(--sci-bg-color);
+            box-shadow: 0 0 0 2px;
+          }
+        }
+      
+        // Mostrar en móvil con clase .show (activada con JS)
+        &:hover .dropdown-menu {
+          display: block;
+          position: static;
+          box-shadow: none;
+        }
+      }
+      
     }
   }
 }

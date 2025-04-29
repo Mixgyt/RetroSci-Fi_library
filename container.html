@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container</title>
+    <link rel="stylesheet" href="dist/css/sci-fi.css">
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+</head>
+
+<body class="bg-lightd">
+    <nav class=" navbar bg-secondary estilo-brillo border rounded border-secondary hover-neon  position-sticky top-0"
+        id="nav1">
+        <div class="navbar-header">
+            <div class="navbar-brand">
+                <div class="img-logo-prin-white"></div>Retro Sci-Fi
+            </div>
+            <button class="navbar-toggle" onclick="toggleMenu('nav1')">
+                <div class="img-menu-white"></div>
+            </button>
+        </div>
+        <div class="navbar-nav">
+            <a class="nav-item rounded-pill" href="#inicio">Inicio</a>
+            <a class="nav-item rounded-pill" href="#estructura">Estructura</a>
+            <a class="nav-item rounded-pill" href="#grid">Grid</a>
+            <a class="nav-item rounded-pill" href="#alerts">Alerts</a>
+        </div>
+    </nav>
+
+    <div div class="grid">
+        <div class="g-col g-col-md-2 g-col-lg-3">
+
+            <div class="">
+
+                <div class=""> <!-- Crear el contenedo para el aside bar (o usar las clases de posision)-->
+
+                    <div class="slide-menu open position-fixed">
+                        <div class="slide-menu__content">
+                            <h2 class="slide-menu__title">Documentacion</h2>
+                            <ul class="slide-menu__list">
+                                <li class="slide-menu__item">
+                                    <a class="estilo-brillo" href="documentacion.html">Documentacion</a>
+                                </li>
+
+                                <li class="slide-menu__item ">
+                                    <a class="estilo-brillo" href="#">Alertas</a>
+                                </li>
+
+                                <p class="">Componentes</p>
+
+                                <li class="slide-menu__item">
+                                    <a class="estilo-brillo" href="badge.html">Badge</a>
+                                </li>
+
+
+                                <p class="">Disposición</p>
+
+                                <li class="slide-menu__item">
+                                    <a class="estilo-brillo" href="container.html">Container</a>
+                                </li>
+                                <li class="slide-menu__item">
+                                    <a class="estilo-brillo" href="navbar.html">Navbar</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="slide-menu__toggle bg-secondary mx-3 ">
+                            <div class="img-izq-arrow-white icon-open"></div>
+                            <div class="img-der-arrow-white icon-closed"></div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="g-col-12 g-col-md-9  g-col-lg-8">
+            <h1> </h1>
+            <header class="container bg-secondary-neon border-warning text-white text-center py-5">
+                <h1>Container</h1>
+                <p>Los contenedores son un componente fundamental que contiene, rellena y alinea su contenido dentro de
+                    un dispositivo o ventana gráfica determinados.</p>
+            </header>
+
+
+            <div class="row g-2 container">
+                <div class="col-12">
+                    <h1>Contenedor predeterminado</h1>
+                    <p>Nuestra clase .container predeterminada es un contenedor responsivo de ancho fijo, lo que
+                        significa que max-width cambia en cada punto de interrupción.</p>
+                    <!-------------------------------- ESQUELETO PARA REUTILIZAR A LA HORA DE HACER LA DOCS--------------------------------- -->
+                    <div class="code container mt-4">
+                        <div class="code-example">
+                            <!-- COLOCAR EL CODIGO HTML DE EJEMPLO -->
+                            <div class="container ">
+                                <!-- Contenido aqui -->
+                            </div>
+                        </div>
+                        <!-- PARA COLOCAR LENGUAJE -->
+                        <div class="code-lenguaje">
+                            <div class="row justify-content-between mx-3">
+                                <div>HTML</div>
+                                <div>
+                                    <div class="img-copy" alt="copy"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BLOQUE DE CODIGO -->
+                        <div class="code-block">
+                            <pre><code class="language-html">  
+          <!-- AQUI VA EL CODIGO YA CON  -->
+&lt;div class=&quot;container&quot;&gt;
+&lt;!-- Contenido aqui --&gt;
+&lt;/div&gt;
+           <!-- SENTENCIA DE ESCAPE -->
+                            </code></pre>
+                        </div>
+                    </div>
+                    <!-- ---------------------------------------------------------------------------------------------------------------- -->
+                </div>
+                <div class="col-12">
+                    <h1>Contenedores responsivos</h1>
+                    <p>Los contenedores adaptables permiten especificar una clase con un ancho del 100 % hasta alcanzar
+                        el punto de interrupción especificado. Tras ello, se aplican max-widths a cada punto de
+                        interrupción superior.</p>
+                    <!-------------------------------- ESQUELETO PARA REUTILIZAR A LA HORA DE HACER LA DOCS--------------------------------- -->
+                    <div class="code container mt-4">
+                        <div class="code-example">
+                            <!-- COLOCAR EL CODIGO HTML DE EJEMPLO -->
+                            <div class="container-sm">100% Ancho hasta un pequeño punto de quiebre</div>
+                            <div class="container-md">100% Ancho hasta punto de interrupción medio</div>
+                            <div class="container-lg">100% Ancho hasta un punto de interrupción grande</div>
+                            <div class="container-xl">100% Ancho hasta punto de interrupción extra grande</div>
+                            <div class="container-xxl">100% Ancho hasta un punto de quiebre extra extra grande</div>
+                        </div>
+                        <!-- PARA COLOCAR LENGUAJE -->
+                        <div class="code-lenguaje">
+                            <div class="row justify-content-between mx-3">
+                                <div>HTML</div>
+                                <div>
+                                    <div class="img-copy" alt="copy"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BLOQUE DE CODIGO -->
+                        <div class="code-block">
+                            <pre><code class="language-html">  
+                              <!-- AQUI VA EL CODIGO YA CON  -->
+&lt;div class=&quot;container-sm&quot;&gt;100% Ancho hasta un pequeño punto de quiebre&lt;/div&gt;
+&lt;div class=&quot;container-md&quot;&gt;100% Ancho hasta punto de interrupción medio&lt;/div&gt;
+&lt;div class=&quot;container-lg&quot;&gt;100% Ancho hasta un punto de interrupción grande&lt;/div&gt;
+&lt;div class=&quot;container-xl&quot;&gt;100% Ancho hasta punto de interrupción extra grande&lt;/div&gt;
+&lt;div class=&quot;container-xxl&quot;&gt;100% Ancho hasta un punto de quiebre extra extra grande&lt;/div&gt;
+                               <!-- SENTENCIA DE ESCAPE -->
+                                                </code></pre>
+                        </div>
+                    </div>
+                    <!-- ---------------------------------------------------------------------------------------------------------------- -->
+                </div>
+                <div class="col-12">
+                    <h1>Contenedores de fluidos</h1>
+                    <p>Use .container-fluid para un contenedor de ancho completo, que abarque todo el ancho de la
+                        ventana gráfica.</p>
+                    <!-------------------------------- ESQUELETO PARA REUTILIZAR A LA HORA DE HACER LA DOCS--------------------------------- -->
+                    <div class="code container mt-4">
+                        <div class="code-example">
+                            <!-- COLOCAR EL CODIGO HTML DE EJEMPLO -->
+                            <div class="container-fluid">
+                                <!-- Contenido aqui -->
+                            </div>
+
+                        </div>
+                        <!-- PARA COLOCAR LENGUAJE -->
+                        <div class="code-lenguaje">
+                            <div class="row justify-content-between mx-3">
+                                <div>HTML</div>
+                                <div>
+                                    <div class="img-copy" alt="copy"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BLOQUE DE CODIGO -->
+                        <div class="code-block">
+                            <pre><code class="language-html">  
+                              <!-- AQUI VA EL CODIGO YA CON  -->
+&lt;div class=&quot;container-fluid&quot;&gt;
+&lt;!-- Contenido aqui --&gt;
+&lt;/div&gt;
+                               <!-- SENTENCIA DE ESCAPE -->
+                                                </code></pre>
+                        </div>
+                    </div>
+                    <!-- ---------------------------------------------------------------------------------------------------------------- -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="container-fluid bg-dark text-white text-center py-3">
+        <p>© 2025 Retro Sci-Fi Library.</p>
+    </footer>
+
+    <script src="dist/js/retrosci-fi.js"></script>
+
+    <script>document.addEventListener("DOMContentLoaded", () => { closeMenu(); });</script>
+</body>
+
+</html>
