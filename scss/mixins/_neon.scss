@@ -12,10 +12,11 @@
 
 @mixin text-neon-effect($color, $intensity){
   text-shadow: 
-    0 0 10px rgba($color, calc($intensity * 0.5)),
-    0 0 20px rgba($color, calc($intensity * 0.3)),
-    0 0 30px rgba($color, calc($intensity * 0.1));
+    0 0 10px rgba($color, calc($intensity * 0.7)),
+    0 0 20px rgba($color, calc($intensity * 0.5)),
+    0 0 30px rgba($color, calc($intensity * 0.2));
 
+  
   transition: all 0.3s ease;
 }
 
@@ -64,9 +65,9 @@
   &.hover-neon:hover {
     transform: translateY(-2px);
     text-shadow: 
-      0 0 20px rgba($color, 0.7),
-      0 0 40px rgba($color, 0.5),
-      0 0 60px rgba($color, 0.3);
+      0 0 20px rgba($color, 0.8),
+      0 0 30px rgba($color, 0.6),
+      0 0 50px rgba($color, 0.5);
   }
   @include text-neon-active($color);
 }

@@ -1,5 +1,6 @@
 @use "../variables";
 @use "../mixins/neon";
+@use "sass:color";
 
 @mixin size($size){
     font-size: #{$size};
@@ -41,6 +42,8 @@
 }
 
 @mixin text-neon($color, $opacity){
+    $text-color: color.mix(rgba(255, 255, 255, 0.623),$color,20%);
+    @include text-color($text-color,$opacity);
     @include neon.text-neon-effect($color, $opacity);
-    @include neon.text-neon-hover($color);
+    @include neon.text-neon-hover(color.mix(white,$color,20%));
 }

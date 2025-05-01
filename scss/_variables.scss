@@ -116,6 +116,7 @@ $borders-radius:(
   "3":.3rem,
   "4":$default-border-radius,
   "5":.5rem,
+  "6":.65rem,
   "circle":50%,
   "pill": 50rem,
 );
@@ -131,12 +132,21 @@ $text-sizes:(
   6: $text-size-base,
 );
 
+$header-sizes:(
+  1: $text-size-base + 1,
+  2: $text-size-base + .5,
+  3: $text-size-base + .17,
+  4: $text-size-base,
+  5: $text-size-base - .17,
+  6: $text-size-base - 0.33,
+);
+
 $text-styles:(
-  "bold":700,
+  "bold":800,
   "bolder":"bolder",
   "semibold":600,
-  "medium":500,
-  "normal":400,
+  "normal":500,
+  "medium":400,
   "light":300,
   "lighter":"lighter",
   "italic":"italic",
