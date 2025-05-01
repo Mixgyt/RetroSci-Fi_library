@@ -7,20 +7,69 @@
  **RetroSci-fi** es una librería de componentes inspirada en la ciencia ficción retro de Japón. Basada en Bootstrap, está desarrollada completamente desde cero con SASS, usando clases reutilizables, estructura modular y un sistema de diseño personalizable.
 
  <!-- ![Tematica](./img/tematica.png) -->
-## 🚀 Inicio Rápido
+## 🚀 Implementación de los estilos en tu página web
 
-Hay varias opciones rápidas para comenzar a usar la librería:
-- **Descargar la última versión**  [Descargar ZIP](https://github.com/Mixgyt/RetroSci-Fi_library/archive/refs/heads/master.zip)
+### 🌐 Opción 1: Utiliza la **CDN**
+  1.  **Coloca el link y script en el head de tu html**
 
-- **Clonar el repositorio**  
-    ```bash
-    git clone https://github.com/Mixgyt/RetroSci-Fi_library.git
-    ```
+      ```html
+      <link rel="stylesheet" href="node_modules/retrosci-fi_library/dist/css/sci-fi.css" crossorigin="anonymous">
+      <script src="link" crossorigin="anonymous" defer></script>
+      ```
+  2.  **Listo utiliza las clases en tu html**
 
-- **Instalar la librería con el comando [npm](https://www.npmjs.com/package/retrosci-fi_library)**  
-    ```bash
-    npm i retrosci-fi_library
-    ```
+      Ahora puedes usar las clases de la librería en tu HTML. Por ejemplo:
+      ```html
+      <button class="btn btn-primary">Haz clic aquí</button>
+      ```
+
+### 💡 Opción 2: Descarga con **npm**
+
+1. **Instalar la librería**  
+   Ejecuta el siguiente comando en tu terminal para instalar la librería:
+   ```bash
+   npm i retrosci-fi_library
+   ```
+
+2. **Incluir el archivo en tu HTML**  
+   Agrega el archivo CSS en el `<head>` de tu archivo HTML:
+   ```html
+   <link rel="stylesheet" href="node_modules/retrosci-fi_library/dist/css/sci-fi.css">
+   ```
+
+3. **Usar las clases en tu HTML**  
+   Ahora puedes usar las clases de la librería en tu HTML. Por ejemplo:
+   ```html
+   <button class="btn btn-primary">Haz clic aquí</button>
+   ```
+
+---
+
+### ⛺ Opción 3: Clonar el repositorio con **git clone** o descarga del ZIP
+
+1. **Clonar el repositorio**  
+   Ejecuta el siguiente comando en tu terminal para clonar el repositorio:
+   ```bash
+   git clone https://github.com/Mixgyt/RetroSci-Fi_library.git
+   ```
+
+2. **Compilar los estilos (opcional)**  
+   Si deseas personalizar los estilos, puedes compilar los archivos SCSS. Usa el siguiente comando para compilar:
+   ```bash
+   npm run css-compile
+   ```
+
+3. **Incluir el archivo CSS en tu proyecto**  
+   Copia el archivo CSS generado en la carpeta `dist/css/sci-fi.css` a tu proyecto o enlázalo directamente desde la carpeta clonada:
+   ```html
+   <link rel="stylesheet" href="retrosci-fi_library/dist/css/sci-fi.css">
+   ```
+
+4. **Usar las clases en tu HTML**  
+   Al igual que con la instalación por npm, puedes usar las clases de la librería en tu HTML:
+   ```html
+   <button class="btn btn-primary">Haz clic aquí</button>
+   ```
  **Consulta la documentación completa**  
 > Para más detalles sobre cómo usar la librería y ejemplos prácticos, visita nuestra [documentación oficial](#).
 
@@ -136,59 +185,6 @@ Para aplicar un estilo hover debes agregar la clase `.hover-neon`, si se necesit
 ```
 
 ![Imagen de los colores neon](./img/backgrounds/hover-neon.png)
-
-
-## 💻 Implementación de los estilos en tu página web
-
-### Opción 1: Descarga con **npm**
-
-1. **Instalar la librería**  
-   Ejecuta el siguiente comando en tu terminal para instalar la librería:
-   ```bash
-   npm i retrosci-fi_library
-   ```
-
-2. **Incluir el archivo en tu HTML**  
-   Agrega el archivo CSS en el `<head>` de tu archivo HTML:
-   ```html
-   <link rel="stylesheet" href="node_modules/retrosci-fi_library/dist/css/sci-fi.css">
-   ```
-
-3. **Usar las clases en tu HTML**  
-   Ahora puedes usar las clases de la librería en tu HTML. Por ejemplo:
-   ```html
-   <button class="btn btn-primary">Haz clic aquí</button>
-   ```
-
----
-
-#### Opción 2: Clonar el repositorio con **git clone** o descarga del ZIP
-
-1. **Clonar el repositorio**  
-   Ejecuta el siguiente comando en tu terminal para clonar el repositorio:
-   ```bash
-   git clone https://github.com/Mixgyt/RetroSci-Fi_library.git
-   ```
-
-2. **Compilar los estilos (opcional)**  
-   Si deseas personalizar los estilos, puedes compilar los archivos SCSS. Usa el siguiente comando para compilar:
-   ```bash
-   npm run css-compile
-   ```
-
-3. **Incluir el archivo CSS en tu proyecto**  
-   Copia el archivo CSS generado en la carpeta `dist/css/sci-fi.css` a tu proyecto o enlázalo directamente desde la carpeta clonada:
-   ```html
-   <link rel="stylesheet" href="retrosci-fi_library/dist/css/sci-fi.css">
-   ```
-
-4. **Usar las clases en tu HTML**  
-   Al igual que con la instalación por npm, puedes usar las clases de la librería en tu HTML:
-   ```html
-   <button class="btn btn-primary">Haz clic aquí</button>
-   ```
- **Consulta la documentación completa**  
-> Para más detalles sobre cómo usar la librería y ejemplos prácticos, visita nuestra [documentación oficial](#).
 ---
 ## 👨🏻‍💻 Integrantes
 
