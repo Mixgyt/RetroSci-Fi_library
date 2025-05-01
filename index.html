@@ -2,23 +2,179 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test de sci-fi library</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test de sci-fi library</title>
 
-    <link rel="stylesheet" href="dist/css/sci-fi.css">
+  <link rel="stylesheet" href="dist/css/sci-fi.css">
+  <link rel="stylesheet" href="styleIndex.css">
+  <script src="pc.js" defer></script>
+  <script src="https://www.youtube.com/iframe_api" defer></script>
 
-    <style>
-        .ancho {
-            height: 100px;
-        }
-        .ancho-2 {
-            height: 200px;
-        }
-    </style>
+
 </head>
 
 <body>
+
+  <div class=" container-fluit cuerpo">
+    
+  </div>
+
+  <nav class=" navbar bg-secondary estilo-brillo border rounded border-secondary hover-neon  position-sticky top-0 p-1"
+    id="nav1">
+    <div class="navbar-header">
+      <div class="navbar-brand">
+        <div class="img-logo-prin-white"></div>Retro Sci-Fi
+      </div>
+      <button class="navbar-toggle" onclick="toggleMenu('nav1')">
+        <div class="img-menu-white"></div>
+      </button>
+    </div>
+    <div class="navbar-nav">
+      <a class="nav-item rounded-pill" href="#inicio">Inicio</a>
+      <a class="nav-item rounded-pill" href="#estructura">Estructura</a>
+      <a class="nav-item rounded-pill" href="#grid">Grid</a>
+      <a class="nav-item rounded-pill" href="#alerts">Alerts</a>
+    </div>
+  </nav>
+
+  <div class="pc container-fluit">
+    <div class="pantalla bg-secondary estilo-brillo">
+      <div class="sistema">
+        <div class="programa" data-canal="0">
+          <div class="img-inicial"></div>
+        </div>
+        <div class="programa" data-canal="1" style="display: none;">
+          <div class="fondo">
+            <iframe id="canal-1"
+              src="https://www.youtube.com/embed/4FBW3mkdKOs?enablejsapi=1&autoplay=1&mute=1&controls=0&loop=1&modestbranding=1&showinfo=0"
+              frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+            </iframe>
+          </div>
+          <div class="container full">
+            <div class="card bg-alert p-2 mt-4 border-secondary">RETRO SCI-FI LIBRARY</div>
+            <div class="light-text container bg-info p-2 rounded-5 border border-secondary">RetroSci-fi es una librería de componentes
+              inspirada en
+              la ciencia ficción retro de Japón. Basada en Bootstrap, está desarrollada completamente desde cero con
+              SASS, usando clases reutilizables, estructura modular y un sistema de diseño personalizable.</div>
+            <div class="img-canal1 mt-3 border border-secondary rounded-5"></div>
+          </div>
+        </div>
+        <div class="programa" data-canal="2" style="display: none;">
+          <div class="fondo">
+            <iframe id="canal-2"
+              src="https://www.youtube.com/embed/7-Vky63lvek?enablejsapi=1&autoplay=1&mute=1&controls=0&loop=1&modestbranding=1&showinfo=0" 
+              frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+            </iframe>
+          </div>
+          <div class="container full">
+            <div class="card bg-success p2 border-secondary">Como iniciar con RETRO SCI-FI LIBRARY</div>
+            <div class="npm bg-info border border-secondary rounded-5">
+              <div class="container">
+                <p>Instalar mediante el <span class="badge bg-warning">npm</span></p>
+                <p>Instala los archivos fuente Sass y JavaScript de Bootstrap mediante npm.</p>
+              </div>
+              <div class="container bg-secondary  p-2 rounded-5">
+                <div class="copia">
+                    <p id="code-to-copy">Hola Mundo, npm aqui!</p>
+                  <div onclick="copiarCodigo()" class="img-copy boton-copia"></div>
+                </div>
+              </div>
+              <div class="container">
+                <p>Incluir a través de <span class="badge bg-warning">CDN</span></p>
+                <p>Si solo necesitas incluir el CSS o JS compilado de Retro Sci-fi Library.</p>
+              </div>
+              <div class="container bg-secondary  p-2 rounded-5">
+                <div class="copia">
+                    <p id="code-to-copy-cdn1">Hola Mundo, cdn aqui!</p>
+                    <p id="code-to-copy-cdn2">Hola Mundo, cdn2 aqui!</p>
+                  <div onclick="copiarCodigoCdn()" class="img-copy boton-copia"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="programa" data-canal="3" style="display: none;">
+          <div class="fondo">
+            <iframe id="canal-3"
+              src="https://www.youtube.com/embed/coYw-eVU0Ks?enablejsapi=1&autoplay=1&mute=1&controls=0&loop=1&modestbranding=1&showinfo=0"
+              frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+            </iframe>
+          </div>
+          <div class="container full">
+            <div class="card bg-warning p-2 mt-4 border-secondary">Puedes perzonalizar todo con <span class="badge bg-secondary">RETRO SCI-FI LIBRARY</span></div>
+            <div class="container-fluit elementos">
+              <div class="card bg-secondary border-light  mb-3" style="max-width: 18rem;">
+                <div class="card-header">Con la librería puedes crear componentes como:</div>
+                <div class="card-body">
+                  <div class="componentes container-fluit">
+                    <span class="badge bg-warning mt-2">Botones</span>
+                    <span class="badge bg-warning mt-2">Formularios</span>
+                    <span class="badge bg-warning mt-2">Tarjetas</span>
+                    <span class="badge bg-warning mt-2">Alertas</span>
+                    <span class="badge bg-warning mt-2">Barras</span>
+                    <span class="badge bg-warning mt-2">Badges</span>
+                    <span class="badge bg-warning mt-2 mb-2">Containers</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card bg-secondary border-light mb-3" style="max-width: 18rem;">
+                <div class="card-header">Con la librería puedes tener clases utilitarias como:</div>
+                <div class="card-body">
+                  <div class="componentes container-fluit">
+                    <span class="badge bg-warning mt-2">Modicar tamaño, grosor, color o texto</span>
+                    <span class="badge bg-warning mt-2">Crear sombras</span>
+                    <span class="badge bg-warning mt-2">Crear márgenes, paddings o borde</span>
+                    <span class="badge bg-warning mt-2">Mover elementos</span>
+                    <span class="badge bg-warning mt-2">Redondear</span>
+                    <span class="badge bg-warning mt-2">Ocultar</span>
+                    <span class="badge bg-warning mt-2 mb-2">Colores de fondo </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="programa" data-canal="4" style="display: none;">
+          <div class="fondo">
+            <iframe id="canal-4"
+              src="https://www.youtube.com/embed/p3rUnBdYWpo?enablejsapi=1&autoplay=1&mute=1&controls=0&loop=1&modestbranding=1&showinfo=0"
+              frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+            </iframe>
+          </div>
+          <div class="container full">
+            <div class="card bg-alert p-2 mt-4 border-secondary">Tambien hay clases especiales como el efecto <span class="badge bg-light-neon">neon</span></div>
+            <div class="container bg-secondary border border-light p-2">
+              <div class="img-canal2 border border-secondary rounded-5 "></div>
+            </div>
+          </div>
+        </div>
+        <div class="programa" data-canal="5" style="display: none;">
+          <div class="fondo">
+            <iframe id="canal-5"
+              src="https://www.youtube.com/embed/lvL7NBq9akc?enablejsapi=1&autoplay=1&mute=1&controls=0&loop=1&modestbranding=1&showinfo=0"
+              frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+            </iframe>
+          </div>
+          <div class="container full">
+            <div class="card bg-secondary p-2 mt-4 border-light">Integrantes <span class="badge bg-warning-neon">Pro</span></div>
+            <div class="light-text container bg-secondary-neon p-2 rounded-5 border border-light">
+              <p>👑 - Cesar Enoc Aparicio Reyes</p>
+              <p>👑 - Cesar Alexander Garay Ortez</p>
+              <p>👑 - Gerson Mauricio Alegria Caballero</p>
+              <p>👑 - Juan Antonio Sandoval Paiz</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluit control">
+    <div class="musica">
+      <p>&#x1F3B5</p>
+      <input type="range" class="form-range perilla" id="volumen" min="0" max="100" value="0">
+    </div>
+  </div>
 
 </body>
 
