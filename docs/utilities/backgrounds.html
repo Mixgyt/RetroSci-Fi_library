@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retrosci-Fi</title>
+    <link rel="stylesheet" href="../../dist/css/sci-fi.css">
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+</head>
+
+<body>
+  <nav class=" navbar bg-secondary estilo-brillo border rounded border-secondary hover-neon  position-sticky top-0 p-1"
+  id="nav1">
+  <div class="navbar-header">
+      <div class="navbar-brand"><div class="img-logo-prin-white"></div>Retro Sci-Fi</div>
+      <button class="navbar-toggle" onclick="toggleMenu('nav1')">
+          <div class="img-menu-white"></div>
+      </button>
+  </div>
+  <div class="navbar-nav">
+      <a class="nav-item rounded-pill" href="#inicio">Inicio</a>
+      <a class="nav-item rounded-pill" href="#estructura">Estructura</a>
+      <a class="nav-item rounded-pill" href="#grid">Grid</a>
+      <a class="nav-item rounded-pill" href="#alerts">Alerts</a>
+  </div>
+</nav>
+
+<div class="grid">
+  <div class="g-col g-col-md-2 g-col-lg-3">
+          <div class=""> <!-- Crear el contenedo para el aside bar (o usar las clases de posision)-->
+              <div class="slide-menu closed position-fixed">
+                  <div class="slide-menu__content">
+                      <h2 class="slide-menu__title">Documentacion</h2>
+                      <ul class="slide-menu__list">
+
+                        <!--COMIENZO LAYOUT-->
+                          <p class="">Layout</p>
+
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#clase-row">Clase .row</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#clase-row-cols">Clase .row-cols-*</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#alineacion-filas">Alineación en Filas</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#clases-espaciado">Espaciado: .g, .gx, .gy</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#clase-col">Clase .col Básica</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#columnas-tamano-fijo">Columnas de Tamaño Fijo</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#columnas-responsivas">Columnas Responsivas</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#autoajuste-col-auto">Autoajuste con .col-auto</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#autoajuste-responsivo">Autoajuste Responsivo</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="#alineacion-individual">Alineación Individual de Columnas</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#desplazamiento-offset">Desplazamiento con Offset</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#clase-grid">Clase .grid y .g-col-*</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#filas-grid">Filas en Grid</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#filas-responsivas">Filas Responsivas</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#filas-columnas">Combinación Filas + Columnas</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#espaciado-grid">Espaciado en Grid .gap-*</a>
+                          </li>
+
+                          <!--FIN DE LAYOUT -->
+
+                          <!--COMIENZO DE COMPONENTES-->
+
+                          <p class="">Componentes</p>
+
+                          <!--BAGGE-->
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="badge.html">Badge</a>
+                          </li>
+                          <!--FIN BAGGE-->
+
+                          <!--BUTTONS-->
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="buttons.html">Botones</a>
+                          </li>
+                          <!--FIN BUTTONS-->
+
+                          <!--CARDS-->
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="card.html">Cards</a>
+                          </li>
+                          <!--FIN CARDS-->
+
+                          <!--CONTAINERS -->
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="container.html">Contenedores</a>
+                          </li>
+                          <!--FIN CONTAINERS-->
+
+                          <!--FORMULARIOS -->
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="container.html">Contenedores</a>
+                          </li>
+                          <!--FIN FORMULARIOS-->
+
+                          <!--NAV BAR -->
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="navbar.html">Contenedores</a>
+                          </li>
+                          <!--FIN NAV BAR-->
+
+                          <!--ALERTAS-->
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="#alerta-basica">Alerta Básica</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="#tipos-alertas">Tipos de alerta</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="#parametros-alertas">Parametros de las alertas</a>
+                          </li>
+                          <!--FIN DE ALERTAS-->
+
+                          <!-- ### FIN DE COMPONENTES ### -->
+                           <!--COMIENZO DE UTILIDADES-->
+                          <p class="">Componentes</p>
+
+                          <!-- ### FIN DE UTILIDADES -->
+                     
+                      </ul><!--FIN DEL SLIDE MENU LIST -->
+                  </div>
+                  <button class="slide-menu__toggle">
+                  </button>
+              </div>
+          </div>
+    </div><!-- FIN DEL ASIDE CONTENT-->
+
+  <div class="g-col-12 g-col-md-9  g-col-lg-8">
+
+    <header class="container bg-warning-neon text-secondary-neon text-center estilo-brillo py-5">
+      <h1>Backgrounds</h1>
+      <p>Los backgrounds son utiles para dar estilo a los contenedores y darles un diferenciador especifico a cada uno como este mismo contenedor que estas viendo actualmente :D</p>
+    </header>
+
+<!--ALERTAS-->
+
+  <div class="row g-2 container">
+    <div class="col-12">
+    <h2 class="text-white">Backgrounds basicos</h2>
+    <p>Estos backgrounds basicos vienen en multiples colores, predefinidos tales como los <code class="text-white">primary</code> y los colores mas opacos <code class="text-white">subtle</code>.</p>
+    <div class="code container mt-4">
+      <div class="code-example">
+          <!-- COLOCAR EL CODIGO HTML DE EJEMPLO -->
+          <div class="bg-primary m-2 text-center">
+              Background Primary
+          </div>
+          <div class="bg-secondary m-2 text-center">
+            Background Secondary
+          </div>
+          <div class="bg-success m-2 text-center">
+            Background Success
+          </div>
+          <div class="bg-danger m-2 text-center">
+            Background Danger
+          </div>
+          <div class="bg-info m-2 text-center">
+            Background Info
+          </div>
+          <div class="bg-warning m-2 text-center">
+            Background Warning
+          </div>
+          <div class="bg-light m-2 text-center">
+            Background Light
+          </div>
+          <div class="bg-alert m-2 text-center">
+            Background Alert
+          </div>
+          <div class="bg-white m-2 text-center">
+            Background White
+          </div>
+          <div class="bg-dark m-2 text-center">
+            Background Dark
+          </div>
+          <div class="bg-primary-subtle m-2 text-center">
+            Background Primary Subtle
+          </div>
+          <div class="bg-r m-2 text-center"><!--Hola--->
+            <span>Background Rainbow</span>
+          </div>
+          <div class="bg-r active m-2 text-center"><!--Hola--->
+            <span>Background Rainbow Active</span>
+          </div>
+      </div>
+      <!-- PARA COLOCAR LENGUAJE -->
+      <div class="code-lenguaje">
+          <div class="row justify-content-between mx-3">
+          <div>HTML</div>
+          <div>
+              <div class="img-copy" alt="copy"></div>
+          </div>
+          </div>
+      </div>
+      <!-- BLOQUE DE CODIGO -->
+      <div class="code-block">
+          <pre><code class="language-html">  
+&lt;div class=&quot;bg-primary m-2 text-center&quot;&gt;
+    Border Primary
+&lt;/div&gt;
+&lt;div class=&quot;bg-secondary m-2 text-center&quot;&gt;
+    Border Secondary
+&lt;/div&gt;
+&lt;div class=&quot;bg-success m-2 text-center&quot;&gt;
+    Border Success
+&lt;/div&gt;
+&lt;div class=&quot;bg-danger m-2 text-center&quot;&gt;
+    Border Danger
+&lt;/div&gt;
+&lt;div class=&quot;bg-info m-2 text-center&quot;&gt;
+    Border Info
+&lt;/div&gt;
+&lt;div class=&quot;bg-warning m-2 text-center&quot;&gt;
+    Border Warning
+&lt;/div&gt;
+&lt;div class=&quot;bg-light m-2 text-center&quot;&gt;
+    Border Light
+&lt;/div&gt;
+&lt;div class=&quot;bg-alert m-2 text-center&quot;&gt;
+    Border Alert
+&lt;/div&gt;
+&lt;div class=&quot;bg-white m-2 text-center&quot;&gt;
+    Border White
+&lt;/div&gt;
+&lt;div class=&quot;bg-dark m-2 text-center&quot;&gt;
+    Border Dark
+&lt;/div&gt;
+&lt;div class=&quot;bg-primary-subtle m-2 text-center&quot;&gt;
+    Border Primary Subtle
+&lt;/div&gt;
+&lt;!-- bg-r no posee las demas propiedades de los bg luego mencionados---&gt;
+&lt;div class=&quot;bg-r m-2 text-center&quot;&gt;
+    &lt;span&gt;Background Rainbow&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;bg-r active m-2 text-center&quot;&gt;
+    &lt;span&gt;Background Rainbow Active&lt;/span&gt;
+&lt;/div&gt;
+</code></pre>
+</div>
+</div>
+  </div>
+  </div>
+
+  <div class="row g-2 container">
+    <div class="col-12">
+      <h2 class="text-white">Background con gradiente</h2>
+      <p>Es un estilo de backgrounds que le da un toque mas bonito a algunos estilos o más personalizacion depende del caso.</p>
+      <div class="code container mt-4">
+        <div class="code-example">
+            <div class="bg-primary bg-gradient m-2 text-center">Background Primary Gradient</div>
+            <div class="bg-secondary bg-gradient m-2 text-center">Background Secondary Gradient</div>
+            <div class="bg-success bg-gradient m-2 text-center">Background Success Gradient</div>
+            <div class="bg-danger bg-gradient m-2 text-center">Background Danger Gradient</div>
+            <div class="bg-info bg-gradient m-2 text-center">Background Info Gradient</div>
+        </div>
+        <div class="code-lenguaje">
+          <div class="row justify-content-between mx-3">
+          <div>HTML</div>
+          <div>
+              <div class="img-copy" alt="copy"></div>
+          </div>
+          </div>
+      </div>
+      <!-- BLOQUE DE CODIGO -->
+      <div class="code-block">
+          <pre><code class="language-html">
+&lt;div class=&quot;bg-primary bg-gradient m-2 text-center&quot;&gt;Background Primary Gradient&lt;/div&gt;
+&lt;div class=&quot;bg-secondary bg-gradient m-2 text-center&quot;&gt;Background Secondary Gradient&lt;/div&gt;
+&lt;div class=&quot;bg-success bg-gradient m-2 text-center&quot;&gt;Background Success Gradient&lt;/div&gt;
+&lt;div class=&quot;bg-danger bg-gradient m-2 text-center&quot;&gt;Background Danger Gradient&lt;/div&gt;
+&lt;div class=&quot;bg-info bg-gradient m-2 text-center&quot;&gt;Background Info Gradient&lt;/div&gt;</code></pre>
+          </div>
+          </div>
+          </div>
+      </div>
+      <div class="row g-2 container">
+        <div class="col-12">
+          <h2 class="text-white">Background Neon</h2>
+          <p>Estos backgrounds neon son una variante mas de los basicos con la diferencia que poseen un estilo mas caracteristico de la tematica para que combine con los elementos propios del estilo neon retro.</p>
+            <div class="code container mt-4">
+              <div class="code-example">
+                <div class="row g-2 justify-content-center">
+                    <div class="bg-primary-neon col-12 col-sm-4 bg-gradient text-center p-4">Background Primary Neon</div>
+                    <div class="bg-secondary-neon col-12 col-sm-4 bg-gradient text-center p-4">Background Secondary Neon</div>
+                    <div class="bg-warning-neon col-12 col-sm-4 bg-gradient text-center p-4">Background Warning Neon</div>
+                    <div class="bg-danger-neon col-12 col-sm-4 bg-gradient text-center p-4">Background Danger Neon</div>
+                    <div class="bg-primary-subtle-neon col-12 col-sm-4 bg-gradient text-center p-4">Background Primary Subtle Neon</div>
+                    <div class="bg-success-neon hover-neon col-12 col-sm-4 bg-gradient text-center p-4">Background Success Neon Hover</div>
+                </div>
+              </div>
+              <div class="code-lenguaje">
+                <div class="row justify-content-between mx-3">
+                <div>HTML</div>
+                <div>
+                    <div class="img-copy" alt="copy"></div>
+                </div>
+                </div>
+            </div>
+            <!-- BLOQUE DE CODIGO -->
+             <div class="code-block">
+              <pre><code class="language-html">
+&lt;div class=&quot;row g-2 justify-content-center&quot;&gt;
+    &lt;div class=&quot;bg-primary-neon col-12 col-sm-4 bg-gradient text-center p-4&quot;&gt;Background Primary Neon&lt;/div&gt;
+    &lt;div class=&quot;bg-secondary-neon col-12 col-sm-4 bg-gradient text-center p-4&quot;&gt;Background Secondary Neon&lt;/div&gt;
+    &lt;div class=&quot;bg-warning-neon col-12 col-sm-4 bg-gradient text-center p-4&quot;&gt;Background Warning Neon&lt;/div&gt;
+    &lt;div class=&quot;bg-danger-neon col-12 col-sm-4 bg-gradient text-center p-4&quot;&gt;Background Danger Neon&lt;/div&gt;
+    &lt;div class=&quot;bg-primary-subtle-neon col-12 col-sm-4 bg-gradient text-center p-4&quot;&gt;Background Primary Subtle Neon&lt;/div&gt;
+    &lt;div class=&quot;bg-success-neon hover-neon col-12 col-sm-4 bg-gradient text-center p-4&quot;&gt;Background Success Neon Hover&lt;/div&gt;
+&lt;/div&gt;</code></pre></div>
+             </div>
+            </div>
+        </div>
+
+        <div class="row g-2 container">
+          <div class="col-12">
+            <h2 class="text-white">Background Opacity</h2>
+            <p>Esta propiedad de los backgrounds sirve para poder personalizar la opacidad de un fondo del contenedor, sirve en casos muy especficos pero le añade mucha personalidad en casos especiales. <br><br>
+            Los valores que esta propiedad puede tomar son <code class="text-white">10,25,50,75,100</code></p>
+            <div class="code container mt-4">
+                <div class="code-example">
+                  <div class="row g-2 m-1 justify-content-center">
+                    <div class="bg-primary bg-opacity-10 col-12 col-xl-2 col-lg-4 col-sm-4 py-5 text-center">opacity-10</div>
+                    <div class="bg-primary bg-opacity-25 border-start-0 col-12 col-xl-2 col-lg-4 col-sm-4 py-5 text-center">opacity-25</div>
+                    <div class="bg-primary bg-opacity-50  col-12 col-xl-2 col-lg-4 col-sm-4 py-5 text-center">opacity-50</div>
+                    <div class="bg-primary bg-opacity-75 col-12 col-xl-2 col-lg-4 col-sm-4 py-5 text-center">opacity-75</div>
+                    <div class="bg-primary bg-opacity-100 col-12 col-xl-2 col-lg-4 col-sm-4 py-5 text-center">opacity-100</div>
+                  </div>
+                </div>
+                <div class="code-lenguaje">
+                <div class="row justify-content-between mx-3">
+                <div>HTML</div>
+                <div>
+                    <div class="img-copy" alt="copy"></div>
+                </div>
+                </div>
+            </div>
+            <!-- BLOQUE DE CODIGO -->
+             <div class="code-block">
+              <pre><code class="language-html">
+&lt;div class=&quot;row g-2 m-1 justify-content-center&quot;&gt;
+    &lt;div class=&quot;bg-primary bg-opacity-10 col-12 col-xl-2 col-lg-4 col-sm-4 py-5 text-center&quot;&gt;opacity-10&lt;/div&gt;
+    &lt;div class=&quot;bg-primary bg-opacity-25 border-start-0 col-12 col-xl-2 col-lg-4 col-sm-4 py-5 text-center&quot;&gt;opacity-25&lt;/div&gt;
+    &lt;div class=&quot;bg-primary bg-opacity-50  col-12 col-xl-2 col-lg-4 col-sm-4 py-5 text-center&quot;&gt;opacity-50&lt;/div&gt;
+    &lt;div class=&quot;bg-primary bg-opacity-75 col-12 col-xl-2 col-lg-4 col-sm-4 py-5 text-center&quot;&gt;opacity-75&lt;/div&gt;
+    &lt;div class=&quot;bg-primary bg-opacity-100 col-12 col-xl-2 col-lg-4 col-sm-4 py-5 text-center&quot;&gt;opacity-100&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+</div>
+</div>
+
+
+
+
+</div><!--fIN DEL container g-col-12 -->
+
+
+</div> 
+
+
+<footer class="container-fluid bg-dark text-white text-center py-3">
+  <p>© 2025 Retro Sci-Fi Library.</p>
+</footer>
+
+    <script src="../../dist/js/retrosci-fi.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", () => { closeMenu(); });</script>
+</body>
+
+</html>

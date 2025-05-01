@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retrosci-Fi</title>
+    <link rel="stylesheet" href="../../dist/css/sci-fi.css">
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+</head>
+
+<body>
+  <nav class=" navbar bg-secondary estilo-brillo border rounded border-secondary hover-neon  position-sticky top-0 p-1"
+  id="nav1">
+  <div class="navbar-header">
+      <div class="navbar-brand"><div class="img-logo-prin-white"></div>Retro Sci-Fi</div>
+      <button class="navbar-toggle" onclick="toggleMenu('nav1')">
+          <div class="img-menu-white"></div>
+      </button>
+  </div>
+  <div class="navbar-nav">
+      <a class="nav-item rounded-pill" href="#inicio">Inicio</a>
+      <a class="nav-item rounded-pill" href="#estructura">Estructura</a>
+      <a class="nav-item rounded-pill" href="#grid">Grid</a>
+      <a class="nav-item rounded-pill" href="#alerts">Alerts</a>
+  </div>
+</nav>
+
+<div class="grid">
+  <div class="g-col g-col-md-2 g-col-lg-3">
+          <div class=""> <!-- Crear el contenedo para el aside bar (o usar las clases de posision)-->
+              <div class="slide-menu closed position-fixed">
+                  <div class="slide-menu__content">
+                      <h2 class="slide-menu__title">Documentacion</h2>
+                      <ul class="slide-menu__list">
+
+                        <!--COMIENZO LAYOUT-->
+                          <p class="">Layout</p>
+
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#clase-row">Clase .row</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#clase-row-cols">Clase .row-cols-*</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#alineacion-filas">Alineación en Filas</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#clases-espaciado">Espaciado: .g, .gx, .gy</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#clase-col">Clase .col Básica</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#columnas-tamano-fijo">Columnas de Tamaño Fijo</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#columnas-responsivas">Columnas Responsivas</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#autoajuste-col-auto">Autoajuste con .col-auto</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#autoajuste-responsivo">Autoajuste Responsivo</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="#alineacion-individual">Alineación Individual de Columnas</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#desplazamiento-offset">Desplazamiento con Offset</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#clase-grid">Clase .grid y .g-col-*</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#filas-grid">Filas en Grid</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#filas-responsivas">Filas Responsivas</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#filas-columnas">Combinación Filas + Columnas</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#espaciado-grid">Espaciado en Grid .gap-*</a>
+                          </li>
+
+                          <!--FIN DE LAYOUT -->
+
+                          <!--COMIENZO DE COMPONENTES-->
+
+                          <p class="">Componentes</p>
+
+                          <!--BAGGE-->
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="badge.html">Badge</a>
+                          </li>
+                          <!--FIN BAGGE-->
+
+                          <!--BUTTONS-->
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="buttons.html">Botones</a>
+                          </li>
+                          <!--FIN BUTTONS-->
+
+                          <!--CARDS-->
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="card.html">Cards</a>
+                          </li>
+                          <!--FIN CARDS-->
+
+                          <!--CONTAINERS -->
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="container.html">Contenedores</a>
+                          </li>
+                          <!--FIN CONTAINERS-->
+
+                          <!--FORMULARIOS -->
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="container.html">Contenedores</a>
+                          </li>
+                          <!--FIN FORMULARIOS-->
+
+                          <!--NAV BAR -->
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="navbar.html">Contenedores</a>
+                          </li>
+                          <!--FIN NAV BAR-->
+
+                          <!--ALERTAS-->
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="#alerta-basica">Alerta Básica</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="#tipos-alertas">Tipos de alerta</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="#parametros-alertas">Parametros de las alertas</a>
+                          </li>
+                          <!--FIN DE ALERTAS-->
+
+                          <!-- ### FIN DE COMPONENTES ### -->
+                     
+                      </ul><!--FIN DEL SLIDE MENU LIST -->
+                  </div>
+                  <button class="slide-menu__toggle">
+                  </button>
+              </div>
+          </div>
+    </div><!-- FIN DEL ASIDE CONTENT-->
+
+  <div class="g-col-12 g-col-md-9  g-col-lg-8">
+
+    <header class="container bg-dark-neon text-white-neon text-center estilo-brillo py-5">
+      <h1>Border</h1>
+      <p>Los borders son muy utiles para diferenciar elementos o poder resaltar ciertos elementos sobre los demas. Ademas de las propiedades exclusivas de la libreria </p>
+    </header>
+
+<!--ALERTAS-->
+
+  <div class="row g-2 container">
+    <div class="col-12">
+    <h2 class="text-white">Borders Basicos</h2>
+    <p>Estos borders basicos vienen en todos los colores predefinidos en la libreria tanto los <code class="text-white">subtle</code> como los <code class="text-white">primarios</code>. <br>
+    A continuación unos ejemplos con los colores primarios de la librerias</p>
+    <div class="code container mt-4">
+      <div class="code-example">
+          <!-- COLOCAR EL CODIGO HTML DE EJEMPLO -->
+          <div class="border border-primary m-2 text-center">
+              Border Primary
+          </div>
+          <div class="border border-secondary m-2 text-center">
+              Border Secondary
+          </div>
+          <div class="border border-success m-2 text-center">
+              Border Success
+          </div>
+          <div class="border border-danger m-2 text-center">
+              Border Danger
+          </div>
+          <div class="border border-info m-2 text-center">
+              Border Info
+          </div>
+          <div class="border border-warning m-2 text-center">
+              Border Warning
+          </div>
+          <div class="border border-light m-2 text-center">
+              Border Light
+          </div>
+          <div class="border border-alert m-2 text-center">
+              Border Alert
+          </div>
+          <div class="border border-white m-2 text-center">
+              Border White
+          </div>
+          <div class="border border-dark m-2 text-center">
+              Border Dark
+          </div>
+          <div class="border border-primary-subtle m-2 text-center">
+            Border Primary Subtle
+        </div>
+      </div>
+      <!-- PARA COLOCAR LENGUAJE -->
+      <div class="code-lenguaje">
+          <div class="row justify-content-between mx-3">
+          <div>HTML</div>
+          <div>
+              <div class="img-copy" alt="copy"></div>
+          </div>
+          </div>
+      </div>
+      <!-- BLOQUE DE CODIGO -->
+      <div class="code-block">
+          <pre><code class="language-html">  
+&lt;div class=&quot;border border-primary m-2 text-center&quot;&gt;
+Border Primary
+&lt;/div&gt;
+&lt;div class=&quot;border border-secondary m-2 text-center&quot;&gt;
+Border Secondary
+&lt;/div&gt;
+&lt;div class=&quot;border border-success m-2 text-center&quot;&gt;
+Border Success
+&lt;/div&gt;
+&lt;div class=&quot;border border-danger m-2 text-center&quot;&gt;
+Border Danger
+&lt;/div&gt;
+&lt;div class=&quot;border border-info m-2 text-center&quot;&gt;
+Border Info
+&lt;/div&gt;
+&lt;div class=&quot;border border-warning m-2 text-center&quot;&gt;
+Border Warning
+&lt;/div&gt;
+&lt;div class=&quot;border border-light m-2 text-center&quot;&gt;
+Border Light
+&lt;/div&gt;
+&lt;div class=&quot;border border-alert m-2 text-center&quot;&gt;
+Border Alert
+&lt;/div&gt;
+&lt;div class=&quot;border border-white m-2 text-center&quot;&gt;
+Border White
+&lt;/div&gt;
+&lt;div class=&quot;border border-dark m-2 text-center&quot;&gt;
+Border Dark
+&lt;/div&gt;
+&lt;div class=&quot;border border-primary-subtle m-2 text-center&quot;&gt;
+Border Primary Subtle
+&lt;/div&gt;
+</code></pre>
+</div>
+</div>
+  </div>
+  </div>
+
+  <div class="row g-2 container">
+    <div class="col-12">
+    <h2 class="text-white">Borders Neon</h2>
+    <p>Estos bordes propios de la libreria que se utilizan para poder brindar un mejor estilo adaptado a la tematica. <br><br>
+    Estos se activan solo usando la clase <code class="text-white">border-neon</code> en cualquier otro estilo de borde y automaticamente es aplicado, esto tambien es valido para activar el hover con la clase <code class="text-white">hover-neon</code>.</p>
+    <div class="code container mt-4">
+      <div class="code-example">
+          <!-- COLOCAR EL CODIGO HTML DE EJEMPLO -->
+          <div class="border border-primary border-neon m-3 text-center">
+              Border Primary Neon
+          </div>
+          <div class="border border-secondary border-neon m-3 text-center">
+              Border Secondary Neon
+          </div>
+          <div class="border border-success border-neon m-3 text-center">
+              Border Success Neon
+          </div>
+          <div class="border border-danger border-neon m-3 text-center">
+              Border Danger Neon
+          </div>
+          <div class="border border-info border-neon m-3 text-center">
+              Border Info Neon
+          </div>
+          <div class="border border-warning border-neon m-3 text-center">
+              Border Warning Neon
+          </div>
+          <div class="border border-light border-neon m-3 text-center">
+              Border Light Neon
+          </div>
+          <div class="border border-alert border-neon m-3 text-center">
+              Border Alert Neon
+          </div>
+          <div class="border border-white border-neon m-3 text-center">
+              Border White Neon
+          </div>
+          <div class="border border-dark border-neon m-3 text-center">
+              Border Dark Neon
+          </div>
+          <div class="border border-primary-subtle border-neon m-3 text-center">
+            Border Primary Subtle Neon
+          </div>
+          <div class="border border-success border-neon hover-neon m-3 text-center">
+              Border Success Neon Hover
+          </div>
+      </div>
+      <!-- PARA COLOCAR LENGUAJE -->
+      <div class="code-lenguaje">
+          <div class="row justify-content-between mx-3">
+          <div>HTML</div>
+          <div>
+              <div class="img-copy" alt="copy"></div>
+          </div>
+          </div>
+      </div>
+      <!-- BLOQUE DE CODIGO -->
+      <div class="code-block">
+          <pre><code class="language-html">  
+&lt;div class=&quot;border border-primary border-neon m-3 text-center&quot;&gt;
+  Border Primary Neon
+&lt;/div&gt;
+&lt;div class=&quot;border border-secondary border-neon m-3 text-center&quot;&gt;
+  Border Secondary Neon
+&lt;/div&gt;
+&lt;div class=&quot;border border-success border-neon m-3 text-center&quot;&gt;
+  Border Success Neon
+&lt;/div&gt;
+&lt;div class=&quot;border border-danger border-neon m-3 text-center&quot;&gt;
+  Border Danger Neon
+&lt;/div&gt;
+&lt;div class=&quot;border border-info border-neon m-3 text-center&quot;&gt;
+  Border Info Neon
+&lt;/div&gt;
+&lt;div class=&quot;border border-warning border-neon m-3 text-center&quot;&gt;
+  Border Warning Neon
+&lt;/div&gt;
+&lt;div class=&quot;border border-light border-neon m-3 text-center&quot;&gt;
+  Border Light Neon
+&lt;/div&gt;
+&lt;div class=&quot;border border-alert border-neon m-3 text-center&quot;&gt;
+  Border Alert Neon
+&lt;/div&gt;
+&lt;div class=&quot;border border-white border-neon m-3 text-center&quot;&gt;
+  Border White Neon
+&lt;/div&gt;
+&lt;div class=&quot;border border-dark border-neon m-3 text-center&quot;&gt;
+  Border Dark Neon
+&lt;/div&gt;
+&lt;div class=&quot;border border-primary-subtle border-neon m-3 text-center&quot;&gt;
+  Border Primary Subtle Neon
+&lt;/div&gt;
+&lt;div class=&quot;border border-success border-neon hover-neon m-3 text-center&quot;&gt;
+  Border Success Neon Hover
+&lt;/div&gt;</code></pre>
+</div>
+</div>
+  </div>
+  </div>
+
+  <div class="row g-2 container">
+    <div class="col-12">
+      <h2 class="text-white">Grosor</h2>
+      <p>El grosor de los bordes se puede manejar utilizando distintos niveles que varian del 1 al 5</p>
+      <div class="code container mt-4">
+        <div class="code-example">
+          <div class="border border-0 border-primary text-center m-2">Grosor 0</div>
+          <div class="border border-1 border-primary text-center m-2">Grosor 1</div>
+          <div class="border border-2 border-primary text-center m-2">Grosor 2</div>
+          <div class="border border-3 border-primary text-center m-2">Grosor 3</div>
+          <div class="border border-4 border-primary text-center m-2">Grosor 4</div>
+          <div class="border border-5 border-primary text-center m-2">Grosor 5</div>
+        </div>
+        <div class="code-lenguaje">
+          <div class="row justify-content-between mx-3">
+          <div>HTML</div>
+          <div>
+              <div class="img-copy" alt="copy"></div>
+          </div>
+          </div>
+      </div>
+      <!-- BLOQUE DE CODIGO -->
+      <div class="code-block">
+          <pre><code class="language-html">
+&lt;div class=&quot;border border-0 border-primary text-center m-2&quot;&gt;
+  Grosor 0
+&lt;/div&gt;
+&lt;div class=&quot;border border-1 border-primary text-center m-2&quot;&gt;
+  Grosor 1
+&lt;/div&gt;
+&lt;div class=&quot;border border-2 border-primary text-center m-2&quot;&gt;
+  Grosor 2
+&lt;/div&gt;
+&lt;div class=&quot;border border-3 border-primary text-center m-2&quot;&gt;
+  Grosor 3
+&lt;/div&gt;
+&lt;div class=&quot;border border-4 border-primary text-center m-2&quot;&gt;
+  Grosor 4
+&lt;/div&gt;
+&lt;div class=&quot;border border-5 border-primary text-center m-2&quot;&gt;
+  Grosor 5
+&lt;/div&gt;</code></pre>
+          </div>
+          </div>
+          </div>
+      </div>
+      <div class="row g-2 container">
+        <div class="col-12">
+          <h2 class="text-white">Posiciones Personalizadas</h2>
+          <p>Las posiciones en los bordes son muy importantes a la hora de poder personalizar y resaltar en ciertos contenedores.<br>
+          Asi que hay distintas posiciones que puedes usar en los bordes al crearlos tales como:</p>
+            <div class="code container mt-4">
+              <div class="code-example">
+                <div class="grid">
+                  <div class="border-start g-col-6 p-4 bg-dark text-center">start</div>
+                  <div class="border-top g-col-6 p-4 bg-dark text-center">top</div>
+                  <div class="border-end g-col-6 p-4 bg-dark text-center">end</div>
+                  <div class="border-bottom g-col-6 p-4 bg-dark text-center">bottom</div>
+                </div>
+              </div>
+              <div class="code-lenguaje">
+                <div class="row justify-content-between mx-3">
+                <div>HTML</div>
+                <div>
+                    <div class="img-copy" alt="copy"></div>
+                </div>
+                </div>
+            </div>
+            <!-- BLOQUE DE CODIGO -->
+             <div class="code-block">
+              <pre><code class="language-html">
+&lt;div class=&quot;grid&quot;&gt;
+  &lt;div class=&quot;border-start g-col-6 g-row-3 bg-dark&quot;&gt;start&lt;/div&gt;
+  &lt;div class=&quot;border-top g-col-6 g-row-3 bg-dark&quot;&gt;top&lt;/div&gt;
+  &lt;div class=&quot;border-end g-col-6 g-row-3 bg-dark&quot;&gt;end&lt;/div&gt;
+  &lt;div class=&quot;border-bottom g-col-6 g-row-3 bg-dark&quot;&gt;bottom&lt;/div&gt;
+&lt;/div&gt;</code></pre></div>
+             </div>
+            </div>
+        </div>
+
+        <div class="row g-2 container">
+          <div class="col-12">
+            <h2 class="text-white">Posiciones Substractivas</h2>
+            <p>Estas clases se utilizan para poder eliminar ciertas zonas especificas de los bordes. Sirven para poder personalizar aun mas el uso y diseño de los contenedores que los poseen.</p>
+            <div class="code container mt-4">
+                <div class="code-example">
+                  <div class="row g-2 m-1 justify-content-center">
+                    <div class="border border-0 col-12 col-xl-2 col-sm-4 bg-dark py-5 text-center">0</div>
+                    <div class="border border-start-0 col-12 col-xl-2 col-sm-4 bg-dark py-5 text-center">start-0</div>
+                    <div class="border border-top-0 col-12 col-xl-2 col-sm-4 bg-dark py-5 text-center">top-0</div>
+                    <div class="border border-end-0 col-12 col-xl-2 col-sm-4 bg-dark py-5 text-center">end-0</div>
+                    <div class="border border-bottom-0 col-12 col-xl-2 col-sm-4 bg-dark py-5 text-center">bottom-0</div>
+                  </div>
+                </div>
+                <div class="code-lenguaje">
+                <div class="row justify-content-between mx-3">
+                <div>HTML</div>
+                <div>
+                    <div class="img-copy" alt="copy"></div>
+                </div>
+                </div>
+            </div>
+            <!-- BLOQUE DE CODIGO -->
+             <div class="code-block">
+              <pre><code class="language-html">
+&lt;div class=&quot;row g-2 m-1 justify-content-center&quot;&gt;
+  &lt;div class=&quot;border border-0 col-12 col-xl-2 col-sm-4 bg-dark py-5 text-center&quot;&gt;0&lt;/div&gt;
+  &lt;div class=&quot;border border-start-0 col-12 col-xl-2 col-sm-4 bg-dark py-5 text-center&quot;&gt;start-0&lt;/div&gt;
+  &lt;div class=&quot;border border-top-0 col-12 col-xl-2 col-sm-4 bg-dark py-5 text-center&quot;&gt;top-0&lt;/div&gt;
+  &lt;div class=&quot;border border-end-0 col-12 col-xl-2 col-sm-4 bg-dark py-5 text-center&quot;&gt;end-0&lt;/div&gt;
+  &lt;div class=&quot;border border-bottom-0 col-12 col-xl-2 col-sm-4 bg-dark py-5 text-center&quot;&gt;bottom-0&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-2 container">
+          <div class="col-12">
+            <h2 class="text-white">Border Opacity</h2>
+            <p>Esta clase propiedad sirve para poder manejar la opacidad de los borders de los contenedores. Muy util para poder persalizar un poco más. <br><br>
+            Los valores que esta propiedad puede tomar son <code class="text-white">10,25,50,75,100</code></p>
+            <div class="code container mt-4">
+                <div class="code-example">
+                  <div class="row g-2 m-1 justify-content-center">
+                    <div class="border-5 border-opacity-10 col-12 col-xxl-2 col-sm-5 bg-dark py-5 text-center">opacity-10</div>
+                    <div class="border-5 border-opacity-25 col-12 col-xxl-2 col-sm-5 bg-dark py-5 text-center">opacity-25</div>
+                    <div class="border-5 border-opacity-50 col-12 col-xxl-2 col-sm-5 bg-dark py-5 text-center">opacity-50</div>
+                    <div class="border-5 border-opacity-75 col-12 col-xxl-2 col-sm-5 bg-dark py-5 text-center">opacity-75</div>
+                    <div class="border-5 border-opacity-100 col-12 col-xxl-2 col-sm-5 bg-dark py-5 text-center">opacity-100</div>
+                  </div>
+                </div>
+                <div class="code-lenguaje">
+                <div class="row justify-content-between mx-3">
+                <div>HTML</div>
+                <div>
+                    <div class="img-copy" alt="copy"></div>
+                </div>
+                </div>
+            </div>
+            <!-- BLOQUE DE CODIGO -->
+             <div class="code-block">
+              <pre><code class="language-html">
+&lt;div class=&quot;row g-2 m-1 justify-content-center&quot;&gt;
+  &lt;div class=&quot;bg-primary bg-opacity-10 col-12 col-xl-2 col-lg-4 col-sm-4 py-5 text-center&quot;&gt;opacity-10&lt;/div&gt;
+  &lt;div class=&quot;bg-primary bg-opacity-25 border-start-0 col-12 col-xl-2 col-lg-4 col-sm-4 py-5 text-center&quot;&gt;opacity-25&lt;/div&gt;
+  &lt;div class=&quot;bg-primary bg-opacity-50  col-12 col-xl-2 col-lg-4 col-sm-4 py-5 text-center&quot;&gt;opacity-50&lt;/div&gt;
+  &lt;div class=&quot;bg-primary bg-opacity-75 col-12 col-xl-2 col-lg-4 col-sm-4 py-5 text-center&quot;&gt;opacity-75&lt;/div&gt;
+  &lt;div class=&quot;bg-primary bg-opacity-100 col-12 col-xl-2 col-lg-4 col-sm-4 py-5 text-center&quot;&gt;opacity-100&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+</div>
+</div>
+
+
+
+
+</div><!--fIN DEL container g-col-12 -->
+
+
+</div> 
+
+
+<footer class="container-fluid bg-dark text-white text-center py-3">
+  <p>© 2025 Retro Sci-Fi Library.</p>
+</footer>
+
+    <script src="../../dist/js/retrosci-fi.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", () => { closeMenu(); });</script>
+</body>
+
+</html>
