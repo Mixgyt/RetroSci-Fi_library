@@ -14,31 +14,28 @@
 
 </head>
 
-<body>
+<body class="cuerpo">
 
-  <div class=" container-fluit cuerpo">
-    
-  </div>
-
-  <nav class=" navbar bg-secondary estilo-brillo border rounded border-secondary hover-neon  position-sticky top-0 p-1"
-    id="nav1">
-    <div class="navbar-header">
-      <div class="navbar-brand">
-        <div class="img-logo-prin-white"></div>Retro Sci-Fi
-      </div>
-      <button class="navbar-toggle" onclick="toggleMenu('nav1')">
-        <div class="img-menu-white"></div>
+<nav class="navbar position-sticky top-0 bg-secondary estilo-brillo border rounded border-secondary hover-neon p-1" id="nav1">
+  <div class="navbar-header">
+      <div class="navbar-brand"><div class="img-logo-prin-white"></div>Retro Sci-Fi</div>
+      <button class="navbar-toggle">
+          <div class="img-menu-white"></div>
       </button>
-    </div>
-    <div class="navbar-nav">
+  </div>
+  <div class="navbar-nav">
       <a class="nav-item rounded-pill" href="#inicio">Inicio</a>
       <a class="nav-item rounded-pill" href="#estructura">Estructura</a>
       <a class="nav-item rounded-pill" href="#grid">Grid</a>
       <a class="nav-item rounded-pill" href="#alerts">Alerts</a>
-    </div>
-  </nav>
+  </div>
+</nav>
 
-  <div class="pc container-fluit">
+
+ <div class="container-fluid">
+
+
+   <div class="pc container-fluit">
     <div class="pantalla bg-secondary estilo-brillo">
       <div class="sistema">
         <div class="programa" data-canal="0">
@@ -175,7 +172,8 @@
       <input type="range" class="form-range perilla" id="volumen" min="0" max="100" value="0">
     </div>
   </div>
-
+ </div>
+<script src="dist/js/retrosci-fi.js"></script>
 </body>
 
 </html>
