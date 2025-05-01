@@ -51,7 +51,7 @@
     &.attr-value,
     &.function,
     &.class-name {
-        color: $success;
+        color: map-get($emphasis-colors, 'success-emphasis' );
     }
 
     &.keyword {
