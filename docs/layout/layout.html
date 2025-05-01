@@ -10,26 +10,25 @@
 </head>
 
 <body>
-  <nav class=" navbar bg-secondary estilo-brillo border rounded border-secondary hover-neon  position-sticky top-0 p-1"
-  id="nav1">
+  <nav class="navbar bg-secondary estilo-brillo border rounded border-secondary hover-neon  position-sticky top-0 p-1">
   <div class="navbar-header">
       <div class="navbar-brand"><div class="img-logo-prin-white"></div>Retro Sci-Fi</div>
-      <button class="navbar-toggle" onclick="toggleMenu('nav1')">
+      <button class="navbar-toggle">
           <div class="img-menu-white"></div>
       </button>
   </div>
   <div class="navbar-nav">
-      <a class="nav-item rounded-pill" href="#inicio">Inicio</a>
-      <a class="nav-item rounded-pill" href="#estructura">Estructura</a>
-      <a class="nav-item rounded-pill" href="#grid">Grid</a>
-      <a class="nav-item rounded-pill" href="#alerts">Alerts</a>
+    <a class="nav-item rounded-pill" href="../../index.html">Inicio</a>
+      <a class="nav-item rounded-pill" href="#">Documentacion</a>
+      <a class="nav-item rounded-pill" href="https://github.com/Mixgyt/RetroSci-Fi_library" target="_blank">Github</a>
+      <a class="nav-item rounded-pill" href="https://www.npmjs.com/package/retrosci-fi_library" target="_blank">NPM</a>
   </div>
 </nav>
 
 <div class="grid">
   <div class="g-col g-col-md-2 g-col-lg-3">
           <div class=""> <!-- Crear el contenedo para el aside bar (o usar las clases de posision)-->
-              <div class="slide-menu open position-fixed">
+              <div class="slide-menu closed position-fixed">
                   <div class="slide-menu__content">
                       <h2 class="slide-menu__title">Documentacion</h2>
                       <ul class="slide-menu__list">
@@ -118,13 +117,13 @@
 
                           <!--FORMULARIOS -->
                           <li class="slide-menu__item">
-                            <a class="estilo-brillo" href="../componentes/container.html">Contenedores</a>
+                            <a class="estilo-brillo" href="../componentes/formularios.html">Formularios</a>
                           </li>
                           <!--FIN FORMULARIOS-->
 
                           <!--NAV BAR -->
                           <li class="slide-menu__item">
-                            <a class="estilo-brillo" href="../componentes/navbar.html">Contenedores</a>
+                            <a class="estilo-brillo" href="../componentes/navbar.html">Nav bars</a>
                           </li>
                           <!--FIN NAV BAR-->
 
@@ -150,6 +149,32 @@
                           </li>
                           <!-- FIN DE ALERTAS-->
 
+                    <!--COMIENZO DE UTILIDADES-->
+                    <p class="text-warning-neon">Utilidades</p>
+
+                    <li class="slide-menu__item">
+                      <a class="estilo-brillo" href="../utilities/backgrounds.html">Backgrounds </a>
+                    </li>
+                    <li class="slide-menu__item">
+                      <a class="estilo-brillo" href="../utilities/borders.html">Borders </a>
+                    </li>
+                    <li class="slide-menu__item">
+                      <a class="estilo-brillo" href="../utilities/positions.html">posicionamiento </a>
+                    </li>
+                    <li class="slide-menu__item">
+                      <a class="estilo-brillo" href="../utilities/shadows.html">Sombras clase Shadows </a>
+                    </li>
+                    <li class="slide-menu__item">
+                      <a class="estilo-brillo" href="../utilities/spacings.html">Espaciados</a>
+                    </li>
+                    <li class="slide-menu__item">
+                      <a class="estilo-brillo" href="../utilities/texts.html">Clases de Texto</a>
+                    </li>
+                    <li class="slide-menu__item">
+                      <a class="estilo-brillo" href="../utilities/visibility.html">Clase Visibility</a>
+                    </li>
+                     <!--FIN DE UTILIDADES-->
+
 
                       </ul><!--FIN DEL SLIDE MENU LIST -->
                   </div>
@@ -167,7 +192,7 @@
     </header>
 
 
-    <div class="row justify-content-center g-2 container">
+    <div class="row g-2 container">
       <div class="col-12">
           <h1 id="clase-row">Clase <code>.row</code></h1>
           <p>La clase <code>.row</code> es el contenedor principal para agrupar columnas. Utiliza <code>display: flex</code> y <code>flex-wrap: wrap</code> para organizar las columnas en una fila.</p>
@@ -739,7 +764,6 @@
 </footer>
 
     <script src="../../dist/js/retrosci-fi.js"></script>
-    <script>document.addEventListener("DOMContentLoaded", () => { closeMenu(); });</script>
 </body>
 
 </html>
