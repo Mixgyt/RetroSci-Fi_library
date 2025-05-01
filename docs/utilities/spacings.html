@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retrosci-Fi</title>
+    <link rel="stylesheet" href="../../dist/css/sci-fi.css">
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+</head>
+
+<body>
+  <nav class=" navbar bg-secondary estilo-brillo border rounded border-secondary hover-neon  position-sticky top-0 p-1"
+  id="nav1">
+  <div class="navbar-header">
+      <div class="navbar-brand"><div class="img-logo-prin-white"></div>Retro Sci-Fi</div>
+      <button class="navbar-toggle" onclick="toggleMenu('nav1')">
+          <div class="img-menu-white"></div>
+      </button>
+  </div>
+  <div class="navbar-nav">
+      <a class="nav-item rounded-pill" href="#inicio">Inicio</a>
+      <a class="nav-item rounded-pill" href="#estructura">Estructura</a>
+      <a class="nav-item rounded-pill" href="#grid">Grid</a>
+      <a class="nav-item rounded-pill" href="#alerts">Alerts</a>
+  </div>
+</nav>
+
+<div class="grid">
+  <div class="g-col g-col-md-2 g-col-lg-3">
+          <div class=""> <!-- Crear el contenedo para el aside bar (o usar las clases de posision)-->
+              <div class="slide-menu closed position-fixed">
+                  <div class="slide-menu__content">
+                      <h2 class="slide-menu__title">Documentacion</h2>
+                      <ul class="slide-menu__list">
+
+                        <!--COMIENZO LAYOUT-->
+                          <p class="">Layout</p>
+
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#clase-row">Clase .row</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#clase-row-cols">Clase .row-cols-*</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#alineacion-filas">Alineación en Filas</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#clases-espaciado">Espaciado: .g, .gx, .gy</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#clase-col">Clase .col Básica</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#columnas-tamano-fijo">Columnas de Tamaño Fijo</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#columnas-responsivas">Columnas Responsivas</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#autoajuste-col-auto">Autoajuste con .col-auto</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#autoajuste-responsivo">Autoajuste Responsivo</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="#alineacion-individual">Alineación Individual de Columnas</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#desplazamiento-offset">Desplazamiento con Offset</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#clase-grid">Clase .grid y .g-col-*</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#filas-grid">Filas en Grid</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#filas-responsivas">Filas Responsivas</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#filas-columnas">Combinación Filas + Columnas</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="../layout/layout.html#espaciado-grid">Espaciado en Grid .gap-*</a>
+                          </li>
+
+                          <!--FIN DE LAYOUT -->
+
+                          <!--COMIENZO DE COMPONENTES-->
+
+                          <p class="">Componentes</p>
+
+                          <!--BAGGE-->
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="badge.html">Badge</a>
+                          </li>
+                          <!--FIN BAGGE-->
+
+                          <!--BUTTONS-->
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="buttons.html">Botones</a>
+                          </li>
+                          <!--FIN BUTTONS-->
+
+                          <!--CARDS-->
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="card.html">Cards</a>
+                          </li>
+                          <!--FIN CARDS-->
+
+                          <!--CONTAINERS -->
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="container.html">Contenedores</a>
+                          </li>
+                          <!--FIN CONTAINERS-->
+
+                          <!--FORMULARIOS -->
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="container.html">Contenedores</a>
+                          </li>
+                          <!--FIN FORMULARIOS-->
+
+                          <!--NAV BAR -->
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="navbar.html">Contenedores</a>
+                          </li>
+                          <!--FIN NAV BAR-->
+
+                          <!--ALERTAS-->
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="#alerta-basica">Alerta Básica</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="#tipos-alertas">Tipos de alerta</a>
+                          </li>
+                          <li class="slide-menu__item">
+                            <a class="estilo-brillo" href="#parametros-alertas">Parametros de las alertas</a>
+                          </li>
+                          <!--FIN DE ALERTAS-->
+
+                          <!-- ### FIN DE COMPONENTES ### -->
+                           <!--COMIENZO DE UTILIDADES-->
+                          <p class="">Componentes</p>
+
+                          <!-- ### FIN DE UTILIDADES -->
+                     
+                      </ul><!--FIN DEL SLIDE MENU LIST -->
+                  </div>
+                  <button class="slide-menu__toggle">
+                  </button>
+              </div>
+          </div>
+    </div><!-- FIN DEL ASIDE CONTENT-->
+
+  <div class="g-col-12 g-col-md-9  g-col-lg-8">
+
+    <header class="container bg-secondary-neon text-white-neon text-center estilo-brillo py-5">
+      <h1>Spacings</h1>
+      <p>Son los elementos de espaciado basicos utilizados en html, pero ahora compactados y listos en clases predefinidas listas para su uso.</p>
+    </header>
+
+<!--ALERTAS-->
+
+  <div class="row g-2 container">
+    <div class="col-12">
+    <h2 class="text-white">Margins y Paddings</h2>
+    <p>Antes de empezar con los ejemplos una pequeña explicacion sobre la implementación de dichos espaciados basicos en la libreria.</p>
+    <p>La notacion que se ha utilizado es la misma que utiliza bootstrap asi que en unos partes para mayor sencillez es lo mismo.</p>
+    <p>Los margins predefinidos usan una medida estandar basada en <code class="text-white">1rem</code> las demas medidas siendo tambien basadas en la medida base tal como se muestra a continuación.</p>
+    <ul>
+      <li><code class="text-white">0</code> - <code class="text-warning">0rem</code></li>
+      <li><code class="text-white">1</code> - <code class="text-warning">0.25rem</code></li>
+      <li><code class="text-white">2</code> - <code class="text-warning">0.50rem</code></li>
+      <li><code class="text-white">3</code> - <code class="text-warning">1rem</code></li>
+      <li><code class="text-white">4</code> - <code class="text-warning">1.5rem</code></li>
+      <li><code class="text-white">5</code> - <code class="text-warning">3rem</code></li>
+      <li><code class="text-white">auto</code> - <code class="text-warning">auto</code></li>
+    </ul>
+    <p>Cada una de las medidas anterior listadas aplican tanto para los <code class="text-white">margins</code> como para los <code class="text-white">paddings</code>.</p>
+
+    <h2 class="text-white">Notación utilizada</h2>
+    <p>Esta pequeña la dedicara para explicar un poco mas sobre la notacion utilizada para los spacings y sus nombres de clase respectivos para su utilización.</p>
+    <p>Margins y Paddings:</p>
+    <ul>
+      <li><code class="text-warning">m</code> - esto es la notacion para <code class="text-white">margin</code></li>
+      <li><code class="text-warning">p</code> - esta es la notacion para <code class="text-white">padding</code></li>
+    </ul>
+
+    <p>Notacion de las posiciones:</p>
+    <ul>
+      <li><code class="text-warning">t</code> - este seria el equivalente a colocar <code class="text-white">top</code>, asi <code class="text-white">margin-top</code> o <code class="text-white">padding-top</code></li>
+      <li><code class="text-warning">b</code> - este seria el equivalente a colocar <code class="text-white">bottom</code>, asi <code class="text-white">margin-bottom</code> o <code class="text-white">padding-bottom</code></li>
+      <li><code class="text-warning">s</code> - este seria el equivalente a colocar <code class="text-white">left</code>, asi <code class="text-white">margin-left</code> o <code class="text-white">padding-left</code> y se usa "s" por la notacion <code class="text-white">start</code>.</li>
+      <li><code class="text-warning">e</code> - este seria el equivalente a colocar <code class="text-white">right</code>, asi <code class="text-white">margin-right</code> o <code class="text-white">padding-right</code> y se usa "e" por la notacion <code class="text-white">end</code>.</li>
+      <li><code class="text-warning">x</code> - este seria el equivalente a colocar <code class="text-white">right</code> y <code class="text-white">left</code> a la vez, es decir aplicando el espaciado en el eje horizontal del elemento.</li>
+      <li><code class="text-warning">y</code> - este seria el equivalente a colocar <code class="text-white">top</code> y <code class="text-white">bottom</code> a la vez, es decir aplicando el espaciado en el eje vertical del elemento.</li>
+    </ul>
+
+    <h2 class="text-white">Ejemplos de dichas clases</h2>
+    
+    <div class="code container mt-4">
+      <!-- PARA COLOCAR LENGUAJE -->
+      <div class="code-lenguaje">
+          <div class="row justify-content-between mx-3">
+          <div>SCSS</div>
+          <div>
+              <div class="img-copy" alt="copy"></div>
+          </div>
+          </div>
+      </div>
+      <!-- BLOQUE DE CODIGO -->
+      <div class="code-block">
+          <pre><code class="language-css">
+$spacer: 1rem;
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.ms-1 {
+  margin-left: ($spacer * .25) !important;
+}
+           
+.px-2 {
+  padding-left: ($spacer * .5) !important;
+  padding-right: ($spacer * .5) !important;
+}
+
+.p-3 {
+  padding: $spacer !important;
+}</code></pre>
+</div>
+</div>
+  </div>
+  </div>
+
+  <div class="row g-2 container">
+    <div class="col-12">
+    <h2 class="text-white">Centrado Horizontal (Propiedad auto)</h2>
+    <p>Utilizar propiedades auto puede ser util en casos de querer centrar ciertos tipos de contenedores o para dejar que el html se adapte solo.</p>
+    <div class="code container mt-4">
+      <div class="code-example">
+          <!-- COLOCAR EL CODIGO HTML DE EJEMPLO -->
+              <div class="mx-auto bg-light-subtle" style="width: 200px;">
+                  Centered element
+              </div>
+      </div>
+      <!-- PARA COLOCAR LENGUAJE -->
+      <div class="code-lenguaje">
+          <div class="row justify-content-between mx-3">
+          <div>HTML</div>
+          <div>
+              <div class="img-copy" alt="copy"></div>
+          </div>
+          </div>
+      </div>
+      <!-- BLOQUE DE CODIGO -->
+      <div class="code-block">
+          <pre><code class="language-html">  
+&lt;div class=&quot;mx-auto bg-light-subtle&quot; style=&quot;width: 200px;&quot;&gt;
+  Centered element
+&lt;/div&gt;</code></pre>
+</div>
+</div>
+  </div>
+  </div>
+
+  <div class="row g-2 container">
+    <div class="col-12">
+    <h2 class="text-white">Gap</h2>
+    <p>Esta propiedad es util cuando usamos <a href="./../layout/layout.html##clase-grid" class="link-warning"><code>grid</code></a> por que nos ayuda a dar un espaciado entre cada elemento dentro del <code class="text-warning">grid</code>, y los valores que <code class="text-white">.gap</code> puede tomar van desde <code class="text-white">0</code> a <code class="text-white">5</code>.</p>
+    <p>Veremos un ejemplo sencillo de como usarlo a continuación:</p>
+    <div class="code container mt-4">
+      <div class="code-example">
+          <!-- COLOCAR EL CODIGO HTML DE EJEMPLO -->
+          <div class="grid gap-2">
+            <div class="p-2 g-col-12 border">Grid item 1</div>
+            <div class="p-2 g-col-12 border">Grid item 2</div>
+            <div class="p-2 g-col-12 border">Grid item 3</div>
+          </div>
+      </div>
+      <!-- PARA COLOCAR LENGUAJE -->
+      <div class="code-lenguaje">
+          <div class="row justify-content-between mx-3">
+          <div>HTML</div>
+          <div>
+              <div class="img-copy" alt="copy"></div>
+          </div>
+          </div>
+      </div>
+      <!-- BLOQUE DE CODIGO -->
+      <div class="code-block">
+          <pre><code class="language-html">  
+&lt;div class=&quot;grid gap-2&quot;&gt;
+  &lt;div class=&quot;p-2 g-col-12 border&quot;&gt;Grid item 1&lt;/div&gt;
+  &lt;div class=&quot;p-2 g-col-12 border&quot;&gt;Grid item 2&lt;/div&gt;
+  &lt;div class=&quot;p-2 g-col-12 border&quot;&gt;Grid item 3&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</div>
+    </div>
+    </div>
+
+</div>
+</div>
+
+</div><!--fIN DEL container g-col-12 -->
+
+</div> 
+
+
+<footer class="container-fluid bg-dark text-white text-center py-3">
+  <p>© 2025 Retro Sci-Fi Library.</p>
+</footer>
+
+    <script src="../../dist/js/retrosci-fi.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", () => { closeMenu(); });</script>
+</body>
+
+</html>
