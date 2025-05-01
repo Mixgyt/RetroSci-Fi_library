@@ -1,10 +1,10 @@
-# RETROSCI-FI LIBRARY
+# RETRO SCI-FI LIBRARY
 
 <div align="center">
   <img src="./img/Retro.webp" alt="Botones">
 </div>
 
- **RetroSci-fi** es una librería de componentes inspirada en la ciencia ficción retro de Japón. Basada en Bootstrap, está desarrollada completamente desde cero con SASS, usando clases reutilizables, estructura modular y un sistema de diseño personalizable.
+ **Retro Sci-fi** es una librería de componentes inspirada en la ciencia ficción retro de Japón. Basada en Bootstrap, está desarrollada completamente desde cero con SASS, usando clases reutilizables, estructura modular y un sistema de diseño personalizable.
 
  <!-- ![Tematica](./img/tematica.png) -->
 ## 🚀 Implementación de los estilos en tu página web
