@@ -13,8 +13,8 @@
   1.  **Coloca el link y script en el head de tu html**
 
       ```html
-      <link rel="stylesheet" href="node_modules/retrosci-fi_library/dist/css/sci-fi.css" crossorigin="anonymous">
-      <script src="link" crossorigin="anonymous" defer></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Mixgyt/RetroSci-Fi_library/dist/css/sci-fi.css">
+      <script src="https://cdn.jsdelivr.net/gh/Mixgyt/RetroSci-Fi_library/dist/js/retrosci-fi.js"></script>
       ```
   2.  **Listo utiliza las clases en tu html**
 
