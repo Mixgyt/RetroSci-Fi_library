@@ -51,6 +51,3 @@ yarn-error.log*
 package-lock.json
 yarn.lock
 pnpm-lock.yaml
-
-# La cache que usa sass al compilar
-/dist/
