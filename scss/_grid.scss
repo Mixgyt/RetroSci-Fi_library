@@ -56,16 +56,19 @@
 
 // gap modificador del row
 @for $i from 0 through 5 {
+    $gap: $i * 0.25rem;
     .g-#{$i} {
-        gap: #{$i * 0.25}rem;
+        gap: #{$gap};
+        --col-gap-adjust: #{$gap};
     }
 
     .gx-#{$i} {
         column-gap: #{$i * 0.25}rem;
+        --col-gap-adjust: #{$gap};
     }
 
     .gy-#{$i} {
-        row-gap: #{$i * 0.25}rem;
+        row-gap: #{$gap};
     }
 }
 

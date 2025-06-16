@@ -50,4 +50,5 @@ yarn-error.log*
 # Archivos de configuracion de IDEs
 package-lock.json
 yarn.lock
+
 pnpm-lock.yaml

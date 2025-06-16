@@ -5,6 +5,7 @@
 @use "mixins/backgrounds" as bg;
 
 // Estilo base
+
 .navbar {
   display: flex;
   align-items: center;
@@ -17,7 +18,6 @@
   .navbar-header {
     display: flex;
     width: 100%;
-    justify-content: space-between;
     align-items: center;
   }
 
