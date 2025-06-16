@@ -3259,7 +3259,6 @@ button:disabled:hover, button:disabled:active {
 .navbar .navbar-header {
   display: flex;
   width: 100%;
-  justify-content: end;
   align-items: center;
 }
 .navbar .navbar-brand {
