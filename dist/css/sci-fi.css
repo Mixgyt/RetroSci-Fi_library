@@ -3242,10 +3242,6 @@ button:disabled:hover, button:disabled:active {
     transform: translateX(-25%);
   }
 }
-.navbar-reverse {
-  flex-direction: row-reverse;
-}
-
 .navbar {
   display: flex;
   align-items: center;
