@@ -1,0 +1,111 @@
+@use "variables";
+@use "mixins/borders" as bord;
+@use "sass:map";
+@use "sass:color";
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-collapse: collapse;
+}
+
+@each $name, $color in variables.$theme-colors {
+    $text-color: if(color.channel($color, "lightness", $space: hsl) > 60%, #000, #fff);
+    $striped-color: if(color.channel($color, "lightness", $space: hsl) > 60%, darken($color, 10%), lighten($color, 10%));
+    $hover-color: if(color.channel($color, "lightness", $space: hsl) > 60%, darken($color, 15%), lighten($color, 15%));
+    $border-color: if(color.channel($color, "lightness", $space: hsl) > 60%, darken($color, 20%), lighten($color, 20%));
+    $border-header-color: if(color.channel($color, "lightness", $space: hsl) > 60%, darken($color, 60%), lighten($color, 60%));
+
+    .table-#{$name} {
+        background-color: $color;
+        color: $text-color;
+
+        &.table-striped tbody tr:nth-of-type(odd) {
+            background-color: $striped-color;
+        }
+
+        &.table-hover tbody tr:hover {
+            background-color: $hover-color;
+        }
+
+        &.table-bordered {
+            border: 1px solid $border-color;
+
+            th, td {
+                border: 1px solid $border-color;
+            }
+        }
+
+        thead th {
+            border-bottom: 2px solid $border-header-color;
+        }
+    }
+
+    .table-#{$name} td {
+        border-bottom: 1px solid $border-color;
+    }
+}
+
+@each $nombre, $color in variables.$subtle-colors {
+    $text-color: if(color.channel($color, "lightness", $space: hsl) > 60%, #000, #fff);
+    $striped-color: if(color.channel($color, "lightness", $space: hsl) > 60%, darken($color, 10%), lighten($color, 10%));
+    $hover-color: if(color.channel($color, "lightness", $space: hsl) > 60%, darken($color, 15%), lighten($color, 15%));
+    $border-color: if(color.channel($color, "lightness", $space: hsl) > 60%, darken($color, 20%), lighten($color, 20%));
+    $border-header-color: if(color.channel($color, "lightness", $space: hsl) > 60%, darken($color, 70%), lighten($color, 70%));
+
+    .table-#{$nombre} {
+        background-color: $color;
+        color: $text-color;
+
+        &.table-striped tbody tr:nth-of-type(odd) {
+            background-color: $striped-color;
+        }
+
+        &.table-hover tbody tr:hover {
+            background-color: $hover-color;
+        }
+        
+        &.table-bordered {
+            border: 1px solid $border-color;
+
+            th, td {
+                border: 1px solid $border-color;
+            }
+        }
+
+        thead th {
+            border-bottom: 2px solid $border-header-color;
+        }
+    }
+
+    .table-#{$nombre} td {
+        border-bottom: 1px solid $border-color;
+    }
+}
+
+.table th,
+.table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    text-align: center;
+}
+
+.table th {
+    border-bottom: 2px solid #444;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #3a3a3a;
+}
+
+.table-hover{ 
+    tbody tr:hover {
+        background-color: #4a4a4a;
+    }
+}
+
+.table-borderless{
+    td,th, thead{
+        border: none !important;
+    }
+}

@@ -3722,6 +3722,467 @@ pre[class*=language-]::-webkit-scrollbar-track {
   display: block;
 }
 
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-collapse: collapse;
+}
+
+.table-primary {
+  background-color: #dcc9a9;
+  color: #000;
+}
+.table-primary.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgb(205.2479338843, 178.2396694215, 132.7520661157);
+}
+.table-primary.table-hover tbody tr:hover {
+  background-color: rgb(197.8719008264, 166.8595041322, 114.6280991736);
+}
+.table-primary.table-bordered {
+  border: 1px solid rgb(190.4958677686, 155.479338843, 96.5041322314);
+}
+.table-primary.table-bordered th, .table-primary.table-bordered td {
+  border: 1px solid rgb(190.4958677686, 155.479338843, 96.5041322314);
+}
+.table-primary thead th {
+  border-bottom: 2px solid rgb(58.9917355372, 45.958677686, 24.0082644628);
+}
+
+.table-primary td {
+  border-bottom: 1px solid rgb(190.4958677686, 155.479338843, 96.5041322314);
+}
+
+.table-secondary {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+.table-secondary.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgb(51.5, 51.5, 51.5);
+}
+.table-secondary.table-hover tbody tr:hover {
+  background-color: rgb(64.25, 64.25, 64.25);
+}
+.table-secondary.table-bordered {
+  border: 1px solid #4d4d4d;
+}
+.table-secondary.table-bordered th, .table-secondary.table-bordered td {
+  border: 1px solid #4d4d4d;
+}
+.table-secondary thead th {
+  border-bottom: 2px solid #b3b3b3;
+}
+
+.table-secondary td {
+  border-bottom: 1px solid #4d4d4d;
+}
+
+.table-success {
+  background-color: #4e6851;
+  color: #fff;
+}
+.table-success.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgb(99.8571428571, 133.1428571429, 103.6978021978);
+}
+.table-success.table-hover tbody tr:hover {
+  background-color: rgb(111.2857142857, 147.2142857143, 115.4313186813);
+}
+.table-success.table-bordered {
+  border: 1px solid rgb(125.8571428571, 158.1428571429, 129.5824175824);
+}
+.table-success.table-bordered th, .table-success.table-bordered td {
+  border: 1px solid rgb(125.8571428571, 158.1428571429, 129.5824175824);
+}
+.table-success thead th {
+  border-bottom: 2px solid rgb(242.4285714286, 245.5714285714, 242.7912087912);
+}
+
+.table-success td {
+  border-bottom: 1px solid rgb(125.8571428571, 158.1428571429, 129.5824175824);
+}
+
+.table-info {
+  background-color: #4b848a;
+  color: #fff;
+}
+.table-info.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgb(95.6197183099, 161.4507042254, 168.3802816901);
+}
+.table-info.table-hover tbody tr:hover {
+  background-color: rgb(112.1408450704, 171.1478873239, 177.3591549296);
+}
+.table-info.table-bordered {
+  border: 1px solid rgb(128.661971831, 180.8450704225, 186.338028169);
+}
+.table-info.table-bordered th, .table-info.table-bordered td {
+  border: 1px solid rgb(128.661971831, 180.8450704225, 186.338028169);
+}
+.table-info thead th {
+  border-bottom: 2px solid white;
+}
+
+.table-info td {
+  border-bottom: 1px solid rgb(128.661971831, 180.8450704225, 186.338028169);
+}
+
+.table-warning {
+  background-color: #fbc359;
+  color: #000;
+}
+.table-warning.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgb(249.8, 177, 39.2);
+}
+.table-warning.table-hover tbody tr:hover {
+  background-color: rgb(249.2, 168, 14.3);
+}
+.table-warning.table-bordered {
+  border: 1px solid rgb(232.4, 154, 5.6);
+}
+.table-warning.table-bordered th, .table-warning.table-bordered td {
+  border: 1px solid rgb(232.4, 154, 5.6);
+}
+.table-warning thead th {
+  border-bottom: 2px solid rgb(33.2, 22, 0.8);
+}
+
+.table-warning td {
+  border-bottom: 1px solid rgb(232.4, 154, 5.6);
+}
+
+.table-danger {
+  background-color: #e70103;
+  color: #fff;
+}
+.table-danger.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgb(254.0215517241, 28.9784482759, 30.9353448276);
+}
+.table-danger.table-hover tbody tr:hover {
+  background-color: rgb(254.1314655172, 54.3685344828, 56.1056034483);
+}
+.table-danger.table-bordered {
+  border: 1px solid rgb(254.2413793103, 79.7586206897, 81.275862069);
+}
+.table-danger.table-bordered th, .table-danger.table-bordered td {
+  border: 1px solid rgb(254.2413793103, 79.7586206897, 81.275862069);
+}
+.table-danger thead th {
+  border-bottom: 2px solid white;
+}
+
+.table-danger td {
+  border-bottom: 1px solid rgb(254.2413793103, 79.7586206897, 81.275862069);
+}
+
+.table-light {
+  background-color: #f9f2f2;
+  color: #000;
+}
+.table-light.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgb(232.8947368421, 207.1052631579, 207.1052631579);
+}
+.table-light.table-hover tbody tr:hover {
+  background-color: rgb(224.8421052632, 189.6578947368, 189.6578947368);
+}
+.table-light.table-bordered {
+  border: 1px solid rgb(216.7894736842, 172.2105263158, 172.2105263158);
+}
+.table-light.table-bordered th, .table-light.table-bordered td {
+  border: 1px solid rgb(216.7894736842, 172.2105263158, 172.2105263158);
+}
+.table-light thead th {
+  border-bottom: 2px solid rgb(126.5789473684, 58.4210526316, 58.4210526316);
+}
+
+.table-light td {
+  border-bottom: 1px solid rgb(216.7894736842, 172.2105263158, 172.2105263158);
+}
+
+.table-alert {
+  background-color: #bb3a2d;
+  color: #fff;
+}
+.table-alert.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgb(210.9698275862, 84.75, 72.0301724138);
+}
+.table-alert.table-hover tbody tr:hover {
+  background-color: rgb(215.9159482759, 103.875, 92.5840517241);
+}
+.table-alert.table-bordered {
+  border: 1px solid rgb(220.8620689655, 123, 113.1379310345);
+}
+.table-alert.table-bordered th, .table-alert.table-bordered td {
+  border: 1px solid rgb(220.8620689655, 123, 113.1379310345);
+}
+.table-alert thead th {
+  border-bottom: 2px solid white;
+}
+
+.table-alert td {
+  border-bottom: 1px solid rgb(220.8620689655, 123, 113.1379310345);
+}
+
+.table-white {
+  background-color: white;
+  color: #000;
+}
+.table-white.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgb(229.5, 229.5, 229.5);
+}
+.table-white.table-hover tbody tr:hover {
+  background-color: rgb(216.75, 216.75, 216.75);
+}
+.table-white.table-bordered {
+  border: 1px solid #cccccc;
+}
+.table-white.table-bordered th, .table-white.table-bordered td {
+  border: 1px solid #cccccc;
+}
+.table-white thead th {
+  border-bottom: 2px solid #666666;
+}
+
+.table-white td {
+  border-bottom: 1px solid #cccccc;
+}
+
+.table-dark {
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+}
+.table-dark.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(25.5, 25.5, 25.5, 0);
+}
+.table-dark.table-hover tbody tr:hover {
+  background-color: rgba(38.25, 38.25, 38.25, 0);
+}
+.table-dark.table-bordered {
+  border: 1px solid rgba(51, 51, 51, 0);
+}
+.table-dark.table-bordered th, .table-dark.table-bordered td {
+  border: 1px solid rgba(51, 51, 51, 0);
+}
+.table-dark thead th {
+  border-bottom: 2px solid rgba(153, 153, 153, 0);
+}
+
+.table-dark td {
+  border-bottom: 1px solid rgba(51, 51, 51, 0);
+}
+
+.table-primary-subtle {
+  background-color: rgb(88, 80.4, 67.6);
+  color: #fff;
+}
+.table-primary-subtle.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgb(116.8431876607, 106.75218509, 89.7568123393);
+}
+.table-primary-subtle.table-hover tbody tr:hover {
+  background-color: rgb(131.264781491, 119.928277635, 100.835218509);
+}
+.table-primary-subtle.table-bordered {
+  border: 1px solid rgb(145.3455012853, 133.0174807198, 112.2544987147);
+}
+.table-primary-subtle.table-bordered th, .table-primary-subtle.table-bordered td {
+  border: 1px solid rgb(145.3455012853, 133.0174807198, 112.2544987147);
+}
+.table-primary-subtle thead th {
+  border-bottom: 2px solid white;
+}
+
+.table-primary-subtle td {
+  border-bottom: 1px solid rgb(145.3455012853, 133.0174807198, 112.2544987147);
+}
+
+.table-secondary-subtle {
+  background-color: rgb(10.4, 10.4, 10.4);
+  color: #fff;
+}
+.table-secondary-subtle.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgb(35.9, 35.9, 35.9);
+}
+.table-secondary-subtle.table-hover tbody tr:hover {
+  background-color: rgb(48.65, 48.65, 48.65);
+}
+.table-secondary-subtle.table-bordered {
+  border: 1px solid rgb(61.4, 61.4, 61.4);
+}
+.table-secondary-subtle.table-bordered th, .table-secondary-subtle.table-bordered td {
+  border: 1px solid rgb(61.4, 61.4, 61.4);
+}
+.table-secondary-subtle thead th {
+  border-bottom: 2px solid rgb(188.9, 188.9, 188.9);
+}
+
+.table-secondary-subtle td {
+  border-bottom: 1px solid rgb(61.4, 61.4, 61.4);
+}
+
+.table-success-subtle {
+  background-color: rgb(31.2, 41.6, 32.4);
+  color: #fff;
+}
+.table-success-subtle.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgb(53.0571428571, 70.7428571429, 55.0978021978);
+}
+.table-success-subtle.table-hover tbody tr:hover {
+  background-color: rgb(63.9857142857, 85.3142857143, 66.4467032967);
+}
+.table-success-subtle.table-bordered {
+  border: 1px solid rgb(74.9142857143, 99.8857142857, 77.7956043956);
+}
+.table-success-subtle.table-bordered th, .table-success-subtle.table-bordered td {
+  border: 1px solid rgb(74.9142857143, 99.8857142857, 77.7956043956);
+}
+.table-success-subtle thead th {
+  border-bottom: 2px solid rgb(209.1714285714, 220.6285714286, 210.4934065934);
+}
+
+.table-success-subtle td {
+  border-bottom: 1px solid rgb(74.9142857143, 99.8857142857, 77.7956043956);
+}
+
+.table-info-subtle {
+  background-color: rgb(30, 52.8, 55.2);
+  color: #fff;
+}
+.table-info-subtle.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgb(47.9577464789, 84.4056338028, 88.2422535211);
+}
+.table-info-subtle.table-hover tbody tr:hover {
+  background-color: rgb(56.9366197183, 100.2084507042, 104.7633802817);
+}
+.table-info-subtle.table-bordered {
+  border: 1px solid rgb(65.9154929577, 116.0112676056, 121.2845070423);
+}
+.table-info-subtle.table-bordered th, .table-info-subtle.table-bordered td {
+  border: 1px solid rgb(65.9154929577, 116.0112676056, 121.2845070423);
+}
+.table-info-subtle thead th {
+  border-bottom: 2px solid rgb(211.0732394366, 229.2169014085, 231.1267605634);
+}
+
+.table-info-subtle td {
+  border-bottom: 1px solid rgb(65.9154929577, 116.0112676056, 121.2845070423);
+}
+
+.table-warning-subtle {
+  background-color: rgb(100.4, 78, 35.6);
+  color: #fff;
+}
+.table-warning-subtle.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgb(138.05, 107.25, 48.95);
+}
+.table-warning-subtle.table-hover tbody tr:hover {
+  background-color: rgb(156.875, 121.875, 55.625);
+}
+.table-warning-subtle.table-bordered {
+  border: 1px solid rgb(175.7, 136.5, 62.3);
+}
+.table-warning-subtle.table-bordered th, .table-warning-subtle.table-bordered td {
+  border: 1px solid rgb(175.7, 136.5, 62.3);
+}
+.table-warning-subtle thead th {
+  border-bottom: 2px solid rgb(250.55, 247.75, 242.45);
+}
+
+.table-warning-subtle td {
+  border-bottom: 1px solid rgb(175.7, 136.5, 62.3);
+}
+
+.table-danger-subtle {
+  background-color: rgb(92.4, 0.4, 1.2);
+  color: #fff;
+}
+.table-danger-subtle.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgb(143.1801724138, 0.6198275862, 1.8594827586);
+}
+.table-danger-subtle.table-hover tbody tr:hover {
+  background-color: rgb(168.5702586207, 0.7297413793, 2.1892241379);
+}
+.table-danger-subtle.table-bordered {
+  border: 1px solid rgb(193.9603448276, 0.8396551724, 2.5189655172);
+}
+.table-danger-subtle.table-bordered th, .table-danger-subtle.table-bordered td {
+  border: 1px solid rgb(193.9603448276, 0.8396551724, 2.5189655172);
+}
+.table-danger-subtle thead th {
+  border-bottom: 2px solid rgb(254.7405172414, 195.0594827586, 195.5784482759);
+}
+
+.table-danger-subtle td {
+  border-bottom: 1px solid rgb(193.9603448276, 0.8396551724, 2.5189655172);
+}
+
+.table-light-subtle {
+  background-color: rgb(102, 102, 102);
+  color: #fff;
+}
+.table-light-subtle.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgb(127.5, 127.5, 127.5);
+}
+.table-light-subtle.table-hover tbody tr:hover {
+  background-color: rgb(140.25, 140.25, 140.25);
+}
+.table-light-subtle.table-bordered {
+  border: 1px solid #999999;
+}
+.table-light-subtle.table-bordered th, .table-light-subtle.table-bordered td {
+  border: 1px solid #999999;
+}
+.table-light-subtle thead th {
+  border-bottom: 2px solid white;
+}
+
+.table-light-subtle td {
+  border-bottom: 1px solid #999999;
+}
+
+.table-alert-subtle {
+  background-color: rgb(74.8, 23.2, 18);
+  color: #fff;
+}
+.table-alert-subtle.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgb(115.9077586207, 35.95, 27.8922413793);
+}
+.table-alert-subtle.table-hover tbody tr:hover {
+  background-color: rgb(136.461637931, 42.325, 32.838362069);
+}
+.table-alert-subtle.table-bordered {
+  border: 1px solid rgb(157.0155172414, 48.7, 37.7844827586);
+}
+.table-alert-subtle.table-bordered th, .table-alert-subtle.table-bordered td {
+  border: 1px solid rgb(157.0155172414, 48.7, 37.7844827586);
+}
+.table-alert-subtle thead th {
+  border-bottom: 2px solid rgb(243.3232758621, 209.85, 206.4767241379);
+}
+
+.table-alert-subtle td {
+  border-bottom: 1px solid rgb(157.0155172414, 48.7, 37.7844827586);
+}
+
+.table th,
+.table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  text-align: center;
+}
+
+.table th {
+  border-bottom: 2px solid #444;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #3a3a3a;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #4a4a4a;
+}
+
+.table-borderless td, .table-borderless th, .table-borderless thead {
+  border: none !important;
+}
+
 .border {
   --sci-border-opacity: 1;
   border: 2px solid rgba(220, 201, 169, var(--sci-border-opacity)) !important;
